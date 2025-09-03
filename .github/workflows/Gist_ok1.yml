@@ -29,7 +29,8 @@ jobs:
           import os, requests, pathlib, yaml
 
           token = os.environ["GIST_TOKEN"]
-          gist_id = "08aeffb9aeaf3d134b4fc993da570f5c"
+          # gist_id = "08aeffb9aeaf3d134b4fc993da570f5c"
+          gist_id = os.environ["gist_id"]
 
           cache_file = pathlib.Path("zhu_he_last.txt")
 
