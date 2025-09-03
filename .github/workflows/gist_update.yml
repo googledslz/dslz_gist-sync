@@ -5,6 +5,11 @@ on:
     - cron: "*/10 * * * *"   # 每10分钟检测一次
   workflow_dispatch:         # 支持手动触发
 
+permissions:
+  contents: write   # 👈 允许写入仓库
+
+
+
 jobs:
   smart-update-gist:
     runs-on: ubuntu-latest
