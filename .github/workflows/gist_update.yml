@@ -1,0 +1,83 @@
+name: Smart Sync Gist
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # 每10分钟检测一次
+  workflow_dispatch:         # 支持手动触发
+
+jobs:
+  smart-update-gist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Run smart update script
+        run: |
+          import os, requests, pathlib
+
+          token = os.environ["GIST_TOKEN"]
+          gist_id = "08aeffb9aeaf3d134b4fc993da570f5c"
+
+          # 缓存文件路径
+          cache_file = pathlib.Path("zhu_he_last.txt")
+
+          # gist 原始地址
+          zhu_he_url = f"https://gist.githubusercontent.com/googledslz/{gist_id}/raw/ZHU_HE"
+          fu_xie_a_url = f"https://gist.githubusercontent.com/googledslz/{gist_id}/raw/fu_xie_A"
+
+          # 拉取最新内容
+          zhu_he_content = requests.get(zhu_he_url).text.strip()
+          fu_xie_a_content = requests.get(fu_xie_a_url).text.strip()
+
+          # 拼接最终内容
+          updated_content = zhu_he_content + "\n" + fu_xie_a_content
+
+          # 读取缓存（上次的完整内容）
+          old_content = ""
+          if cache_file.exists():
+              old_content = cache_file.read_text().strip()
+
+          # 对比
+          if updated_content == old_content:
+              print("✅ ZHU_HE + fu_xie_A 没有变化，跳过更新")
+          else:
+              print("🔄 检测到变化，准备更新 gist")
+
+              # 更新 gist
+              update_url = f"https://api.github.com/gists/{gist_id}"
+              headers = {"Authorization": f"token {token}"}
+              data = {
+                  "files": {
+                      "ZHU_HE": {
+                          "content": updated_content
+                      }
+                  }
+              }
+
+              res = requests.patch(update_url, headers=headers, json=data)
+              print("Update status:", res.status_code, res.text)
+
+              # 更新缓存为完整内容
+              cache_file.write_text(updated_content)
+
+        shell: python
+
+      - name: Commit cache file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add zhu_he_last.txt
+          git commit -m "update cache file" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    env:
+      GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
