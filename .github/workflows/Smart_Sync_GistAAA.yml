@@ -1,0 +1,94 @@
+name: Smart Sync GistAAA
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # 每10分钟检测一次
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 允许推送缓存文件
+
+jobs:
+  smart-update-gist:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 拉取仓库代码
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      # 安装 Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      # 安装依赖
+      - name: Install dependencies
+        run: pip install requests
+
+      # 运行主逻辑脚本
+      - name: Run smart update script
+        run: |
+          import os, requests, pathlib
+
+          token = os.environ["GIST_TOKEN"]
+          gist_id = "08aeffb9aeaf3d134b4fc993da570f5c"
+
+          cache_file = pathlib.Path("zhu_he_last.txt")
+
+          # 远程 Gist 文件地址
+          zhu_he_url = f"https://gist.githubusercontent.com/googledslz/{gist_id}/raw/ZHU_HE"
+          fu_xie_a_url = f"https://gist.githubusercontent.com/googledslz/{gist_id}/raw/fu_xie_A"
+
+          # 获取最新内容
+          zhu_he_content = requests.get(zhu_he_url).text.rstrip()
+          fu_xie_a_content = requests.get(fu_xie_a_url).text.rstrip()
+
+          # 防止重复追加
+          if fu_xie_a_content in zhu_he_content:
+              print("✅ fu_xie_A 已经在 ZHU_HE 中，跳过追加")
+              updated_content = zhu_he_content
+          else:
+              updated_content = zhu_he_content + "\n" + fu_xie_a_content
+              print("🔄 追加 fu_xie_A 到 ZHU_HE")
+
+          # 读取缓存
+          old_content = ""
+          if cache_file.exists():
+              old_content = cache_file.read_text().rstrip()
+
+          if updated_content == old_content:
+              print("✅ 内容未变化，跳过更新 Gist")
+          else:
+              print("🔄 内容变化，更新 Gist")
+
+              # 调用 GitHub API 更新 Gist
+              update_url = f"https://api.github.com/gists/{gist_id}"
+              headers = {"Authorization": f"token {token}"}
+              data = {
+                  "files": {
+                      "ZHU_HE": {"content": updated_content}
+                  }
+              }
+
+              res = requests.patch(update_url, headers=headers, json=data)
+              print("Update status:", res.status_code, res.text)
+
+              # 更新缓存
+              cache_file.write_text(updated_content)
+        shell: python
+
+      # 提交并 push 缓存文件
+      - name: Commit cache file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add zhu_he_last.txt
+          git commit -m "update cache file" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    env:
+      GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
