@@ -1,5 +1,5 @@
 proxies:
-  - {"name":"剩余流量：9994269.66 GB","server":"us1.1010991.xyz","port":3001,"udp":true,"skip-cert-verify":false,"sni":"us1.1010991.xyz","type":"hysteria2","password":"a24c6851-2055-42c1-9c20-2d3bad97334f"}
+  - {"name":"剩余流量：9994268.64 GB","server":"us1.1010991.xyz","port":3001,"udp":true,"skip-cert-verify":false,"sni":"us1.1010991.xyz","type":"hysteria2","password":"a24c6851-2055-42c1-9c20-2d3bad97334f"}
   - {"name":"套餐到期：长期有效","server":"us1.1010991.xyz","port":3001,"udp":true,"skip-cert-verify":false,"sni":"us1.1010991.xyz","type":"hysteria2","password":"a24c6851-2055-42c1-9c20-2d3bad97334f"}
   - {"name":"🇦🇪阿联酋-三网优化1.1-TK|NF|GPT","type":"vless","server":"zz1.1010991.xyz","port":2052,"uuid":"a24c6851-2055-42c1-9c20-2d3bad97334f","udp":true,"network":"ws","ws-opts":{"headers":{"Host":"syyn-ae1-mp7fr2.1095825.xyz"},"path":"/"}}
   - {"name":"🇦🇪阿联酋-三网优化1.2-TK|NF|GPT","type":"vless","server":"zz2.1010991.xyz","port":2052,"uuid":"a24c6851-2055-42c1-9c20-2d3bad97334f","udp":true,"network":"ws","ws-opts":{"headers":{"Host":"syyn-ae1-mp7fr2.1095825.xyz"},"path":"/"}}
@@ -250,658 +250,243 @@ proxies:
   - {"name":"🇺🇸美国04","type":"trojan","server":"okanc.iepl.cac.cab","port":23024,"password":"51e39469-c3e4-4a68-bba6-185a4cae2e56","udp":true,"sni":"www.bilibili.com","skip-cert-verify":true}
   - {"name":"🇺🇸美国05","type":"trojan","server":"okanc.iepl.cac.cab","port":23025,"password":"51e39469-c3e4-4a68-bba6-185a4cae2e56","udp":true,"sni":"www.bilibili.com","skip-cert-verify":true}
   - {"name":"🔔 关注https://github.com/wzdnzd不迷路","server":"9.9.9.9","port":54321,"type":"ss","cipher":"aes-256-cfb","password":"febf501b-e19d-4451-8071-aa6144bb8825"}
-  - {"name":"🇹🇼 台湾家宽 0397","server":"36.232.127.240","port":10132,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"a268ad3a-fea7-4310-9b67-bcacf6d10adb","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0178","server":"1.170.62.249","port":10133,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"14e78772-b485-4fb4-9c8a-77453ed4c8f7","udp":true}
-  - {"name":"🇸🇬 新加坡 083","server":"mlc.cac.cab","port":51113,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"dd7c0e4e-f2f9-4cee-94ec-978b1027f822","udp":true}
-  - {"name":"🇯🇵 日本 106","server":"mlc.cac.cab","port":51114,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"251ce08f-6cf3-41aa-85fa-d822d1b7268c","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0001","server":"111.253.210.159","port":10151,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ede9f321-c56b-43c2-941b-cf85c560e0f7","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1275","server":"114.46.70.116","port":10055,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"50608038-0442-4595-a25f-4c2aad0af5a6","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0587","server":"1.170.37.220","port":10099,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ede9f321-c56b-43c2-941b-cf85c560e0f7","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1326","server":"1.165.120.233","port":10035,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"3544f024-271f-472f-a555-74b1d78e4297","udp":true}
-  - {"name":"🇯🇵 日本 149","server":"ldu.izenny.com","port":57927,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"615f21de-c199-49e3-b49c-bcbaf646a8d3","udp":true}
-  - {"name":"🇺🇸 美国 361","server":"haa.dashuai.cyou","port":45052,"type":"vmess","uuid":"4d568146-3240-4481-a19c-49760a2cc633","alterId":0,"cipher":"auto","tls":false,"udp":true}
-  - {"name":"🇬🇧 英国 01","server":"haa.dashuai.cyou","port":45066,"type":"vmess","uuid":"4d568146-3240-4481-a19c-49760a2cc633","alterId":0,"cipher":"auto","tls":false,"udp":true}
-  - {"name":"🇹🇼 台湾家宽 0789","server":"114.46.70.116","port":10055,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"eb7215ba-dd38-4d84-9f07-fa9762542220","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0595","server":"125.229.191.103","port":10023,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"bb694874-4e86-4073-87db-391d20a1313a","udp":true}
-  - {"name":"🇹🇼 台湾 069","server":"mlc.cac.cab","port":51003,"type":"trojan","password":"0e813d5c-adc7-48c1-9e13-dcb216fe5289","sni":"tw.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
-  - {"name":"🇹🇭 泰国 01","server":"mlc.cac.cab","port":51116,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"6abc73c7-e84b-4e4d-8610-37bc43416949","udp":true}
-  - {"name":"🇸🇬 新加坡 005","server":"mlc.cac.cab","port":51113,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"83cd4913-1e7d-4e31-a95f-a1ebb3f1754b","udp":true}
-  - {"name":"🇹🇼 台湾 113","server":"sgsqldsv.catcat321.com","port":20021,"type":"trojan","password":"2db71c8f-b7d3-4272-b868-2f7c92b395d1","sni":"iepl.twx1.cat.bilibili.com","skip-cert-verify":true,"udp":true}
-  - {"name":"🇺🇸 美国 375","server":"sgsqldsv.catcat321.com","port":20005,"type":"trojan","password":"2db71c8f-b7d3-4272-b868-2f7c92b395d1","sni":"iepl.jpx1.cat.bilibili.com","skip-cert-verify":true,"udp":true}
-  - {"name":"🇫🇷 法国 01","server":"haa.dashuai.cyou","port":45072,"type":"vmess","uuid":"37d4c8c1-c25c-42e3-8dbf-cee41715afa3","alterId":0,"cipher":"auto","tls":false,"udp":true}
-  - {"name":"🇹🇼 台湾家宽 1472","server":"1.165.71.196","port":10026,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"314cba30-e908-4720-b06f-74bbf32814b0","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0291","server":"125.229.191.103","port":10023,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"dc977451-743a-490d-a5f8-817874635fce","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0080","server":"125.231.66.145","port":10060,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"314cba30-e908-4720-b06f-74bbf32814b0","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0775","server":"118.170.204.122","port":10013,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"308344fb-a0fe-42fc-bcf7-de7863647248","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1477","server":"114.33.53.213","port":10037,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"b6ca3dbf-334f-4313-a644-119f84c17438","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0774","server":"1.170.62.249","port":10133,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fb941bcb-a777-47c9-958d-f01178bef303","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1512","server":"114.46.70.213","port":10064,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"049efb80-1105-4891-8160-2b55d57cbe3b","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0578","server":"36.235.20.163","port":10110,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"314cba30-e908-4720-b06f-74bbf32814b0","udp":true}
-  - {"name":"🇨🇦 加拿大 09","server":"150.230.28.100","port":45979,"type":"hysteria2","password":"cfe032e4-1bc3-454f-9d09-301b0aea08ff","auth":"cfe032e4-1bc3-454f-9d09-301b0aea08ff","sni":"www.bing.com","skip-cert-verify":true,"alpn":["h3"],"udp":true}
-  - {"name":"🇹🇼 台湾家宽 1923","server":"1.170.37.220","port":10099,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"39fd2bea-0cc6-43d3-a1ca-c16d5c1b53d7","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0411","server":"1.170.40.62","port":10096,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"a268ad3a-fea7-4310-9b67-bcacf6d10adb","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1406","server":"111.253.210.159","port":10151,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"61405455-91a2-49d5-b72e-814d304f877d","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1614","server":"118.170.199.80","port":10034,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"bb694874-4e86-4073-87db-391d20a1313a","udp":true}
-  - {"name":"🇺🇸 美国 098","server":"46.17.45.21","port":80,"type":"hysteria2","password":"ed8dee23-7fe3-4bd3-abf7-b5f31dddf946","auth":"ed8dee23-7fe3-4bd3-abf7-b5f31dddf946","up":100,"down":100,"skip-cert-verify":true,"obfs":"salamander","obfs-password":"OGU1NTEyMGE2ZDhkODdhOQ==","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0161","server":"114.46.118.137","port":10043,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fc454ebd-591d-43ae-b0fd-ecee4cbe442a","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1867","server":"36.232.82.143","port":10142,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"443b4e17-54ff-41f9-b063-c7c13e6272c0","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1478","server":"114.33.53.80","port":10047,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4c2561f4-447c-406d-ad7d-b2e73a46447c","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1927","server":"1.170.17.51","port":10085,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"dc977451-743a-490d-a5f8-817874635fce","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0508","server":"1.170.40.62","port":10096,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"e243d208-5ad4-4ccc-9e56-f113d950aa5f","udp":true}
-  - {"name":"🇯🇵 日本 018","server":"mlc.cac.cab","port":51005,"type":"trojan","password":"8d6523ef-6163-4b72-91f3-57b1307c772a","sni":"jp.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
-  - {"name":"🇹🇼 台湾家宽 1633","server":"118.170.193.109","port":10017,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"556b5480-89fc-4bb5-b684-bce0d3e7b695","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1671","server":"59.126.32.59","port":10066,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"e243d208-5ad4-4ccc-9e56-f113d950aa5f","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1104","server":"118.170.200.223","port":10031,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"443b4e17-54ff-41f9-b063-c7c13e6272c0","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0593","server":"114.46.77.133","port":10056,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ec9f74bf-0d19-4a1a-99d3-a6fd1fe68b4e","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1949","server":"1.165.85.234","port":10036,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"3544f024-271f-472f-a555-74b1d78e4297","udp":true}
-  - {"name":"🇺🇸 美国 036","server":"mlc.cac.cab","port":51115,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"0e813d5c-adc7-48c1-9e13-dcb216fe5289","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0253","server":"125.229.191.101","port":10007,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"419430ac-009d-46d8-9c8f-5ca3c7672ca5","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0549","server":"36.232.83.103","port":10146,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"9f6405e6-3b4f-4737-9cb8-5d7aba907496","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1444","server":"36.235.20.163","port":10110,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"efe9da04-938f-4d87-9e60-f2b79f0d8ea5","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0064","server":"1.170.14.225","port":10102,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"314cba30-e908-4720-b06f-74bbf32814b0","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0450","server":"1.170.54.154","port":10119,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fb99409f-560e-45bb-84ea-edf1796200f7","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0892","server":"114.33.53.213","port":10037,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"bb694874-4e86-4073-87db-391d20a1313a","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0509","server":"1.165.120.233","port":10035,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"308344fb-a0fe-42fc-bcf7-de7863647248","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1476","server":"118.170.250.194","port":10010,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"d9f695de-6098-4063-816f-7af183f75f71","udp":true}
-  - {"name":"🇸🇬 新加坡 036","server":"mlc.cac.cab","port":52113,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"251ce08f-6cf3-41aa-85fa-d822d1b7268c","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0704","server":"36.235.20.184","port":10120,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"39fd2bea-0cc6-43d3-a1ca-c16d5c1b53d7","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0037","server":"125.229.191.101","port":10007,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"61405455-91a2-49d5-b72e-814d304f877d","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0446","server":"118.170.203.159","port":10009,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"45e1887f-24c9-4a44-b645-92e18d0b0d32","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0181","server":"114.46.118.137","port":10043,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ede9f321-c56b-43c2-941b-cf85c560e0f7","udp":true}
-  - {"name":"🇹🇭 泰国 63","server":"mlc.cac.cab","port":52116,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4fe31940-417c-4056-a55a-0e7ca3746235","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1581","server":"36.235.20.163","port":10110,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"443b4e17-54ff-41f9-b063-c7c13e6272c0","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0273","server":"36.232.82.143","port":10142,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"308344fb-a0fe-42fc-bcf7-de7863647248","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1064","server":"1.170.37.220","port":10099,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ac78d686-ba2e-4ec8-8a62-3009fbbadbac","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0445","server":"36.232.127.240","port":10132,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"efe9da04-938f-4d87-9e60-f2b79f0d8ea5","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0417","server":"1.170.54.154","port":10119,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"eb7215ba-dd38-4d84-9f07-fa9762542220","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1322","server":"1.170.54.154","port":10119,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"dc977451-743a-490d-a5f8-817874635fce","udp":true}
-  - {"name":"🇺🇸 美国 229","server":"46.17.45.21","port":25039,"type":"vmess","uuid":"5f5514ff-a5c3-4b0d-a6c2-44c9cb1955d9","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/"},"udp":true}
-  - {"name":"🇹🇼 台湾家宽 0537","server":"36.235.20.184","port":10120,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"dc977451-743a-490d-a5f8-817874635fce","udp":true}
-  - {"name":"🇺🇸 美国 106","server":"46.17.45.21","port":80,"type":"hysteria2","password":"863e80cc-8825-4830-9c28-0039cde1b933","auth":"863e80cc-8825-4830-9c28-0039cde1b933","up":100,"down":100,"skip-cert-verify":true,"obfs":"salamander","obfs-password":"OGU1NTEyMGE2ZDhkODdhOQ==","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0418","server":"36.232.65.181","port":10135,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"dc977451-743a-490d-a5f8-817874635fce","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0316","server":"118.170.222.97","port":10041,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"754ed3e6-af67-435e-a6bb-662788aca35b","udp":true}
-  - {"name":"🇺🇸 美国 050","server":"mlc.cac.cab","port":51115,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"c6c4cbf5-b550-423c-b954-44aa9ed0ab06","udp":true}
-  - {"name":"🇭🇰 香港 083","server":"mlc.cac.cab","port":52111,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"6abc73c7-e84b-4e4d-8610-37bc43416949","udp":true}
-  - {"name":"🇮🇱 以色列 01","server":"ldu.izenny.com","port":18140,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"0f814c16-3c19-4ed9-a14c-9a99ec56c874","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0020","server":"118.170.204.122","port":10013,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fc454ebd-591d-43ae-b0fd-ecee4cbe442a","udp":true}
-  - {"name":"🇺🇸 美国 035","server":"mlc.cac.cab","port":51115,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"7353c334-b4fc-448c-b6fe-58a885278a06","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1161","server":"36.232.65.181","port":10135,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"556b5480-89fc-4bb5-b684-bce0d3e7b695","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1748","server":"59.126.32.59","port":10066,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"dc977451-743a-490d-a5f8-817874635fce","udp":true}
-  - {"name":"🇸🇬 新加坡 109","server":"sgsqldsv.catcat321.com","port":20039,"type":"trojan","password":"2db71c8f-b7d3-4272-b868-2f7c92b395d1","sni":"iepl.sgx2.cat.bilibili.com","skip-cert-verify":true,"udp":true}
-  - {"name":"🇹🇼 台湾 064","server":"mlc.cac.cab","port":51003,"type":"trojan","password":"0b728edf-fdda-4670-bacc-91c8ad50ec44","sni":"tw.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
-  - {"name":"🇹🇼 台湾家宽 0872","server":"125.228.162.163","port":10137,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"35b2ac43-6c81-431f-b70b-4fc451ae7b7c","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0234","server":"1.170.8.182","port":10100,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"efe9da04-938f-4d87-9e60-f2b79f0d8ea5","udp":true}
-  - {"name":"🇰🇷 韩国 08","server":"kr2.qiangdong.xyz","port":1052,"type":"ss","cipher":"aes-128-gcm","password":"VXPipi29nxMO","plugin":"obfs","plugin-opts":{"mode":"http","host":"182039459a34f64238143cd31ddebbc914362.taobao.com"},"udp":true}
-  - {"name":"🇹🇼 台湾 024","server":"mlc.cac.cab","port":51003,"type":"trojan","password":"1457299a-ee94-4a40-8ecb-19620eb0b8da","sni":"tw.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
-  - {"name":"🇲🇾 马来西亚 02","server":"ldu.izenny.com","port":13828,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4807d292-2667-4f4a-95f4-a50bf3255a39","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0041","server":"118.170.217.180","port":10020,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"308344fb-a0fe-42fc-bcf7-de7863647248","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0351","server":"125.229.191.103","port":10023,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"8070e3b8-f49d-4934-811a-3203077852a1","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1410","server":"125.229.191.101","port":10007,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"049efb80-1105-4891-8160-2b55d57cbe3b","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0074","server":"1.170.8.182","port":10100,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4d942075-1807-4a31-9e44-65e521bebee5","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0205","server":"118.170.203.159","port":10009,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"e243d208-5ad4-4ccc-9e56-f113d950aa5f","udp":true}
-  - {"name":"🇺🇸 美国 224","server":"46.17.45.21","port":25039,"type":"vmess","uuid":"48a6cbd4-9457-414d-a7d2-e83d7dd7e197","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/"},"udp":true}
-  - {"name":"🇺🇸 美国 130","server":"46.17.45.21","port":33079,"type":"hysteria2","password":"817b7c22-9112-4e15-b2f0-d619ba383dd4","auth":"817b7c22-9112-4e15-b2f0-d619ba383dd4","up":100,"down":100,"skip-cert-verify":true,"obfs":"salamander","obfs-password":"NDhhNmY5YTY0MGYzOTgxYQ==","udp":true}
-  - {"name":"🇺🇸 美国 083","server":"46.17.45.21","port":80,"type":"hysteria2","password":"c67d7f5c-308a-4478-9571-64a6d49f45b8","auth":"c67d7f5c-308a-4478-9571-64a6d49f45b8","up":100,"down":100,"skip-cert-verify":true,"obfs":"salamander","obfs-password":"OGU1NTEyMGE2ZDhkODdhOQ==","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0405","server":"125.228.162.163","port":10137,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"dc977451-743a-490d-a5f8-817874635fce","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1950","server":"1.170.40.62","port":10096,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"422e5684-9701-4e71-9c7b-b36c14b6499a","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0666","server":"36.234.106.210","port":10012,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ec9f74bf-0d19-4a1a-99d3-a6fd1fe68b4e","udp":true}
-  - {"name":"🇺🇸 美国 410","server":"us3.xilucloud.top","port":14558,"type":"hysteria2","password":"249ffa83-7d7e-4ef6-b6ca-756f4e8784f5","auth":"249ffa83-7d7e-4ef6-b6ca-756f4e8784f5","sni":"us3.xilucloud.top","skip-cert-verify":true,"udp":true}
-  - {"name":"🇹🇼 台湾家宽 0280","server":"111.253.210.159","port":10151,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"e243d208-5ad4-4ccc-9e56-f113d950aa5f","udp":true}
-  - {"name":"🇹🇷 土耳其 03","server":"ldu.izenny.com","port":33744,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4807d292-2667-4f4a-95f4-a50bf3255a39","udp":true}
-  - {"name":"🇹🇼 台湾家宽 0248","server":"36.235.20.184","port":10120,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"1b1ddbf9-2707-4c16-96c3-8a48166c31aa","udp":true}
-  - {"name":"🇹🇼 台湾家宽 1119","server":"36.234.94.41","port":10042,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4d942075-1807-4a31-9e44-65e521bebee5","udp":true}
-# https://mihomo.party/docs/guide/override/yaml
-
-
-
-
-  ##000000000000000000
-
-
-
-proxy-groups:
-- name: 🚀 节点选择
-  proxies:
-  - ♻️ 自动选择
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇨🇦 加拿大A点
-  - 🇫🇷 法国节A点
-  - 🇸🇬 新加坡A点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  type: select
-- include-all: true
-  name: 🚀 手动切换
-  type: select
-- include-all: true
-  interval: 300
-  name: ♻️ 自动选择
-  tolerance: 50
-  type: url-test
-- name: 📲 电报消息
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🇸🇬 狮城节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇫🇷 法国节A点
-  - 🇸🇬 新加坡A点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  type: select
-- name: 💬 Ai平台
-  proxies:
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🇩🇪德国A点
-  - 🚀 手动切换
-  - DIRECT
-  type: select
-- name: 📹 油管视频
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🇸🇬 狮城节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  type: select
-- name: 📺 巴哈姆特
-  proxies:
-  - 🇨🇳 台湾节点
-  - 🚀 节点选择
-  - 🚀 手动切换
-  - DIRECT
-  type: select
-- name: 📺 哔哩哔哩
-  proxies:
-  - 🎯 全球直连
-  - 🇨🇳 台湾节点
-  - 🇭🇰 香港节点
-  type: select
-- name: 🌍 国外媒体
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  type: select
-- name: 🌏 国内媒体
-  proxies:
-  - DIRECT
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🚀 手动切换
-  type: select
-- name: 📢 谷歌FCM
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- name: Ⓜ️ 微软Bing
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- name: Ⓜ️ 微软云盘
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- name: Ⓜ️ 微软服务
-  proxies:
-  - 🚀 节点选择
-  - DIRECT
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- name: 🍎 苹果服务
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- name: 🎮 游戏平台
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- filter: (?i)网易|音乐|NetEase|Music
-  include-all: true
-  name: 🎶 网易音乐
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  type: select
-- name: 🎯 全球直连
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  type: select
-- name: 🛑 广告拦截
-  proxies:
-  - REJECT
-  - DIRECT
-  type: select
-- name: 🍃 应用净化
-  proxies:
-  - REJECT
-  - DIRECT
-  type: select
-- name: 🐟 漏网之鱼
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - DIRECT
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
-  include-all: true
-  interval: 300
-  name: 🇭🇰 香港节点
-  tolerance: 50
-  type: url-test
-- filter: (?i)法国|FR|fr|🇫🇷|法
-  include-all: true
-  interval: 300
-  name: 🇫🇷 法国节A点
-  tolerance: 50
-  type: url-test
-- filter: (?i)荷兰|🇳🇱|NL|nl
-  include-all: true
-  interval: 300
-  name: 🇳🇱荷兰A点
-  tolerance: 50
-  type: url-test
-- filter: (?i)🇩🇪|德国|DE|de
-  include-all: true
-  interval: 300
-  name: 🇩🇪德国A点
-  tolerance: 50
-  type: url-test
-- filter: (?i)新加坡|🇸🇬|SG|sg
-  include-all: true
-  interval: 300
-  name: 🇸🇬 新加坡A点
-  tolerance: 50
-  type: url-test
-- filter: (?i)🇨🇦|CA|加拿大
-  include-all: true
-  interval: 300
-  name: 🇨🇦 加拿大A点
-  tolerance: 50
-  type: url-test
-- filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
-  include-all: true
-  interval: 300
-  name: 🇯🇵 日本节点
-  tolerance: 50
-  type: url-test
-- filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
-  include-all: true
-  interval: 300
-  name: 🇺🇲 美国节点
-  tolerance: 50
-  type: url-test
-- filter: (?i)台|新北|彰化|TW|Taiwan
-  include-all: true
-  interval: 300
-  name: 🇨🇳 台湾节点
-  tolerance: 50
-  type: url-test
-- filter: (?i)新加坡|坡|狮城|SG|Singapore
-  include-all: true
-  interval: 300
-  name: 🇸🇬 狮城节点
-  tolerance: 50
-  type: url-test
-- filter: (?i)KR|Korea|KOR|首尔|韩|韓
-  include-all: true
-  interval: 300
-  name: 🇰🇷 韩国节点
-  tolerance: 50
-  type: url-test
-rule-providers:
-  AI:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/AI.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/AI.list
-  Apple:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Apple.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list
-  Bahamut:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Bahamut.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bahamut.list
-  BanAD:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/BanAD.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
-  BanProgramAD:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/BanProgramAD.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
-  Bilibili:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Bilibili.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bilibili.list
-  BilibiliHMT:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/BilibiliHMT.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/BilibiliHMT.list
-  Bing:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Bing.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Bing.list
-  ChinaCompanyIp:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/ChinaCompanyIp.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
-  ChinaDomain:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/ChinaDomain.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
-  ChinaMedia:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/ChinaMedia.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
-  Download:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Download.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
-  Epic:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Epic.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list
-  GoogleCN:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/GoogleCN.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
-  GoogleFCM:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/GoogleFCM.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
-  LocalAreaNetwork:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/LocalAreaNetwork.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
-  Microsoft:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Microsoft.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list
-  NetEaseMusic:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/NetEaseMusic.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list
-  Netflix:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Netflix.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Netflix.list
-  Nintendo:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Nintendo.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Nintendo.list
-  OneDrive:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/OneDrive.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/OneDrive.list
-  OpenAi:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/OpenAi.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
-  Origin:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Origin.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Origin.list
-  ProxyGFWlist:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/ProxyGFWlist.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
-  ProxyMedia:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/ProxyMedia.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
-  Sony:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Sony.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Sony.list
-  Steam:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Steam.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list
-  SteamCN:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/SteamCN.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
-  Telegram:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Telegram.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
-  UnBan:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/UnBan.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
-  YouTube:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/YouTube.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
-rules:
-
-- DOMAIN-SUFFIX,192.168.0.111,DIRECT 
-#明确指定这个地址走直连
-- IP-CIDR,192.168.0.0/16,DIRECT
-#匹配整个局域网 IP 段（192.168.x.x 都直连），防止其他内网访问也被代理
- 
-- DOMAIN-KEYWORD,sub,💬 Ai平台
-- DOMAIN-KEYWORD,pm.,💬 Ai平台
-- DOMAIN-KEYWORD,github,💬 Ai平台
-- DOMAIN-KEYWORD,chatgpt,💬 Ai平台
-- DOMAIN-KEYWORD,openai.,💬 Ai平台
-- "DOMAIN-KEYWORD,oaistatic,💬 Ai平台"
-- "DOMAIN-KEYWORD,oaiusercontent,💬 Ai平台"
-- "DOMAIN-KEYWORD,anthropic.,💬 Ai平台"
-- "DOMAIN-KEYWORD,claude.ai,💬 Ai平台"
-- PROCESS-NAME,subs-check.exe,🎯 全球直连
-- PROCESS-NAME,subs-check,🎯 全球直连
-- RULE-SET,LocalAreaNetwork,🎯 全球直连
-- RULE-SET,UnBan,🎯 全球直连
-- RULE-SET,BanAD,🛑 广告拦截
-- RULE-SET,BanProgramAD,🍃 应用净化
-- RULE-SET,GoogleFCM,📢 谷歌FCM
-- RULE-SET,GoogleCN,🎯 全球直连
-- RULE-SET,SteamCN,🎯 全球直连
-- RULE-SET,Bing,Ⓜ️ 微软Bing
-- RULE-SET,OneDrive,Ⓜ️ 微软云盘
-- RULE-SET,Microsoft,Ⓜ️ 微软服务
-- RULE-SET,Apple,🍎 苹果服务
-- RULE-SET,Telegram,📲 电报消息
-- RULE-SET,AI,💬 Ai平台
-- RULE-SET,NetEaseMusic,🎶 网易音乐
-- RULE-SET,Epic,🎮 游戏平台
-- RULE-SET,Origin,🎮 游戏平台
-- RULE-SET,Sony,🎮 游戏平台
-- RULE-SET,Steam,🎮 游戏平台
-- RULE-SET,Nintendo,🎮 游戏平台
-- RULE-SET,YouTube,📹 油管视频
-- RULE-SET,Bahamut,📺 巴哈姆特
-- RULE-SET,BilibiliHMT,📺 哔哩哔哩
-- RULE-SET,Bilibili,📺 哔哩哔哩
-- RULE-SET,ChinaMedia,🌏 国内媒体
-- RULE-SET,ProxyMedia,🌍 国外媒体
-- RULE-SET,ProxyGFWlist,🚀 节点选择
-- RULE-SET,ChinaDomain,🎯 全球直连
-- RULE-SET,ChinaCompanyIp,🎯 全球直连
-- RULE-SET,Download,🎯 全球直连
-- GEOIP,CN,🎯 全球直连
-- MATCH,🐟 漏网之鱼
-
-
-
-##00000000000000000011111111
+  - {"name":"🇹🇼 台湾家宽 0209","server":"1.170.40.62","port":10096,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"556b5480-89fc-4bb5-b684-bce0d3e7b695","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0060","server":"1.165.120.233","port":10035,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"1b1ddbf9-2707-4c16-96c3-8a48166c31aa","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1376","server":"1.170.17.51","port":10085,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"7a2d3eaa-476c-4874-b558-819c67e67d15","udp":true}
+  - {"name":"🇹🇼 台湾 027","server":"mlc.cac.cab","port":51003,"type":"trojan","password":"736a0919-9aba-4cc7-8229-5b9ec889ff06","sni":"tw.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇹🇼 台湾家宽 1047","server":"125.228.180.250","port":10081,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4c2561f4-447c-406d-ad7d-b2e73a46447c","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0069","server":"1.165.120.233","port":10035,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"2e36e9ca-38f5-4a41-85d9-938f5c3ca41b","udp":true}
+  - {"name":"🇯🇵 日本 091","server":"mlc.cac.cab","port":51114,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"7353c334-b4fc-448c-b6fe-58a885278a06","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1054","server":"114.46.77.133","port":10056,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"897c2093-3f1f-4811-828e-c72aba548e5c","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1384","server":"114.46.70.116","port":10055,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"efe9da04-938f-4d87-9e60-f2b79f0d8ea5","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0674","server":"118.170.200.223","port":10031,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"3f539828-7340-4c7c-9bee-cd29235bb899","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1500","server":"36.235.20.163","port":10110,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"419430ac-009d-46d8-9c8f-5ca3c7672ca5","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0830","server":"36.232.83.103","port":10146,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"61405455-91a2-49d5-b72e-814d304f877d","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1879","server":"118.170.212.53","port":10018,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"754ed3e6-af67-435e-a6bb-662788aca35b","udp":true}
+  - {"name":"🇺🇸 美国 154","server":"46.17.45.21","port":23168,"type":"vmess","uuid":"90e737e9-bee9-4e28-bdb8-9e21dfc576b0","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/"},"udp":true}
+  - {"name":"🇹🇼 台湾家宽 0140","server":"118.170.212.53","port":10018,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"897c2093-3f1f-4811-828e-c72aba548e5c","udp":true}
+  - {"name":"🇭🇰 香港 111","server":"mlc.cac.cab","port":52111,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"3a414519-fcca-40f3-a602-9f55a7974eb3","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0386","server":"1.170.54.154","port":10119,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"be2c356f-fb47-4874-8958-a1572210042f","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0093","server":"114.46.70.213","port":10064,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"35b2ac43-6c81-431f-b70b-4fc451ae7b7c","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1817","server":"36.234.94.41","port":10042,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"897c2093-3f1f-4811-828e-c72aba548e5c","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1024","server":"1.170.8.182","port":10100,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"b6ca3dbf-334f-4313-a644-119f84c17438","udp":true}
+  - {"name":"🇺🇸 美国 082","server":"46.17.45.21","port":33079,"type":"hysteria2","password":"701c3c65-b858-468f-ba47-4f99ac6884f8","auth":"701c3c65-b858-468f-ba47-4f99ac6884f8","up":100,"down":100,"skip-cert-verify":true,"obfs":"salamander","obfs-password":"NDhhNmY5YTY0MGYzOTgxYQ==","udp":true}
+  - {"name":"🇹🇭 泰国 68","server":"ldu.izenny.com","port":39037,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4807d292-2667-4f4a-95f4-a50bf3255a39","udp":true}
+  - {"name":"🇺🇸 美国 474","server":"104.21.9.71","port":443,"type":"vless","uuid":"c226ac5d-65e9-4379-95c3-fb542bc242d8","tls":true,"alpn":["http%2F1.1"],"client-fingerprint":"chrome","network":"ws","ws-opts":{"path":"/OjdW89Bpg4ykd4O","headers":{"Host":"ddDDdDDdDDF.777198.XyZ"}},"udp":true,"servername":"ddDDdDDdDDF.777198.XyZ"}
+  - {"name":"🇹🇼 台湾家宽 1418","server":"114.46.118.137","port":10043,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"422e5684-9701-4e71-9c7b-b36c14b6499a","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1862","server":"118.170.199.80","port":10034,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"308344fb-a0fe-42fc-bcf7-de7863647248","udp":true}
+  - {"name":"🇺🇸 美国 076","server":"xjp1.xiaohuolongjc.top","port":37771,"type":"hysteria2","password":"12cc60a0-03e5-4df5-b2d0-90360d7e06ba","auth":"12cc60a0-03e5-4df5-b2d0-90360d7e06ba","sni":"xjp1.xiaohuolongjc.top","skip-cert-verify":true,"udp":true}
+  - {"name":"🇺🇸 美国 104","server":"46.17.45.21","port":80,"type":"hysteria2","password":"1994346d-d6f0-4e3b-bde9-ff141aacf9bb","auth":"1994346d-d6f0-4e3b-bde9-ff141aacf9bb","up":100,"down":100,"skip-cert-verify":true,"obfs":"salamander","obfs-password":"OGU1NTEyMGE2ZDhkODdhOQ==","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0320","server":"114.33.53.80","port":10047,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"314cba30-e908-4720-b06f-74bbf32814b0","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0777","server":"118.170.200.223","port":10031,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"39fd2bea-0cc6-43d3-a1ca-c16d5c1b53d7","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1339","server":"118.170.250.194","port":10010,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"419430ac-009d-46d8-9c8f-5ca3c7672ca5","udp":true}
+  - {"name":"🇺🇸 美国 469","server":"join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz","port":443,"type":"vless","uuid":"01990f4a-1682-5f3f-189a-c4f04463b812","tls":true,"client-fingerprint":"chrome","network":"ws","ws-opts":{"path":"/snippets?ip=proxyip:port(443)&nat64=6to4","headers":{"Host":"ofc898.bpkuu.9emjoa5cnet.imkisc5b.g9jw.hzhaz.cqowo3.43sl2ty.cfj22q75413.qv1.s8k175n.vyn.j9i3d.ocp5wm.6yj5.jfjmlcpv.wxwmp6593oe.prgzutut9iu.6ftec.ar9nsk29tw.zcq2vmc9egiz5szhbfq5mpkedv1ea6pmpn2buebmtvxk2rcnimk.nudt.edu.kg"}},"udp":true,"servername":"ofc898.bpkuu.9emjoa5cnet.imkisc5b.g9jw.hzhaz.cqowo3.43sl2ty.cfj22q75413.qv1.s8k175n.vyn.j9i3d.ocp5wm.6yj5.jfjmlcpv.wxwmp6593oe.prgzutut9iu.6ftec.ar9nsk29tw.zcq2vmc9egiz5szhbfq5mpkedv1ea6pmpn2buebmtvxk2rcnimk.nudt.edu.kg"}
+  - {"name":"🇺🇸 美国 087","server":"46.17.45.21","port":33079,"type":"hysteria2","password":"0e4de08c-3aaf-409f-b4bc-3a195be0241f","auth":"0e4de08c-3aaf-409f-b4bc-3a195be0241f","up":100,"down":100,"skip-cert-verify":true,"obfs":"salamander","obfs-password":"NDhhNmY5YTY0MGYzOTgxYQ==","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1213","server":"114.33.53.213","port":10037,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fb99409f-560e-45bb-84ea-edf1796200f7","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1640","server":"1.165.120.233","port":10035,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4d942075-1807-4a31-9e44-65e521bebee5","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0799","server":"36.232.127.240","port":10132,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"15261b66-f2da-4eab-b99f-df9a5e0d6e90","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0387","server":"118.170.222.97","port":10041,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"80cf80de-45c5-4016-b5d4-c6d3ab80dbc0","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0059","server":"36.232.82.143","port":10142,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"8070e3b8-f49d-4934-811a-3203077852a1","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0204","server":"114.46.70.116","port":10055,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4c2561f4-447c-406d-ad7d-b2e73a46447c","udp":true}
+  - {"name":"🇺🇸 美国 221","server":"46.17.45.21","port":23168,"type":"vmess","uuid":"b3d8ba70-01e7-4e72-8ab5-d7d556a80adf","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/"},"udp":true}
+  - {"name":"🇺🇸 美国 405","server":"185.174.138.195","port":2096,"type":"trojan","password":"slch2024","sni":"ocost-dy.wmlefl.cc","network":"ws","ws-opts":{"path":"/Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3","headers":{"Host":"ocost-dy.wmlefl.cc"}},"udp":true}
+  - {"name":"🇹🇼 台湾家宽 0169","server":"125.230.13.19","port":10032,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"422e5684-9701-4e71-9c7b-b36c14b6499a","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1354","server":"111.253.210.159","port":10151,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"314cba30-e908-4720-b06f-74bbf32814b0","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1044","server":"1.170.3.40","port":10104,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4c2561f4-447c-406d-ad7d-b2e73a46447c","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1534","server":"1.170.54.154","port":10119,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"3f539828-7340-4c7c-9bee-cd29235bb899","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0589","server":"114.33.53.213","port":10037,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"9e965737-6b43-485c-b98f-8692fddd6393","udp":true}
+  - {"name":"🇹🇼 台湾 017","server":"mlc.cac.cab","port":51112,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"6abc73c7-e84b-4e4d-8610-37bc43416949","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1086","server":"36.232.65.181","port":10135,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fc454ebd-591d-43ae-b0fd-ecee4cbe442a","udp":true}
+  - {"name":"🇺🇸 美国 341","server":"185.193.28.195","port":2096,"type":"trojan","password":"slch2024","sni":"ocost-dy.wmlefl.cc","network":"ws","ws-opts":{"path":"/Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3","headers":{"Host":"ocost-dy.wmlefl.cc"}},"udp":true}
+  - {"name":"🇺🇸 美国 113","server":"46.17.45.21","port":33079,"type":"hysteria2","password":"5b3eb22f-9bdf-40a8-846c-6fb1caa4752c","auth":"5b3eb22f-9bdf-40a8-846c-6fb1caa4752c","up":100,"down":100,"skip-cert-verify":true,"obfs":"salamander","obfs-password":"NDhhNmY5YTY0MGYzOTgxYQ==","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1631","server":"114.46.70.213","port":10064,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fc454ebd-591d-43ae-b0fd-ecee4cbe442a","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1144","server":"125.229.191.101","port":10007,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"443b4e17-54ff-41f9-b063-c7c13e6272c0","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1957","server":"118.170.219.120","port":10006,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"35b2ac43-6c81-431f-b70b-4fc451ae7b7c","udp":true}
+  - {"name":"🇹🇼 台湾 057","server":"mlc.cac.cab","port":51003,"type":"trojan","password":"1234b7d9-42fa-4aeb-85a2-26cc98a18ae5","sni":"tw.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇺🇸 美国 203","server":"46.17.45.21","port":25039,"type":"vmess","uuid":"05ed319f-932e-4e18-8a21-aee06683fc59","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/"},"udp":true}
+  - {"name":"🇯🇵 日本 130","server":"mlc.cac.cab","port":51005,"type":"trojan","password":"8673ad93-6b10-4e84-ab50-a5e440cbe51c","sni":"jp.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇹🇭 泰国 69","server":"ldu.izenny.com","port":39037,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"615f21de-c199-49e3-b49c-bcbaf646a8d3","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1413","server":"114.46.91.186","port":10050,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"3544f024-271f-472f-a555-74b1d78e4297","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0118","server":"36.232.115.106","port":10148,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"7a2d3eaa-476c-4874-b558-819c67e67d15","udp":true}
+  - {"name":"🇺🇸 美国 397","server":"185.176.26.195","port":2096,"type":"trojan","password":"slch2024","sni":"ocost-dy.wmlefl.cc","network":"ws","ws-opts":{"path":"/Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3","headers":{"Host":"ocost-dy.wmlefl.cc"}},"udp":true}
+  - {"name":"🇹🇼 台湾家宽 0468","server":"125.231.66.145","port":10060,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"443b4e17-54ff-41f9-b063-c7c13e6272c0","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0399","server":"125.228.180.250","port":10081,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"049efb80-1105-4891-8160-2b55d57cbe3b","udp":true}
+  - {"name":"🇸🇬 新加坡 057","server":"mlc.cac.cab","port":52113,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"9a1f5182-19e1-4a9f-aeae-1d9c0629b673","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1380","server":"118.170.222.97","port":10041,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"dc977451-743a-490d-a5f8-817874635fce","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1038","server":"118.170.199.80","port":10034,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4c2561f4-447c-406d-ad7d-b2e73a46447c","udp":true}
+  - {"name":"🇺🇸 美国 102","server":"46.17.45.21","port":33079,"type":"hysteria2","password":"14a00c8f-8d15-4345-bbdb-94895616056e","auth":"14a00c8f-8d15-4345-bbdb-94895616056e","up":100,"down":100,"skip-cert-verify":true,"obfs":"salamander","obfs-password":"NDhhNmY5YTY0MGYzOTgxYQ==","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1816","server":"114.46.70.213","port":10064,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"9e965737-6b43-485c-b98f-8692fddd6393","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1368","server":"1.170.3.40","port":10104,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fc454ebd-591d-43ae-b0fd-ecee4cbe442a","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1739","server":"36.232.127.240","port":10132,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fb941bcb-a777-47c9-958d-f01178bef303","udp":true}
+  - {"name":"🇭🇰 香港 005","server":"mlc.cac.cab","port":51002,"type":"trojan","password":"1bf4fc20-f320-47d5-91f8-bf4fd3c44848","sni":"hk.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇹🇼 台湾家宽 1984","server":"1.165.120.233","port":10035,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"419430ac-009d-46d8-9c8f-5ca3c7672ca5","udp":true}
+  - {"name":"🇮🇸 冰岛 01","server":"ldu.izenny.com","port":18244,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"0f814c16-3c19-4ed9-a14c-9a99ec56c874","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1181","server":"125.228.180.250","port":10081,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"39fd2bea-0cc6-43d3-a1ca-c16d5c1b53d7","udp":true}
+  - {"name":"🇺🇸 美国 095","server":"46.17.45.21","port":80,"type":"hysteria2","password":"df9eede8-43fd-4d3a-ba5f-a2d77f9ca86d","auth":"df9eede8-43fd-4d3a-ba5f-a2d77f9ca86d","up":100,"down":100,"skip-cert-verify":true,"obfs":"salamander","obfs-password":"OGU1NTEyMGE2ZDhkODdhOQ==","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0355","server":"114.46.91.186","port":10050,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fb941bcb-a777-47c9-958d-f01178bef303","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1005","server":"125.228.180.250","port":10081,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"80cf80de-45c5-4016-b5d4-c6d3ab80dbc0","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1145","server":"118.170.203.159","port":10009,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ec9f74bf-0d19-4a1a-99d3-a6fd1fe68b4e","udp":true}
+  - {"name":"🇺🇸 美国 450","server":"join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz","port":443,"type":"vless","uuid":"01990f4a-1682-058e-189a-c4f0a066783c","tls":true,"client-fingerprint":"chrome","network":"ws","ws-opts":{"path":"/snippets?ip=proxyip:port(443)&nat64=6to4","headers":{"Host":"qf1fun.yfa5gibzca3.5obed7f1bh.2dul.89dp0w9t2gv2.bfmaa.7yu9q.1ixu2czjn8o.97xcn.lvpwj.pastze7d3.5ds.lqjtuaq.q6dhipp12.61cxoqo9ji4.8ezuwbpfpe.ujh3.qx5h5jj.4s5kcmhxgqx.vtzy9cszbip.sy58csoorod2j9i1oohxbvyrz285fyv.nudt.edu.kg"}},"udp":true,"servername":"qf1fun.yfa5gibzca3.5obed7f1bh.2dul.89dp0w9t2gv2.bfmaa.7yu9q.1ixu2czjn8o.97xcn.lvpwj.pastze7d3.5ds.lqjtuaq.q6dhipp12.61cxoqo9ji4.8ezuwbpfpe.ujh3.qx5h5jj.4s5kcmhxgqx.vtzy9cszbip.sy58csoorod2j9i1oohxbvyrz285fyv.nudt.edu.kg"}
+  - {"name":"🇹🇼 台湾家宽 1774","server":"1.170.8.182","port":10100,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"bb694874-4e86-4073-87db-391d20a1313a","udp":true}
+  - {"name":"🇹🇭 泰国 34","server":"mlc.cac.cab","port":51116,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"251ce08f-6cf3-41aa-85fa-d822d1b7268c","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1159","server":"1.170.37.220","port":10099,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"422e5684-9701-4e71-9c7b-b36c14b6499a","udp":true}
+  - {"name":"🇯🇵 日本 043","server":"mlc.cac.cab","port":52114,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"31b516f8-c972-427d-a3cc-71b189bcc388","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1138","server":"125.228.180.250","port":10081,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ec9f74bf-0d19-4a1a-99d3-a6fd1fe68b4e","udp":true}
+  - {"name":"🇺🇸 美国 044","server":"mlc.cac.cab","port":51006,"type":"trojan","password":"e68710bf-270f-4dda-ae7c-5c55b65e31ea","sni":"us.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇹🇼 台湾 085","server":"mlc.cac.cab","port":52112,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"7353c334-b4fc-448c-b6fe-58a885278a06","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0625","server":"125.230.13.19","port":10032,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ede9f321-c56b-43c2-941b-cf85c560e0f7","udp":true}
+  - {"name":"🇺🇸 美国 057","server":"mlc.cac.cab","port":51006,"type":"trojan","password":"2c7fbd63-1565-44f9-ad2e-f1a68f422afb","sni":"us.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇺🇸 美国 241","server":"mlc.cac.cab","port":52115,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"011afb14-9716-48a7-ad82-c6ca09ddf835","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1670","server":"36.234.94.41","port":10042,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"308344fb-a0fe-42fc-bcf7-de7863647248","udp":true}
+  - {"name":"🇹🇼 台湾 009","server":"mlc.cac.cab","port":51112,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"91f8630b-d119-4a82-9380-f8e8882f327c","udp":true}
+  - {"name":"🇮🇳 印度 10","server":"ldu.izenny.com","port":34411,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"615f21de-c199-49e3-b49c-bcbaf646a8d3","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1426","server":"1.170.8.182","port":10100,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"308344fb-a0fe-42fc-bcf7-de7863647248","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0182","server":"1.170.9.27","port":10112,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"35b2ac43-6c81-431f-b70b-4fc451ae7b7c","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1688","server":"36.235.20.163","port":10110,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"d9f695de-6098-4063-816f-7af183f75f71","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1028","server":"1.170.8.182","port":10100,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"422e5684-9701-4e71-9c7b-b36c14b6499a","udp":true}
+  - {"name":"🇸🇬 新加坡 046","server":"mlc.cac.cab","port":52113,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"1bf4fc20-f320-47d5-91f8-bf4fd3c44848","udp":true}
+  - {"name":"🇹🇼 台湾家宽 0779","server":"1.170.37.220","port":10099,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"efe9da04-938f-4d87-9e60-f2b79f0d8ea5","udp":true}
+  - {"name":"🇹🇭 泰国 17","server":"mlc.cac.cab","port":51116,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"661c9ab6-a5e0-4e9d-bf7a-20d1b20b2c9b","udp":true}
+  - {"name":"🇭🇰 香港 117","server":"xh.dashuai.cyou","port":50051,"type":"vmess","uuid":"4d568146-3240-4481-a19c-49760a2cc633","alterId":0,"cipher":"auto","tls":false,"udp":true}
+  - {"name":"🇹🇼 台湾家宽 0421","server":"1.170.14.225","port":10102,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"e243d208-5ad4-4ccc-9e56-f113d950aa5f","udp":true}
+  - {"name":"🇹🇼 台湾家宽 1744","server":"36.232.65.181","port":10135,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"39fd2bea-0cc6-43d3-a1ca-c16d5c1b53d7","udp":true}
+  - {"name":"🇦🇺 _IN_印度->_AU_澳大利亚-114","type":"vmess","server":"103.57.249.204","port":443,"cipher":"none","uuid":"f13143a7-542d-49ec-9428-098142b6977c","alterId":0,"tls":false,"client-fingerprint":""}
+  - {"name":"🇨🇦 加拿大 01-86","server":"haa.dashuai.cyou","port":45064,"type":"vmess","uuid":"4d568146-3240-4481-a19c-49760a2cc633","alterId":0,"cipher":"auto","tls":false,"udp":true}
+  - {"name":"🇨🇳 台湾 003-70","server":"mlc.cac.cab","port":51003,"type":"trojan","password":"520aee53-2a4d-4551-9152-f5d3e06cab4c","sni":"tw.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇨🇳 台湾 010-14","server":"mlc.cac.cab","port":51112,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ca8ab00b-a7fc-414d-858f-ecb373b8b874","udp":true}
+  - {"name":"🇨🇳 台湾 022-109","server":"mlc.cac.cab","port":51003,"type":"trojan","password":"9a1f5182-19e1-4a9f-aeae-1d9c0629b673","sni":"tw.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇨🇳 台湾 039-42","server":"xdd.dashuai.cyou","port":45077,"type":"vmess","uuid":"37d4c8c1-c25c-42e3-8dbf-cee41715afa3","alterId":0,"cipher":"auto","tls":false,"udp":true}
+  - {"name":"🇨🇳 台湾 079-69","server":"mlc.cac.cab","port":52112,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"33d10302-1c6c-4599-8f69-1e977d19cc5b","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0013-36","server":"118.170.217.180","port":10020,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ac78d686-ba2e-4ec8-8a62-3009fbbadbac","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0040-102","server":"1.170.62.249","port":10133,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"443b4e17-54ff-41f9-b063-c7c13e6272c0","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0073-85","server":"1.170.14.225","port":10102,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fb99409f-560e-45bb-84ea-edf1796200f7","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0087-81","server":"125.229.191.103","port":10023,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fb99409f-560e-45bb-84ea-edf1796200f7","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0104-24","server":"114.46.77.133","port":10056,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"2e36e9ca-38f5-4a41-85d9-938f5c3ca41b","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0108-54","server":"36.232.127.240","port":10132,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"b6ca3dbf-334f-4313-a644-119f84c17438","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0123-80","server":"125.229.191.102","port":10019,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ede9f321-c56b-43c2-941b-cf85c560e0f7","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0186-61","server":"118.170.200.223","port":10031,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"9e965737-6b43-485c-b98f-8692fddd6393","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0189-38","server":"111.253.210.159","port":10151,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"897c2093-3f1f-4811-828e-c72aba548e5c","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0265-19","server":"125.229.191.102","port":10019,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"3544f024-271f-472f-a555-74b1d78e4297","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0288-95","server":"36.232.127.240","port":10132,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"308344fb-a0fe-42fc-bcf7-de7863647248","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0335-103","server":"118.170.217.180","port":10020,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"efe9da04-938f-4d87-9e60-f2b79f0d8ea5","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0368-65","server":"118.170.212.53","port":10018,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ec9f74bf-0d19-4a1a-99d3-a6fd1fe68b4e","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0447-99","server":"1.165.76.196","port":10024,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"45e1887f-24c9-4a44-b645-92e18d0b0d32","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0472-51","server":"114.33.53.213","port":10037,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"efe9da04-938f-4d87-9e60-f2b79f0d8ea5","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0478-68","server":"125.229.191.102","port":10019,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"dc977451-743a-490d-a5f8-817874635fce","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0482-84","server":"36.232.65.181","port":10135,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"a268ad3a-fea7-4310-9b67-bcacf6d10adb","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0496-88","server":"1.170.9.27","port":10112,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"9f6405e6-3b4f-4737-9cb8-5d7aba907496","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0538-37","server":"114.33.53.80","port":10047,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"bb694874-4e86-4073-87db-391d20a1313a","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0558-53","server":"125.231.66.145","port":10060,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ac78d686-ba2e-4ec8-8a62-3009fbbadbac","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0637-89","server":"118.170.203.159","port":10009,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"1b1ddbf9-2707-4c16-96c3-8a48166c31aa","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0647-82","server":"111.253.210.159","port":10151,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"50608038-0442-4595-a25f-4c2aad0af5a6","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0667-96","server":"1.165.71.196","port":10026,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fc454ebd-591d-43ae-b0fd-ecee4cbe442a","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0805-50","server":"36.232.82.143","port":10142,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"7a2d3eaa-476c-4874-b558-819c67e67d15","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0825-83","server":"1.170.9.27","port":10112,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ede9f321-c56b-43c2-941b-cf85c560e0f7","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0829-21","server":"111.253.210.159","port":10151,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"443b4e17-54ff-41f9-b063-c7c13e6272c0","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0846-44","server":"114.46.70.213","port":10064,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"45e1887f-24c9-4a44-b645-92e18d0b0d32","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0853-40","server":"1.165.71.196","port":10026,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"7a2d3eaa-476c-4874-b558-819c67e67d15","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0866-11","server":"118.170.203.159","port":10009,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"bb694874-4e86-4073-87db-391d20a1313a","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0935-46","server":"118.170.200.223","port":10031,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4d942075-1807-4a31-9e44-65e521bebee5","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0962-97","server":"114.46.70.213","port":10064,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ede9f321-c56b-43c2-941b-cf85c560e0f7","udp":true}
+  - {"name":"🇨🇳 台湾家宽 0977-108","server":"1.165.85.234","port":10036,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"419430ac-009d-46d8-9c8f-5ca3c7672ca5","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1052-17","server":"1.170.62.249","port":10133,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"049efb80-1105-4891-8160-2b55d57cbe3b","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1056-78","server":"1.170.37.220","port":10099,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"45e1887f-24c9-4a44-b645-92e18d0b0d32","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1074-67","server":"125.229.191.102","port":10019,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"9f6405e6-3b4f-4737-9cb8-5d7aba907496","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1108-91","server":"1.165.71.196","port":10026,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"15261b66-f2da-4eab-b99f-df9a5e0d6e90","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1223-33","server":"114.46.70.116","port":10055,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"7a2d3eaa-476c-4874-b558-819c67e67d15","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1270-79","server":"36.232.65.181","port":10135,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"15261b66-f2da-4eab-b99f-df9a5e0d6e90","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1279-12","server":"118.170.200.223","port":10031,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"d9f695de-6098-4063-816f-7af183f75f71","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1299-90","server":"36.234.94.41","port":10042,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"b6ca3dbf-334f-4313-a644-119f84c17438","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1372-101","server":"1.170.17.51","port":10085,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"8070e3b8-f49d-4934-811a-3203077852a1","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1382-31","server":"118.170.193.109","port":10017,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"ede9f321-c56b-43c2-941b-cf85c560e0f7","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1383-72","server":"1.170.62.249","port":10133,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"556b5480-89fc-4bb5-b684-bce0d3e7b695","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1422-28","server":"1.170.54.154","port":10119,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"d9f695de-6098-4063-816f-7af183f75f71","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1459-71","server":"118.170.199.80","port":10034,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4d942075-1807-4a31-9e44-65e521bebee5","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1480-60","server":"114.46.77.133","port":10056,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"4c2561f4-447c-406d-ad7d-b2e73a46447c","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1492-41","server":"125.231.66.145","port":10060,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"35b2ac43-6c81-431f-b70b-4fc451ae7b7c","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1495-27","server":"1.170.62.249","port":10133,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"9e965737-6b43-485c-b98f-8692fddd6393","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1513-87","server":"36.235.20.184","port":10120,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"bb694874-4e86-4073-87db-391d20a1313a","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1561-66","server":"114.46.91.186","port":10050,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"50608038-0442-4595-a25f-4c2aad0af5a6","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1588-32","server":"36.235.20.184","port":10120,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"e243d208-5ad4-4ccc-9e56-f113d950aa5f","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1602-18","server":"1.170.54.154","port":10119,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"556b5480-89fc-4bb5-b684-bce0d3e7b695","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1652-20","server":"36.232.65.181","port":10135,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"422e5684-9701-4e71-9c7b-b36c14b6499a","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1691-25","server":"36.232.115.106","port":10148,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"fb99409f-560e-45bb-84ea-edf1796200f7","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1754-15","server":"36.232.115.106","port":10148,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"443b4e17-54ff-41f9-b063-c7c13e6272c0","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1768-59","server":"1.170.37.220","port":10099,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"3f539828-7340-4c7c-9bee-cd29235bb899","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1785-58","server":"114.46.118.137","port":10043,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"61405455-91a2-49d5-b72e-814d304f877d","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1813-34","server":"36.232.115.106","port":10148,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"15261b66-f2da-4eab-b99f-df9a5e0d6e90","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1832-74","server":"114.33.53.213","port":10037,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"419430ac-009d-46d8-9c8f-5ca3c7672ca5","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1860-13","server":"1.165.76.196","port":10024,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"419430ac-009d-46d8-9c8f-5ca3c7672ca5","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1868-94","server":"36.232.83.103","port":10146,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"a268ad3a-fea7-4310-9b67-bcacf6d10adb","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1917-73","server":"114.46.77.133","port":10056,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"d9f695de-6098-4063-816f-7af183f75f71","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1958-98","server":"125.231.66.145","port":10060,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"422e5684-9701-4e71-9c7b-b36c14b6499a","udp":true}
+  - {"name":"🇨🇳 台湾家宽 1979-75","server":"114.46.91.186","port":10050,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"35b2ac43-6c81-431f-b70b-4fc451ae7b7c","udp":true}
+  - {"name":"🇨🇳 台湾家宽 2004-57","server":"36.235.20.184","port":10120,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"14e78772-b485-4fb4-9c8a-77453ed4c8f7","udp":true}
+  - {"name":"🇨🇳 悦 ·  台湾1-120","server":"yue-tw.yuetoto.net","port":21008,"sni":"yue-tw.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇨🇳 悦 ·  台湾2-121","server":"yue-tw.yuetoto.net","port":21019,"sni":"yue-tw.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"type":"ss","server":"46.183.184.60","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3","name":"🇩🇪 _DE_德国-113"}
+  - {"sni":"cdn-node-oss-99.paofu.de","network":"ws","ws-opts":{"path":"/profile/telegram@ssrsub","headers":{"Host":"cdn-node-oss-99.paofu.de"}},"type":"trojan","password":"56c852c2-9517-4c13-ae18-bf0bee41706a","server":"fastcup.net","port":8443,"name":"🇩🇰 _DK_丹麦->_US_美国-110"}
+  - {"name":"🇪🇸 _ES_西班牙-115","type":"vmess","server":"188.208.141.177","port":443,"cipher":"auto","uuid":"0970834f-5b4d-44da-d890-19dcb2a72d4c","alterId":0,"tls":false,"client-fingerprint":""}
+  - {"name":"🇪🇸 _US_美国->_ES_西班牙-117","type":"vmess","server":"38.54.59.237","port":443,"cipher":"auto","uuid":"5ac807d5-42c9-4b97-9567-478e61dab696","alterId":0,"tls":false,"client-fingerprint":""}
+  - {"name":"🇬🇧 _GB_英国-112","type":"vmess","server":"89.31.120.192","port":443,"cipher":"auto","uuid":"44537595-9ccc-4b83-8936-5f9ad3229019","alterId":0,"tls":false,"client-fingerprint":""}
+  - {"name":"🇬🇧 英国 04-35","server":"xdd.dashuai.cyou","port":45067,"type":"vmess","uuid":"37d4c8c1-c25c-42e3-8dbf-cee41715afa3","alterId":0,"cipher":"auto","tls":false,"udp":true}
+  - {"type":"ss","server":"jphj-hk-500m-100g.ifuck.gay","port":38001,"cipher":"aes-256-gcm","password":"McRu2JvKif","name":"🇭🇰 JA-HK-9950X-7"}
+  - {"name":"🇭🇰 悦 ·  香港1-118","server":"yue-hk.yuetoto.net","port":21074,"sni":"yue-hk.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇭🇰 悦 ·  香港2-119","server":"yue-hk.yuetoto.net","port":21092,"sni":"yue-hk.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇭🇰 香港 062-100","server":"mlc.cac.cab","port":51002,"type":"trojan","password":"1457299a-ee94-4a40-8ecb-19620eb0b8da","sni":"hk.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇭🇰 香港 100-52","server":"mlc.cac.cab","port":52111,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"661c9ab6-a5e0-4e9d-bf7a-20d1b20b2c9b","udp":true}
+  - {"name":"🇭🇰 香港 137-64","server":"v9.heduian.link","port":30809,"type":"vmess","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":2,"cipher":"auto","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/oooo","headers":{"Host":"baidu.com"}},"udp":true}
+  - {"name":"🇮🇸 冰岛 04-62","server":"ldu.izenny.com","port":18244,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"03f90416-0cb9-46ad-9601-7014018efca2","udp":true}
+  - {"name":"🇯🇵 悦 ·  日本1-122","server":"yue-jp.yuetoto.net","port":21089,"sni":"yue-jp.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇯🇵 悦 ·  日本2-123","server":"yue-jp.yuetoto.net","port":21046,"sni":"yue-jp.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇯🇵 日本 014-77","server":"mlc.cac.cab","port":51005,"type":"trojan","password":"1457299a-ee94-4a40-8ecb-19620eb0b8da","sni":"jp.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇯🇵 日本 095-22","server":"mlc.cac.cab","port":51005,"type":"trojan","password":"7353c334-b4fc-448c-b6fe-58a885278a06","sni":"jp.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇰🇷 悦 ·  韩国1-124","server":"yue-kr.yuetoto.net","port":21030,"sni":"yue-kr.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇰🇷 悦 ·  韩国2-125","server":"yue-kr.yuetoto.net","port":21096,"sni":"yue-kr.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇰🇷 韩国 02-55","server":"haa.dashuai.cyou","port":45076,"type":"vmess","uuid":"4d568146-3240-4481-a19c-49760a2cc633","alterId":0,"cipher":"auto","tls":false,"udp":true}
+  - {"type":"ss","server":"91.132.94.200","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3","name":"🇲🇩 _MD_摩尔多瓦-116"}
+  - {"name":"🇳🇬 悦 ·  尼日利亚1-136","server":"yue-ng.yuetoto.net","port":21053,"sni":"yue-ng.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇳🇬 悦 ·  尼日利亚2-137","server":"yue-ng.yuetoto.net","port":21089,"sni":"yue-ng.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇵🇱 _PL_波兰-111","type":"vmess","server":"myfreecloud.ru","port":43953,"cipher":"auto","uuid":"712c13ab-550a-4812-8d3b-7eb11ac7eeaf","alterId":0,"tls":false}
+  - {"name":"🇷🇺 悦 ·  俄罗斯1-132","server":"yue-ru.yuetoto.net","port":21076,"sni":"yue-ru.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇷🇺 悦 ·  俄罗斯2-133","server":"yue-ru.yuetoto.net","port":21008,"sni":"yue-ru.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"type":"hysteria2","name":"🇸🇬 SG-01-231-3","server":"142.91.102.176","port":43597,"password":"5h0hcc7wc8","sni":"cn.bing.com","skip-cert-verify":true,"tfo":false}
+  - {"name":"🇸🇬 悦 ·  新加坡1-126","server":"yue-sg.yuetoto.net","port":21067,"sni":"yue-sg.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇸🇬 悦 ·  新加坡2-127","server":"yue-sg.yuetoto.net","port":21081,"sni":"yue-sg.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇸🇬 新加坡 020-48","server":"mlc.cac.cab","port":51004,"type":"trojan","password":"2c7fbd63-1565-44f9-ad2e-f1a68f422afb","sni":"sg.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇸🇬 新加坡 075-92","server":"mlc.cac.cab","port":51004,"type":"trojan","password":"a3b936ff-df1b-4bdb-a2e8-54019ef1e2bf","sni":"sg.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇹🇭 泰国 14-10","server":"mlc.cac.cab","port":51116,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"7b263a47-d0de-409a-a606-76f274ce1b44","udp":true}
+  - {"name":"🇹🇭 泰国 43-105","server":"mlc.cac.cab","port":52116,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"3a414519-fcca-40f3-a602-9f55a7974eb3","udp":true}
+  - {"name":"🇹🇷 悦 ·  土耳其1-134","server":"yue-tr.yuetoto.net","port":21044,"sni":"yue-tr.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇹🇷 悦 ·  土耳其2-135","server":"yue-tr.yuetoto.net","port":21061,"sni":"yue-tr.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇺🇸 悦 ·  美国1-128","server":"yue-us.yuetoto.net","port":21093,"sni":"yue-us.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇺🇸 悦 ·  美国2-129","server":"yue-us.yuetoto.net","port":21073,"sni":"yue-us.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇺🇸 美国 051-104","server":"mlc.cac.cab","port":51006,"type":"trojan","password":"520aee53-2a4d-4551-9152-f5d3e06cab4c","sni":"us.01.naiun.bilibili.com","skip-cert-verify":true,"udp":true}
+  - {"name":"🇺🇸 美国 132-107","server":"46.17.45.21","port":33079,"type":"hysteria2","password":"5f5514ff-a5c3-4b0d-a6c2-44c9cb1955d9","auth":"5f5514ff-a5c3-4b0d-a6c2-44c9cb1955d9","up":100,"down":100,"skip-cert-verify":true,"obfs":"salamander","obfs-password":"NDhhNmY5YTY0MGYzOTgxYQ==","udp":true}
+  - {"name":"🇺🇸 美国 163-49","server":"46.17.45.21","port":23168,"type":"vmess","uuid":"9363eedf-00e9-4b14-8d66-e596b02538bc","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/"},"udp":true}
+  - {"name":"🇺🇸 美国 210-45","server":"46.17.45.21","port":23168,"type":"vmess","uuid":"48a6cbd4-9457-414d-a7d2-e83d7dd7e197","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/"},"udp":true}
+  - {"name":"🇺🇸 美国 215-39","server":"46.17.45.21","port":25039,"type":"vmess","uuid":"42a74fed-54e5-40ec-afcd-96cb5934e006","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/"},"udp":true}
+  - {"name":"🇺🇸 美国 264-16","server":"mlc.cac.cab","port":52115,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"66603d83-5506-4960-b276-6ddc74e18b44","udp":true}
+  - {"name":"🇺🇸 美国 272-26","server":"46.17.45.21","port":22105,"type":"vmess","uuid":"2094943c-b9e9-435e-84bb-48d29b73419b","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/"},"udp":true}
+  - {"name":"🇺🇸 美国 273-63","server":"46.17.45.21","port":22105,"type":"vmess","uuid":"cfee9ee1-10c2-45da-b1c6-1b54f7513a43","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/"},"udp":true}
+  - {"name":"🇺🇸 美国 287-47","server":"46.17.45.21","port":22105,"type":"vmess","uuid":"b3d8ba70-01e7-4e72-8ab5-d7d556a80adf","alterId":0,"cipher":"auto","tls":false,"network":"ws","ws-opts":{"path":"/"},"udp":true}
+  - {"name":"🇺🇸 美国 317-93","server":"dg1.xiaohuolongjc.top","port":37771,"type":"hysteria2","password":"8873807e-7932-4b31-b996-51621ae05865","auth":"8873807e-7932-4b31-b996-51621ae05865","sni":"dg1.xiaohuolongjc.top","skip-cert-verify":true,"udp":true}
+  - {"name":"🇺🇸 美国 346-56","server":"185.148.105.195","port":2096,"type":"trojan","password":"slch2024","sni":"ocost-dy.wmlefl.cc","skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/Telegram🇨🇳","headers":{"Host":"ocost-dy.wmlefl.cc"}},"udp":true}
+  - {"name":"🇺🇸 美国 347-23","server":"195.13.45.195","port":2096,"type":"trojan","password":"slch2024","sni":"ocost-dy.wmlefl.cc","network":"ws","ws-opts":{"path":"/Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3","headers":{"Host":"ocost-dy.wmlefl.cc"}},"udp":true}
+  - {"name":"🇺🇸 美国 359-29","server":"xdd.dashuai.cyou","port":45053,"type":"vmess","uuid":"826571c1-c4cf-4976-95ed-cf5bc69e7753","alterId":0,"cipher":"auto","tls":false,"udp":true}
+  - {"name":"🇺🇸 美国 376-106","server":"185.251.81.195","port":2096,"type":"trojan","password":"slch2024","sni":"ocost-dy.wmlefl.cc","network":"ws","ws-opts":{"path":"/Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3","headers":{"Host":"ocost-dy.wmlefl.cc"}},"udp":true}
+  - {"name":"🇺🇸 美国 388-43","server":"185.251.82.195","port":2096,"type":"trojan","password":"slch2024","sni":"ocost-dy.wmlefl.cc","network":"ws","ws-opts":{"path":"/Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3","headers":{"Host":"ocost-dy.wmlefl.cc"}},"udp":true}
+  - {"name":"🇺🇸 美国 407-30","server":"dg1.xiaohuolongjc.top","port":37771,"type":"hysteria2","password":"92c6a80e-1566-4f15-a4d8-8a9d17e0c12c","auth":"92c6a80e-1566-4f15-a4d8-8a9d17e0c12c","sni":"dg1.xiaohuolongjc.top","skip-cert-verify":true,"udp":true}
+  - {"name":"🇺🇸 美国 440-76","server":"195.13.44.195","port":2096,"type":"trojan","password":"slch2024","sni":"ocost-dy.wmlefl.cc","network":"ws","ws-opts":{"path":"/Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3","headers":{"Host":"ocost-dy.wmlefl.cc"}},"udp":true}
+  - {"name":"🇻🇳 悦 ·  越南1-130","server":"yue-vn.yuetoto.net","port":21054,"sni":"yue-vn.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"name":"🇻🇳 悦 ·  越南2-131","server":"yue-vn.yuetoto.net","port":21090,"sni":"yue-vn.yuetoto.net","skip-cert-verify":false,"ports":"21001-21099","type":"hysteria2","password":"e889ff36-a27f-477e-bcb5-f2ccdb361de5"}
+  - {"type":"ss","server":"qq.com","port":80,"cipher":"aes-256-gcm","password":"txwl666","name":"🏴‍☠️ Channel: https://t.me/txwl666-2"}
+  - {"type":"ss","server":"www.360.com","port":88,"cipher":"aes-256-gcm","password":"txwl666","name":"🏴‍☠️ Group: https://t.me/txwl233-1"}
+  - {"type":"hysteria2","name":"🏴‍☠️ hysteria2-jp-5","server":"178.94.142.163","port":18888,"password":"4ce1005b-aa80-4dcc-842b-17c713ef4ce1","skip-cert-verify":true,"tfo":false}
+  - {"type":"hysteria2","name":"🏴‍☠️ hysteria2-msk-4","server":"95.181.212.141","port":16187,"password":"ee4a8f20-5467-4f12-bd87-ff21b7ba817c","skip-cert-verify":true,"tfo":false}
+  - {"type":"hysteria2","name":"🏴‍☠️ hysteria2-us-6","server":"199.245.100.27","port":16688,"password":"ed206fcd-c81f-4983-a6bf-bbfcc71a2664","skip-cert-verify":true,"tfo":false}
+  - {"type":"vless","name":"🏴‍☠️ uk 1 vless xhttp tls cdn-9","server":"linux.do","port":443,"uuid":"1a18d083-aadd-4f51-b058-723fd0e471c2","tls":true,"client-fingerprint":"random","alpn":["h3","h2"],"skip-cert-verify":false,"network":"xhttp","xhttp-opts":{"path":"/vless_xhttp_tls"},"servername":"uk-1.caughtwind.top"}
+  - {"type":"vless","name":"🏴‍☠️ vless-zoro-8","server":"64.81.117.172","port":443,"uuid":"0cd07402-0edb-4890-808d-cd6f0e2625ee","tls":true,"flow":"xtls-rprx-vision","client-fingerprint":"firefox","skip-cert-verify":false,"reality-opts":{"public-key":"0n_NS2q2bvgpgQt0-gNmGNXTH-B0aqaJdE1A40sjsyE"},"network":"tcp","servername":"ts2.tc.mm.bing.net"}
 # https://mihomo.party/docs/guide/override/yaml
 
 
