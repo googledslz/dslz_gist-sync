@@ -1,4 +1,4 @@
-name: Smart Sync Gist_OK1
+name: Smart Sync Gist
 
 on:
   schedule:
@@ -29,7 +29,6 @@ jobs:
           import os, requests, pathlib, yaml
 
           token = os.environ["GIST_TOKEN"]
-          # gist_id = "08aeffb9aeaf3d134b4fc993da570f5c"
           gist_id = os.environ["GIST_ID"]
 
           cache_file = pathlib.Path("zhu_he_last.txt")
@@ -68,10 +67,9 @@ jobs:
                       proxy["name"] = new_name
                       seen[base_name] += 1
                       seen[new_name] = 1
-                      updated_flag = True  # 重命名后内容发生变化
+                      updated_flag = True
               data["proxies"] = proxies
 
-          # 转回 YAML 字符串
           zhu_he_content_fixed = yaml.dump(data, allow_unicode=True)
 
           # ===========================
@@ -99,7 +97,6 @@ jobs:
               data_payload = {"files": {"ZHU_HE": {"content": updated_content}}}
               res = requests.patch(update_url, headers=headers, json=data_payload)
               print("Update status:", res.status_code, res.text)
-              # 更新缓存
               cache_file.write_text(updated_content)
           else:
               print("✅ 内容未变化，跳过更新 Gist")
@@ -118,3 +115,4 @@ jobs:
 
     env:
       GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+      GIST_ID: ${{ secrets.GIST_ID }}
