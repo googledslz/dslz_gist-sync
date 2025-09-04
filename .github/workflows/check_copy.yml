@@ -111,3 +111,29 @@ if pc_file.exists():
 pc_file.write_text(zhu_he_fixed + "\n" + fu_xie_a_content, encoding="utf-8")
 print(f"✅ 已写入合并内容到 {pc_file}")
 EOF
+
+      - name: Debug tmp directory
+        run: ls -R tmp || echo "tmp directory not found"
+
+      - name: Show pc.yaml content
+        run: cat tmp/pc.yaml || echo "pc.yaml not found"
+
+      - name: Upload pc.yaml artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pc-yaml
+          path: tmp/pc.yaml
+          overwrite: true
+
+      - name: Upload zhu_he_last.txt artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: zhu_he-cache
+          path: tmp/zhu_he_last.txt
+          overwrite: true
+
+      - name: Debug ENV
+        run: |
+          echo "GIST_TOKEN set? -> ${GIST_TOKEN:+YES}"
+          echo "GIST_ID set? -> ${GIST_ID:+YES}"
+          echo "GIST_USER set? -> ${GIST_USER:+YES}"
