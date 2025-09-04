@@ -32,7 +32,11 @@ jobs:
           gist_id = os.environ["GIST_ID"]
           gist_user = os.environ["GIST_USER"]
 
-          cache_file = pathlib.Path("zhu_he_last.txt")
+          # 确保 tmp 目录存在
+          tmp_dir = pathlib.Path("tmp")
+          tmp_dir.mkdir(exist_ok=True)
+
+          cache_file = tmp_dir / "zhu_he_last.txt"
 
           # 构造 Gist 文件 URL
           base_url = f"https://gist.githubusercontent.com/{gist_user}/{gist_id}/raw"
@@ -110,7 +114,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add zhu_he_last.txt
+          git add tmp/zhu_he_last.txt
           git commit -m "update cache file" || echo "No changes to commit"
           git push
         env:
