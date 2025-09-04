@@ -1,0 +1,133 @@
+name: Smart Sync Gist   # ok2.yml
+
+on:
+  schedule:
+    - cron: "* * * * *"   # ⚡ 每分钟运行一次（调试用）
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 允许推送缓存文件
+
+jobs:
+  smart-update-gist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Show current time
+        run: |
+          echo "=== Current UTC time ==="
+          date -u
+          echo "=== Current Beijing time ==="
+          TZ='Asia/Shanghai' date
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests pyyaml
+
+      - name: Run smart update script
+        run: |
+          import os, requests, pathlib, yaml
+
+          token = os.environ["GIST_TOKEN"]
+          gist_id = os.environ["GIST_ID"]
+          gist_user = os.environ["GIST_USER"]
+
+          # 确保 tmp 目录存在
+          tmp_dir = pathlib.Path("tmp")
+          tmp_dir.mkdir(exist_ok=True)
+
+          cache_file = tmp_dir / "zhu_he_last.txt"
+
+          # 构造 Gist 文件 URL
+          base_url = f"https://gist.githubusercontent.com/{gist_user}/{gist_id}/raw"
+          zhu_he_url = f"{base_url}/ZHU_HE"
+          fu_xie_a_url = f"{base_url}/fu_xie_A"
+
+          # 下载文件
+          zhu_he_content = requests.get(zhu_he_url).text
+          fu_xie_a_content = requests.get(fu_xie_a_url).text
+
+          # ===========================
+          # 1️⃣ 解析 YAML，处理 proxies 重复 name
+          # ===========================
+          try:
+              data = yaml.safe_load(zhu_he_content)
+          except Exception:
+              print("⚠️ ZHU_HE 内容不是有效 YAML，跳过 proxies 重命名")
+              data = {}
+
+          updated_flag = False
+
+          if "proxies" in data:
+              proxies = data["proxies"]
+              seen = {}
+              for proxy in proxies:
+                  base_name = proxy.get("name", "")
+                  if base_name not in seen:
+                      seen[base_name] = 1
+                  else:
+                      count = seen[base_name]
+                      new_name = f"{base_name}-{count}"
+                      while new_name in seen:
+                          count += 1
+                          new_name = f"{base_name}-{count}"
+                      proxy["name"] = new_name
+                      seen[base_name] += 1
+                      seen[new_name] = 1
+                      updated_flag = True
+              data["proxies"] = proxies
+
+          zhu_he_content_fixed = yaml.dump(data, allow_unicode=True)
+
+          # ===========================
+          # 2️⃣ 防止重复追加 fu_xie_A
+          # ===========================
+          if fu_xie_a_content in zhu_he_content_fixed:
+              updated_content = zhu_he_content_fixed
+              print("✅ fu_xie_A 已经在 ZHU_HE 中，跳过追加")
+          else:
+              updated_content = zhu_he_content_fixed + "\n" + fu_xie_a_content
+              updated_flag = True
+              print("🔄 追加 fu_xie_A 到 ZHU_HE")
+
+          # ===========================
+          # 3️⃣ 对比缓存，决定是否更新 Gist
+          # ===========================
+          old_content = ""
+          if cache_file.exists():
+              old_content = cache_file.read_text()
+
+          if updated_flag or updated_content != old_content:
+              print("🔄 内容变化，更新 Gist")
+              update_url = f"https://api.github.com/gists/{gist_id}"
+              headers = {"Authorization": f"token {token}"}
+              data_payload = {"files": {"ZHU_HE": {"content": updated_content}}}
+              res = requests.patch(update_url, headers=headers, json=data_payload)
+              print("Update status:", res.status_code, res.text)
+              cache_file.write_text(updated_content)
+          else:
+              print("✅ 内容未变化，跳过更新 Gist")
+
+        shell: python
+
+      - name: Commit cache file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tmp/zhu_he_last.txt
+          git commit -m "update cache file" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    env:
+      GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+      GIST_ID: ${{ secrets.GIST_ID }}
+      GIST_USER: ${{ secrets.GIST_USER }}
