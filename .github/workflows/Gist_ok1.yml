@@ -1,4 +1,4 @@
-name: Smart Sync Gist   ok1.yml
+name: Smart Sync Gist
 
 on:
   schedule:
@@ -25,8 +25,9 @@ jobs:
         run: pip install requests pyyaml
 
       - name: Run smart update script
+        id: update_gist
         run: |
-          import os, requests, pathlib, yaml
+          import os, requests, pathlib, yaml, datetime, json
 
           token = os.environ["GIST_TOKEN"]
           gist_id = os.environ["GIST_ID"]
@@ -100,18 +101,27 @@ jobs:
               data_payload = {"files": {"ZHU_HE": {"content": updated_content}}}
               res = requests.patch(update_url, headers=headers, json=data_payload)
               print("Update status:", res.status_code, res.text)
-              cache_file.write_text(updated_content)
+
+              if res.status_code == 200:
+                  cache_file.write_text(updated_content)
+                  ts = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+                  print(f"::set-output name=commit_msg::✅ Update Gist at {ts}")
+              else:
+                  print("⚠️ 更新 Gist 失败")
+                  print(f"::set-output name=commit_msg::⚠️ Failed update")
           else:
               print("✅ 内容未变化，跳过更新 Gist")
+              print("::set-output name=commit_msg::No changes")
 
         shell: python
 
       - name: Commit cache file
+        if: steps.update_gist.outputs.commit_msg != 'No changes'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add zhu_he_last.txt
-          git commit -m "update cache file" || echo "No changes to commit"
+          git commit -m "${{ steps.update_gist.outputs.commit_msg }}"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
