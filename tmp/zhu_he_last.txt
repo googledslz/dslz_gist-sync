@@ -1,5 +1,5 @@
 proxies:
-- name: 剩余流量：1111111.29 GB
+- name: 剩余流量：9994226.29 GB
   password: a24c6851-2055-42c1-9c20-2d3bad97334f
   port: 3001
   server: us1.1010991.xyz
