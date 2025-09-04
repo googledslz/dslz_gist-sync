@@ -30,13 +30,16 @@ jobs:
 
           token = os.environ["GIST_TOKEN"]
           gist_id = os.environ["GIST_ID"]
+          gist_user = os.environ["GIST_USER"]
 
           cache_file = pathlib.Path("zhu_he_last.txt")
 
-          # 获取 Gist 文件内容
-          zhu_he_url = f"https://gist.githubusercontent.com/googledslz/{gist_id}/raw/ZHU_HE"
-          fu_xie_a_url = f"https://gist.githubusercontent.com/googledslz/{gist_id}/raw/fu_xie_A"
+          # 构造 Gist 文件 URL
+          base_url = f"https://gist.githubusercontent.com/{gist_user}/{gist_id}/raw"
+          zhu_he_url = f"{base_url}/ZHU_HE"
+          fu_xie_a_url = f"{base_url}/fu_xie_A"
 
+          # 下载文件
           zhu_he_content = requests.get(zhu_he_url).text
           fu_xie_a_content = requests.get(fu_xie_a_url).text
 
@@ -49,7 +52,7 @@ jobs:
               print("⚠️ ZHU_HE 内容不是有效 YAML，跳过 proxies 重命名")
               data = {}
 
-          updated_flag = False  # 标记是否有变化
+          updated_flag = False
 
           if "proxies" in data:
               proxies = data["proxies"]
@@ -116,3 +119,4 @@ jobs:
     env:
       GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
       GIST_ID: ${{ secrets.GIST_ID }}
+      GIST_USER: ${{ secrets.GIST_USER }}
