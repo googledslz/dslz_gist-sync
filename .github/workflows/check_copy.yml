@@ -1,4 +1,4 @@
-      - name: Run  check_copy.yml
+       name: Run  check_copy.yml
         run: |
           import os, requests, pathlib, yaml
 
