@@ -1,42 +1,10 @@
 proxies:
-- name: 剩余000011111量：167 GB
-  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  port: 37011
-  server: yg.foldjc.top
-  skip-cert-verify: true
-  sni: yg.foldjc.top
-  type: hysteria2
-  udp: true
-- name: 剩余流0000222量：9994213.31 GB
+- name: 剩余流量：9994213.15 GB
   password: a24c6851-2055-42c1-9c20-2d3bad97334f
   port: 3001
   server: us1.1010991.xyz
   skip-cert-verify: false
   sni: us1.1010991.xyz
-  type: hysteria2
-  udp: true
-- name: 印度
-  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  port: 37014
-  server: yd.foldjc.top
-  skip-cert-verify: true
-  sni: yd.foldjc.top
-  type: hysteria2
-  udp: true
-- name: 台湾
-  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  port: 37013
-  server: tw.foldjc.top
-  skip-cert-verify: true
-  sni: tw.foldjc.top
-  type: hysteria2
-  udp: true
-- name: 套餐到期：2025-09-25
-  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  port: 37011
-  server: yg.foldjc.top
-  skip-cert-verify: true
-  sni: yg.foldjc.top
   type: hysteria2
   udp: true
 - name: 套餐到期：长期有效
@@ -45,62 +13,6 @@ proxies:
   server: us1.1010991.xyz
   skip-cert-verify: false
   sni: us1.1010991.xyz
-  type: hysteria2
-  udp: true
-- name: 官网-foldjc.top
-  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  port: 37017
-  server: dg.foldjc.top
-  skip-cert-verify: true
-  sni: dg.foldjc.top
-  type: hysteria2
-  udp: true
-- name: 德国
-  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  port: 37017
-  server: dg.foldjc.top
-  skip-cert-verify: true
-  sni: dg.foldjc.top
-  type: hysteria2
-  udp: true
-- name: 新加坡
-  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  port: 37012
-  server: xjp.foldjc.top
-  skip-cert-verify: true
-  sni: xjp.foldjc.top
-  type: hysteria2
-  udp: true
-- name: 美国
-  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  port: 37016
-  server: mg.foldjc.top
-  skip-cert-verify: true
-  sni: mg.foldjc.top
-  type: hysteria2
-  udp: true
-- name: 英国
-  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  port: 37011
-  server: yg.foldjc.top
-  skip-cert-verify: true
-  sni: yg.foldjc.top
-  type: hysteria2
-  udp: true
-- name: 距离下次重置剩余：26 天
-  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  port: 37011
-  server: yg.foldjc.top
-  skip-cert-verify: true
-  sni: yg.foldjc.top
-  type: hysteria2
-  udp: true
-- name: 香港
-  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  port: 37015
-  server: xg.foldjc.top
-  skip-cert-verify: true
-  sni: xg.foldjc.top
   type: hysteria2
   udp: true
 - name: 🇦🇪阿联酋-三网优化1.1-TK|NF|GPT
@@ -4131,779 +4043,350 @@ proxies:
   port: 54321
   server: 9.9.9.9
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1550
-  password: d89157f7-f642-43b0-a3a6-097b99d99727
-  port: 10119
-  server: 1.170.54.154
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1052
-  password: 1cd03be5-7f45-4bfb-bc51-479901f5b7ef
-  port: 10091
-  server: 1.170.18.196
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 2063
-  password: 754ed3e6-af67-435e-a6bb-662788aca35b
-  port: 10023
-  server: 125.229.191.103
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1339
-  password: 97984a4e-0c49-45a1-94c2-c9b7f81a6a78
-  port: 10019
-  server: 125.229.191.102
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0716
-  password: 3544f024-271f-472f-a555-74b1d78e4297
-  port: 10060
-  server: 125.231.66.145
-  type: ss
+- auth: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+  name: 🇺🇸 美国 082
+  password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+  port: 1743
+  server: f18e5748-t26yo0-t3i5yp-b4pt.la.shifen.uk
+  sni: f18e5748-t26yo0-t3i5yp-b4pt.la.shifen.uk
+  type: hysteria2
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国 297
+  name: 🇺🇸 美国 294
   network: ws
   port: 25039
   server: 45.144.174.211
   tls: false
   type: vmess
   udp: true
-  uuid: 817b7c22-9112-4e15-b2f0-d619ba383dd4
+  uuid: 9cd85f71-7b0c-47b2-b262-71c53b5e5f8b
   ws-opts:
     path: /
+- auth: 5a375b58-a22a-4ec0-8acd-8eb83c8824ef
+  down: 100
+  name: 🇺🇸 美国 246
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 5a375b58-a22a-4ec0-8acd-8eb83c8824ef
+  port: 31008
+  server: 45.144.174.211
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0300
-  password: de1af436-6b8d-468f-ba53-ef024ae045de
-  port: 10064
-  server: 114.46.70.213
+  name: 🇹🇼 台湾家宽 1895
+  password: affb7b59-d4a0-489f-ae3a-ffa8a1d73e99
+  port: 10052
+  server: 36.234.100.248
+  type: ss
+  udp: true
+- auth: cdb9fa76-10a0-436b-bc49-c24506eed2ba
+  name: 🇯🇵 日本 073
+  password: cdb9fa76-10a0-436b-bc49-c24506eed2ba
+  port: 50000
+  ports: 50000-55000
+  server: 45.11.1.62
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 0223
+  password: 1cd03be5-7f45-4bfb-bc51-479901f5b7ef
+  port: 10119
+  server: 1.170.54.154
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 198
+  password: 15261b66-f2da-4eab-b99f-df9a5e0d6e90
+  port: 10040
+  server: 1.165.74.197
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 1063
+  password: 8070e3b8-f49d-4934-811a-3203077852a1
+  port: 10126
+  server: 36.232.100.149
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 1414
+  password: 3544f024-271f-472f-a555-74b1d78e4297
+  port: 10086
+  server: 36.235.14.137
+  type: ss
+  udp: true
+- name: 🇸🇬 新加坡 05
+  password: 5d641d3a-ddf6-416c-82dc-2ccf2e24a764
+  port: 51004
+  server: mlc.cac.cab
+  skip-cert-verify: true
+  sni: sg.01.naiun.bilibili.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 0590
+  password: 36ab932f-a1fa-4759-a7c3-66ff3dca403f
+  port: 10022
+  server: 1.165.67.43
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 1520
+  password: ccabf244-4132-4ebe-886d-25df59bb47f7
+  port: 10086
+  server: 36.235.14.137
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 0741
+  password: affb7b59-d4a0-489f-ae3a-ffa8a1d73e99
+  port: 10067
+  server: 36.234.114.126
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 0480
+  password: 45e1887f-24c9-4a44-b645-92e18d0b0d32
+  port: 10085
+  server: 1.170.17.51
+  type: ss
+  udp: true
+- auth: 8b3723ac-00a4-4f6c-bf4e-ea3c6f6eef9f
+  name: 🇺🇸 美国 258
+  password: 8b3723ac-00a4-4f6c-bf4e-ea3c6f6eef9f
+  port: 37771
+  server: dg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: dg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- name: 🇹🇼 台湾 024
+  password: 89b76dc6-b127-4732-947b-c4d4a8160a57
+  port: 51003
+  server: mlc.cac.cab
+  skip-cert-verify: true
+  sni: tw.01.naiun.bilibili.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 0992
+  password: 80cc5f42-4d5e-406e-989b-9f9455cb7f77
+  port: 10126
+  server: 36.232.100.149
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 1500
+  password: cb72e7d0-edf1-4b2a-92d8-f28b62f382d0
+  port: 10029
+  server: 118.170.227.242
+  type: ss
+  udp: true
+- auth: 5451e30b-3b76-4ffb-bc50-597f0a648f21
+  name: 🇺🇸 美国 276
+  password: 5451e30b-3b76-4ffb-bc50-597f0a648f21
+  port: 37771
+  server: dg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: dg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 2032
+  password: 754ed3e6-af67-435e-a6bb-662788aca35b
+  port: 10001
+  server: 125.229.191.100
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 0422
+  password: cb72e7d0-edf1-4b2a-92d8-f28b62f382d0
+  port: 10144
+  server: 111.253.201.202
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 1581
+  password: 64d1d262-c75b-4000-834a-3ab7cc3b9723
+  port: 10013
+  server: 118.170.204.122
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 061
+  password: 14e78772-b485-4fb4-9c8a-77453ed4c8f7
+  port: 10135
+  server: 36.232.65.181
+  type: ss
+  udp: true
+- auth: 8b3723ac-00a4-4f6c-bf4e-ea3c6f6eef9f
+  name: 🇺🇸 美国 162
+  password: 8b3723ac-00a4-4f6c-bf4e-ea3c6f6eef9f
+  port: 37771
+  server: mg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: mg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- name: 🇺🇸 美国 190
+  network: ws
+  port: 443
+  server: registry.cyou
+  servername: hhgowv.ww2flixo.ro24j0932g.0cm3xn.izcl.kyn96o.gnzc1t.9oif50xrp7v.r72erhioxh4p.as6lrjagm3ve.aw4bon5.177hnn8v1k.75lqp9.pcmsw1.baqku3n.fotkecxb6e.1j05u0a.evobe.pri.gfmawem8t.asu20f1t6vg1r8rwke2kmp37xtvcuwhthdq9.nudt.edu.kg
+  tls: true
+  type: vless
+  udp: true
+  uuid: 019910dd-c4f0-55bd-b20f-d75e4bf00d38
+  ws-opts:
+    headers:
+      Host: hhgowv.ww2flixo.ro24j0932g.0cm3xn.izcl.kyn96o.gnzc1t.9oif50xrp7v.r72erhioxh4p.as6lrjagm3ve.aw4bon5.177hnn8v1k.75lqp9.pcmsw1.baqku3n.fotkecxb6e.1j05u0a.evobe.pri.gfmawem8t.asu20f1t6vg1r8rwke2kmp37xtvcuwhthdq9.nudt.edu.kg
+    path: /snippets?ip=proxyip:port(443)&nat64=6to4
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡 46
+  password: 6bc2b14e-3464-47a3-a7da-0c7ee1e14336
+  port: 52113
+  server: mlc.cac.cab
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 1632
+  password: 64d1d262-c75b-4000-834a-3ab7cc3b9723
+  port: 10085
+  server: 1.170.17.51
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 1466
+  password: 3544f024-271f-472f-a555-74b1d78e4297
+  port: 10104
+  server: 1.170.15.193
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 1830
+  password: fb941bcb-a777-47c9-958d-f01178bef303
+  port: 10055
+  server: 114.46.70.116
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 1413
+  password: 97984a4e-0c49-45a1-94c2-c9b7f81a6a78
+  port: 10137
+  server: 125.228.162.163
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国 203
+  name: 🇺🇸 美国 214
   network: ws
   port: 23168
   server: 45.144.174.211
   tls: false
   type: vmess
   udp: true
-  uuid: 90e737e9-bee9-4e28-bdb8-9e21dfc576b0
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵 日本 114
-  port: 45056
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d5b13161-a944-421b-a8f8-9bf9f058904d
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0105
-  password: ccabf244-4132-4ebe-886d-25df59bb47f7
-  port: 10081
-  server: 125.228.180.250
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 135
-  password: fe431d9b-e103-4f4b-9926-24a49aaf1ceb
-  port: 10094
-  server: 1.170.19.6
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 2035
-  password: affb7b59-d4a0-489f-ae3a-ffa8a1d73e99
-  port: 10138
-  server: 36.232.72.168
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0622
-  password: 55139fc3-6be9-433f-9b41-1f0e578e8832
-  port: 10091
-  server: 1.170.18.196
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1776
-  password: 245fb20c-8231-4228-b6f2-de138a4a6eb3
-  port: 10002
-  server: 1.165.126.93
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0896
-  password: 7948787c-e566-49b9-ade1-c4afaa928cc5
-  port: 10086
-  server: 36.235.14.137
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1918
-  password: 8070e3b8-f49d-4934-811a-3203077852a1
-  port: 10065
-  server: 125.231.72.120
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1319
-  password: 61405455-91a2-49d5-b72e-814d304f877d
-  port: 10065
-  server: 125.231.72.120
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0188
-  password: 1cd03be5-7f45-4bfb-bc51-479901f5b7ef
-  port: 10096
-  server: 1.170.40.62
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1900
-  password: 29ccf1f4-6351-46c9-9e91-3e861794ad40
-  port: 10024
-  server: 1.165.76.196
-  type: ss
-  udp: true
-- name: 🇺🇸 美国 419
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.170.166.195
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1219
-  password: affb7b59-d4a0-489f-ae3a-ffa8a1d73e99
-  port: 10066
-  server: 59.126.32.59
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0267
-  password: 2e36e9ca-38f5-4a41-85d9-938f5c3ca41b
-  port: 10013
-  server: 118.170.204.122
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 136
-  password: 3544f024-271f-472f-a555-74b1d78e4297
-  port: 10039
-  server: 118.170.207.158
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0395
-  password: cb72e7d0-edf1-4b2a-92d8-f28b62f382d0
-  port: 10002
-  server: 1.165.126.93
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1487
-  password: d89157f7-f642-43b0-a3a6-097b99d99727
-  port: 10002
-  server: 1.165.126.93
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1565
-  password: ccabf244-4132-4ebe-886d-25df59bb47f7
-  port: 10064
-  server: 114.46.70.213
-  type: ss
-  udp: true
-- name: 🇭🇰 香港 011
-  password: 4ddc5e3a-64d2-4be2-b5a7-6be29cf98c5f
-  port: 51002
-  server: mlc.cac.cab
-  skip-cert-verify: true
-  sni: hk.01.naiun.bilibili.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1556
-  password: 64d1d262-c75b-4000-834a-3ab7cc3b9723
-  port: 10032
-  server: 125.230.13.19
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 114
-  password: aa2bc255-5f31-4075-9cfa-642719537fd1
-  port: 10036
-  server: 1.165.85.234
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0694
-  password: 76c3dad6-ef3f-4779-be42-f609115a4e99
-  port: 10137
-  server: 125.228.162.163
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0420
-  password: affb7b59-d4a0-489f-ae3a-ffa8a1d73e99
-  port: 10061
-  server: 118.170.198.195
-  type: ss
-  udp: true
-- auth: a0fb6563-bd17-43c3-8fd9-fd97e9e805aa
-  name: 🇺🇸 美国 375
-  password: a0fb6563-bd17-43c3-8fd9-fd97e9e805aa
-  port: 40001
-  server: rb.dimoyun.top
-  skip-cert-verify: true
-  sni: rb.dimoyun.top
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1971
-  password: 45e1887f-24c9-4a44-b645-92e18d0b0d32
-  port: 10032
-  server: 125.230.13.19
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1364
-  password: 1cd03be5-7f45-4bfb-bc51-479901f5b7ef
-  port: 10048
-  server: 114.46.80.189
-  type: ss
-  udp: true
-- auth: 7fd98159-a3e7-440f-b29a-6185c04f14e9
-  name: 🇭🇰 香港家宽 21
-  password: 7fd98159-a3e7-440f-b29a-6185c04f14e9
-  port: 37771
-  server: xg1.xiaohuolongjc.top
-  skip-cert-verify: true
-  sni: xg1.xiaohuolongjc.top
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1712
-  password: 84a43095-d46d-44df-9a5a-34e052d43cc6
-  port: 10022
-  server: 1.165.67.43
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1468
-  password: 64d1d262-c75b-4000-834a-3ab7cc3b9723
-  port: 10024
-  server: 1.165.76.196
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本 031
-  password: 404509a9-0d00-4663-8c7b-2314a500e354
-  port: 51114
-  server: mlc.cac.cab
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 301
-  network: ws
-  port: 25039
-  server: 45.144.174.211
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8f728694-29a1-41ee-814c-c9b3a55007bf
+  uuid: e54230ef-8551-4400-a21c-421265a99686
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 176
-  password: 245fb20c-8231-4228-b6f2-de138a4a6eb3
-  port: 10037
-  server: 114.33.53.213
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0361
-  password: eb7215ba-dd38-4d84-9f07-fa9762542220
-  port: 10137
-  server: 125.228.162.163
-  type: ss
-  udp: true
-- auth: 86d07617-6d2f-4aa4-84aa-aaeb53b321bc
-  name: 🇺🇸 美国 346
-  password: 86d07617-6d2f-4aa4-84aa-aaeb53b321bc
-  port: 37771
-  server: rb1.xiaohuolongjc.top
-  skip-cert-verify: true
-  sni: rb1.xiaohuolongjc.top
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1314
-  password: 61405455-91a2-49d5-b72e-814d304f877d
-  port: 10104
-  server: 1.170.15.193
-  type: ss
-  udp: true
-- name: 🇺🇸 美国 427
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.162.231.195
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0399
-  password: 3544f024-271f-472f-a555-74b1d78e4297
-  port: 10022
-  server: 1.165.67.43
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1454
-  password: 49130943-59a6-447c-af95-25d60172397b
+  name: 🇹🇼 台湾家宽 2080
+  password: d7035a3c-b5b9-4938-a95f-cacf95e94653
   port: 10110
   server: 36.235.20.163
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1305
-  password: b56edcb9-b1b7-482f-9da4-9dab4dfed87c
+  name: 🇹🇼 台湾 200
+  password: affb7b59-d4a0-489f-ae3a-ffa8a1d73e99
   port: 10034
   server: 118.170.199.80
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0031
-  password: 40c7a460-24fc-475c-b6f1-47e63049c2cc
-  port: 10009
-  server: 118.170.203.159
+  name: 🇹🇼 台湾家宽 0478
+  password: 97984a4e-0c49-45a1-94c2-c9b7f81a6a78
+  port: 10007
+  server: 125.229.191.101
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0145
-  password: 15261b66-f2da-4eab-b99f-df9a5e0d6e90
-  port: 10002
-  server: 1.165.126.93
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1089
-  password: 40c7a460-24fc-475c-b6f1-47e63049c2cc
-  port: 10013
-  server: 118.170.204.122
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0013
-  password: 80cc5f42-4d5e-406e-989b-9f9455cb7f77
-  port: 10032
-  server: 125.230.13.19
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1649
-  password: ccabf244-4132-4ebe-886d-25df59bb47f7
-  port: 10078
-  server: 36.234.112.113
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0484
-  password: 36ab932f-a1fa-4759-a7c3-66ff3dca403f
-  port: 10078
-  server: 36.234.112.113
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1977
-  password: fc454ebd-591d-43ae-b0fd-ecee4cbe442a
-  port: 10140
-  server: 36.232.102.25
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 121
-  password: ec9f74bf-0d19-4a1a-99d3-a6fd1fe68b4e
-  port: 10034
-  server: 118.170.199.80
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0642
-  password: 8070e3b8-f49d-4934-811a-3203077852a1
-  port: 10137
-  server: 125.228.162.163
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0382
-  password: 84a43095-d46d-44df-9a5a-34e052d43cc6
-  port: 10086
-  server: 36.235.14.137
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0764
-  password: 29ccf1f4-6351-46c9-9e91-3e861794ad40
-  port: 10130
-  server: 36.232.80.9
-  type: ss
-  udp: true
-- auth: 8873807e-7932-4b31-b996-51621ae05865
-  name: 🇺🇸 美国 342
-  password: 8873807e-7932-4b31-b996-51621ae05865
-  port: 37771
-  server: rb1.xiaohuolongjc.top
-  skip-cert-verify: true
-  sni: rb1.xiaohuolongjc.top
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 027
-  password: 2f1c410e-86ee-48c1-89d7-e6ace288bd4e
-  port: 51112
-  server: mlc.cac.cab
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0507
-  password: cb72e7d0-edf1-4b2a-92d8-f28b62f382d0
-  port: 10074
-  server: 114.46.116.43
-  type: ss
-  udp: true
-- auth: Yet-Another-Public-Config-1
-  name: 🇳🇱 荷兰 05
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 36400
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1901
-  password: 49130943-59a6-447c-af95-25d60172397b
-  port: 10114
-  server: 36.232.84.128
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1735
-  password: 61405455-91a2-49d5-b72e-814d304f877d
-  port: 10067
-  server: 36.234.114.126
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0447
-  password: 45e1887f-24c9-4a44-b645-92e18d0b0d32
-  port: 10151
-  server: 111.253.210.159
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1242
-  password: 1cd03be5-7f45-4bfb-bc51-479901f5b7ef
-  port: 10140
-  server: 36.232.102.25
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0302
-  password: 61405455-91a2-49d5-b72e-814d304f877d
-  port: 10144
-  server: 111.253.201.202
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0430
-  password: aa2bc255-5f31-4075-9cfa-642719537fd1
+  name: 🇹🇼 台湾家宽 1590
+  password: 3544f024-271f-472f-a555-74b1d78e4297
   port: 10065
   server: 125.231.72.120
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 087
-  password: 76c3dad6-ef3f-4779-be42-f609115a4e99
-  port: 10090
-  server: 1.170.43.225
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 050
-  network: ws
-  port: 22105
-  server: 45.144.174.211
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c5bf1e44-971c-4dcc-a016-8cc43eedbf60
-  ws-opts:
-    path: /
-- auth: 99dcb463-abdf-4d7d-923e-15ff79d8b467
-  name: 🇺🇸 美国 226
-  password: 99dcb463-abdf-4d7d-923e-15ff79d8b467
-  port: 8443
-  server: h23.cpddx.club
-  skip-cert-verify: false
-  sni: h23.cpddx.club
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 2075
-  password: affb7b59-d4a0-489f-ae3a-ffa8a1d73e99
-  port: 10060
-  server: 125.231.66.145
-  type: ss
-  udp: true
-- auth: 97f8e11a-683a-493d-839a-3340a7bc63fb
-  name: 🇺🇸 美国 176
-  password: 97f8e11a-683a-493d-839a-3340a7bc63fb
-  port: 37771
-  server: xjp1.xiaohuolongjc.top
-  skip-cert-verify: true
-  sni: xjp1.xiaohuolongjc.top
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0296
-  password: 15261b66-f2da-4eab-b99f-df9a5e0d6e90
-  port: 10078
-  server: 36.234.112.113
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0855
-  password: ccabf244-4132-4ebe-886d-25df59bb47f7
-  port: 10094
-  server: 1.170.19.6
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0898
+  name: 🇹🇼 台湾家宽 1927
   password: fb941bcb-a777-47c9-958d-f01178bef303
-  port: 10023
-  server: 125.229.191.103
+  port: 10085
+  server: 1.170.17.51
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0605
-  password: fe431d9b-e103-4f4b-9926-24a49aaf1ceb
-  port: 10020
-  server: 1.165.67.244
+  name: 🇹🇼 台湾家宽 0233
+  password: 2e36e9ca-38f5-4a41-85d9-938f5c3ca41b
+  port: 10086
+  server: 36.235.14.137
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1997
-  password: 80cc5f42-4d5e-406e-989b-9f9455cb7f77
-  port: 10055
-  server: 114.46.70.116
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0182
-  password: fc454ebd-591d-43ae-b0fd-ecee4cbe442a
+  name: 🇹🇼 台湾 175
+  password: eb7215ba-dd38-4d84-9f07-fa9762542220
   port: 10130
   server: 36.232.80.9
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1669
-  password: f1f82575-4045-4379-b0d6-6b84ce3f4680
-  port: 10135
-  server: 36.232.65.181
+  name: 🇹🇼 台湾家宽 1486
+  password: 80cc5f42-4d5e-406e-989b-9f9455cb7f77
+  port: 10009
+  server: 118.170.203.159
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 285
-  network: ws
-  port: 25039
-  server: 45.144.174.211
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b7fd9c0c-18f8-426f-8ac7-f9aa3da2e214
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦 加拿大 02
-  port: 45064
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d5b13161-a944-421b-a8f8-9bf9f058904d
-- auth: be1c5ecb-9185-425e-9069-16e1ae086334
-  name: 🇯🇵 日本 044
-  password: be1c5ecb-9185-425e-9069-16e1ae086334
-  port: 50000
-  ports: 50000-55000
-  server: 133.18.163.202
+- auth: 626873ff-9e0d-4b5f-9243-f66eec240926
+  name: 🇭🇰 香港 081
+  password: 626873ff-9e0d-4b5f-9243-f66eec240926
+  port: 37771
+  server: hg1.xiaohuolongjc.top
   skip-cert-verify: true
-  sni: www.microsoft.com
+  sni: hg1.xiaohuolongjc.top
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0281
-  password: 3544f024-271f-472f-a555-74b1d78e4297
-  port: 10112
-  server: 1.170.9.27
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1516
-  password: 4498b9cb-f3e4-4138-b0c5-9538ddcf804a
-  port: 10032
-  server: 125.230.13.19
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0715
-  password: 14e78772-b485-4fb4-9c8a-77453ed4c8f7
+  name: 🇹🇼 台湾家宽 0698
+  password: aa2bc255-5f31-4075-9cfa-642719537fd1
   port: 10060
   server: 125.231.66.145
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇨🇦 加拿大 05
-  network: tcp
-  port: 59303
-  reality-opts:
-    public-key: FHm9vc9hi1aK9jz8CqCjhJvT0bxzsD470FvOyubB6EA
-    short-id: bbe06294
-  server: 40.233.67.146
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 862e90e1-2f26-4506-b8b9-0adf20da05fc
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1309
-  password: 45e1887f-24c9-4a44-b645-92e18d0b0d32
-  port: 10047
-  server: 114.33.53.80
+  name: 🇹🇼 台湾家宽 0808
+  password: de1af436-6b8d-468f-ba53-ef024ae045de
+  port: 10101
+  server: 1.170.45.29
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦 加拿大 01
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 0493
+  password: 76c3dad6-ef3f-4779-be42-f609115a4e99
+  port: 10067
+  server: 36.234.114.126
+  type: ss
   udp: true
-  uuid: d5b13161-a944-421b-a8f8-9bf9f058904d
-- name: 🇯🇵 日本 111
-  password: dc4e4402-d32a-4614-889c-bdc9a33677fb
-  port: 39769
-  server: cdntwa.xiaomispeed.com
+- auth: 4bd663f9-8af8-4fde-8405-717e0e76043b
+  name: 🇺🇸 美国 347
+  password: 4bd663f9-8af8-4fde-8405-717e0e76043b
+  port: 37771
+  server: rb1.xiaohuolongjc.top
   skip-cert-verify: true
-  sni: cdntwa.xiaomispeed.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0935
-  password: f1f82575-4045-4379-b0d6-6b84ce3f4680
-  port: 10144
-  server: 111.253.201.202
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 293
-  network: ws
-  port: 25039
-  server: 45.144.174.211
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ac09066f-0ec5-45cf-b5d2-50ab44440eec
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0505
-  password: 84a43095-d46d-44df-9a5a-34e052d43cc6
-  port: 10137
-  server: 125.228.162.163
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0373
-  password: 84a43095-d46d-44df-9a5a-34e052d43cc6
-  port: 10111
-  server: 1.170.22.6
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1437
-  password: 80cc5f42-4d5e-406e-989b-9f9455cb7f77
-  port: 10120
-  server: 36.235.20.184
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1405
-  password: 84a43095-d46d-44df-9a5a-34e052d43cc6
-  port: 10120
-  server: 36.235.20.184
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1592
-  password: cb72e7d0-edf1-4b2a-92d8-f28b62f382d0
-  port: 10111
-  server: 1.170.22.6
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 1302
-  password: f1f82575-4045-4379-b0d6-6b84ce3f4680
-  port: 10052
-  server: 36.234.100.248
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0326
-  password: 36ab932f-a1fa-4759-a7c3-66ff3dca403f
-  port: 10081
-  server: 125.228.180.250
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 0497
-  password: b56edcb9-b1b7-482f-9da4-9dab4dfed87c
-  port: 10047
-  server: 114.33.53.80
-  type: ss
+  sni: rb1.xiaohuolongjc.top
+  type: hysteria2
   udp: true
 - alterId: 0
   cipher: none
@@ -6005,541 +5488,6 @@ proxies:
   tls: true
   type: vless
   uuid: 0cd07402-0edb-4890-808d-cd6f0e2625ee
-proxy-groups:
-- name: 🚀 节点选择
-  proxies:
-  - ♻️ 自动选择
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇨🇦 加拿大A点
-  - 🇫🇷 法国节A点
-  - 🇸🇬 新加坡A点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  type: select
-- include-all: true
-  name: 🚀 手动切换
-  type: select
-- include-all: true
-  interval: 300
-  name: ♻️ 自动选择
-  tolerance: 50
-  type: url-test
-- name: 📲 电报消息
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🇸🇬 狮城节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇫🇷 法国节A点
-  - 🇸🇬 新加坡A点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  type: select
-- name: 💬 Ai平台
-  proxies:
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🇩🇪德国A点
-  - 🚀 手动切换
-  - DIRECT
-  type: select
-- name: 📹 油管视频
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🇸🇬 狮城节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  type: select
-- name: 📺 巴哈姆特
-  proxies:
-  - 🇨🇳 台湾节点
-  - 🚀 节点选择
-  - 🚀 手动切换
-  - DIRECT
-  type: select
-- name: 📺 哔哩哔哩
-  proxies:
-  - 🎯 全球直连
-  - 🇨🇳 台湾节点
-  - 🇭🇰 香港节点
-  type: select
-- name: 🌍 国外媒体
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  - DIRECT
-  type: select
-- name: 🌏 国内媒体
-  proxies:
-  - DIRECT
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🚀 手动切换
-  type: select
-- name: 📢 谷歌FCM
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- name: Ⓜ️ 微软Bing
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- name: Ⓜ️ 微软云盘
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- name: Ⓜ️ 微软服务
-  proxies:
-  - 🚀 节点选择
-  - DIRECT
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- name: 🍎 苹果服务
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- name: 🎮 游戏平台
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - 🇺🇲 美国节点
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- filter: (?i)网易|音乐|NetEase|Music
-  include-all: true
-  name: 🎶 网易音乐
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  type: select
-- name: 🎯 全球直连
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  type: select
-- name: 🛑 广告拦截
-  proxies:
-  - REJECT
-  - DIRECT
-  type: select
-- name: 🍃 应用净化
-  proxies:
-  - REJECT
-  - DIRECT
-  type: select
-- name: 🐟 漏网之鱼
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - DIRECT
-  - 🇭🇰 香港节点
-  - 🇨🇳 台湾节点
-  - 🇸🇬 狮城节点
-  - 🇯🇵 日本节点
-  - 🇺🇲 美国节点
-  - 🇰🇷 韩国节点
-  - 🚀 手动切换
-  type: select
-- filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
-  include-all: true
-  interval: 300
-  name: 🇭🇰 香港节点
-  tolerance: 50
-  type: url-test
-- filter: (?i)法国|FR|fr|🇫🇷|法
-  include-all: true
-  interval: 300
-  name: 🇫🇷 法国节A点
-  tolerance: 50
-  type: url-test
-- filter: (?i)荷兰|🇳🇱|NL|nl
-  include-all: true
-  interval: 300
-  name: 🇳🇱荷兰A点
-  tolerance: 50
-  type: url-test
-- filter: (?i)🇩🇪|德国|DE|de
-  include-all: true
-  interval: 300
-  name: 🇩🇪德国A点
-  tolerance: 50
-  type: url-test
-- filter: (?i)新加坡|🇸🇬|SG|sg
-  include-all: true
-  interval: 300
-  name: 🇸🇬 新加坡A点
-  tolerance: 50
-  type: url-test
-- filter: (?i)🇨🇦|CA|加拿大
-  include-all: true
-  interval: 300
-  name: 🇨🇦 加拿大A点
-  tolerance: 50
-  type: url-test
-- filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
-  include-all: true
-  interval: 300
-  name: 🇯🇵 日本节点
-  tolerance: 50
-  type: url-test
-- filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
-  include-all: true
-  interval: 300
-  name: 🇺🇲 美国节点
-  tolerance: 50
-  type: url-test
-- filter: (?i)台|新北|彰化|TW|Taiwan
-  include-all: true
-  interval: 300
-  name: 🇨🇳 台湾节点
-  tolerance: 50
-  type: url-test
-- filter: (?i)新加坡|坡|狮城|SG|Singapore
-  include-all: true
-  interval: 300
-  name: 🇸🇬 狮城节点
-  tolerance: 50
-  type: url-test
-- filter: (?i)KR|Korea|KOR|首尔|韩|韓
-  include-all: true
-  interval: 300
-  name: 🇰🇷 韩国节点
-  tolerance: 50
-  type: url-test
-rule-providers:
-  AI:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/AI.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/AI.list
-  Apple:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Apple.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list
-  Bahamut:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Bahamut.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bahamut.list
-  BanAD:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/BanAD.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
-  BanProgramAD:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/BanProgramAD.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
-  Bilibili:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Bilibili.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bilibili.list
-  BilibiliHMT:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/BilibiliHMT.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/BilibiliHMT.list
-  Bing:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Bing.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Bing.list
-  ChinaCompanyIp:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/ChinaCompanyIp.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
-  ChinaDomain:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/ChinaDomain.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
-  ChinaMedia:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/ChinaMedia.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
-  Download:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Download.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
-  Epic:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Epic.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list
-  GoogleCN:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/GoogleCN.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
-  GoogleFCM:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/GoogleFCM.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
-  LocalAreaNetwork:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/LocalAreaNetwork.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
-  Microsoft:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Microsoft.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list
-  NetEaseMusic:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/NetEaseMusic.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list
-  Netflix:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Netflix.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Netflix.list
-  Nintendo:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Nintendo.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Nintendo.list
-  OneDrive:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/OneDrive.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/OneDrive.list
-  OpenAi:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/OpenAi.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
-  Origin:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Origin.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Origin.list
-  ProxyGFWlist:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/ProxyGFWlist.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
-  ProxyMedia:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/ProxyMedia.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
-  Sony:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Sony.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Sony.list
-  Steam:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Steam.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list
-  SteamCN:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/SteamCN.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
-  Telegram:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/Telegram.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
-  UnBan:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/UnBan.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
-  YouTube:
-    behavior: classical
-    format: text
-    interval: 86400
-    path: ./ruleset/YouTube.list
-    type: http
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
-rules:
-- DOMAIN-SUFFIX,192.168.0.111,DIRECT
-- IP-CIDR,192.168.0.0/16,DIRECT
-- DOMAIN-KEYWORD,sub,💬 Ai平台
-- DOMAIN-KEYWORD,pm.,💬 Ai平台
-- DOMAIN-KEYWORD,github,💬 Ai平台
-- DOMAIN-KEYWORD,chatgpt,💬 Ai平台
-- DOMAIN-KEYWORD,openai.,💬 Ai平台
-- DOMAIN-KEYWORD,oaistatic,💬 Ai平台
-- DOMAIN-KEYWORD,oaiusercontent,💬 Ai平台
-- DOMAIN-KEYWORD,anthropic.,💬 Ai平台
-- DOMAIN-KEYWORD,claude.ai,💬 Ai平台
-- PROCESS-NAME,subs-check.exe,🎯 全球直连
-- PROCESS-NAME,subs-check,🎯 全球直连
-- RULE-SET,LocalAreaNetwork,🎯 全球直连
-- RULE-SET,UnBan,🎯 全球直连
-- RULE-SET,BanAD,🛑 广告拦截
-- RULE-SET,BanProgramAD,🍃 应用净化
-- RULE-SET,GoogleFCM,📢 谷歌FCM
-- RULE-SET,GoogleCN,🎯 全球直连
-- RULE-SET,SteamCN,🎯 全球直连
-- RULE-SET,Bing,Ⓜ️ 微软Bing
-- RULE-SET,OneDrive,Ⓜ️ 微软云盘
-- RULE-SET,Microsoft,Ⓜ️ 微软服务
-- RULE-SET,Apple,🍎 苹果服务
-- RULE-SET,Telegram,📲 电报消息
-- RULE-SET,AI,💬 Ai平台
-- RULE-SET,NetEaseMusic,🎶 网易音乐
-- RULE-SET,Epic,🎮 游戏平台
-- RULE-SET,Origin,🎮 游戏平台
-- RULE-SET,Sony,🎮 游戏平台
-- RULE-SET,Steam,🎮 游戏平台
-- RULE-SET,Nintendo,🎮 游戏平台
-- RULE-SET,YouTube,📹 油管视频
-- RULE-SET,Bahamut,📺 巴哈姆特
-- RULE-SET,BilibiliHMT,📺 哔哩哔哩
-- RULE-SET,Bilibili,📺 哔哩哔哩
-- RULE-SET,ChinaMedia,🌏 国内媒体
-- RULE-SET,ProxyMedia,🌍 国外媒体
-- RULE-SET,ProxyGFWlist,🚀 节点选择
-- RULE-SET,ChinaDomain,🎯 全球直连
-- RULE-SET,ChinaCompanyIp,🎯 全球直连
-- RULE-SET,Download,🎯 全球直连
-- GEOIP,CN,🎯 全球直连
-- MATCH,🐟 漏网之鱼
 
 # https://mihomo.party/docs/guide/override/yaml
 
