@@ -24,7 +24,14 @@ jobs:
       - name: Run check_copy.py
         run: python check_copy.py
 
-    env:
-      GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
-      GIST_ID: ${{ secrets.GIST_ID }}
-      GIST_USER: ${{ secrets.GIST_USER }}
+      - name: Debug tmp directory
+        run: ls -R tmp || echo "tmp directory not found"
+
+      - name: Show pc.yaml content
+        run: cat tmp/pc.yaml || echo "pc.yaml not found"
+
+      - name: Upload pc.yaml artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: pc-yaml
+          path: tmp/pc.yaml
