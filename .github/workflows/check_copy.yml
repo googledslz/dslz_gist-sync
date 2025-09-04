@@ -9,6 +9,11 @@ jobs:
   check-copy:
     runs-on: ubuntu-latest
 
+    env:   # job 级别设置 env，所有 steps 可用
+      GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+      GIST_ID: ${{ secrets.GIST_ID }}
+      GIST_USER: ${{ secrets.GIST_USER }}
+
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
@@ -35,3 +40,17 @@ jobs:
         with:
           name: pc-yaml
           path: tmp/pc.yaml
+          overwrite: true
+
+      - name: Upload zhu_he_last.txt artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: zhu_he-cache
+          path: tmp/zhu_he_last.txt
+          overwrite: true
+
+      - name: Debug ENV
+        run: |
+          echo "GIST_TOKEN set? -> ${GIST_TOKEN:+YES}"
+          echo "GIST_ID set? -> ${GIST_ID:+YES}"
+          echo "GIST_USER set? -> ${GIST_USER:+YES}"
