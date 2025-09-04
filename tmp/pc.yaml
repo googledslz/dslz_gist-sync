@@ -1,0 +1,3846 @@
+proxies:
+- name: 剩余流量：158.43 GB
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37011
+  server: yg.foldjc.top
+  skip-cert-verify: true
+  sni: yg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 印度
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37014
+  server: yd.foldjc.top
+  skip-cert-verify: true
+  sni: yd.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 台湾
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37013
+  server: tw.foldjc.top
+  skip-cert-verify: true
+  sni: tw.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 套餐到期：2025-09-25
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37011
+  server: yg.foldjc.top
+  skip-cert-verify: true
+  sni: yg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 官网-foldjc.top
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37017
+  server: dg.foldjc.top
+  skip-cert-verify: true
+  sni: dg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 德国
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37017
+  server: dg.foldjc.top
+  skip-cert-verify: true
+  sni: dg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 新加坡
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37012
+  server: xjp.foldjc.top
+  skip-cert-verify: true
+  sni: xjp.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 美国
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37016
+  server: mg.foldjc.top
+  skip-cert-verify: true
+  sni: mg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 英国
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37011
+  server: yg.foldjc.top
+  skip-cert-verify: true
+  sni: yg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 距离下次重置剩余：25 天
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37011
+  server: yg.foldjc.top
+  skip-cert-verify: true
+  sni: yg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 香港
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37015
+  server: xg.foldjc.top
+  skip-cert-verify: true
+  sni: xg.foldjc.top
+  type: hysteria2
+  udp: true
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 10_2
+  network: ws
+  port: 443
+  server: 8.212.40.29
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 10_3
+  network: ws
+  port: 443
+  server: 8.212.40.29
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 2_2
+  network: ws
+  port: 12373
+  server: 8.210.185.198
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 2_3
+  network: ws
+  port: 12373
+  server: 8.210.185.198
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 3_2
+  network: ws
+  port: 443
+  server: 34.92.205.97
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 3_3
+  network: ws
+  port: 443
+  server: 34.92.205.97
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 4_2
+  network: ws
+  port: 2010
+  server: 8.210.75.107
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 4_3
+  network: ws
+  port: 2010
+  server: 8.210.75.107
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 5_2
+  network: ws
+  port: 443
+  server: 47.239.212.52
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 5_3
+  network: ws
+  port: 443
+  server: 47.239.212.52
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 6_2
+  network: ws
+  port: 30701
+  server: 47.242.25.137
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 6_3
+  network: ws
+  port: 30701
+  server: 47.242.25.137
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 7_2
+  network: ws
+  port: 9002
+  server: 8.218.209.29
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 7_3
+  network: ws
+  port: 9002
+  server: 8.218.209.29
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 8_2
+  network: ws
+  port: 12332
+  server: 8.218.107.214
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 8_3
+  network: ws
+  port: 12332
+  server: 8.218.107.214
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 9_2
+  network: ws
+  port: 443
+  server: 8.212.27.131
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】 9_3
+  network: ws
+  port: 443
+  server: 8.212.27.131
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】_2
+  network: ws
+  port: 443
+  server: 20.2.19.77
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇭🇰 HK🐲™️【橘子科技】_3
+  network: ws
+  port: 443
+  server: 20.2.19.77
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 10_2
+  network: ws
+  port: 443
+  server: 18.183.222.39
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 10_3
+  network: ws
+  port: 443
+  server: 18.183.222.39
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 2_2
+  network: ws
+  port: 443
+  server: 18.183.158.211
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 2_3
+  network: ws
+  port: 443
+  server: 18.183.158.211
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 3_2
+  network: ws
+  port: 8443
+  server: 185.184.223.85
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 3_3
+  network: ws
+  port: 8443
+  server: 185.184.223.85
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 4_2
+  network: ws
+  port: 443
+  server: 47.79.92.16
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 4_3
+  network: ws
+  port: 443
+  server: 47.79.92.16
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 5_2
+  network: ws
+  port: 30001
+  server: 8.216.81.187
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 5_3
+  network: ws
+  port: 30001
+  server: 8.216.81.187
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 6_2
+  network: ws
+  port: 443
+  server: 160.16.123.65
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 6_3
+  network: ws
+  port: 443
+  server: 160.16.123.65
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 7_2
+  network: ws
+  port: 13118
+  server: 140.83.57.20
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 7_3
+  network: ws
+  port: 13118
+  server: 140.83.57.20
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 8_2
+  network: ws
+  port: 8843
+  server: 47.79.90.82
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 8_3
+  network: ws
+  port: 8843
+  server: 47.79.90.82
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 9_2
+  network: ws
+  port: 49153
+  server: 47.79.90.37
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】 9_3
+  network: ws
+  port: 49153
+  server: 47.79.90.37
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】_2
+  network: ws
+  port: 443
+  server: 13.230.34.30
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇯🇵 JP🐲™️【橘子科技】_3
+  network: ws
+  port: 443
+  server: 13.230.34.30
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 10_2
+  network: ws
+  port: 12457
+  server: 222.104.213.148
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 10_3
+  network: ws
+  port: 12457
+  server: 222.104.213.148
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 2_2
+  network: ws
+  port: 443
+  server: 43.203.199.76
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 2_3
+  network: ws
+  port: 443
+  server: 43.203.199.76
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 3_2
+  network: ws
+  port: 443
+  server: 43.164.129.82
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 3_3
+  network: ws
+  port: 443
+  server: 43.164.129.82
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 4_2
+  network: ws
+  port: 12116
+  server: 125.134.6.129
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 4_3
+  network: ws
+  port: 12116
+  server: 125.134.6.129
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 5_2
+  network: ws
+  port: 50000
+  server: 125.132.168.97
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 5_3
+  network: ws
+  port: 50000
+  server: 125.132.168.97
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 6_2
+  network: ws
+  port: 18009
+  server: 125.134.22.5
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 6_3
+  network: ws
+  port: 18009
+  server: 125.134.22.5
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 7_2
+  network: ws
+  port: 12165
+  server: 211.222.170.55
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 7_3
+  network: ws
+  port: 12165
+  server: 211.222.170.55
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 8_2
+  network: ws
+  port: 18043
+  server: 222.121.121.198
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 8_3
+  network: ws
+  port: 18043
+  server: 222.121.121.198
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 9_2
+  network: ws
+  port: 10007
+  server: 121.160.141.91
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】 9_3
+  network: ws
+  port: 10007
+  server: 121.160.141.91
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】_2
+  network: ws
+  port: 12270
+  server: 119.200.48.55
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇰🇷 KR🐲™️【橘子科技】_3
+  network: ws
+  port: 12270
+  server: 119.200.48.55
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 10_2
+  network: ws
+  port: 2053
+  server: 86.110.56.94
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 10_3
+  network: ws
+  port: 2053
+  server: 86.110.56.94
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 2_2
+  network: ws
+  port: 8443
+  server: 45.144.51.180
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 2_3
+  network: ws
+  port: 8443
+  server: 45.144.51.180
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 3_2
+  network: ws
+  port: 443
+  server: 45.144.48.48
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 3_3
+  network: ws
+  port: 443
+  server: 45.144.48.48
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 4_2
+  network: ws
+  port: 8443
+  server: 45.144.48.192
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 4_3
+  network: ws
+  port: 8443
+  server: 45.144.48.192
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 5_2
+  network: ws
+  port: 443
+  server: 38.180.51.120
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 5_3
+  network: ws
+  port: 443
+  server: 38.180.51.120
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 6_2
+  network: ws
+  port: 443
+  server: 185.188.147.79
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 6_3
+  network: ws
+  port: 443
+  server: 185.188.147.79
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 7_2
+  network: ws
+  port: 2053
+  server: 193.124.41.165
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 7_3
+  network: ws
+  port: 2053
+  server: 193.124.41.165
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 8_2
+  network: ws
+  port: 2053
+  server: 91.239.148.84
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 8_3
+  network: ws
+  port: 2053
+  server: 91.239.148.84
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 9_2
+  network: ws
+  port: 8443
+  server: 217.30.10.46
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】 9_3
+  network: ws
+  port: 8443
+  server: 217.30.10.46
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】_2
+  network: ws
+  port: 2053
+  server: 86.110.56.169
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇵🇱 PL🐲™️【橘子科技】_3
+  network: ws
+  port: 2053
+  server: 86.110.56.169
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 10_2
+  network: ws
+  port: 443
+  server: 47.236.171.64
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 10_3
+  network: ws
+  port: 443
+  server: 47.236.171.64
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 2_2
+  network: ws
+  port: 8443
+  server: 92.243.74.2
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 2_3
+  network: ws
+  port: 8443
+  server: 92.243.74.2
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 3_2
+  network: ws
+  port: 8443
+  server: 92.243.74.3
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 3_3
+  network: ws
+  port: 8443
+  server: 92.243.74.3
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 4_2
+  network: ws
+  port: 2083
+  server: 27.50.48.126
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 4_3
+  network: ws
+  port: 2083
+  server: 27.50.48.126
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 5_2
+  network: ws
+  port: 443
+  server: 43.134.174.114
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 5_3
+  network: ws
+  port: 443
+  server: 43.134.174.114
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 6_2
+  network: ws
+  port: 2087
+  server: 92.243.75.49
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 6_3
+  network: ws
+  port: 2087
+  server: 92.243.75.49
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 7_2
+  network: ws
+  port: 8443
+  server: 92.243.74.180
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 7_3
+  network: ws
+  port: 8443
+  server: 92.243.74.180
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 8_2
+  network: ws
+  port: 8443
+  server: 92.243.74.239
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 8_3
+  network: ws
+  port: 8443
+  server: 92.243.74.239
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 9_2
+  network: ws
+  port: 8443
+  server: 27.50.48.154
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】 9_3
+  network: ws
+  port: 8443
+  server: 27.50.48.154
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】_2
+  network: ws
+  port: 443
+  server: 161.117.81.41
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇸🇬 SG🐲™️【橘子科技】_3
+  network: ws
+  port: 443
+  server: 161.117.81.41
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇹🇼 TW🐲™️【橘子科技】 2_2
+  network: ws
+  port: 8443
+  server: 45.207.158.29
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇹🇼 TW🐲™️【橘子科技】 2_3
+  network: ws
+  port: 8443
+  server: 45.207.158.29
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇹🇼 TW🐲™️【橘子科技】 3_2
+  network: ws
+  port: 8080
+  server: 45.207.159.194
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇹🇼 TW🐲™️【橘子科技】 3_3
+  network: ws
+  port: 8080
+  server: 45.207.159.194
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇹🇼 TW🐲™️【橘子科技】_2
+  network: ws
+  port: 8443
+  server: 34.81.169.32
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇹🇼 TW🐲™️【橘子科技】_3
+  network: ws
+  port: 8443
+  server: 34.81.169.32
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 10_2
+  network: ws
+  port: 2053
+  server: 104.26.15.138
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 10_3
+  network: ws
+  port: 2053
+  server: 104.26.15.138
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 2_2
+  network: ws
+  port: 2096
+  server: 172.64.229.222
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 2_3
+  network: ws
+  port: 2096
+  server: 172.64.229.222
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 3_2
+  network: ws
+  port: 2096
+  server: 104.19.86.120
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 3_3
+  network: ws
+  port: 2096
+  server: 104.19.86.120
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 4_2
+  network: ws
+  port: 444
+  server: 154.26.176.94
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 4_3
+  network: ws
+  port: 444
+  server: 154.26.176.94
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 5_2
+  network: ws
+  port: 2083
+  server: 172.67.65.113
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 5_3
+  network: ws
+  port: 2083
+  server: 172.67.65.113
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 6_2
+  network: ws
+  port: 443
+  server: 173.245.59.203
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 6_3
+  network: ws
+  port: 443
+  server: 173.245.59.203
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 7_2
+  network: ws
+  port: 2083
+  server: 108.165.152.202
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 7_3
+  network: ws
+  port: 2083
+  server: 108.165.152.202
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 8_2
+  network: ws
+  port: 2083
+  server: 103.116.7.103
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 8_3
+  network: ws
+  port: 2083
+  server: 103.116.7.103
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 9_2
+  network: ws
+  port: 2083
+  server: 130.250.137.63
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】 9_3
+  network: ws
+  port: 2083
+  server: 130.250.137.63
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alpn:
+  - http%2F1.1
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】_2
+  network: ws
+  port: 8443
+  server: 172.64.229.221
+  servername: cdn.romil-ltd.co.uk
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  ws-opts:
+    headers:
+      Host: cdn.romil-ltd.co.uk
+    path: /Ki5km8BGWTxThVEAefvkMj
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 🇺🇸 US🐲™️【橘子科技】_3
+  network: ws
+  port: 8443
+  server: 172.64.229.221
+  servername: aio.loophole.Biz.iD
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  ws-opts:
+    headers:
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- name: 🇨🇳永久地址：www.okanc.com
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23001
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇭🇰香港01
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23001
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇭🇰香港02
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23002
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇭🇰香港03
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23003
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇭🇰香港04
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23004
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇭🇰香港05
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23005
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇯🇵日本01
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23011
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇯🇵日本02
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23012
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇯🇵日本03
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23013
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇯🇵日本04
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23014
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇯🇵日本05
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23015
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇰🇷韩国
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 24001
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇲🇾马来西亚
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 24003
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇳🇬尼日利亚
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 24011
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇵🇭菲律宾
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 24004
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇸🇬新加坡01
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23016
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇸🇬新加坡02
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23017
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇸🇬新加坡03
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23018
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇸🇬新加坡04
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23019
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇸🇬新加坡05
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23020
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇹🇭泰国
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 24118
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇹🇼台湾01
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23006
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇹🇼台湾02
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23007
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇹🇼台湾03
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23008
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇹🇼台湾04
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23009
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇹🇼台湾05
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23010
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇺🇸美国01
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23021
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇺🇸美国02
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23022
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇺🇸美国03
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23023
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇺🇸美国04
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23024
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- name: 🇺🇸美国05
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  port: 23025
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 🔔 关注https://github.com/wzdnzd不迷路
+  password: febf501b-e19d-4451-8071-aa6144bb8825
+  port: 54321
+  server: 9.9.9.9
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 599
+  password: 73cd08a5-42f3-4807-8363-b7d14c1a1a56
+  port: 10020
+  server: 1.165.67.244
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 516
+  password: a4f3cb0a-a5ae-4478-8a38-2e88f73bd5a6
+  port: 10023
+  server: 125.229.191.103
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 316
+  password: a755cba8-8567-406e-8c42-c717784079c4
+  port: 10019
+  server: 125.229.191.102
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 914
+  password: fa078ffe-64d7-4da1-8820-d53b1680a0d2
+  port: 10040
+  server: 1.165.74.197
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 529
+  password: 76c3dad6-ef3f-4779-be42-f609115a4e99
+  port: 10064
+  server: 114.46.70.213
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 329
+  password: 270ddae5-8df8-4691-b35d-9e8ea9d95713
+  port: 10104
+  server: 1.170.15.193
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 103
+  network: ws
+  port: 25039
+  server: 45.144.174.211
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 33515774-4edd-4bf1-9218-c6a0928ad2de
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 228
+  password: fe431d9b-e103-4f4b-9926-24a49aaf1ceb
+  port: 10023
+  server: 125.229.191.103
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 美国 169
+  password: 13dba19c-b145-44e6-ba12-7fb3a755d056
+  port: 12589
+  server: ldu.izenny.com
+  type: ss
+  udp: true
+- auth: 0d77b1fe-5139-49d2-8156-0fc20998c474
+  name: 🇭🇰 香港家宽 04
+  password: 0d77b1fe-5139-49d2-8156-0fc20998c474
+  port: 37771
+  server: xg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: xg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- auth: 6c1918a9-b64c-4fe2-a908-ec56ad0a0b2d
+  name: 🇯🇵 日本 49
+  password: 6c1918a9-b64c-4fe2-a908-ec56ad0a0b2d
+  port: 50000
+  ports: 50000-55000
+  server: 45.11.1.62
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 印度 06
+  port: 45073
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aff4534b-0bed-4a29-ba60-fc6a5d3848e9
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 222
+  password: de0c6174-7d13-4b4a-a465-b9d25d956f94
+  port: 10111
+  server: 1.170.22.6
+  type: ss
+  udp: true
+- auth: 01d40ce1-e4c5-45c3-96db-5a5b9b1249ab
+  down: 100
+  name: 🇭🇰 香港 107
+  obfs: salamander
+  obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  password: 01d40ce1-e4c5-45c3-96db-5a5b9b1249ab
+  port: 31008
+  server: 45.144.174.211
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+  up: 100
+- auth: 62267cdf-31cf-44ca-b61b-b6667128839b
+  name: 🇭🇰 香港 056
+  password: 62267cdf-31cf-44ca-b61b-b6667128839b
+  port: 37771
+  server: hg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: hg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡 22
+  password: e8081578-62ff-4f6e-bfc3-562b5ca5a49c
+  port: 51113
+  server: mlc.cac.cab
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇭 泰国 04
+  password: 506afb6c-e82b-45f7-8425-b7142745131b
+  port: 52116
+  server: mlc.cac.cab
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 375
+  password: 29ccf1f4-6351-46c9-9e91-3e861794ad40
+  port: 10029
+  server: 118.170.227.242
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 783
+  password: a755cba8-8567-406e-8c42-c717784079c4
+  port: 10022
+  server: 1.165.67.43
+  type: ss
+  udp: true
+- name: 🇸🇬 新加坡 31
+  password: 88534b2d-79a3-44da-bc43-eb7c533f655c
+  port: 51004
+  server: mlc.cac.cab
+  skip-cert-verify: true
+  sni: sg.01.naiun.bilibili.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 430
+  password: 80cc5f42-4d5e-406e-989b-9f9455cb7f77
+  port: 10060
+  server: 125.231.66.145
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 095
+  network: ws
+  port: 25039
+  server: 45.144.174.211
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d0423ee6-b591-408a-a909-6ea49ba48b03
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 758
+  password: fe431d9b-e103-4f4b-9926-24a49aaf1ceb
+  port: 10018
+  server: 118.170.212.53
+  type: ss
+  udp: true
+- name: 🇺🇸 美国 086
+  network: ws
+  password: slch2024
+  port: 8443
+  server: 104.18.3.108
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 431
+  password: 7948787c-e566-49b9-ade1-c4afaa928cc5
+  port: 10036
+  server: 1.165.85.234
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 323
+  password: 7948787c-e566-49b9-ade1-c4afaa928cc5
+  port: 10029
+  server: 118.170.227.242
+  type: ss
+  udp: true
+- auth: 04a24f06-17fa-464b-a799-90600783499f
+  name: 🇭🇰 香港 053
+  password: 04a24f06-17fa-464b-a799-90600783499f
+  port: 37771
+  server: hg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: hg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- name: 🇺🇸 美国 244
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.18.184.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%252525F0%2525259F%25252587%252525A8%252525F0%2525259F%25252587%252525B3
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 224
+  password: e60fbc8a-fc2b-48ff-9405-28284928e800
+  port: 10007
+  server: 125.229.191.101
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇦🇺 澳大利亚 02
+  port: 45063
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b035e69a-0915-45ee-a373-e33a4876fbf8
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 141
+  network: ws
+  port: 25039
+  server: 45.144.174.211
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 05ed319f-932e-4e18-8a21-aee06683fc59
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 186
+  password: 7948787c-e566-49b9-ade1-c4afaa928cc5
+  port: 10137
+  server: 125.228.162.163
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷 法国 03
+  port: 45072
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: aff4534b-0bed-4a29-ba60-fc6a5d3848e9
+- name: 🇭🇰 香港 039
+  password: bbb873e1-0d04-4709-a84c-d3b9777965c7
+  port: 39765
+  server: cdntwa.xiaomispeed.com
+  skip-cert-verify: true
+  sni: cdntwa.xiaomispeed.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 198
+  password: b9d3c170-e6a5-45a3-bc37-f56892b9e819
+  port: 10006
+  server: 118.170.219.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡 03
+  password: 88534b2d-79a3-44da-bc43-eb7c533f655c
+  port: 52113
+  server: mlc.cac.cab
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 174
+  password: 55139fc3-6be9-433f-9b41-1f0e578e8832
+  port: 10055
+  server: 114.46.70.116
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇭 泰国 15
+  password: 086e92fe-4155-4d46-9770-100b4d56b8ed
+  port: 51116
+  server: mlc.cac.cab
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 289
+  password: 7948787c-e566-49b9-ade1-c4afaa928cc5
+  port: 10121
+  server: 125.229.88.58
+  type: ss
+  udp: true
+- name: 🇺🇸 美国 238
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 190.93.245.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵 日本 05
+  password: 2df15572-8373-465b-9e96-d9aae7dd11f4
+  port: 52114
+  server: mlc.cac.cab
+  type: ss
+  udp: true
+- auth: 8b3723ac-00a4-4f6c-bf4e-ea3c6f6eef9f
+  name: 🇭🇰 香港家宽 01
+  password: 8b3723ac-00a4-4f6c-bf4e-ea3c6f6eef9f
+  port: 37771
+  server: xg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: xg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 033
+  password: e60fbc8a-fc2b-48ff-9405-28284928e800
+  port: 10034
+  server: 118.170.199.80
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 051
+  password: 718dc0cf-9b9b-4f77-b5e9-f84d3f073f45
+  port: 10137
+  server: 125.228.162.163
+  type: ss
+  udp: true
+- auth: 49b9de1c-88ad-45b5-9798-005c015c5620
+  name: 🇯🇵 日本 43
+  password: 49b9de1c-88ad-45b5-9798-005c015c5620
+  port: 50000
+  ports: 50000-55000
+  server: 45.11.1.62
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 360
+  password: 5695443d-9206-49b5-99be-e1276218c54e
+  port: 10032
+  server: 125.230.13.19
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇹🇼 台湾 038
+  port: 45077
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 32c6b48f-0190-42ce-9c32-abe2212f8c53
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 036
+  password: fe431d9b-e103-4f4b-9926-24a49aaf1ceb
+  port: 10029
+  server: 118.170.227.242
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 368
+  password: 36ab932f-a1fa-4759-a7c3-66ff3dca403f
+  port: 10047
+  server: 114.33.53.80
+  type: ss
+  udp: true
+- auth: 62267cdf-31cf-44ca-b61b-b6667128839b
+  name: 🇭🇰 香港家宽 19
+  password: 62267cdf-31cf-44ca-b61b-b6667128839b
+  port: 37771
+  server: xg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: xg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 317
+  password: eb191429-0a40-4b22-a980-5112445461ec
+  port: 10135
+  server: 36.232.65.181
+  type: ss
+  udp: true
+- name: 🇭🇰 香港 012
+  password: 506afb6c-e82b-45f7-8425-b7142745131b
+  port: 51002
+  server: mlc.cac.cab
+  skip-cert-verify: true
+  sni: hk.01.naiun.bilibili.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 453
+  password: 270ddae5-8df8-4691-b35d-9e8ea9d95713
+  port: 10040
+  server: 1.165.74.197
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 887
+  password: 270ddae5-8df8-4691-b35d-9e8ea9d95713
+  port: 10038
+  server: 36.234.102.8
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 690
+  password: d89157f7-f642-43b0-a3a6-097b99d99727
+  port: 10056
+  server: 125.231.66.193
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 086
+  password: 7948787c-e566-49b9-ade1-c4afaa928cc5
+  port: 10135
+  server: 36.232.65.181
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 042
+  password: 13dba19c-b145-44e6-ba12-7fb3a755d056
+  port: 18148
+  server: ldu.izenny.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 957
+  password: 84aa7e23-4586-440b-94ea-1f376b405d12
+  port: 10137
+  server: 125.228.162.163
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 098
+  password: bc54e4b7-2032-47f6-9a33-abb5e2ab7da9
+  port: 10111
+  server: 1.170.22.6
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 582
+  password: d89157f7-f642-43b0-a3a6-097b99d99727
+  port: 10047
+  server: 114.33.53.80
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 189
+  password: b33cde8e-7f84-498c-a54a-81176d799828
+  port: 10085
+  server: 1.170.17.51
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 423
+  password: 97984a4e-0c49-45a1-94c2-c9b7f81a6a78
+  port: 10017
+  server: 118.170.193.109
+  type: ss
+  udp: true
+- name: 🇺🇸 美国 210
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.18.250.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 188
+  password: 4498b9cb-f3e4-4138-b0c5-9538ddcf804a
+  port: 10055
+  server: 114.46.70.116
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 162
+  password: ed212b13-12b8-4ea2-9643-6658b18d5583
+  port: 10085
+  server: 1.170.17.51
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 872
+  password: b56edcb9-b1b7-482f-9da4-9dab4dfed87c
+  port: 10019
+  server: 125.229.191.102
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 007
+  password: b33cde8e-7f84-498c-a54a-81176d799828
+  port: 10121
+  server: 125.229.88.58
+  type: ss
+  udp: true
+- name: 🇺🇸 美国 187
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 195.13.54.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 678
+  password: 718dc0cf-9b9b-4f77-b5e9-f84d3f073f45
+  port: 10102
+  server: 1.170.14.225
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 130
+  password: 2b6be601-6c1e-4df7-a7a8-7198a6915cb6
+  port: 10104
+  server: 1.170.15.193
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 326
+  password: 49130943-59a6-447c-af95-25d60172397b
+  port: 10038
+  server: 36.234.102.8
+  type: ss
+  udp: true
+- auth: 5acaa712-e40b-4e92-9ae4-a5c9790217fb
+  name: 🇭🇰 香港 092
+  password: 5acaa712-e40b-4e92-9ae4-a5c9790217fb
+  port: 37771
+  server: hg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: hg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 368
+  password: 718dc0cf-9b9b-4f77-b5e9-f84d3f073f45
+  port: 10104
+  server: 1.170.15.193
+  type: ss
+  udp: true
+- auth: 0fa27b66-c29d-4628-b5b6-ab70f24451c9
+  name: 🇭🇰 香港 044
+  password: 0fa27b66-c29d-4628-b5b6-ab70f24451c9
+  port: 37771
+  server: hg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: hg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇰🇷 韩国 07
+  password: b3d8245b-88f4-4247-aef9-b38cbd9ddaab
+  port: 41431
+  server: ldu.izenny.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 933
+  password: b9d3c170-e6a5-45a3-bc37-f56892b9e819
+  port: 10002
+  server: 1.165.126.93
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬 新加坡 09
+  password: 506afb6c-e82b-45f7-8425-b7142745131b
+  port: 52113
+  server: mlc.cac.cab
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 836
+  password: 2b6be601-6c1e-4df7-a7a8-7198a6915cb6
+  port: 10048
+  server: 114.46.80.189
+  type: ss
+  udp: true
+- name: 🇯🇵 日本 17
+  password: 2df15572-8373-465b-9e96-d9aae7dd11f4
+  port: 51005
+  server: mlc.cac.cab
+  skip-cert-verify: true
+  sni: jp.01.naiun.bilibili.com
+  type: trojan
+  udp: true
+- auth: 0dc65427-2a51-4fdc-aba2-a1a56cbd497c
+  name: 🇯🇵 日本 39
+  password: 0dc65427-2a51-4fdc-aba2-a1a56cbd497c
+  port: 50000
+  ports: 50000-55000
+  server: 133.18.163.202
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 256
+  password: b9d3c170-e6a5-45a3-bc37-f56892b9e819
+  port: 10052
+  server: 36.234.100.248
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 117
+  password: 270ddae5-8df8-4691-b35d-9e8ea9d95713
+  port: 10101
+  server: 1.170.45.29
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 186
+  password: b33cde8e-7f84-498c-a54a-81176d799828
+  port: 10031
+  server: 118.170.200.223
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 499
+  password: d89157f7-f642-43b0-a3a6-097b99d99727
+  port: 10064
+  server: 114.46.70.213
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 320
+  password: 73cd08a5-42f3-4807-8363-b7d14c1a1a56
+  port: 10007
+  server: 125.229.191.101
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 266
+  password: a4f3cb0a-a5ae-4478-8a38-2e88f73bd5a6
+  port: 10120
+  server: 36.235.20.184
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 633
+  password: d7035a3c-b5b9-4938-a95f-cacf95e94653
+  port: 10020
+  server: 1.165.67.244
+  type: ss
+  udp: true
+- name: 🇹🇼 台湾 027
+  password: b9ad52d0-85cc-439c-9e7e-6955997b558b
+  port: 51003
+  server: mlc.cac.cab
+  skip-cert-verify: true
+  sni: tw.01.naiun.bilibili.com
+  type: trojan
+  udp: true
+- auth: 31fba5b4-7401-4697-872f-952057df4efc
+  name: 🇯🇵 日本 52
+  password: 31fba5b4-7401-4697-872f-952057df4efc
+  port: 50000
+  ports: 50000-55000
+  server: 133.18.163.202
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 765
+  password: 84a43095-d46d-44df-9a5a-34e052d43cc6
+  port: 10101
+  server: 1.170.45.29
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 🇩🇪 德国 04
+  network: ws
+  port: 30833
+  server: v33.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 260
+  network: ws
+  port: 23168
+  server: 45.144.174.211
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c862b3ca-9d28-4fdf-8d4e-0b6b39a4ed2a
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 881
+  password: eb191429-0a40-4b22-a980-5112445461ec
+  port: 10085
+  server: 1.170.17.51
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 063
+  password: a755cba8-8567-406e-8c42-c717784079c4
+  port: 10061
+  server: 118.170.198.195
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 美国 266
+  password: 86d997c9-b0d5-43ae-8b10-629d6fa61e4f
+  port: 46197
+  server: ldu.izenny.com
+  type: ss
+  udp: true
+- client-fingerprint: random
+  name: 🇸🇬 新加坡 42
+  network: ws
+  port: 443
+  server: freeyx.cloudflare88.eu.org
+  servername: do-sgp1.008883.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3ab0e109-9083-44e9-8324-7f347b77d4ca
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: do-sgp1.008883.xyz
+    max-early-data: 2048
+    path: /freev2.net
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 240
+  password: 9b64ced0-3589-4395-9200-13022b5f1c95
+  port: 10111
+  server: 1.170.22.6
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 436
+  password: 97984a4e-0c49-45a1-94c2-c9b7f81a6a78
+  port: 10144
+  server: 111.253.201.202
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 629
+  password: 55139fc3-6be9-433f-9b41-1f0e578e8832
+  port: 10120
+  server: 36.235.20.184
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 642
+  password: 49130943-59a6-447c-af95-25d60172397b
+  port: 10020
+  server: 1.165.67.244
+  type: ss
+  udp: true
+
+# https://mihomo.party/docs/guide/override/yaml
+
+
+
+
+  ##000000000000000000
+
+
+
+proxy-groups:
+- name: 🚀 节点选择
+  proxies:
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇨🇦 加拿大A点
+  - 🇫🇷 法国节A点
+  - 🇸🇬 新加坡A点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+  type: select
+- include-all: true
+  name: 🚀 手动切换
+  type: select
+- include-all: true
+  interval: 300
+  name: ♻️ 自动选择
+  tolerance: 50
+  type: url-test
+- name: 📲 电报消息
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇸🇬 狮城节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇫🇷 法国节A点
+  - 🇸🇬 新加坡A点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+  type: select
+- name: 💬 Ai平台
+  proxies:
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🇩🇪德国A点
+  - 🚀 手动切换
+  - DIRECT
+  type: select
+- name: 📹 油管视频
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇸🇬 狮城节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+  type: select
+- name: 📺 巴哈姆特
+  proxies:
+  - 🇨🇳 台湾节点
+  - 🚀 节点选择
+  - 🚀 手动切换
+  - DIRECT
+  type: select
+- name: 📺 哔哩哔哩
+  proxies:
+  - 🎯 全球直连
+  - 🇨🇳 台湾节点
+  - 🇭🇰 香港节点
+  type: select
+- name: 🌍 国外媒体
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+  type: select
+- name: 🌏 国内媒体
+  proxies:
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🚀 手动切换
+  type: select
+- name: 📢 谷歌FCM
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- name: Ⓜ️ 微软Bing
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- name: Ⓜ️ 微软云盘
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- name: Ⓜ️ 微软服务
+  proxies:
+  - 🚀 节点选择
+  - DIRECT
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- name: 🍎 苹果服务
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- name: 🎮 游戏平台
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- filter: (?i)网易|音乐|NetEase|Music
+  include-all: true
+  name: 🎶 网易音乐
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  type: select
+- name: 🎯 全球直连
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  type: select
+- name: 🛑 广告拦截
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🍃 应用净化
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🐟 漏网之鱼
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+  include-all: true
+  interval: 300
+  name: 🇭🇰 香港节点
+  tolerance: 50
+  type: url-test
+- filter: (?i)法国|FR|fr|🇫🇷|法
+  include-all: true
+  interval: 300
+  name: 🇫🇷 法国节A点
+  tolerance: 50
+  type: url-test
+- filter: (?i)荷兰|🇳🇱|NL|nl
+  include-all: true
+  interval: 300
+  name: 🇳🇱荷兰A点
+  tolerance: 50
+  type: url-test
+- filter: (?i)🇩🇪|德国|DE|de
+  include-all: true
+  interval: 300
+  name: 🇩🇪德国A点
+  tolerance: 50
+  type: url-test
+- filter: (?i)新加坡|🇸🇬|SG|sg
+  include-all: true
+  interval: 300
+  name: 🇸🇬 新加坡A点
+  tolerance: 50
+  type: url-test
+- filter: (?i)🇨🇦|CA|加拿大
+  include-all: true
+  interval: 300
+  name: 🇨🇦 加拿大A点
+  tolerance: 50
+  type: url-test
+- filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
+  include-all: true
+  interval: 300
+  name: 🇯🇵 日本节点
+  tolerance: 50
+  type: url-test
+- filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+  include-all: true
+  interval: 300
+  name: 🇺🇲 美国节点
+  tolerance: 50
+  type: url-test
+- filter: (?i)台|新北|彰化|TW|Taiwan
+  include-all: true
+  interval: 300
+  name: 🇨🇳 台湾节点
+  tolerance: 50
+  type: url-test
+- filter: (?i)新加坡|坡|狮城|SG|Singapore
+  include-all: true
+  interval: 300
+  name: 🇸🇬 狮城节点
+  tolerance: 50
+  type: url-test
+- filter: (?i)KR|Korea|KOR|首尔|韩|韓
+  include-all: true
+  interval: 300
+  name: 🇰🇷 韩国节点
+  tolerance: 50
+  type: url-test
+rule-providers:
+  AI:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/AI.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/AI.list
+  Apple:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Apple.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list
+  Bahamut:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Bahamut.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bahamut.list
+  BanAD:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/BanAD.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
+  BanProgramAD:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/BanProgramAD.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
+  Bilibili:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Bilibili.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bilibili.list
+  BilibiliHMT:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/BilibiliHMT.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/BilibiliHMT.list
+  Bing:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Bing.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Bing.list
+  ChinaCompanyIp:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/ChinaCompanyIp.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
+  ChinaDomain:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/ChinaDomain.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
+  ChinaMedia:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/ChinaMedia.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
+  Download:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Download.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
+  Epic:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Epic.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list
+  GoogleCN:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/GoogleCN.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
+  GoogleFCM:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/GoogleFCM.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
+  LocalAreaNetwork:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/LocalAreaNetwork.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
+  Microsoft:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Microsoft.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list
+  NetEaseMusic:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/NetEaseMusic.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list
+  Netflix:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Netflix.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Netflix.list
+  Nintendo:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Nintendo.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Nintendo.list
+  OneDrive:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/OneDrive.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/OneDrive.list
+  OpenAi:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/OpenAi.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
+  Origin:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Origin.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Origin.list
+  ProxyGFWlist:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/ProxyGFWlist.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
+  ProxyMedia:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/ProxyMedia.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
+  Sony:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Sony.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Sony.list
+  Steam:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Steam.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list
+  SteamCN:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/SteamCN.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
+  Telegram:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Telegram.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
+  UnBan:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/UnBan.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
+  YouTube:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/YouTube.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
+rules:
+
+- DOMAIN-SUFFIX,192.168.0.111,DIRECT 
+#明确指定这个地址走直连
+- IP-CIDR,192.168.0.0/16,DIRECT
+#匹配整个局域网 IP 段（192.168.x.x 都直连），防止其他内网访问也被代理
+ 
+- DOMAIN-KEYWORD,sub,💬 Ai平台
+- DOMAIN-KEYWORD,pm.,💬 Ai平台
+- DOMAIN-KEYWORD,github,💬 Ai平台
+- DOMAIN-KEYWORD,chatgpt,💬 Ai平台
+- DOMAIN-KEYWORD,openai.,💬 Ai平台
+- "DOMAIN-KEYWORD,oaistatic,💬 Ai平台"
+- "DOMAIN-KEYWORD,oaiusercontent,💬 Ai平台"
+- "DOMAIN-KEYWORD,anthropic.,💬 Ai平台"
+- "DOMAIN-KEYWORD,claude.ai,💬 Ai平台"
+- PROCESS-NAME,subs-check.exe,🎯 全球直连
+- PROCESS-NAME,subs-check,🎯 全球直连
+- RULE-SET,LocalAreaNetwork,🎯 全球直连
+- RULE-SET,UnBan,🎯 全球直连
+- RULE-SET,BanAD,🛑 广告拦截
+- RULE-SET,BanProgramAD,🍃 应用净化
+- RULE-SET,GoogleFCM,📢 谷歌FCM
+- RULE-SET,GoogleCN,🎯 全球直连
+- RULE-SET,SteamCN,🎯 全球直连
+- RULE-SET,Bing,Ⓜ️ 微软Bing
+- RULE-SET,OneDrive,Ⓜ️ 微软云盘
+- RULE-SET,Microsoft,Ⓜ️ 微软服务
+- RULE-SET,Apple,🍎 苹果服务
+- RULE-SET,Telegram,📲 电报消息
+- RULE-SET,AI,💬 Ai平台
+- RULE-SET,NetEaseMusic,🎶 网易音乐
+- RULE-SET,Epic,🎮 游戏平台
+- RULE-SET,Origin,🎮 游戏平台
+- RULE-SET,Sony,🎮 游戏平台
+- RULE-SET,Steam,🎮 游戏平台
+- RULE-SET,Nintendo,🎮 游戏平台
+- RULE-SET,YouTube,📹 油管视频
+- RULE-SET,Bahamut,📺 巴哈姆特
+- RULE-SET,BilibiliHMT,📺 哔哩哔哩
+- RULE-SET,Bilibili,📺 哔哩哔哩
+- RULE-SET,ChinaMedia,🌏 国内媒体
+- RULE-SET,ProxyMedia,🌍 国外媒体
+- RULE-SET,ProxyGFWlist,🚀 节点选择
+- RULE-SET,ChinaDomain,🎯 全球直连
+- RULE-SET,ChinaCompanyIp,🎯 全球直连
+- RULE-SET,Download,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
+
+
+
+##00000000000000000011111111
