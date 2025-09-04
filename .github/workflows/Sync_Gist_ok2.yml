@@ -1,12 +1,15 @@
-name: Smart Sync Gist  ok2.yml  # ok2.yml
+name: Smart Sync Gist  Sync_Gist_ok2.yml
 
 on:
+  push:
+    branches:
+      - main            # 推送到 main 分支时触发
   schedule:
-    - cron: "* * * * *"   # ⚡ 每分钟运行一次（调试用）
-  workflow_dispatch:
+    - cron: "*/10 * * * *"   # 每10分钟检测一次
+  workflow_dispatch:         # 手动运行
 
 permissions:
-  contents: write   # 允许推送缓存文件
+  contents: write   # 允许推送缓存文件   
 
 jobs:
   smart-update-gist:
@@ -16,8 +19,9 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - name: Show current time
+      - name: Show trigger source
         run: |
+          echo "=== Workflow triggered by: ${{ github.event_name }} ==="
           echo "=== Current UTC time ==="
           date -u
           echo "=== Current Beijing time ==="
@@ -121,8 +125,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 获取触发来源 (push / schedule / workflow_dispatch)
+          EVENT_NAME=${{ github.event_name }}
+          TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
+
           git add tmp/zhu_he_last.txt
-          git commit -m "update cache file" || echo "No changes to commit"
+          git commit -m "update cache file [${EVENT_NAME}] at ${TIMESTAMP}" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
