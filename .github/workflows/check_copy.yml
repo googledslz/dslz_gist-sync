@@ -31,7 +31,7 @@ jobs:
         run: cat tmp/pc.yaml || echo "pc.yaml not found"
 
       - name: Upload pc.yaml artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: pc-yaml
           path: tmp/pc.yaml
