@@ -1,4 +1,4 @@
-name: Smart Sync Gist to /tmp/pc.yaml
+name: Smart Sync Gist to tmp/pc.yaml
 
 on:
   push:
@@ -35,9 +35,9 @@ jobs:
       - name: Install dependencies
         run: pip install requests pyyaml
 
-      - name: Merge Gist to /tmp/pc.yaml
+      - name: Merge Gist to tmp/pc.yaml
         run: |
-          import os, requests, yaml
+          import os, requests, yaml, pathlib, hashlib
 
           gist_user = os.environ["GIST_USER"]
           gist_id = os.environ["GIST_ID"]
@@ -79,13 +79,37 @@ jobs:
           # 合并 ZHU_HE 和 fu_xie_A
           merged_content = zhu_he_content_fixed + "\n" + fu_xie_a_content
 
-          # 写入 /tmp/pc.yaml (先清空)
-          pc_path = "/tmp/pc.yaml"
-          with open(pc_path, "w", encoding="utf-8") as f:
-              f.write(merged_content)
+          # 确保 tmp 目录存在
+          tmp_dir = pathlib.Path("tmp")
+          tmp_dir.mkdir(exist_ok=True)
 
-          print(f"✅ 合并内容写入 {pc_path}")
+          # tmp/pc.yaml 路径
+          pc_path = tmp_dir / "pc.yaml"
+
+          # 读取已有内容（如果存在），仅在内容变化时更新
+          old_content = ""
+          if pc_path.exists():
+              old_content = pc_path.read_text(encoding="utf-8")
+
+          if hashlib.md5(merged_content.encode("utf-8")).hexdigest() != hashlib.md5(old_content.encode("utf-8")).hexdigest():
+              with open(pc_path, "w", encoding="utf-8") as f:
+                  f.write(merged_content)
+              print(f"🔄 tmp/pc.yaml 内容变化，已更新")
+          else:
+              print("✅ tmp/pc.yaml 内容未变化，跳过写入")
         shell: python
+
+      - name: Commit tmp/pc.yaml to repo if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add tmp/pc.yaml
+          # 仅在有变化时 commit
+          git diff --cached --quiet || git commit -m "Update tmp/pc.yaml from Gist [${{ github.event_name }}]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     env:
       GIST_ID: ${{ secrets.GIST_ID }}
