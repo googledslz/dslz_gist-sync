@@ -28,7 +28,7 @@ jobs:
 
       - name: Run embedded Python script
         run: |
-          python - <<'EOF'
+python - <<'EOF'
 import os, sys, pathlib, requests, yaml
 
 # 检查环境变量
