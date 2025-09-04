@@ -1,9 +1,26 @@
 # check_copy.py
 import os, requests, pathlib, yaml
 
+
+# check_copy.py
+import os, sys, requests, pathlib, yaml
+
+# 必需的环境变量
+required_envs = ["GIST_TOKEN", "GIST_ID", "GIST_USER"]
+missing = [name for name in required_envs if name not in os.environ]
+
+if missing:
+    print(f"❌ 缺少必要的环境变量: {', '.join(missing)}")
+    print("请在 GitHub 仓库的 Settings → Secrets → Actions 中配置这些变量。")
+    sys.exit(1)
+
+# 环境变量存在才继续
 token = os.environ["GIST_TOKEN"]
 gist_id = os.environ["GIST_ID"]
 gist_user = os.environ["GIST_USER"]
+
+
+
 
 # 确保 tmp 目录存在（固定在仓库根目录）
 repo_root = pathlib.Path(__file__).parent
