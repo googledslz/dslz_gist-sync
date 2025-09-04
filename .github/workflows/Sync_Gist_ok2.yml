@@ -1,4 +1,4 @@
-name: Smart Sync Gist   # ok2.yml
+name: Smart Sync Gist  ok2.yml  # ok2.yml
 
 on:
   schedule:
