@@ -5,9 +5,10 @@ token = os.environ["GIST_TOKEN"]
 gist_id = os.environ["GIST_ID"]
 gist_user = os.environ["GIST_USER"]
 
-# 确保 tmp 目录存在
-tmp_dir = pathlib.Path("tmp")
-tmp_dir.mkdir(exist_ok=True)
+# 确保 tmp 目录存在（固定在仓库根目录）
+repo_root = pathlib.Path(__file__).parent
+tmp_dir = repo_root / "tmp"
+tmp_dir.mkdir(parents=True, exist_ok=True)
 
 cache_file = tmp_dir / "zhu_he_last.txt"
 pc_file = tmp_dir / "pc.yaml"
@@ -18,63 +19,63 @@ zhu_he_url = f"{base_url}/ZHU_HE"
 fu_xie_a_url = f"{base_url}/fu_xie_A"
 
 # 下载文件
-zhu_he_content = requests.get(zhu_he_url).text
-fu_xie_a_content = requests.get(fu_xie_a_url).text
+zhu_he_content = requests.get(zhu_he_url).text.strip()
+fu_xie_a_content = requests.get(fu_xie_a_url).text.strip()
 
 # ===========================
-# 1️⃣ 判断 ZHU_HE 是否变化
+# 判断是否第一次运行 / ZHU_HE 是否变化
 # ===========================
-old_content = ""
-if cache_file.exists():
-    old_content = cache_file.read_text()
+first_run = not cache_file.exists()
+old_content = cache_file.read_text(encoding="utf-8") if not first_run else ""
 
-if zhu_he_content != old_content:
-    print("🔄 ZHU_HE 内容变化，更新 Gist 并写入 pc.yaml")
-
-    # 更新 Gist（保持原始内容，不修改）
-    update_url = f"https://api.github.com/gists/{gist_id}"
-    headers = {"Authorization": f"token {token}"}
-    data_payload = {"files": {"ZHU_HE": {"content": zhu_he_content}}}
-    res = requests.patch(update_url, headers=headers, json=data_payload)
-    print("Update status:", res.status_code, res.text)
-
-    # 更新缓存
-    cache_file.write_text(zhu_he_content, encoding="utf-8")
-
-    # ===========================
-    # 2️⃣ 写入 tmp/pc.yaml（带 proxies 重命名）
-    # ===========================
-    try:
-        data = yaml.safe_load(zhu_he_content)
-    except Exception:
-        print("⚠️ ZHU_HE 内容不是有效 YAML，直接原样写入 pc.yaml")
-        data = {}
-
-    if isinstance(data, dict) and "proxies" in data:
-        proxies = data["proxies"]
-        seen = {}
-        for proxy in proxies:
-            base_name = proxy.get("name", "")
-            if base_name not in seen:
-                seen[base_name] = 1
-            else:
-                count = seen[base_name]
-                new_name = f"{base_name}-{count}"
-                while new_name in seen:
-                    count += 1
-                    new_name = f"{base_name}-{count}"
-                proxy["name"] = new_name
-                seen[base_name] += 1
-                seen[new_name] = 1
-        data["proxies"] = proxies
-        zhu_he_fixed = yaml.dump(data, allow_unicode=True)
-    else:
-        zhu_he_fixed = zhu_he_content
-
-    # 合并写入
-    if pc_file.exists():
-        pc_file.unlink()
-    pc_file.write_text(zhu_he_fixed + "\n" + fu_xie_a_content, encoding="utf-8")
-    print(f"✅ 已写入合并内容到 {pc_file}")
+if first_run:
+    print("🆕 第一次运行，强制生成 pc.yaml")
+elif zhu_he_content != old_content:
+    print("🔄 ZHU_HE 内容变化，更新并写入 pc.yaml")
 else:
-    print("✅ ZHU_HE 内容未变化，跳过更新 Gist 和 pc.yaml")
+    print("✅ ZHU_HE 内容未变化，跳过更新 pc.yaml")
+    exit(0)  # 不生成
+
+# ===========================
+# 更新缓存
+# ===========================
+cache_file.write_text(zhu_he_content, encoding="utf-8")
+
+# ===========================
+# YAML 处理（保证 proxies 重命名）
+# ===========================
+try:
+    data = yaml.safe_load(zhu_he_content)
+except Exception:
+    print("⚠️ ZHU_HE 内容不是有效 YAML，直接原样写入 pc.yaml")
+    data = {}
+
+if isinstance(data, dict) and "proxies" in data:
+    proxies = data["proxies"]
+    seen = {}
+    for proxy in proxies:
+        base_name = proxy.get("name", "")
+        if base_name not in seen:
+            seen[base_name] = 1
+        else:
+            count = seen[base_name]
+            new_name = f"{base_name}-{count}"
+            while new_name in seen:
+                count += 1
+                new_name = f"{base_name}-{count}"
+            proxy["name"] = new_name
+            seen[base_name] += 1
+            seen[new_name] = 1
+    data["proxies"] = proxies
+    zhu_he_fixed = yaml.dump(data, allow_unicode=True)
+else:
+    zhu_he_fixed = zhu_he_content
+
+# ===========================
+# 写入 tmp/pc.yaml（先删除）
+# ===========================
+if pc_file.exists():
+    pc_file.unlink()
+pc_file.write_text(zhu_he_fixed + "\n" + fu_xie_a_content, encoding="utf-8")
+
+print(f"✅ 已写入合并内容到 {pc_file}")
