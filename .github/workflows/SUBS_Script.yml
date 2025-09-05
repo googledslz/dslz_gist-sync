@@ -1,18 +1,20 @@
-name: Run SUBS Script
+name: Update Clash Config
 
 on:
   schedule:
-    # 每天北京时间早上 8 点执行 (UTC 时间要减 8 小时)
+    # 每天北京时间早上 8 点执行 (UTC 0 点)
     - cron: "0 0 * * *"
   workflow_dispatch:   # 允许手动触发
 
 jobs:
-  run-script:
+  update-subs:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true   # 确保可以推送
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -24,6 +26,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run SUBS script
+      - name: Run subs.py
         run: |
           python subs.py
+
+      - name: Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add clash.yaml
+          git commit -m "update clash config" || echo "No changes to commit"
+          git push
