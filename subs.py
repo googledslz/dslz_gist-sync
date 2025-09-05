@@ -240,7 +240,21 @@ def read_existing_yaml(paths: list[str]) -> list[dict]:
             print(f"[!] 读取已有 YAML 失败: {p} -> {e}")
     return []
 
+# ================= 打印延迟表格 =================
+
 def print_latency_table(proxies: list[dict]):
-    if not proxies: return
+    if not proxies:
+        return
     print("\n┌" + "─"*72 + "┐")
-    print(f"│
+    print(f"│ {'节点名称':<20} │ {'服务器':<20} │ {'端口':<6} │ {'延迟(ms)':<8} │")
+    print("├" + "─"*72 + "┤")
+    for p in proxies:
+        print(f"│ {p['name']:<20} │ {p['server']:<20} │ {p['port']:<6} │ {p.get('latency_ms', '-'):<8} │")
+    print("└" + "─"*72 + "┘\n")
+
+# ================= 主流程 =================
+
+def main():
+    urls = read_url_list()
+    merged = []
+    for url in
