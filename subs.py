@@ -93,7 +93,7 @@ def parse_trojan(link: str) -> dict | None:
             "name": name,
             "type": "trojan",
             "server": host,
-            "port": int(port),
+            "port": port,  # 注意这里暂时保留字符串，后面解析
             "password": pwd,
         }
         sni = q.get("sni") or q.get("peer")
@@ -131,7 +131,7 @@ def parse_ss(link: str) -> dict | None:
             "name": name,
             "type": "ss",
             "server": host,
-            "port": int(port),
+            "port": port,  # 保留字符串，后面解析
             "cipher": method,
             "password": password,
         }
@@ -197,12 +197,19 @@ async def filter_alive_async(proxies: list[dict], concurrency: int = 50) -> list
         server, port = p.get("server"), p.get("port")
         if not server or not port:
             return
+        # 提取端口中的纯数字部分
+        if isinstance(port, str):
+            m = re.match(r"(\d+)", port)
+            if m:
+                port = int(m.group(1))
+            else:
+                return  # 不能解析的端口，跳过
         key = (server, port)
         if key in seen_server_port:
             return
         seen_server_port.add(key)
         async with sem:
-            latency = await test_one(server, int(port))
+            latency = await test_one(server, port)
             if latency is not None:
                 p["latency_ms"] = latency
                 alive.append(p)
@@ -211,7 +218,6 @@ async def filter_alive_async(proxies: list[dict], concurrency: int = 50) -> list
     return alive
 
 def build_final_config(all_proxies: list[dict]) -> dict:
-    # 按延迟排序
     all_proxies.sort(key=lambda x: x.get("latency_ms", 9999))
     seen_names = set()
     normalized = []
