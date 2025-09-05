@@ -1,45 +1,46 @@
-import sys
 import yaml
 from pathlib import Path
 
-def fix_port(port):
-    """将端口字符串中的非数字字符去掉，只保留数字"""
-    if isinstance(port, int):
-        return port
-    if isinstance(port, str):
-        num = ''.join(filter(str.isdigit, port))
-        return int(num) if num else 0
-    return 0
+CLASH_FILE = "clash.yaml"
 
-def fix_clash_yaml(input_path, output_path):
-    fp = Path(input_path)
-    if not fp.exists():
-        print(f"[!] 文件不存在: {input_path}")
-        return
+def load_yaml(path):
+    fp = Path(path)
+    if not fp.exists(): return None
     try:
-        data = yaml.safe_load(fp.read_text(encoding="utf-8"))
-        if "proxies" not in data or not isinstance(data["proxies"], list):
-            print("[!] proxies 节点不存在或格式错误")
-            return
-        fixed = []
-        seen = set()
-        for p in data["proxies"]:
-            # 修复端口
-            p["port"] = fix_port(p.get("port"))
-            # 避免重复 server+port
-            key = (p.get("server"), p.get("port"))
-            if key in seen:
-                continue
-            seen.add(key)
-            fixed.append(p)
-        data["proxies"] = fixed
-        Path(output_path).write_text(yaml.dump(data, allow_unicode=True, sort_keys=False), encoding="utf-8")
-        print(f"[√] 已生成修复文件: {output_path}, 节点数: {len(fixed)}")
-    except Exception as e:
-        print(f"[!] 处理失败: {e}")
+        return yaml.safe_load(fp.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+def save_yaml(data, path):
+    with open(path, "w", encoding="utf-8") as f:
+        yaml.dump(data, f, allow_unicode=True, sort_keys=False)
+
+def fix_ports_and_dedup(data):
+    if "proxies" not in data: return data
+    new_list = []
+    seen_server_port = set()
+    for p in data["proxies"]:
+        server = p.get("server")
+        port = p.get("port")
+        if not server or not port: continue
+        try:
+            port_int = int(str(port).split()[0].split("#")[0])
+        except Exception:
+            continue
+        key = (server, port_int)
+        if key in seen_server_port: continue
+        seen_server_port.add(key)
+        p["port"] = port_int
+        new_list.append(p)
+    data["proxies"] = new_list
+    return data
+
+def main():
+    data = load_yaml(CLASH_FILE)
+    if not data: return
+    data = fix_ports_and_dedup(data)
+    save_yaml(data, CLASH_FILE)
+    print(f"[+] clash.yaml 已修复，节点总数: {len(data['proxies'])}")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("用法: python fix_clash.py 输入.yaml 输出.yaml")
-    else:
-        fix_clash_yaml(sys.argv[1], sys.argv[2])
+    main()
