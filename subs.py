@@ -4,9 +4,9 @@ import yaml
 import re
 import asyncio
 import time
-import subprocess
 from pathlib import Path
 from urllib.parse import unquote, parse_qs
+import subprocess
 from tqdm import tqdm
 
 # ================= 配置 =================
@@ -14,6 +14,8 @@ INPUT_CANDIDATES = ["tmp/1.TXT", "/tmp/1.TXT"]
 EXISTING_YAML = ["tmp/dslz.yaml", "/tmp/dslz.yaml"]
 OUTPUT_FILE = "clash.yaml"
 FIX_SCRIPT = "fix_clash.py"
+CONCURRENCY = 50
+TIMEOUT = 3
 
 # ================= 工具函数 =================
 
@@ -26,7 +28,7 @@ def read_url_list() -> list:
             if urls:
                 print(f"[+] 读取订阅列表: {fp} ({len(urls)} 条)")
                 return urls
-    raise FileNotFoundError("未找到 tmp/1.TXT 或 /tmp/1.TXT")
+    raise FileNotFoundError("未找到订阅列表文件")
 
 def http_get(url: str) -> str:
     r = requests.get(url, timeout=45)
@@ -47,6 +49,7 @@ def maybe_b64_decode(text: str) -> str:
     return text
 
 # ================= 协议解析 =================
+
 def parse_hysteria2(link: str) -> dict | None:
     try:
         raw = link[len("hysteria2://"):]
@@ -75,6 +78,7 @@ def parse_hysteria2(link: str) -> dict | None:
                 ("insecure" in q and q["insecure"][0] in ("1", "true", "True")) or
                 ("skip-cert-verify" in q and q["skip-cert-verify"][0] in ("1", "true", "True"))
             ) else {}),
+            "password": password
         }
     except Exception:
         return None
@@ -145,6 +149,8 @@ def parse_uri_line(line: str) -> dict | None:
     if line.startswith("ss://"): return parse_ss(line)
     return None
 
+# ================= 合并逻辑 =================
+
 def parse_subscription_text(text: str) -> list[dict]:
     text = maybe_b64_decode(text).strip()
     proxies: list[dict] = []
@@ -174,30 +180,27 @@ def unique_name(existing: set, name: str) -> str:
             return cand
         i += 1
 
-# ================= 并发连通性测试 =================
-async def test_one(server: str, port: int, timeout: int = 3) -> float | None:
-    start = time.perf_counter()
+# ================= 并发连通性 =================
+
+async def test_one(server: str, port: int, timeout: int = TIMEOUT) -> int | None:
     try:
         reader, writer = await asyncio.wait_for(asyncio.open_connection(server, port), timeout)
         writer.close()
         await writer.wait_closed()
-        end = time.perf_counter()
-        return int((end - start) * 1000)
+        return int((time.perf_counter() - start) * 1000)
     except Exception:
         return None
 
-async def filter_alive_async(proxies: list[dict], concurrency: int = 50) -> list[dict]:
+async def filter_alive_async(proxies: list[dict], concurrency: int = CONCURRENCY) -> list[dict]:
     sem = asyncio.Semaphore(concurrency)
     alive = []
     seen_server_port = set()
 
     async def check(p):
         server, port = p.get("server"), p.get("port")
-        if not server or not port:
-            return
+        if not server or not port: return
         key = (server, port)
-        if key in seen_server_port:
-            return
+        if key in seen_server_port: return
         seen_server_port.add(key)
         async with sem:
             latency = await test_one(server, int(port))
@@ -205,47 +208,55 @@ async def filter_alive_async(proxies: list[dict], concurrency: int = 50) -> list
                 p["latency_ms"] = latency
                 alive.append(p)
 
-    for _ in tqdm(asyncio.as_completed([check(p) for p in proxies]), total=len(proxies), desc="测试节点连通性"):
-        await _
+    for p in tqdm(proxies, desc="测试节点连通性"):
+        await check(p)
 
     return alive
 
-def build_final_config(all_proxies: list[dict]) -> dict:
-    # 按延迟排序
-    all_proxies.sort(key=lambda x: x.get("latency_ms", 9999))
-    seen_names = set()
-    normalized = []
-    for p in all_proxies:
-        if "name" not in p: continue
-        p = dict(p)
-        p["name"] = unique_name(seen_names, str(p["name"]))
-        normalized.append(p)
-    return {"proxies": normalized}
+# ================= 保存 =================
 
 def save_yaml(data: dict, path: str):
     with open(path, "w", encoding="utf-8") as f:
         yaml.dump(data, f, allow_unicode=True, sort_keys=False)
 
-def read_existing_yaml(paths: list[str]) -> list[dict]:
-    merged = []
-    for path in paths:
-        fp = Path(path)
+def read_existing_yaml(paths: list) -> list[dict]:
+    proxies = []
+    for p in paths:
+        fp = Path(p)
         if fp.exists():
             try:
                 data = yaml.safe_load(fp.read_text(encoding="utf-8"))
-                if isinstance(data, dict) and "proxies" in data and isinstance(data["proxies"], list):
-                    merged.extend(data["proxies"])
-            except Exception as e:
-                print(f"[!] 读取已有 YAML 失败: {path} -> {e}")
-    return merged
+                if isinstance(data, dict) and "proxies" in data:
+                    proxies.extend(data["proxies"])
+            except Exception:
+                continue
+    return proxies
+
+def build_final_config(all_proxies: list[dict]) -> dict:
+    all_proxies.sort(key=lambda x: x.get("latency_ms", 9999))
+    seen_names = set()
+    normalized = []
+    seen_server_port = set()
+    for p in all_proxies:
+        key = (p.get("server"), p.get("port"))
+        if key in seen_server_port: continue
+        seen_server_port.add(key)
+        p["name"] = unique_name(seen_names, str(p.get("name","Node")))
+        normalized.append(p)
+    return {"proxies": normalized}
+
+# ================= 主流程 =================
 
 def main():
     urls = read_url_list()
     merged = []
-    for url in tqdm(urls, desc="拉取订阅"):
+
+    for url in urls:
         try:
+            print(f"[+] 拉取: {url}")
             raw = http_get(url)
             proxies = parse_subscription_text(raw)
+            print(f"    - 解析 {len(proxies)} 个节点")
             merged.extend(proxies)
         except Exception as e:
             print(f"[!] 拉取失败: {url} -> {e}")
@@ -253,35 +264,6 @@ def main():
     print(f"[=] 开始并发测试节点连通性，总计 {len(merged)} 个")
     alive = asyncio.run(filter_alive_async(merged))
 
-    # 读取已有仓库 tmp/dslz.yaml
+    # 读取已有 YAML
     existing_proxies = read_existing_yaml(EXISTING_YAML)
-    print(f"[+] 已读取仓库 tmp/dslz.yaml 节点 {len(existing_proxies)} 个")
-
-    # 合并节点
-    all_proxies = alive + existing_proxies
-
-    # 构建最终配置
-    cfg = build_final_config(all_proxies)
-
-    # 打印节点数量
-    print(f"[+] 有效节点总数: {len(cfg['proxies'])}")
-
-    # 写入 clash.yaml
-    save_yaml(cfg, OUTPUT_FILE)
-    print(f"[√] 已生成 {OUTPUT_FILE}")
-
-    # 调用 fix_clash.py
-    print("[+] 调用 fix_clash.py 修复端口并剔除错误节点...")
-    try:
-        result = subprocess.run(["python3", FIX_SCRIPT], capture_output=True, text=True)
-        print(result.stdout)
-        if result.returncode != 0:
-            print(f"[!] fix_clash.py 返回非零退出码 {result.returncode}")
-            print(result.stderr)
-        else:
-            print("[+] fix_clash.py 执行完成")
-    except Exception as e:
-        print(f"[!] 调用 fix_clash.py 失败: {e}")
-
-if __name__ == "__main__":
-    main()
+    print(f"[+] 已读取仓库 tmp
