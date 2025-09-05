@@ -1,61 +1,85 @@
 import yaml
-import requests
-from tqdm import tqdm
 from pathlib import Path
+from tqdm import tqdm
+import requests
+import socket
 
-OUTPUT_FILE = "clash.yaml"
+INPUT_FILE = "clash.yaml"
 
-VALID_SS_CIPHERS = [
-    "aes-128-gcm","aes-192-gcm","aes-256-gcm",
-    "chacha20-ietf-poly1305","xchacha20-ietf-poly1305"
-]
+# 国家IP库 API（示例免费IP查询服务）
+IPAPI_URL = "https://ipapi.co/{}/json/"
 
-IPAPI_URL = "https://ipapi.co/{}/country_code/"
+# 简单的 IP -> 国家缩写映射缓存
+ip_country_cache = {}
 
 def get_country_emoji(ip: str) -> str:
+    if ip in ip_country_cache:
+        return ip_country_cache[ip]
     try:
         r = requests.get(IPAPI_URL.format(ip), timeout=5)
         r.raise_for_status()
-        code = r.text.strip().upper()
-        if code:
-            return f"🇨🇳CN" if code=="CN" else f"🇺🇸US" if code=="US" else f"🌐{code}"
+        data = r.json()
+        code = data.get("country_code", "")
+        if not code: return ""
+        emoji = f"🇨🇳" if code=="CN" else f"🇺🇸" if code=="US" else f"🇪🇺" if code=="EU" else f"🌐"
+        ip_country_cache[ip] = f"{emoji}{code}"
+        return f"{emoji}{code}"
     except Exception:
-        pass
-    return "🌐??"
+        return ""
 
-def fix_node(p: dict) -> dict | None:
-    t = p.get("type")
-    if t == "ss":
-        if not p.get("server") or not p.get("port") or not p.get("cipher") or p["cipher"] not in VALID_SS_CIPHERS:
-            return None
-    elif t in ("trojan","hysteria2","vmess","vless"):
-        if not p.get("server") or not p.get("port"):
-            return None
-    else:
-        return None
-    # 加国家前缀
-    server_ip = p.get("server")
-    prefix = get_country_emoji(server_ip)
-    p["name"] = f"{prefix} {p.get('name','node')}"
-    return p
+def is_valid_node(node: dict) -> bool:
+    """检查节点是否含有必要字段"""
+    required = ["name","server","port","type"]
+    for k in required:
+        if k not in node:
+            return False
+    if not isinstance(node["port"], int):
+        return False
+    return True
 
 def main():
-    fp = Path(OUTPUT_FILE)
+    fp = Path(INPUT_FILE)
     if not fp.exists():
-        print("[!] clash.yaml 不存在")
+        print(f"[!] {INPUT_FILE} 不存在")
         return
+
     with open(fp, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
-    proxies = data.get("proxies", [])
-    fixed = []
-    for p in tqdm(proxies, desc="[>] 修复节点"):
-        np = fix_node(p)
-        if np:
-            fixed.append(np)
-    data["proxies"] = fixed
-    with open(fp, "w", encoding="utf-8") as f:
+
+    if not isinstance(data, dict) or "proxies" not in data:
+        print("[!] clash.yaml 格式错误")
+        return
+
+    nodes = data["proxies"]
+    fixed_nodes = []
+
+    for node in tqdm(nodes, desc="[>] 处理节点"):
+        if not is_valid_node(node):
+            continue
+        # 修复端口（保证整数）
+        try:
+            node["port"] = int(node["port"])
+        except Exception:
+            continue
+        # 添加国家缩写前缀
+        server = node.get("server","")
+        try:
+            ip = socket.gethostbyname(server)
+            country = get_country_emoji(ip)
+            if country:
+                node["name"] = f"{country} {node['name']}"
+        except Exception:
+            pass
+        fixed_nodes.append(node)
+
+    print(f"[+] 原始节点数: {len(nodes)}")
+    print(f"[+] 修复后节点数: {len(fixed_nodes)}")
+
+    data["proxies"] = fixed_nodes
+    with open(INPUT_FILE, "w", encoding="utf-8") as f:
         yaml.safe_dump(data, f, allow_unicode=True)
-    print(f"[+] 修复完成，节点总数: {len(fixed)}")
+
+    print(f"[+] 已覆盖生成 {INPUT_FILE} 成功")
 
 if __name__ == "__main__":
     main()
