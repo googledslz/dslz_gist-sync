@@ -3,99 +3,5814 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 proxies:
-- name: 剩余流量：152.32 GB
-  type: hysteria
+- name: 🇭🇰香港01
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23001
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇭🇰香港02
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23002
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇭🇰香港03
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23003
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇭🇰香港04
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23004
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇭🇰香港05
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23005
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇹🇼台湾01
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23006
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇹🇼台湾02
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23007
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇹🇼台湾03
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23008
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇹🇼台湾04
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23009
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇹🇼台湾05
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23010
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇯🇵日本01
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23011
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇯🇵日本02
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23012
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇯🇵日本03
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23013
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇯🇵日本04
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23014
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇯🇵日本05
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23015
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇸🇬新加坡01
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23016
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇸🇬新加坡02
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23017
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇸🇬新加坡03
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23018
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇸🇬新加坡04
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23019
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇸🇬新加坡05
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23020
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇺🇸美国01
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23021
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇺🇸美国02
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23022
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇺🇸美国03
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23023
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇺🇸美国04
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23024
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇺🇸美国05
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23025
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇰🇷韩国
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 24001
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇲🇾马来西亚
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 24003
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇵🇭菲律宾
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 24004
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇳🇬尼日利亚
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 24011
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇹🇭泰国
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 24118
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 🇨🇳永久地址：www.okanc.com
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23001
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+- name: 剩余流量：152.06 GB
+  type: hysteria2
   server: yg.foldjc.top
   port: 37011
-  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  tls: true
-  alpn: []
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
   sni: yg.foldjc.top
+  skip-cert-verify: true
 - name: 距离下次重置剩余：25 天
-  type: hysteria
+  type: hysteria2
   server: yg.foldjc.top
   port: 37011
-  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  tls: true
-  alpn: []
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
   sni: yg.foldjc.top
+  skip-cert-verify: true
 - name: 套餐到期：2025-09-25
-  type: hysteria
+  type: hysteria2
   server: yg.foldjc.top
   port: 37011
-  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  tls: true
-  alpn: []
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
   sni: yg.foldjc.top
+  skip-cert-verify: true
 - name: 英国
-  type: hysteria
+  type: hysteria2
   server: yg.foldjc.top
   port: 37011
-  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  tls: true
-  alpn: []
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
   sni: yg.foldjc.top
+  skip-cert-verify: true
 - name: 新加坡
-  type: hysteria
+  type: hysteria2
   server: xjp.foldjc.top
   port: 37012
-  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  tls: true
-  alpn: []
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
   sni: xjp.foldjc.top
+  skip-cert-verify: true
 - name: 台湾
-  type: hysteria
+  type: hysteria2
   server: tw.foldjc.top
   port: 37013
-  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  tls: true
-  alpn: []
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
   sni: tw.foldjc.top
+  skip-cert-verify: true
 - name: 印度
-  type: hysteria
+  type: hysteria2
   server: yd.foldjc.top
   port: 37014
-  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  tls: true
-  alpn: []
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
   sni: yd.foldjc.top
+  skip-cert-verify: true
 - name: 香港
-  type: hysteria
+  type: hysteria2
   server: xg.foldjc.top
   port: 37015
-  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  tls: true
-  alpn: []
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
   sni: xg.foldjc.top
+  skip-cert-verify: true
 - name: 美国
-  type: hysteria
+  type: hysteria2
   server: mg.foldjc.top
   port: 37016
-  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  tls: true
-  alpn: []
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
   sni: mg.foldjc.top
+  skip-cert-verify: true
 - name: 德国
-  type: hysteria
+  type: hysteria2
   server: dg.foldjc.top
   port: 37017
-  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  tls: true
-  alpn: []
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
   sni: dg.foldjc.top
+  skip-cert-verify: true
 - name: 官网-foldjc.top
-  type: hysteria
+  type: hysteria2
   server: dg.foldjc.top
   port: 37017
-  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
-  tls: true
-  alpn: []
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
   sni: dg.foldjc.top
+  skip-cert-verify: true
+- name: 🇭🇰 HK🐲™️【橘子科技】
+  server: 20.2.19.77
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇭🇰 HK🐲™️【橘子科技】 2
+  server: 8.210.185.198
+  port: 12373
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇭🇰 HK🐲™️【橘子科技】 3
+  server: 34.92.205.97
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇭🇰 HK🐲™️【橘子科技】 4
+  server: 8.210.75.107
+  port: 2010
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇭🇰 HK🐲™️【橘子科技】 5
+  server: 47.239.212.52
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇭🇰 HK🐲™️【橘子科技】 6
+  server: 47.242.25.137
+  port: 30701
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇭🇰 HK🐲™️【橘子科技】 7
+  server: 8.218.209.29
+  port: 9002
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇭🇰 HK🐲™️【橘子科技】 8
+  server: 8.218.107.214
+  port: 12332
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇭🇰 HK🐲™️【橘子科技】 9
+  server: 8.212.27.131
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇭🇰 HK🐲™️【橘子科技】 10
+  server: 8.212.40.29
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇸🇬 SG🐲™️【橘子科技】
+  server: 161.117.81.41
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇸🇬 SG🐲™️【橘子科技】 2
+  server: 92.243.74.2
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇸🇬 SG🐲™️【橘子科技】 3
+  server: 92.243.74.3
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇸🇬 SG🐲™️【橘子科技】 4
+  server: 27.50.48.126
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇸🇬 SG🐲™️【橘子科技】 5
+  server: 43.134.174.114
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇸🇬 SG🐲™️【橘子科技】 6
+  server: 92.243.75.49
+  port: 2087
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇸🇬 SG🐲™️【橘子科技】 7
+  server: 92.243.74.180
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇸🇬 SG🐲™️【橘子科技】 8
+  server: 92.243.74.239
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇸🇬 SG🐲™️【橘子科技】 9
+  server: 27.50.48.154
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇸🇬 SG🐲™️【橘子科技】 10
+  server: 47.236.171.64
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇯🇵 JP🐲™️【橘子科技】
+  server: 13.230.34.30
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇯🇵 JP🐲™️【橘子科技】 2
+  server: 18.183.158.211
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇯🇵 JP🐲™️【橘子科技】 3
+  server: 185.184.223.85
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇯🇵 JP🐲™️【橘子科技】 4
+  server: 47.79.92.16
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇯🇵 JP🐲™️【橘子科技】 5
+  server: 8.216.81.187
+  port: 30001
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇯🇵 JP🐲™️【橘子科技】 6
+  server: 160.16.123.65
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇯🇵 JP🐲™️【橘子科技】 7
+  server: 140.83.57.20
+  port: 13118
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇯🇵 JP🐲™️【橘子科技】 8
+  server: 47.79.90.82
+  port: 8843
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇯🇵 JP🐲™️【橘子科技】 9
+  server: 47.79.90.37
+  port: 49153
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇯🇵 JP🐲™️【橘子科技】 10
+  server: 18.183.222.39
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇹🇼 TW🐲™️【橘子科技】
+  server: 34.81.169.32
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇹🇼 TW🐲™️【橘子科技】 2
+  server: 45.207.158.29
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇹🇼 TW🐲™️【橘子科技】 3
+  server: 45.207.159.194
+  port: 8080
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇰🇷 KR🐲™️【橘子科技】
+  server: 119.200.48.55
+  port: 12270
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇰🇷 KR🐲™️【橘子科技】 2
+  server: 43.203.199.76
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇰🇷 KR🐲™️【橘子科技】 3
+  server: 43.164.129.82
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇰🇷 KR🐲™️【橘子科技】 4
+  server: 125.134.6.129
+  port: 12116
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇰🇷 KR🐲™️【橘子科技】 5
+  server: 125.132.168.97
+  port: 50000
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇰🇷 KR🐲™️【橘子科技】 6
+  server: 125.134.22.5
+  port: 18009
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇰🇷 KR🐲™️【橘子科技】 7
+  server: 211.222.170.55
+  port: 12165
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇰🇷 KR🐲™️【橘子科技】 8
+  server: 222.121.121.198
+  port: 18043
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇰🇷 KR🐲™️【橘子科技】 9
+  server: 121.160.141.91
+  port: 10007
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇰🇷 KR🐲™️【橘子科技】 10
+  server: 222.104.213.148
+  port: 12457
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇺🇸 US🐲™️【橘子科技】
+  server: 172.64.229.221
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇺🇸 US🐲™️【橘子科技】 2
+  server: 172.64.229.222
+  port: 2096
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇺🇸 US🐲™️【橘子科技】 3
+  server: 104.19.86.120
+  port: 2096
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇺🇸 US🐲™️【橘子科技】 4
+  server: 154.26.176.94
+  port: 444
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇺🇸 US🐲™️【橘子科技】 5
+  server: 172.67.65.113
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇺🇸 US🐲™️【橘子科技】 6
+  server: 173.245.59.203
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇺🇸 US🐲™️【橘子科技】 7
+  server: 108.165.152.202
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇺🇸 US🐲™️【橘子科技】 8
+  server: 103.116.7.103
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇺🇸 US🐲™️【橘子科技】 9
+  server: 130.250.137.63
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇺🇸 US🐲™️【橘子科技】 10
+  server: 104.26.15.138
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇵🇱 PL🐲™️【橘子科技】
+  server: 86.110.56.169
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇵🇱 PL🐲™️【橘子科技】 2
+  server: 45.144.51.180
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇵🇱 PL🐲™️【橘子科技】 3
+  server: 45.144.48.48
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇵🇱 PL🐲™️【橘子科技】 4
+  server: 45.144.48.192
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇵🇱 PL🐲™️【橘子科技】 5
+  server: 38.180.51.120
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇵🇱 PL🐲™️【橘子科技】 6
+  server: 185.188.147.79
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇵🇱 PL🐲™️【橘子科技】 7
+  server: 193.124.41.165
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇵🇱 PL🐲™️【橘子科技】 8
+  server: 91.239.148.84
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇵🇱 PL🐲™️【橘子科技】 9
+  server: 217.30.10.46
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇵🇱 PL🐲™️【橘子科技】 10
+  server: 86.110.56.94
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+- name: 🇭🇰 HK🐲™️【橘子科技】 (2)
+  server: 20.2.19.77
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇭🇰 HK🐲™️【橘子科技】 2 (2)
+  server: 8.210.185.198
+  port: 12373
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇭🇰 HK🐲™️【橘子科技】 3 (2)
+  server: 34.92.205.97
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇭🇰 HK🐲™️【橘子科技】 4 (2)
+  server: 8.210.75.107
+  port: 2010
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇭🇰 HK🐲™️【橘子科技】 5 (2)
+  server: 47.239.212.52
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇭🇰 HK🐲™️【橘子科技】 6 (2)
+  server: 47.242.25.137
+  port: 30701
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇭🇰 HK🐲™️【橘子科技】 7 (2)
+  server: 8.218.209.29
+  port: 9002
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇭🇰 HK🐲™️【橘子科技】 8 (2)
+  server: 8.218.107.214
+  port: 12332
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇭🇰 HK🐲™️【橘子科技】 9 (2)
+  server: 8.212.27.131
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇭🇰 HK🐲™️【橘子科技】 10 (2)
+  server: 8.212.40.29
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇸🇬 SG🐲™️【橘子科技】 (2)
+  server: 161.117.81.41
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇸🇬 SG🐲™️【橘子科技】 2 (2)
+  server: 92.243.74.2
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇸🇬 SG🐲™️【橘子科技】 3 (2)
+  server: 92.243.74.3
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇸🇬 SG🐲™️【橘子科技】 4 (2)
+  server: 27.50.48.126
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇸🇬 SG🐲™️【橘子科技】 5 (2)
+  server: 43.134.174.114
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇸🇬 SG🐲™️【橘子科技】 6 (2)
+  server: 92.243.75.49
+  port: 2087
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇸🇬 SG🐲™️【橘子科技】 7 (2)
+  server: 92.243.74.180
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇸🇬 SG🐲™️【橘子科技】 8 (2)
+  server: 92.243.74.239
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇸🇬 SG🐲™️【橘子科技】 9 (2)
+  server: 27.50.48.154
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇸🇬 SG🐲™️【橘子科技】 10 (2)
+  server: 47.236.171.64
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇯🇵 JP🐲™️【橘子科技】 (2)
+  server: 13.230.34.30
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇯🇵 JP🐲™️【橘子科技】 2 (2)
+  server: 18.183.158.211
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇯🇵 JP🐲™️【橘子科技】 3 (2)
+  server: 185.184.223.85
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇯🇵 JP🐲™️【橘子科技】 4 (2)
+  server: 47.79.92.16
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇯🇵 JP🐲™️【橘子科技】 5 (2)
+  server: 8.216.81.187
+  port: 30001
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇯🇵 JP🐲™️【橘子科技】 6 (2)
+  server: 160.16.123.65
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇯🇵 JP🐲™️【橘子科技】 7 (2)
+  server: 140.83.57.20
+  port: 13118
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇯🇵 JP🐲™️【橘子科技】 8 (2)
+  server: 47.79.90.82
+  port: 8843
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇯🇵 JP🐲™️【橘子科技】 9 (2)
+  server: 47.79.90.37
+  port: 49153
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇯🇵 JP🐲™️【橘子科技】 10 (2)
+  server: 18.183.222.39
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇹🇼 TW🐲™️【橘子科技】 (2)
+  server: 34.81.169.32
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇹🇼 TW🐲™️【橘子科技】 2 (2)
+  server: 45.207.158.29
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇹🇼 TW🐲™️【橘子科技】 3 (2)
+  server: 45.207.159.194
+  port: 8080
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇰🇷 KR🐲™️【橘子科技】 (2)
+  server: 119.200.48.55
+  port: 12270
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇰🇷 KR🐲™️【橘子科技】 2 (2)
+  server: 43.203.199.76
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇰🇷 KR🐲™️【橘子科技】 3 (2)
+  server: 43.164.129.82
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇰🇷 KR🐲™️【橘子科技】 4 (2)
+  server: 125.134.6.129
+  port: 12116
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇰🇷 KR🐲™️【橘子科技】 5 (2)
+  server: 125.132.168.97
+  port: 50000
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇰🇷 KR🐲™️【橘子科技】 6 (2)
+  server: 125.134.22.5
+  port: 18009
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇰🇷 KR🐲™️【橘子科技】 7 (2)
+  server: 211.222.170.55
+  port: 12165
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇰🇷 KR🐲™️【橘子科技】 8 (2)
+  server: 222.121.121.198
+  port: 18043
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇰🇷 KR🐲™️【橘子科技】 9 (2)
+  server: 121.160.141.91
+  port: 10007
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇰🇷 KR🐲™️【橘子科技】 10 (2)
+  server: 222.104.213.148
+  port: 12457
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇺🇸 US🐲™️【橘子科技】 (2)
+  server: 172.64.229.221
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇺🇸 US🐲™️【橘子科技】 2 (2)
+  server: 172.64.229.222
+  port: 2096
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇺🇸 US🐲™️【橘子科技】 3 (2)
+  server: 104.19.86.120
+  port: 2096
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇺🇸 US🐲™️【橘子科技】 4 (2)
+  server: 154.26.176.94
+  port: 444
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇺🇸 US🐲™️【橘子科技】 5 (2)
+  server: 172.67.65.113
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇺🇸 US🐲™️【橘子科技】 6 (2)
+  server: 173.245.59.203
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇺🇸 US🐲™️【橘子科技】 7 (2)
+  server: 108.165.152.202
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇺🇸 US🐲™️【橘子科技】 8 (2)
+  server: 103.116.7.103
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇺🇸 US🐲™️【橘子科技】 9 (2)
+  server: 130.250.137.63
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇺🇸 US🐲™️【橘子科技】 10 (2)
+  server: 104.26.15.138
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇵🇱 PL🐲™️【橘子科技】 (2)
+  server: 86.110.56.169
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇵🇱 PL🐲™️【橘子科技】 2 (2)
+  server: 45.144.51.180
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇵🇱 PL🐲™️【橘子科技】 3 (2)
+  server: 45.144.48.48
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇵🇱 PL🐲™️【橘子科技】 4 (2)
+  server: 45.144.48.192
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇵🇱 PL🐲™️【橘子科技】 5 (2)
+  server: 38.180.51.120
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇵🇱 PL🐲™️【橘子科技】 6 (2)
+  server: 185.188.147.79
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇵🇱 PL🐲™️【橘子科技】 7 (2)
+  server: 193.124.41.165
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇵🇱 PL🐲™️【橘子科技】 8 (2)
+  server: 91.239.148.84
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇵🇱 PL🐲™️【橘子科技】 9 (2)
+  server: 217.30.10.46
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- name: 🇵🇱 PL🐲™️【橘子科技】 10 (2)
+  server: 86.110.56.94
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: aio.loophole.Biz.iD
+  network: ws
+  ws-opts:
+    path: /aioproxybot/8.215.59.6-443
+    headers:
+      Host: aio.loophole.Biz.iD
+- type: vless
+  name: www.ipchicken.com请通过绑定自定义域名订阅！_1
+  server: www.ipchicken.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: ipv4.ip.sb请通过绑定自定义域名订阅！_1
+  server: ipv4.ip.sb
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: ipv4.ip.sb_1
+  server: ipv4.ip.sb
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: ipv4.ip.sb请通过绑定自定义域名订阅！_2
+  server: ipv4.ip.sb
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: www.ipchicken.com_1
+  server: www.ipchicken.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: www.ipchicken.com_2
+  server: www.ipchicken.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: www.ipchicken.com_3
+  server: www.ipchicken.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: www.ipchicken.com请通过绑定自定义域名订阅！_2
+  server: www.ipchicken.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: ipv4.ip.sb_2
+  server: ipv4.ip.sb
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: 172.67.79.211_1
+  server: 172.67.79.211
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: 🇺🇸US_1
+  server: 104.17.128.1
+  port: 2096
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: 🇭🇰HK_1
+  server: 104.17.142.12
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: www.okcupid.com请通过绑定自定义域名订阅！_1
+  server: www.okcupid.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: 🇺🇸US_2
+  server: 104.17.128.1
+  port: 2096
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: 104.17.142.12_1
+  server: 104.17.142.12
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: 🇭🇰HK_2
+  server: 104.17.142.12
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: 🇭🇰HK_3
+  server: 104.17.68.85
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: www.4chan.org_1
+  server: www.4chan.org
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: cris.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  server: cris.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: kyree.ns.cloudflare.com_1
+  server: kyree.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: dnschecker.org_1
+  server: dnschecker.org
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: pranab.ns.cloudflare.com_1
+  server: pranab.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: cris.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  server: cris.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: 162.159.36.104_1
+  server: 162.159.36.104
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: 162.159.36.104_2
+  server: 162.159.36.104
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: dnschecker.org_2
+  server: dnschecker.org
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: 🇺🇸US请通过绑定自定义域名订阅！_1
+  server: 198.62.62.156
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: pranab.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  server: pranab.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: 🇺🇸US_3
+  server: 162.159.129.67
+  port: 8443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: kyree.ns.cloudflare.com_2
+  server: kyree.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: kyree.ns.cloudflare.com_3
+  server: kyree.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: 162.159.36.104_3
+  server: 162.159.36.104
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: www.pcmag.com_1
+  server: www.pcmag.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: trevor.ns.cloudflare.com_1
+  server: trevor.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: 172.67.110.232_1
+  server: 172.67.110.232
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: dnschecker.org请通过绑定自定义域名订阅！_1
+  server: dnschecker.org
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: ashton.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  server: ashton.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: benedict.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  server: benedict.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: steamdb.info请通过绑定自定义域名订阅！_1
+  server: steamdb.info
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: huxley.ns.cloudflare.com_1
+  server: huxley.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: 162.159.36.104_4
+  server: 162.159.36.104
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: kyree.ns.cloudflare.com_4
+  server: kyree.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: rustam.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  server: rustam.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: kyree.ns.cloudflare.com_5
+  server: kyree.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: 104.17.68.85_1
+  server: 104.17.68.85
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: 🇺🇸US_4
+  server: 162.159.129.67
+  port: 8443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: 🇭🇰HK_4
+  server: 104.17.68.85
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: www.pcmag.com_2
+  server: www.pcmag.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: www.csgo.com请通过绑定自定义域名订阅！_1
+  server: www.csgo.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: 🇭🇰HK_5
+  server: 103.160.204.59
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: benedict.ns.cloudflare.com_1
+  server: benedict.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: ashton.ns.cloudflare.com_1
+  server: ashton.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: www.pcmag.com_3
+  server: www.pcmag.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: steamdb.info请通过绑定自定义域名订阅！_2
+  server: steamdb.info
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: kyree.ns.cloudflare.com_6
+  server: kyree.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: whatismyipaddress.com_1
+  server: whatismyipaddress.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: 172.67.106.26_1
+  server: 172.67.106.26
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: 162.159.36.104_5
+  server: 162.159.36.104
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: www.pcmag.com_4
+  server: www.pcmag.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: benedict.ns.cloudflare.com_2
+  server: benedict.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: 103.160.204.59_1
+  server: 103.160.204.59
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: time.is_1
+  server: time.is
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: damien.ns.cloudflare.com_1
+  server: damien.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: 162.159.36.104_6
+  server: 162.159.36.104
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: 104.17.68.85_2
+  server: 104.17.68.85
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: github.com/amclubsGitHub仓库(关注查看新功能)_1
+  server: time.is
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: 🇺🇸US_5
+  server: 162.159.129.67
+  port: 8443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: iplocation.io_1
+  server: iplocation.io
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: dnschecker.org_3
+  server: dnschecker.org
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: 172.67.120.0_1
+  server: 172.67.120.0
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: dnschecker.org_4
+  server: dnschecker.org
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: pranab.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  server: pranab.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: 🇺🇸US_6
+  server: 104.25.254.4
+  port: 2087
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: 🇺🇸US_7
+  server: 104.25.254.4
+  port: 2087
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: 103.160.204.59_2
+  server: 103.160.204.59
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: steamdb.info_1
+  server: steamdb.info
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: 🇭🇰HK_6
+  server: 198.62.62.4
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: 🇺🇸US请通过绑定自定义域名订阅！_2
+  server: 198.62.62.156
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: shopify.com_1
+  server: shopify.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: trevor.ns.cloudflare.com_2
+  server: trevor.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: 🇭🇰HK_7
+  server: 103.160.204.59
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: www.pcmag.com_5
+  server: www.pcmag.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: julio.ns.cloudflare.com_1
+  server: julio.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: www.pcmag.com_6
+  server: www.pcmag.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: www.pcmag.com_7
+  server: www.pcmag.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: braden.ns.cloudflare.com_1
+  server: braden.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: trevor.ns.cloudflare.com_3
+  server: trevor.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: trevor.ns.cloudflare.com_4
+  server: trevor.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: steamdb.info_2
+  server: steamdb.info
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: icook.tw_1
+  server: icook.tw
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: rustam.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  server: rustam.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: benedict.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  server: benedict.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: 🇺🇸US请通过绑定自定义域名订阅！_3
+  server: 104.25.254.4
+  port: 2087
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: huxley.ns.cloudflare.com_2
+  server: huxley.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: julio.ns.cloudflare.com_2
+  server: julio.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: wilson.ns.cloudflare.com_1
+  server: wilson.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: www.udemy.com_1
+  server: www.udemy.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: icook.tw_2
+  server: icook.tw
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: lewis.ns.cloudflare.com_1
+  server: lewis.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: www.4chan.org_2
+  server: www.4chan.org
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: 172.67.106.26_2
+  server: 172.67.106.26
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: damien.ns.cloudflare.com_2
+  server: damien.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: 🇭🇰HK_8
+  server: 198.62.62.4
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: github.com/amclubsGitHub仓库(关注查看新功能)请通过绑定自定义域名订阅！
+  server: time.is
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: craig.ns.cloudflare.com_1
+  server: craig.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: rustam.ns.cloudflare.com_1
+  server: rustam.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: rustam.ns.cloudflare.com_2
+  server: rustam.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: uriah.ns.cloudflare.com_1
+  server: uriah.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: 172.67.110.232_2
+  server: 172.67.110.232
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: trevor.ns.cloudflare.com_5
+  server: trevor.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: www.hugedomains.com请通过绑定自定义域名订阅！_1
+  server: www.hugedomains.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: ashton.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  server: ashton.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: 🇺🇸US请通过绑定自定义域名订阅！_4
+  server: 104.25.254.4
+  port: 2087
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: tasteatlas.com_1
+  server: tasteatlas.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: pranab.ns.cloudflare.com_2
+  server: pranab.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: www.udemy.com_2
+  server: www.udemy.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: rustam.ns.cloudflare.com_3
+  server: rustam.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: US_1
+  server: icook.hk
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: www.pcmag.com_8
+  server: www.pcmag.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: lewis.ns.cloudflare.com_2
+  server: lewis.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: tasteatlas.com_2
+  server: tasteatlas.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: 172.67.120.0_2
+  server: 172.67.120.0
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: www.udemy.com_3
+  server: www.udemy.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: www.okcupid.com请通过绑定自定义域名订阅！_2
+  server: www.okcupid.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: iplocation.io请通过绑定自定义域名订阅！_1
+  server: iplocation.io
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: www.wto.org_1
+  server: www.wto.org
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: ashton.ns.cloudflare.com_2
+  server: ashton.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: github.com/amclubsGitHub仓库(关注查看新功能)_2
+  server: time.is
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: github.com/amclubsGitHub仓库(关注查看新功能)_3
+  server: time.is
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: dylan.ns.cloudflare.com_1
+  server: dylan.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: tasteatlas.com_3
+  server: tasteatlas.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: braden.ns.cloudflare.com_2
+  server: braden.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: uriah.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  server: uriah.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: braden.ns.cloudflare.com_3
+  server: braden.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: braden.ns.cloudflare.com_4
+  server: braden.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: rustam.ns.cloudflare.com_4
+  server: rustam.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: iplocation.io_2
+  server: iplocation.io
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: braden.ns.cloudflare.com_5
+  server: braden.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: whatismyipaddress.com_2
+  server: whatismyipaddress.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: otto.ns.cloudflare.com_1
+  server: otto.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: dylan.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  server: dylan.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: www.hugedomains.com请通过绑定自定义域名订阅！_2
+  server: www.hugedomains.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: www.csgo.com请通过绑定自定义域名订阅！_2
+  server: www.csgo.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: time.is_2
+  server: time.is
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: www.wto.org_2
+  server: www.wto.org
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: dylan.ns.cloudflare.com_2
+  server: dylan.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: craig.ns.cloudflare.com_2
+  server: craig.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: julio.ns.cloudflare.com_3
+  server: julio.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: time.is_3
+  server: time.is
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: rustam.ns.cloudflare.com_5
+  server: rustam.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: uriah.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  server: uriah.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: www.ipget.net_1
+  server: www.ipget.net
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: wilson.ns.cloudflare.com_2
+  server: wilson.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: lewis.ns.cloudflare.com_3
+  server: lewis.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: whatismyipaddress.com_3
+  server: whatismyipaddress.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: www.udemy.com_4
+  server: www.udemy.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: julio.ns.cloudflare.com_4
+  server: julio.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: iplocation.io请通过绑定自定义域名订阅！_2
+  server: iplocation.io
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: lewis.ns.cloudflare.com_4
+  server: lewis.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: tasteatlas.com_4
+  server: tasteatlas.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: uriah.ns.cloudflare.com_2
+  server: uriah.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: time.is_4
+  server: time.is
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: dnschecker.org请通过绑定自定义域名订阅！_2
+  server: dnschecker.org
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: dylan.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  server: dylan.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: braden.ns.cloudflare.com_6
+  server: braden.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: US_2
+  server: icook.hk
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: 🇺🇸US_8
+  server: 162.159.129.67
+  port: 8443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: otto.ns.cloudflare.com_2
+  server: otto.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: shopify.com_2
+  server: shopify.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: github.com/amclubsGitHub仓库(关注查看新功能)_4
+  server: time.is
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: trevor.ns.cloudflare.com_6
+  server: trevor.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: vless
+  name: rustam.ns.cloudflare.com_6
+  server: rustam.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: 172.67.243.218_1
+  server: 172.67.243.218
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: 104.17.142.12_2
+  server: 104.17.142.12
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: whatismyipaddress.com_4
+  server: whatismyipaddress.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: www.ipchicken.com_4
+  server: www.ipchicken.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: IPV6_1
+  server: '[2606'
+  port: 4700
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: IPV6_2
+  server: '[2606'
+  port: 4700
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: IPV6请通过绑定自定义域名订阅！_1
+  server: '[2606'
+  port: 4700
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: IPV6请通过绑定自定义域名订阅！_2
+  server: '[2606'
+  port: 4700
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: US_3
+  server: icook.hk
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: IPV6请通过绑定自定义域名订阅！_3
+  server: '[2606'
+  port: 4700
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: trojan
+  name: IPV6_3
+  server: '[2606'
+  port: 4700
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: edgetunnel_1
+  server: yy.bgm2024.dpdns.org
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: IPV6_4
+  server: '[2606'
+  port: 4700
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: vless
+  name: edgetunnel_2
+  server: xdgxsd-vdss.pages.dev
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: xdgxsd-vdss.pages.dev
+- type: vless
+  name: US_4
+  server: icook.hk
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+- type: trojan
+  name: 172.67.79.211_2
+  server: 172.67.79.211
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: US_5
+  server: icook.hk
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: vless
+  name: 172.67.181.209_1
+  server: 172.67.181.209
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: 172.67.181.209_2
+  server: 172.67.181.209
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+- type: trojan
+  name: www.ipget.net_2
+  server: www.ipget.net
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+- type: trojan
+  name: 172.67.243.218_2
+  server: 172.67.243.218
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+- type: vless
+  name: comicabc.com_1
+  server: comicabc.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+- type: trojan
+  name: comicabc.com_2
+  server: comicabc.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+- name: 🇭🇰 HK🐲™️【橘子科技】 (3)
+  server: 20.44.136.56
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇭🇰 HK🐲™️【橘子科技】 2 (3)
+  server: 47.76.248.76
+  port: 8002
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇭🇰 HK🐲™️【橘子科技】 3 (3)
+  server: 157.254.32.145
+  port: 27017
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇭🇰 HK🐲™️【橘子科技】 4 (3)
+  server: 47.240.15.210
+  port: 4432
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇭🇰 HK🐲™️【橘子科技】 5 (3)
+  server: 210.97.108.246
+  port: 13579
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇸🇬 SG🐲™️【橘子科技】 (3)
+  server: 47.236.4.205
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇸🇬 SG🐲™️【橘子科技】 2 (3)
+  server: 8.219.238.249
+  port: 47984
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇸🇬 SG🐲™️【橘子科技】 3 (3)
+  server: 158.178.247.58
+  port: 30008
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇸🇬 SG🐲™️【橘子科技】 4 (3)
+  server: 43.156.181.203
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇸🇬 SG🐲™️【橘子科技】 5 (3)
+  server: 13.250.131.37
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇹🇼 TW🐲™️【橘子科技】 (3)
+  server: 45.207.158.29
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇹🇼 TW🐲™️【橘子科技】 2 (3)
+  server: 166.0.198.184
+  port: 4333
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇹🇼 TW🐲™️【橘子科技】 3 (3)
+  server: 34.81.140.124
+  port: 10240
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇹🇼 TW🐲™️【橘子科技】 4
+  server: 45.207.159.194
+  port: 8080
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇹🇼 TW🐲™️【橘子科技】 5
+  server: 34.81.185.105
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇹🇼 TW🐲™️【橘子科技】 6
+  server: 61.220.128.226
+  port: 43
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇹🇼 TW🐲™️【橘子科技】 7
+  server: 34.81.169.32
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇹🇼 TW🐲™️【橘子科技】 8
+  server: 141.11.86.94
+  port: 18333
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇯🇵 JP🐲™️【橘子科技】 (3)
+  server: 160.16.123.65
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇯🇵 JP🐲™️【橘子科技】 2 (3)
+  server: 3.34.49.221
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇯🇵 JP🐲™️【橘子科技】 3 (3)
+  server: 47.79.38.17
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇯🇵 JP🐲™️【橘子科技】 4 (3)
+  server: 47.79.32.90
+  port: 12299
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇯🇵 JP🐲™️【橘子科技】 5 (3)
+  server: 158.101.77.33
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇰🇷 KR🐲™️【橘子科技】 (3)
+  server: 49.168.9.171
+  port: 50001
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇰🇷 KR🐲™️【橘子科技】 2 (3)
+  server: 116.47.199.34
+  port: 50000
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇰🇷 KR🐲™️【橘子科技】 3 (3)
+  server: 59.31.83.164
+  port: 21262
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇰🇷 KR🐲™️【橘子科技】 4 (3)
+  server: 211.216.189.208
+  port: 39726
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇰🇷 KR🐲™️【橘子科技】 5 (3)
+  server: 115.40.244.240
+  port: 12696
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇺🇸 US🐲™️【橘子科技】 (3)
+  server: 92.243.74.23
+  port: 2096
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇺🇸 US🐲™️【橘子科技】 2 (3)
+  server: 5.182.84.50
+  port: 2096
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇺🇸 US🐲™️【橘子科技】 3 (3)
+  server: 213.241.198.59
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇺🇸 US🐲™️【橘子科技】 4 (3)
+  server: 216.24.57.1
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇺🇸 US🐲™️【橘子科技】 5 (3)
+  server: 45.67.215.250
+  port: 2096
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇩🇪 DE🐲™️【橘子科技】
+  server: 45.134.15.120
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇩🇪 DE🐲™️【橘子科技】 2
+  server: 89.22.225.117
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇩🇪 DE🐲™️【橘子科技】 3
+  server: 92.119.90.51
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇩🇪 DE🐲™️【橘子科技】 4
+  server: 130.61.107.238
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇩🇪 DE🐲™️【橘子科技】 5
+  server: 138.124.24.11
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇵🇱 PL🐲™️【橘子科技】 (3)
+  server: 193.110.163.10
+  port: 58443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇵🇱 PL🐲™️【橘子科技】 2 (3)
+  server: 217.30.10.46
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+- name: 🇵🇱 PL🐲™️【橘子科技】 3 (3)
+  server: 86.110.56.94
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
 proxy-groups:
 - name: AUTO
   type: select
   proxies:
-  - 剩余流量：152.32 GB
+  - 🇭🇰香港01
+  - 🇭🇰香港02
+  - 🇭🇰香港03
+  - 🇭🇰香港04
+  - 🇭🇰香港05
+  - 🇹🇼台湾01
+  - 🇹🇼台湾02
+  - 🇹🇼台湾03
+  - 🇹🇼台湾04
+  - 🇹🇼台湾05
+  - 🇯🇵日本01
+  - 🇯🇵日本02
+  - 🇯🇵日本03
+  - 🇯🇵日本04
+  - 🇯🇵日本05
+  - 🇸🇬新加坡01
+  - 🇸🇬新加坡02
+  - 🇸🇬新加坡03
+  - 🇸🇬新加坡04
+  - 🇸🇬新加坡05
+  - 🇺🇸美国01
+  - 🇺🇸美国02
+  - 🇺🇸美国03
+  - 🇺🇸美国04
+  - 🇺🇸美国05
+  - 🇰🇷韩国
+  - 🇲🇾马来西亚
+  - 🇵🇭菲律宾
+  - 🇳🇬尼日利亚
+  - 🇹🇭泰国
+  - 🇨🇳永久地址：www.okanc.com
+  - 剩余流量：152.06 GB
   - 距离下次重置剩余：25 天
   - 套餐到期：2025-09-25
   - 英国
@@ -106,5 +5821,367 @@ proxy-groups:
   - 美国
   - 德国
   - 官网-foldjc.top
+  - 🇭🇰 HK🐲™️【橘子科技】
+  - 🇭🇰 HK🐲™️【橘子科技】 2
+  - 🇭🇰 HK🐲™️【橘子科技】 3
+  - 🇭🇰 HK🐲™️【橘子科技】 4
+  - 🇭🇰 HK🐲™️【橘子科技】 5
+  - 🇭🇰 HK🐲™️【橘子科技】 6
+  - 🇭🇰 HK🐲™️【橘子科技】 7
+  - 🇭🇰 HK🐲™️【橘子科技】 8
+  - 🇭🇰 HK🐲™️【橘子科技】 9
+  - 🇭🇰 HK🐲™️【橘子科技】 10
+  - 🇸🇬 SG🐲™️【橘子科技】
+  - 🇸🇬 SG🐲™️【橘子科技】 2
+  - 🇸🇬 SG🐲™️【橘子科技】 3
+  - 🇸🇬 SG🐲™️【橘子科技】 4
+  - 🇸🇬 SG🐲™️【橘子科技】 5
+  - 🇸🇬 SG🐲™️【橘子科技】 6
+  - 🇸🇬 SG🐲™️【橘子科技】 7
+  - 🇸🇬 SG🐲™️【橘子科技】 8
+  - 🇸🇬 SG🐲™️【橘子科技】 9
+  - 🇸🇬 SG🐲™️【橘子科技】 10
+  - 🇯🇵 JP🐲™️【橘子科技】
+  - 🇯🇵 JP🐲™️【橘子科技】 2
+  - 🇯🇵 JP🐲™️【橘子科技】 3
+  - 🇯🇵 JP🐲™️【橘子科技】 4
+  - 🇯🇵 JP🐲™️【橘子科技】 5
+  - 🇯🇵 JP🐲™️【橘子科技】 6
+  - 🇯🇵 JP🐲™️【橘子科技】 7
+  - 🇯🇵 JP🐲™️【橘子科技】 8
+  - 🇯🇵 JP🐲™️【橘子科技】 9
+  - 🇯🇵 JP🐲™️【橘子科技】 10
+  - 🇹🇼 TW🐲™️【橘子科技】
+  - 🇹🇼 TW🐲™️【橘子科技】 2
+  - 🇹🇼 TW🐲™️【橘子科技】 3
+  - 🇰🇷 KR🐲™️【橘子科技】
+  - 🇰🇷 KR🐲™️【橘子科技】 2
+  - 🇰🇷 KR🐲™️【橘子科技】 3
+  - 🇰🇷 KR🐲™️【橘子科技】 4
+  - 🇰🇷 KR🐲™️【橘子科技】 5
+  - 🇰🇷 KR🐲™️【橘子科技】 6
+  - 🇰🇷 KR🐲™️【橘子科技】 7
+  - 🇰🇷 KR🐲™️【橘子科技】 8
+  - 🇰🇷 KR🐲™️【橘子科技】 9
+  - 🇰🇷 KR🐲™️【橘子科技】 10
+  - 🇺🇸 US🐲™️【橘子科技】
+  - 🇺🇸 US🐲™️【橘子科技】 2
+  - 🇺🇸 US🐲™️【橘子科技】 3
+  - 🇺🇸 US🐲™️【橘子科技】 4
+  - 🇺🇸 US🐲™️【橘子科技】 5
+  - 🇺🇸 US🐲™️【橘子科技】 6
+  - 🇺🇸 US🐲™️【橘子科技】 7
+  - 🇺🇸 US🐲™️【橘子科技】 8
+  - 🇺🇸 US🐲™️【橘子科技】 9
+  - 🇺🇸 US🐲™️【橘子科技】 10
+  - 🇵🇱 PL🐲™️【橘子科技】
+  - 🇵🇱 PL🐲™️【橘子科技】 2
+  - 🇵🇱 PL🐲™️【橘子科技】 3
+  - 🇵🇱 PL🐲™️【橘子科技】 4
+  - 🇵🇱 PL🐲™️【橘子科技】 5
+  - 🇵🇱 PL🐲™️【橘子科技】 6
+  - 🇵🇱 PL🐲™️【橘子科技】 7
+  - 🇵🇱 PL🐲™️【橘子科技】 8
+  - 🇵🇱 PL🐲™️【橘子科技】 9
+  - 🇵🇱 PL🐲™️【橘子科技】 10
+  - 🇭🇰 HK🐲™️【橘子科技】 (2)
+  - 🇭🇰 HK🐲™️【橘子科技】 2 (2)
+  - 🇭🇰 HK🐲™️【橘子科技】 3 (2)
+  - 🇭🇰 HK🐲™️【橘子科技】 4 (2)
+  - 🇭🇰 HK🐲™️【橘子科技】 5 (2)
+  - 🇭🇰 HK🐲™️【橘子科技】 6 (2)
+  - 🇭🇰 HK🐲™️【橘子科技】 7 (2)
+  - 🇭🇰 HK🐲™️【橘子科技】 8 (2)
+  - 🇭🇰 HK🐲™️【橘子科技】 9 (2)
+  - 🇭🇰 HK🐲™️【橘子科技】 10 (2)
+  - 🇸🇬 SG🐲™️【橘子科技】 (2)
+  - 🇸🇬 SG🐲™️【橘子科技】 2 (2)
+  - 🇸🇬 SG🐲™️【橘子科技】 3 (2)
+  - 🇸🇬 SG🐲™️【橘子科技】 4 (2)
+  - 🇸🇬 SG🐲™️【橘子科技】 5 (2)
+  - 🇸🇬 SG🐲™️【橘子科技】 6 (2)
+  - 🇸🇬 SG🐲™️【橘子科技】 7 (2)
+  - 🇸🇬 SG🐲™️【橘子科技】 8 (2)
+  - 🇸🇬 SG🐲™️【橘子科技】 9 (2)
+  - 🇸🇬 SG🐲™️【橘子科技】 10 (2)
+  - 🇯🇵 JP🐲™️【橘子科技】 (2)
+  - 🇯🇵 JP🐲™️【橘子科技】 2 (2)
+  - 🇯🇵 JP🐲™️【橘子科技】 3 (2)
+  - 🇯🇵 JP🐲™️【橘子科技】 4 (2)
+  - 🇯🇵 JP🐲™️【橘子科技】 5 (2)
+  - 🇯🇵 JP🐲™️【橘子科技】 6 (2)
+  - 🇯🇵 JP🐲™️【橘子科技】 7 (2)
+  - 🇯🇵 JP🐲™️【橘子科技】 8 (2)
+  - 🇯🇵 JP🐲™️【橘子科技】 9 (2)
+  - 🇯🇵 JP🐲™️【橘子科技】 10 (2)
+  - 🇹🇼 TW🐲™️【橘子科技】 (2)
+  - 🇹🇼 TW🐲™️【橘子科技】 2 (2)
+  - 🇹🇼 TW🐲™️【橘子科技】 3 (2)
+  - 🇰🇷 KR🐲™️【橘子科技】 (2)
+  - 🇰🇷 KR🐲™️【橘子科技】 2 (2)
+  - 🇰🇷 KR🐲™️【橘子科技】 3 (2)
+  - 🇰🇷 KR🐲™️【橘子科技】 4 (2)
+  - 🇰🇷 KR🐲™️【橘子科技】 5 (2)
+  - 🇰🇷 KR🐲™️【橘子科技】 6 (2)
+  - 🇰🇷 KR🐲™️【橘子科技】 7 (2)
+  - 🇰🇷 KR🐲™️【橘子科技】 8 (2)
+  - 🇰🇷 KR🐲™️【橘子科技】 9 (2)
+  - 🇰🇷 KR🐲™️【橘子科技】 10 (2)
+  - 🇺🇸 US🐲™️【橘子科技】 (2)
+  - 🇺🇸 US🐲™️【橘子科技】 2 (2)
+  - 🇺🇸 US🐲™️【橘子科技】 3 (2)
+  - 🇺🇸 US🐲™️【橘子科技】 4 (2)
+  - 🇺🇸 US🐲™️【橘子科技】 5 (2)
+  - 🇺🇸 US🐲™️【橘子科技】 6 (2)
+  - 🇺🇸 US🐲™️【橘子科技】 7 (2)
+  - 🇺🇸 US🐲™️【橘子科技】 8 (2)
+  - 🇺🇸 US🐲™️【橘子科技】 9 (2)
+  - 🇺🇸 US🐲™️【橘子科技】 10 (2)
+  - 🇵🇱 PL🐲™️【橘子科技】 (2)
+  - 🇵🇱 PL🐲™️【橘子科技】 2 (2)
+  - 🇵🇱 PL🐲™️【橘子科技】 3 (2)
+  - 🇵🇱 PL🐲™️【橘子科技】 4 (2)
+  - 🇵🇱 PL🐲™️【橘子科技】 5 (2)
+  - 🇵🇱 PL🐲™️【橘子科技】 6 (2)
+  - 🇵🇱 PL🐲™️【橘子科技】 7 (2)
+  - 🇵🇱 PL🐲™️【橘子科技】 8 (2)
+  - 🇵🇱 PL🐲™️【橘子科技】 9 (2)
+  - 🇵🇱 PL🐲™️【橘子科技】 10 (2)
+  - www.ipchicken.com请通过绑定自定义域名订阅！_1
+  - ipv4.ip.sb请通过绑定自定义域名订阅！_1
+  - ipv4.ip.sb_1
+  - ipv4.ip.sb请通过绑定自定义域名订阅！_2
+  - www.ipchicken.com_1
+  - www.ipchicken.com_2
+  - www.ipchicken.com_3
+  - www.ipchicken.com请通过绑定自定义域名订阅！_2
+  - ipv4.ip.sb_2
+  - 172.67.79.211_1
+  - 🇺🇸US_1
+  - 🇭🇰HK_1
+  - www.okcupid.com请通过绑定自定义域名订阅！_1
+  - 🇺🇸US_2
+  - 104.17.142.12_1
+  - 🇭🇰HK_2
+  - 🇭🇰HK_3
+  - www.4chan.org_1
+  - cris.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  - kyree.ns.cloudflare.com_1
+  - dnschecker.org_1
+  - pranab.ns.cloudflare.com_1
+  - cris.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  - 162.159.36.104_1
+  - 162.159.36.104_2
+  - dnschecker.org_2
+  - 🇺🇸US请通过绑定自定义域名订阅！_1
+  - pranab.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  - 🇺🇸US_3
+  - kyree.ns.cloudflare.com_2
+  - kyree.ns.cloudflare.com_3
+  - 162.159.36.104_3
+  - www.pcmag.com_1
+  - trevor.ns.cloudflare.com_1
+  - 172.67.110.232_1
+  - dnschecker.org请通过绑定自定义域名订阅！_1
+  - ashton.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  - benedict.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  - steamdb.info请通过绑定自定义域名订阅！_1
+  - huxley.ns.cloudflare.com_1
+  - 162.159.36.104_4
+  - kyree.ns.cloudflare.com_4
+  - rustam.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  - kyree.ns.cloudflare.com_5
+  - 104.17.68.85_1
+  - 🇺🇸US_4
+  - 🇭🇰HK_4
+  - www.pcmag.com_2
+  - www.csgo.com请通过绑定自定义域名订阅！_1
+  - 🇭🇰HK_5
+  - benedict.ns.cloudflare.com_1
+  - ashton.ns.cloudflare.com_1
+  - www.pcmag.com_3
+  - steamdb.info请通过绑定自定义域名订阅！_2
+  - kyree.ns.cloudflare.com_6
+  - whatismyipaddress.com_1
+  - 172.67.106.26_1
+  - 162.159.36.104_5
+  - www.pcmag.com_4
+  - benedict.ns.cloudflare.com_2
+  - 103.160.204.59_1
+  - time.is_1
+  - damien.ns.cloudflare.com_1
+  - 162.159.36.104_6
+  - 104.17.68.85_2
+  - github.com/amclubsGitHub仓库(关注查看新功能)_1
+  - 🇺🇸US_5
+  - iplocation.io_1
+  - dnschecker.org_3
+  - 172.67.120.0_1
+  - dnschecker.org_4
+  - pranab.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  - 🇺🇸US_6
+  - 🇺🇸US_7
+  - 103.160.204.59_2
+  - steamdb.info_1
+  - 🇭🇰HK_6
+  - 🇺🇸US请通过绑定自定义域名订阅！_2
+  - shopify.com_1
+  - trevor.ns.cloudflare.com_2
+  - 🇭🇰HK_7
+  - www.pcmag.com_5
+  - julio.ns.cloudflare.com_1
+  - www.pcmag.com_6
+  - www.pcmag.com_7
+  - braden.ns.cloudflare.com_1
+  - trevor.ns.cloudflare.com_3
+  - trevor.ns.cloudflare.com_4
+  - steamdb.info_2
+  - icook.tw_1
+  - rustam.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  - benedict.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  - 🇺🇸US请通过绑定自定义域名订阅！_3
+  - huxley.ns.cloudflare.com_2
+  - julio.ns.cloudflare.com_2
+  - wilson.ns.cloudflare.com_1
+  - www.udemy.com_1
+  - icook.tw_2
+  - lewis.ns.cloudflare.com_1
+  - www.4chan.org_2
+  - 172.67.106.26_2
+  - damien.ns.cloudflare.com_2
+  - 🇭🇰HK_8
+  - github.com/amclubsGitHub仓库(关注查看新功能)请通过绑定自定义域名订阅！
+  - craig.ns.cloudflare.com_1
+  - rustam.ns.cloudflare.com_1
+  - rustam.ns.cloudflare.com_2
+  - uriah.ns.cloudflare.com_1
+  - 172.67.110.232_2
+  - trevor.ns.cloudflare.com_5
+  - www.hugedomains.com请通过绑定自定义域名订阅！_1
+  - ashton.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  - 🇺🇸US请通过绑定自定义域名订阅！_4
+  - tasteatlas.com_1
+  - pranab.ns.cloudflare.com_2
+  - www.udemy.com_2
+  - rustam.ns.cloudflare.com_3
+  - US_1
+  - www.pcmag.com_8
+  - lewis.ns.cloudflare.com_2
+  - tasteatlas.com_2
+  - 172.67.120.0_2
+  - www.udemy.com_3
+  - www.okcupid.com请通过绑定自定义域名订阅！_2
+  - iplocation.io请通过绑定自定义域名订阅！_1
+  - www.wto.org_1
+  - ashton.ns.cloudflare.com_2
+  - github.com/amclubsGitHub仓库(关注查看新功能)_2
+  - github.com/amclubsGitHub仓库(关注查看新功能)_3
+  - dylan.ns.cloudflare.com_1
+  - tasteatlas.com_3
+  - braden.ns.cloudflare.com_2
+  - uriah.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  - braden.ns.cloudflare.com_3
+  - braden.ns.cloudflare.com_4
+  - rustam.ns.cloudflare.com_4
+  - iplocation.io_2
+  - braden.ns.cloudflare.com_5
+  - whatismyipaddress.com_2
+  - otto.ns.cloudflare.com_1
+  - dylan.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  - www.hugedomains.com请通过绑定自定义域名订阅！_2
+  - www.csgo.com请通过绑定自定义域名订阅！_2
+  - time.is_2
+  - www.wto.org_2
+  - dylan.ns.cloudflare.com_2
+  - craig.ns.cloudflare.com_2
+  - julio.ns.cloudflare.com_3
+  - time.is_3
+  - rustam.ns.cloudflare.com_5
+  - uriah.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  - www.ipget.net_1
+  - wilson.ns.cloudflare.com_2
+  - lewis.ns.cloudflare.com_3
+  - whatismyipaddress.com_3
+  - www.udemy.com_4
+  - julio.ns.cloudflare.com_4
+  - iplocation.io请通过绑定自定义域名订阅！_2
+  - lewis.ns.cloudflare.com_4
+  - tasteatlas.com_4
+  - uriah.ns.cloudflare.com_2
+  - time.is_4
+  - dnschecker.org请通过绑定自定义域名订阅！_2
+  - dylan.ns.cloudflare.com请通过绑定自定义域名订阅！_2
+  - braden.ns.cloudflare.com_6
+  - US_2
+  - 🇺🇸US_8
+  - otto.ns.cloudflare.com_2
+  - shopify.com_2
+  - github.com/amclubsGitHub仓库(关注查看新功能)_4
+  - trevor.ns.cloudflare.com_6
+  - rustam.ns.cloudflare.com_6
+  - 172.67.243.218_1
+  - 104.17.142.12_2
+  - whatismyipaddress.com_4
+  - www.ipchicken.com_4
+  - IPV6_1
+  - IPV6_2
+  - IPV6请通过绑定自定义域名订阅！_1
+  - IPV6请通过绑定自定义域名订阅！_2
+  - US_3
+  - IPV6请通过绑定自定义域名订阅！_3
+  - IPV6_3
+  - edgetunnel_1
+  - IPV6_4
+  - edgetunnel_2
+  - US_4
+  - 172.67.79.211_2
+  - US_5
+  - 172.67.181.209_1
+  - 172.67.181.209_2
+  - www.ipget.net_2
+  - 172.67.243.218_2
+  - comicabc.com_1
+  - comicabc.com_2
+  - 🇭🇰 HK🐲™️【橘子科技】 (3)
+  - 🇭🇰 HK🐲™️【橘子科技】 2 (3)
+  - 🇭🇰 HK🐲™️【橘子科技】 3 (3)
+  - 🇭🇰 HK🐲™️【橘子科技】 4 (3)
+  - 🇭🇰 HK🐲™️【橘子科技】 5 (3)
+  - 🇸🇬 SG🐲™️【橘子科技】 (3)
+  - 🇸🇬 SG🐲™️【橘子科技】 2 (3)
+  - 🇸🇬 SG🐲™️【橘子科技】 3 (3)
+  - 🇸🇬 SG🐲™️【橘子科技】 4 (3)
+  - 🇸🇬 SG🐲™️【橘子科技】 5 (3)
+  - 🇹🇼 TW🐲™️【橘子科技】 (3)
+  - 🇹🇼 TW🐲™️【橘子科技】 2 (3)
+  - 🇹🇼 TW🐲™️【橘子科技】 3 (3)
+  - 🇹🇼 TW🐲™️【橘子科技】 4
+  - 🇹🇼 TW🐲™️【橘子科技】 5
+  - 🇹🇼 TW🐲™️【橘子科技】 6
+  - 🇹🇼 TW🐲™️【橘子科技】 7
+  - 🇹🇼 TW🐲™️【橘子科技】 8
+  - 🇯🇵 JP🐲™️【橘子科技】 (3)
+  - 🇯🇵 JP🐲™️【橘子科技】 2 (3)
+  - 🇯🇵 JP🐲™️【橘子科技】 3 (3)
+  - 🇯🇵 JP🐲™️【橘子科技】 4 (3)
+  - 🇯🇵 JP🐲™️【橘子科技】 5 (3)
+  - 🇰🇷 KR🐲™️【橘子科技】 (3)
+  - 🇰🇷 KR🐲™️【橘子科技】 2 (3)
+  - 🇰🇷 KR🐲™️【橘子科技】 3 (3)
+  - 🇰🇷 KR🐲™️【橘子科技】 4 (3)
+  - 🇰🇷 KR🐲™️【橘子科技】 5 (3)
+  - 🇺🇸 US🐲™️【橘子科技】 (3)
+  - 🇺🇸 US🐲™️【橘子科技】 2 (3)
+  - 🇺🇸 US🐲™️【橘子科技】 3 (3)
+  - 🇺🇸 US🐲™️【橘子科技】 4 (3)
+  - 🇺🇸 US🐲™️【橘子科技】 5 (3)
+  - 🇩🇪 DE🐲™️【橘子科技】
+  - 🇩🇪 DE🐲™️【橘子科技】 2
+  - 🇩🇪 DE🐲™️【橘子科技】 3
+  - 🇩🇪 DE🐲™️【橘子科技】 4
+  - 🇩🇪 DE🐲™️【橘子科技】 5
+  - 🇵🇱 PL🐲™️【橘子科技】 (3)
+  - 🇵🇱 PL🐲™️【橘子科技】 2 (3)
+  - 🇵🇱 PL🐲™️【橘子科技】 3 (3)
 rules:
 - MATCH,AUTO
