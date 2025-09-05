@@ -1,5 +1,5 @@
 proxies:
-- name: 1DSLZ03.160.204.59_1
+- name: 103.160.204.59_1
   network: ws
   port: 443
   server: 103.160.204.59
@@ -2372,6 +2372,94 @@ proxies:
     headers:
       Host: yy.bgm2024.dpdns.org
     path: /?ed=2560&PROT_TYPE=vless
+- name: 剩余流量：149.32 GB
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37011
+  server: yg.foldjc.top
+  skip-cert-verify: true
+  sni: yg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 印度
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37014
+  server: yd.foldjc.top
+  skip-cert-verify: true
+  sni: yd.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 台湾
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37013
+  server: tw.foldjc.top
+  skip-cert-verify: true
+  sni: tw.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 套餐到期：2025-09-25
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37011
+  server: yg.foldjc.top
+  skip-cert-verify: true
+  sni: yg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 官网-foldjc.top
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37017
+  server: dg.foldjc.top
+  skip-cert-verify: true
+  sni: dg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 德国
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37017
+  server: dg.foldjc.top
+  skip-cert-verify: true
+  sni: dg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 新加坡
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37012
+  server: xjp.foldjc.top
+  skip-cert-verify: true
+  sni: xjp.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 美国
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37016
+  server: mg.foldjc.top
+  skip-cert-verify: true
+  sni: mg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 英国
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37011
+  server: yg.foldjc.top
+  skip-cert-verify: true
+  sni: yg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 距离下次重置剩余：25 天
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37011
+  server: yg.foldjc.top
+  skip-cert-verify: true
+  sni: yg.foldjc.top
+  type: hysteria2
+  udp: true
+- name: 香港
+  password: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  port: 37015
+  server: xg.foldjc.top
+  skip-cert-verify: true
+  sni: xg.foldjc.top
+  type: hysteria2
+  udp: true
 - alpn:
   - h3
   client-fingerprint: random
@@ -5818,114 +5906,204 @@ proxies:
   server: 9.9.9.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 印度 10
-  password: 7009f155-0680-48c1-a17e-f86ed09c9766
-  port: 34411
-  server: ldu.izenny.com
+  name: 🇹🇼 台湾家宽 171
+  password: 70d18b04-51e1-4c63-8dfd-c0e1028c8f92
+  port: 10062
+  server: 114.46.98.152
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 131
-  port: 45053
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b4bf9f0-45b5-46a6-9de5-78538a51721c
-- auth: 8873807e-7932-4b31-b996-51621ae05865
-  name: 🇺🇸 美国 163
-  password: 8873807e-7932-4b31-b996-51621ae05865
+- auth: e33b95f1-4363-40d4-afdd-1ce468882df4
+  name: 🇺🇸 美国 041
+  password: e33b95f1-4363-40d4-afdd-1ce468882df4
   port: 37771
-  server: xjp1.xiaohuolongjc.top
+  server: mg1.xiaohuolongjc.top
   skip-cert-verify: true
-  sni: xjp1.xiaohuolongjc.top
+  sni: mg1.xiaohuolongjc.top
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 英国 02
-  port: 45066
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b4bf9f0-45b5-46a6-9de5-78538a51721c
-- auth: 0d77b1fe-5139-49d2-8156-0fc20998c474
-  name: 🇺🇸 美国 154
-  password: 0d77b1fe-5139-49d2-8156-0fc20998c474
-  port: 37771
-  server: xjp1.xiaohuolongjc.top
-  skip-cert-verify: true
-  sni: xjp1.xiaohuolongjc.top
-  type: hysteria2
-  udp: true
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 100
-  name: 🇫🇷 法国 07
-  port: 40099
-  protocol: udp
-  server: 62.210.127.217
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 100
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 066
-  password: f920dbdd-7ef9-4e3c-b9d8-68240e6e9a00
-  port: 10066
-  server: 59.126.32.59
+  name: 🇹🇼 台湾家宽 081
+  password: c35f8bc0-7cac-4718-a668-1877954fdda9
+  port: 10062
+  server: 114.46.98.152
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 393
-  password: 140e4cb2-a874-414b-a58b-c0300720fa7d
+  name: 🇹🇼 台湾家宽 024
+  password: 936b3245-e24b-43a1-9ac2-f5d5326908cf
   port: 10056
   server: 125.231.66.193
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 208
-  password: 8665ab20-e997-4839-b691-e0ccdc8715ab
-  port: 10023
-  server: 125.229.191.103
+  name: 🇹🇼 台湾家宽 460
+  password: 7adae194-e255-42b3-913d-016920743cd6
+  port: 10025
+  server: 118.170.241.115
   type: ss
   udp: true
-- auth: ecc4674e-6acb-47a7-b41d-dbb691857c39
-  name: 🇯🇵 日本 13
-  password: ecc4674e-6acb-47a7-b41d-dbb691857c39
-  port: 50000
-  ports: 50000-55000
-  server: 133.18.163.202
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  type: hysteria2
+- name: 🇺🇸 美国 216
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.193.30.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
   udp: true
-- auth: 7620d37d-8633-49e9-be68-4a87812d18e8
-  name: 🇭🇰 香港家宽 08
-  password: 7620d37d-8633-49e9-be68-4a87812d18e8
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- name: 🇺🇸 美国 146
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.65.217.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- name: 🇺🇸 美国 189
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.181.197.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 533
+  password: 376ef421-e991-4b07-b2e7-ee71c89053f8
+  port: 10065
+  server: 125.231.72.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 117
+  password: 18db5347-e3b9-4ec0-ac36-dfc6ffdd2bc1
+  port: 10006
+  server: 118.170.219.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 165
+  password: 01ca8349-7759-44b5-bc4a-c3a7e6b228a9
+  port: 10045
+  server: 125.231.67.133
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 309
+  password: 70d18b04-51e1-4c63-8dfd-c0e1028c8f92
+  port: 10013
+  server: 118.170.204.122
+  type: ss
+  udp: true
+- auth: 915cd180-0ef8-4e85-afa5-2701284d7a8c
+  name: 🇭🇰 香港家宽 02
+  password: 915cd180-0ef8-4e85-afa5-2701284d7a8c
   port: 37771
   server: xg1.xiaohuolongjc.top
   skip-cert-verify: true
   sni: xg1.xiaohuolongjc.top
   type: hysteria2
   udp: true
-- auth: 97f8e11a-683a-493d-839a-3340a7bc63fb
-  name: 🇺🇸 美国 003
-  password: 97f8e11a-683a-493d-839a-3340a7bc63fb
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 067
+  password: 61b78487-1c7f-4aca-b1d7-b1a7583714f5
+  port: 10056
+  server: 125.231.66.193
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 503
+  password: 759a2ed7-7230-4585-9bee-c38715a7a8c0
+  port: 10060
+  server: 125.231.66.145
+  type: ss
+  udp: true
+- name: 🇺🇸 美国 206
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.193.29.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 438
+  password: 7adae194-e255-42b3-913d-016920743cd6
+  port: 10139
+  server: 36.232.87.113
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 664
+  password: 8eb42a28-15df-4017-b510-1dd6a4aa61ec
+  port: 10139
+  server: 36.232.87.113
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 173
+  password: 140e4cb2-a874-414b-a58b-c0300720fa7d
+  port: 10060
+  server: 125.231.66.145
+  type: ss
+  udp: true
+- auth: f7d248a3-6b12-4bf7-b0cd-802adbc002d9
+  name: 🇭🇰 香港家宽 21
+  password: f7d248a3-6b12-4bf7-b0cd-802adbc002d9
   port: 37771
-  server: rb1.xiaohuolongjc.top
+  server: xg1.xiaohuolongjc.top
   skip-cert-verify: true
-  sni: rb1.xiaohuolongjc.top
+  sni: xg1.xiaohuolongjc.top
   type: hysteria2
   udp: true
-- auth: 4ca87d98-3e4d-43b2-b8d9-0be7fa56fed8
-  name: 🇯🇵 日本 46
-  password: 4ca87d98-3e4d-43b2-b8d9-0be7fa56fed8
+- auth: 456cbeda-b6e4-4e83-b61c-62c0d3722fcb
+  name: 🇺🇸 美国 180
+  password: 456cbeda-b6e4-4e83-b61c-62c0d3722fcb
+  port: 8443
+  server: h23.cpddx.club
+  skip-cert-verify: false
+  sni: h23.cpddx.club
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 160
+  password: 01ca8349-7759-44b5-bc4a-c3a7e6b228a9
+  port: 10072
+  server: 36.234.89.242
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 041
+  password: 936b3245-e24b-43a1-9ac2-f5d5326908cf
+  port: 10064
+  server: 114.46.70.213
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 210
+  password: ed7b6c5e-4658-426e-9764-13226b4256d8
+  port: 10037
+  server: 114.33.53.213
+  type: ss
+  udp: true
+- auth: 0f9dcd5a-86c4-4fd7-a32f-a750c9d7af35
+  name: 🇯🇵 日本 16
+  password: 0f9dcd5a-86c4-4fd7-a32f-a750c9d7af35
   port: 50000
   ports: 50000-55000
   server: 133.18.163.202
@@ -5934,38 +6112,323 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 183
-  password: ed7b6c5e-4658-426e-9764-13226b4256d8
-  port: 10066
-  server: 59.126.32.59
+  name: 🇹🇼 台湾家宽 077
+  password: e39cba96-0a8c-46a5-abbd-0d1273bda2c7
+  port: 10064
+  server: 114.46.70.213
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 280
-  password: b565382b-cef2-4f9a-8162-c1b723ef27d1
-  port: 10045
-  server: 125.231.67.133
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 149
-  password: 06d4deb6-ed35-4549-bba7-29745b838262
-  port: 10066
-  server: 59.126.32.59
-  type: ss
-  udp: true
-- auth: e33b95f1-4363-40d4-afdd-1ce468882df4
-  name: 🇺🇸 美国 173
-  password: e33b95f1-4363-40d4-afdd-1ce468882df4
+- auth: 5acaa712-e40b-4e92-9ae4-a5c9790217fb
+  name: 🇺🇸 美国 158
+  password: 5acaa712-e40b-4e92-9ae4-a5c9790217fb
   port: 37771
   server: xjp1.xiaohuolongjc.top
   skip-cert-verify: true
   sni: xjp1.xiaohuolongjc.top
   type: hysteria2
   udp: true
-- auth: 97f8e11a-683a-493d-839a-3340a7bc63fb
-  name: 🇺🇸 美国 063
-  password: 97f8e11a-683a-493d-839a-3340a7bc63fb
+- auth: Yet-Another-Public-Config-1
+  name: 🇳🇱 荷兰 02
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 36300
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: true
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 695
+  password: 3353aa71-2cc8-421e-9c4a-ce6f4c053772
+  port: 10088
+  server: 1.170.34.91
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 644
+  password: f350e14c-5443-4bd2-873b-ee33e88f71a9
+  port: 10034
+  server: 118.170.199.80
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 315
+  password: 9746d3ab-3c5a-4bcb-a41b-9163ed1af350
+  port: 10065
+  server: 125.231.72.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 131
+  password: 70d18b04-51e1-4c63-8dfd-c0e1028c8f92
+  port: 10137
+  server: 125.228.162.163
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 048
+  password: d1d57e88-301b-4725-80c1-830ad22a3f1b
+  port: 10068
+  server: 114.46.93.196
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 007
+  password: 64cbe6f2-e70f-42b7-9951-1d222e807d42
+  port: 33922
+  server: 120.233.44.207
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 001
+  password: 7862e42c-87ac-460f-b88b-fe17a2442b15
+  port: 10013
+  server: 118.170.204.122
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 013
+  password: 7862e42c-87ac-460f-b88b-fe17a2442b15
+  port: 10080
+  server: 114.46.119.144
+  type: ss
+  udp: true
+- auth: 626873ff-9e0d-4b5f-9243-f66eec240926
+  name: 🇭🇰 香港家宽 01
+  password: 626873ff-9e0d-4b5f-9243-f66eec240926
+  port: 37771
+  server: xg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: xg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 541
+  password: d8083a21-892b-4355-be1c-a79c6aaf4957
+  port: 10056
+  server: 125.231.66.193
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 207
+  password: ce510ed8-72f8-4458-8f5a-90fa3f483ea4
+  port: 10056
+  server: 125.231.66.193
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 406
+  password: 3353aa71-2cc8-421e-9c4a-ce6f4c053772
+  port: 10139
+  server: 36.232.87.113
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 390
+  password: f09db49c-7a78-46e7-a994-efe676fb7f63
+  port: 10062
+  server: 114.46.98.152
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 660
+  password: 77023a39-564b-4ed7-8a4a-3aa9a3dcd0ff
+  port: 10023
+  server: 125.229.191.103
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 222
+  password: d9c73bad-d344-43ef-9fb9-b91232d9e4a9
+  port: 10149
+  server: 36.232.80.151
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 043
+  password: 4e9d2e3e-ab5a-4890-b572-d1edc7cdd26f
+  port: 10080
+  server: 114.46.119.144
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 096
+  password: 8eb42a28-15df-4017-b510-1dd6a4aa61ec
+  port: 10045
+  server: 125.231.67.133
+  type: ss
+  udp: true
+- auth: 04a24f06-17fa-464b-a799-90600783499f
+  name: 🇭🇰 香港 12
+  password: 04a24f06-17fa-464b-a799-90600783499f
+  port: 37771
+  server: hg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: hg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 092
+  password: f09db49c-7a78-46e7-a994-efe676fb7f63
+  port: 10088
+  server: 1.170.34.91
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 358
+  password: 759a2ed7-7230-4585-9bee-c38715a7a8c0
+  port: 10128
+  server: 36.232.104.177
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 051
+  password: 3076c795-ff4f-4eba-a7c0-345cca52305c
+  port: 10048
+  server: 114.46.80.189
+  type: ss
+  udp: true
+- auth: 04a24f06-17fa-464b-a799-90600783499f
+  name: 🇺🇸 美国 049
+  password: 04a24f06-17fa-464b-a799-90600783499f
+  port: 37771
+  server: mg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: mg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- auth: 4d10ac6f-df9b-4433-ace0-8826e4e276c5
+  name: 🇯🇵 日本 26
+  password: 4d10ac6f-df9b-4433-ace0-8826e4e276c5
+  port: 50000
+  ports: 50000-55000
+  server: 133.18.163.202
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 720
+  password: d1d57e88-301b-4725-80c1-830ad22a3f1b
+  port: 10088
+  server: 1.170.34.91
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 113
+  password: 3353aa71-2cc8-421e-9c4a-ce6f4c053772
+  port: 10149
+  server: 36.232.80.151
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 184
+  password: 18db5347-e3b9-4ec0-ac36-dfc6ffdd2bc1
+  port: 10116
+  server: 1.170.46.7
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 107
+  password: 70d18b04-51e1-4c63-8dfd-c0e1028c8f92
+  port: 10117
+  server: 1.170.17.67
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 089
+  password: 3353aa71-2cc8-421e-9c4a-ce6f4c053772
+  port: 10048
+  server: 114.46.80.189
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇲🇩 摩尔多瓦 01
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+  udp: true
+- name: 🇺🇸 美国 196
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.162.229.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 028
+  password: 99968610-9c75-422f-a2cc-baad29c8a015
+  port: 10064
+  server: 114.46.70.213
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 563
+  password: 686c0bc3-25d2-4945-9793-d483779f6ebd
+  port: 10023
+  server: 125.229.191.103
+  type: ss
+  udp: true
+- auth: bc57732f-3679-4c6b-8d78-c9e8ee48376e
+  name: 🇯🇵 日本 25
+  password: bc57732f-3679-4c6b-8d78-c9e8ee48376e
+  port: 50000
+  ports: 50000-55000
+  server: 133.18.163.202
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 218
+  password: 140e4cb2-a874-414b-a58b-c0300720fa7d
+  port: 10149
+  server: 36.232.80.151
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 321
+  password: 8eb42a28-15df-4017-b510-1dd6a4aa61ec
+  port: 10072
+  server: 36.234.89.242
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 426
+  password: 376ef421-e991-4b07-b2e7-ee71c89053f8
+  port: 10072
+  server: 36.234.89.242
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 153
+  password: 99968610-9c75-422f-a2cc-baad29c8a015
+  port: 10019
+  server: 125.229.191.102
+  type: ss
+  udp: true
+- name: 🇺🇸 美国 177
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.62.62.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- auth: 62267cdf-31cf-44ca-b61b-b6667128839b
+  name: 🇺🇸 美国 084
+  password: 62267cdf-31cf-44ca-b61b-b6667128839b
   port: 37771
   server: dg1.xiaohuolongjc.top
   skip-cert-verify: true
@@ -5973,354 +6436,148 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 433
-  password: ed7b6c5e-4658-426e-9764-13226b4256d8
-  port: 10023
-  server: 125.229.191.103
+  name: 🇹🇼 台湾家宽 002
+  password: 328066bd-08c3-491c-a949-7ba9d5e05fa3
+  port: 10117
+  server: 1.170.17.67
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 524
-  password: d8083a21-892b-4355-be1c-a79c6aaf4957
-  port: 10068
-  server: 114.46.93.196
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳 印度 08
-  password: ed35711f-1135-4a7c-8eb0-6c75dde759f3
-  port: 34411
-  server: ldu.izenny.com
-  type: ss
-  udp: true
-- auth: e4ef780e-fe25-4b40-b899-eb0d79878be1
-  name: 🇯🇵 日本 30
-  password: e4ef780e-fe25-4b40-b899-eb0d79878be1
-  port: 50000
-  ports: 50000-55000
-  server: 133.18.163.202
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 045
-  password: 16a9e529-b9d5-4f78-84f5-a5eb7e68be61
-  port: 10128
-  server: 36.232.104.177
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 024
-  password: 686c0bc3-25d2-4945-9793-d483779f6ebd
-  port: 10139
-  server: 36.232.87.113
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 094
-  password: ea94f92f-e693-467d-ba3a-2279f2b7db8a
+  name: 🇹🇼 台湾家宽 194
+  password: d9c73bad-d344-43ef-9fb9-b91232d9e4a9
   port: 10048
   server: 114.46.80.189
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇸🇬 新加坡 02
-  port: 45054
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 71884d49-32ee-412a-9adb-96e2219fc54e
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 027
-  password: 06d4deb6-ed35-4549-bba7-29745b838262
-  port: 10139
-  server: 36.232.87.113
+  name: 🇹🇼 台湾家宽 575
+  password: 3076c795-ff4f-4eba-a7c0-345cca52305c
+  port: 10068
+  server: 114.46.93.196
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 71
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 11689
+  server: ss.038.node-for-bigairport.win
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 674
-  password: 9746d3ab-3c5a-4bcb-a41b-9163ed1af350
-  port: 10088
-  server: 1.170.34.91
+  name: 🇹🇼 台湾 104
+  password: 18db5347-e3b9-4ec0-ac36-dfc6ffdd2bc1
+  port: 10048
+  server: 114.46.80.189
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 630
-  password: b565382b-cef2-4f9a-8162-c1b723ef27d1
-  port: 10128
-  server: 36.232.104.177
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港 33
-  port: 45051
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 71884d49-32ee-412a-9adb-96e2219fc54e
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 317
-  password: d8083a21-892b-4355-be1c-a79c6aaf4957
+  name: 🇹🇼 台湾家宽 443
+  password: ce510ed8-72f8-4458-8f5a-90fa3f483ea4
   port: 10066
   server: 59.126.32.59
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 728
-  password: 99968610-9c75-422f-a2cc-baad29c8a015
-  port: 10023
-  server: 125.229.191.103
+  name: 🇹🇼 台湾家宽 736
+  password: 759a2ed7-7230-4585-9bee-c38715a7a8c0
+  port: 10139
+  server: 36.232.87.113
   type: ss
   udp: true
+- auth: 88d594e6-0689-4fb0-9d65-1f3a5df70b8e
+  name: 🇺🇸 美国 152
+  password: 88d594e6-0689-4fb0-9d65-1f3a5df70b8e
+  port: 37771
+  server: xjp1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: xjp1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 印度 06
+  port: 45073
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b4bf9f0-45b5-46a6-9de5-78538a51721c
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 544
-  password: f920dbdd-7ef9-4e3c-b9d8-68240e6e9a00
+  name: 🇹🇼 台湾家宽 415
+  password: ce510ed8-72f8-4458-8f5a-90fa3f483ea4
   port: 10065
   server: 125.231.72.120
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 241
-  password: 4e9d2e3e-ab5a-4890-b572-d1edc7cdd26f
-  port: 10018
-  server: 1.165.123.183
+  name: 🇹🇼 台湾家宽 026
+  password: 30a579e9-58c7-475c-8ad1-fe6029e34f4e
+  port: 10065
+  server: 125.231.72.120
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 646
-  password: 7adae194-e255-42b3-913d-016920743cd6
-  port: 10060
-  server: 125.231.66.145
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 049
-  password: d1d57e88-301b-4725-80c1-830ad22a3f1b
-  port: 10013
-  server: 118.170.204.122
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 322
-  password: 1ba90c9f-3202-4c0c-a4cf-ee577fc4e48b
-  port: 10064
-  server: 114.46.70.213
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 334
-  password: c2b3f115-70aa-4dde-bc23-e062153f4cc1
-  port: 10128
-  server: 36.232.104.177
-  type: ss
-  udp: true
-- auth: 13ee6524-1579-451b-bb6a-9b6d5d74ac6a
-  name: 🇺🇸 美国 004
-  password: 13ee6524-1579-451b-bb6a-9b6d5d74ac6a
+- auth: f7d248a3-6b12-4bf7-b0cd-802adbc002d9
+  name: 🇺🇸 美国 001
+  password: f7d248a3-6b12-4bf7-b0cd-802adbc002d9
   port: 37771
   server: rb1.xiaohuolongjc.top
   skip-cert-verify: true
   sni: rb1.xiaohuolongjc.top
   type: hysteria2
   udp: true
-- auth: 4d10ac6f-df9b-4433-ace0-8826e4e276c5
-  name: 🇯🇵 日本 32
-  password: 4d10ac6f-df9b-4433-ace0-8826e4e276c5
-  port: 50000
-  ports: 50000-55000
-  server: 45.11.1.62
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 108
+  password: 936b3245-e24b-43a1-9ac2-f5d5326908cf
+  port: 10088
+  server: 1.170.34.91
+  type: ss
+  udp: true
+- auth: 626873ff-9e0d-4b5f-9243-f66eec240926
+  name: 🇭🇰 香港 16
+  password: 626873ff-9e0d-4b5f-9243-f66eec240926
+  port: 37771
+  server: hg1.xiaohuolongjc.top
   skip-cert-verify: true
-  sni: www.microsoft.com
+  sni: hg1.xiaohuolongjc.top
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 087
-  password: 7862e42c-87ac-460f-b88b-fe17a2442b15
-  port: 10045
-  server: 125.231.67.133
+  name: 🇹🇼 台湾家宽 299
+  password: 674ee5a2-42e6-4c9f-ab6f-885f9c8e71c9
+  port: 10128
+  server: 36.232.104.177
   type: ss
   udp: true
-- auth: a0fb6563-bd17-43c3-8fd9-fd97e9e805aa
-  name: 🇺🇸 美国 182
-  password: a0fb6563-bd17-43c3-8fd9-fd97e9e805aa
-  port: 40001
-  server: xjp.dimoyun.top
-  skip-cert-verify: true
-  sni: xjp.dimoyun.top
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 408
-  password: b565382b-cef2-4f9a-8162-c1b723ef27d1
-  port: 10013
-  server: 118.170.204.122
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇺🇸 美国 191
+- name: 🇺🇸 美国 202
   network: ws
-  port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  servername: xmp.zmxquick.sbs
-  tls: true
-  type: vless
+  password: slch2024
+  port: 2096
+  server: 185.162.228.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
   udp: true
-  uuid: 01991996-ff71-b55e-4aad-efdfa9758012
   ws-opts:
     headers:
-      Host: xmp.zmxquick.sbs
-    path: /snippets?ip=proxyip:port(443)&nat64=6to4
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
 - cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国 092
-  password: fd25d2d6-cac8-49b8-bdd4-c836f2536e94
-  port: 12589
-  server: ldu.izenny.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 211
-  password: 140e4cb2-a874-414b-a58b-c0300720fa7d
+  name: 🇹🇼 台湾 125
+  password: 99968610-9c75-422f-a2cc-baad29c8a015
   port: 10047
   server: 114.33.53.80
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 381
-  password: 686c0bc3-25d2-4945-9793-d483779f6ebd
-  port: 10013
-  server: 118.170.204.122
-  type: ss
-  udp: true
-- auth: 6c92debe-b389-4117-870d-7a52c692b866
-  name: 🇭🇰 香港家宽 07
-  password: 6c92debe-b389-4117-870d-7a52c692b866
-  port: 37771
-  server: xg1.xiaohuolongjc.top
-  skip-cert-verify: true
-  sni: xg1.xiaohuolongjc.top
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 579
-  password: 674ee5a2-42e6-4c9f-ab6f-885f9c8e71c9
-  port: 10068
-  server: 114.46.93.196
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 686
-  password: 06d4deb6-ed35-4549-bba7-29745b838262
-  port: 10137
-  server: 125.228.162.163
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 369
-  password: c2b3f115-70aa-4dde-bc23-e062153f4cc1
-  port: 10018
-  server: 1.165.123.183
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 132
-  password: e39cba96-0a8c-46a5-abbd-0d1273bda2c7
-  port: 10137
-  server: 125.228.162.163
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 253
-  password: 759a2ed7-7230-4585-9bee-c38715a7a8c0
+  name: 🇹🇼 台湾家宽 733
+  password: 6b9e151f-10bb-4ef9-8607-fe3ad53f7dc1
   port: 10034
   server: 118.170.199.80
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 🇺🇸 美国 227
-  network: ws
-  port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  servername: www2.zmxquick.cloudns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01991996-ff71-5f81-4aad-efdf042e8f87
-  ws-opts:
-    headers:
-      Host: www2.zmxquick.cloudns.org
-    path: /snippets?ip=proxyip:port(443)&nat64=6to4
-- auth: L60nS04NhsoMpN2DDGbnMqLP8DY
-  name: 🇭🇰 香港 68
-  password: L60nS04NhsoMpN2DDGbnMqLP8DY
-  port: 11243
-  server: 47.76.83.25
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 063
-  password: b565382b-cef2-4f9a-8162-c1b723ef27d1
-  port: 10056
-  server: 125.231.66.193
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 023
-  password: 61b78487-1c7f-4aca-b1d7-b1a7583714f5
-  port: 10037
-  server: 114.33.53.213
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国 141
-  network: ws
-  port: 22106
-  server: 45.144.174.211
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5104a960-2c84-4eaa-b17d-32c55ca272e4
-  ws-opts:
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 404
-  password: 936b3245-e24b-43a1-9ac2-f5d5326908cf
-  port: 10018
-  server: 1.165.123.183
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇰🇷 韩国 10
-  password: ed35711f-1135-4a7c-8eb0-6c75dde759f3
-  port: 41431
-  server: ldu.izenny.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 469
-  password: 61b78487-1c7f-4aca-b1d7-b1a7583714f5
-  port: 10062
-  server: 114.46.98.152
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 488
-  password: 759a2ed7-7230-4585-9bee-c38715a7a8c0
-  port: 10064
-  server: 114.46.70.213
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾 002
-  port: 45077
+  name: 🇮🇳 印度 05
+  port: 45073
   server: xdd.dashuai.cyou
   tls: false
   type: vmess
@@ -6328,302 +6585,1413 @@ proxies:
   uuid: 3d96c02f-679c-4948-ae2a-a4dcf278e396
 - alpn:
   - h3
-  disable-sni: false
-  name: 🇨🇦 加拿大 10
-  password: 871f77eb-3bf6-4faa-ad2b-79e0b9f1a284
-  port: 16897
-  reduce-rtt: false
-  request-timeout: 0
-  server: 40.233.77.57
+  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  name: 🇨🇦 加拿大 09
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 54530
+  server: 40.233.67.146
   skip-cert-verify: true
   sni: www.bing.com
-  type: tuic
-  uuid: 871f77eb-3bf6-4faa-ad2b-79e0b9f1a284
-  version: 5
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 734
+  password: 77023a39-564b-4ed7-8a4a-3aa9a3dcd0ff
+  port: 10025
+  server: 118.170.241.115
+  type: ss
+  udp: true
+- auth: 0fa27b66-c29d-4628-b5b6-ab70f24451c9
+  name: 🇭🇰 香港 24
+  password: 0fa27b66-c29d-4628-b5b6-ab70f24451c9
+  port: 37771
+  server: hg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: hg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 357
+  password: 7adae194-e255-42b3-913d-016920743cd6
+  port: 10141
+  server: 36.232.123.188
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 006
+  password: 70d18b04-51e1-4c63-8dfd-c0e1028c8f92
+  port: 10037
+  server: 114.33.53.213
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 019
+  password: 3076c795-ff4f-4eba-a7c0-345cca52305c
+  port: 10066
+  server: 59.126.32.59
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 122
+  password: d9c73bad-d344-43ef-9fb9-b91232d9e4a9
+  port: 10006
+  server: 118.170.219.120
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 美国 029
+  name: 🇺🇸 美国 032
   network: ws
   port: 25150
   server: 45.144.174.211
   tls: false
   type: vmess
   udp: true
-  uuid: 33d0a099-3eb5-455e-891b-290589c1a764
+  uuid: e54230ef-8551-4400-a21c-421265a99686
   ws-opts:
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 672
+  password: c35f8bc0-7cac-4718-a668-1877954fdda9
+  port: 10013
+  server: 118.170.204.122
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 073
+  password: b565382b-cef2-4f9a-8162-c1b723ef27d1
+  port: 10062
+  server: 114.46.98.152
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 238
+  password: 7adae194-e255-42b3-913d-016920743cd6
+  port: 10065
+  server: 125.231.72.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 449
+  password: 8665ab20-e997-4839-b691-e0ccdc8715ab
+  port: 10072
+  server: 36.234.89.242
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾 010
+  password: e690cd6f-6c50-42e2-8b51-570e95a9be19
+  port: 10139
+  server: 36.232.87.113
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇼 台湾家宽 495
+  password: 30a579e9-58c7-475c-8ad1-fe6029e34f4e
+  port: 10064
+  server: 114.46.70.213
+  type: ss
+  udp: true
 - alterId: 0
-  cipher: auto
-  name: 🇨🇦 加拿大 02
-  port: 45065
-  server: xdd.dashuai.cyou
+  cipher: none
+  client-fingerprint: ''
+  name: 🇦🇺 _IN_印度->_AU_澳大利亚-116
+  port: 443
+  server: 103.57.249.204
   tls: false
   type: vmess
+  uuid: f13143a7-542d-49ec-9428-098142b6977c
+- alpn:
+  - h3
+  auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  name: 🇨🇦 加拿大 09-98
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 54530
+  server: 40.233.67.146
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
   udp: true
-  uuid: 71884d49-32ee-412a-9adb-96e2219fc54e
+- mport: 35000-36000
+  name: 🇨🇳 Tai Wan 1-123
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 83.147.15.91
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- mport: 35000-36000
+  name: 🇨🇳 Tai Wan 2-124
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 166.0.198.178
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- mport: 35000-36000
+  name: 🇨🇳 Tai Wan 3-125
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 82.152.91.239
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 319
+  name: 🇨🇳 台湾 007-45
+  password: 64cbe6f2-e70f-42b7-9951-1d222e807d42
+  port: 33922
+  server: 120.233.44.207
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾 010-110
+  password: e690cd6f-6c50-42e2-8b51-570e95a9be19
+  port: 10139
+  server: 36.232.87.113
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾 013-47
   password: 7862e42c-87ac-460f-b88b-fe17a2442b15
+  port: 10080
+  server: 114.46.119.144
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾 043-55
+  password: 4e9d2e3e-ab5a-4890-b572-d1edc7cdd26f
+  port: 10080
+  server: 114.46.119.144
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾 089-67
+  password: 3353aa71-2cc8-421e-9c4a-ce6f4c053772
+  port: 10048
+  server: 114.46.80.189
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾 092-58
+  password: f09db49c-7a78-46e7-a994-efe676fb7f63
+  port: 10088
+  server: 1.170.34.91
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾 104-83
+  password: 18db5347-e3b9-4ec0-ac36-dfc6ffdd2bc1
+  port: 10048
+  server: 114.46.80.189
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾 108-91
+  password: 936b3245-e24b-43a1-9ac2-f5d5326908cf
+  port: 10088
+  server: 1.170.34.91
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾 117-21
+  password: 18db5347-e3b9-4ec0-ac36-dfc6ffdd2bc1
+  port: 10006
+  server: 118.170.219.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾 122-104
+  password: d9c73bad-d344-43ef-9fb9-b91232d9e4a9
+  port: 10006
+  server: 118.170.219.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾 125-95
+  password: 99968610-9c75-422f-a2cc-baad29c8a015
+  port: 10047
+  server: 114.33.53.80
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 001-46
+  password: 7862e42c-87ac-460f-b88b-fe17a2442b15
+  port: 10013
+  server: 118.170.204.122
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 002-79
+  password: 328066bd-08c3-491c-a949-7ba9d5e05fa3
+  port: 10117
+  server: 1.170.17.67
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 006-102
+  password: 70d18b04-51e1-4c63-8dfd-c0e1028c8f92
+  port: 10037
+  server: 114.33.53.213
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 019-103
+  password: 3076c795-ff4f-4eba-a7c0-345cca52305c
+  port: 10066
+  server: 59.126.32.59
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 024-15
+  password: 936b3245-e24b-43a1-9ac2-f5d5326908cf
+  port: 10056
+  server: 125.231.66.193
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 026-89
+  password: 30a579e9-58c7-475c-8ad1-fe6029e34f4e
+  port: 10065
+  server: 125.231.72.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 028-70
+  password: 99968610-9c75-422f-a2cc-baad29c8a015
+  port: 10064
+  server: 114.46.70.213
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 041-34
+  password: 936b3245-e24b-43a1-9ac2-f5d5326908cf
+  port: 10064
+  server: 114.46.70.213
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 048-44
+  password: d1d57e88-301b-4725-80c1-830ad22a3f1b
+  port: 10068
+  server: 114.46.93.196
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 051-60
+  password: 3076c795-ff4f-4eba-a7c0-345cca52305c
+  port: 10048
+  server: 114.46.80.189
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 067-25
+  password: 61b78487-1c7f-4aca-b1d7-b1a7583714f5
+  port: 10056
+  server: 125.231.66.193
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 073-107
+  password: b565382b-cef2-4f9a-8162-c1b723ef27d1
+  port: 10062
+  server: 114.46.98.152
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 077-37
+  password: e39cba96-0a8c-46a5-abbd-0d1273bda2c7
+  port: 10064
+  server: 114.46.70.213
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 081-14
+  password: c35f8bc0-7cac-4718-a668-1877954fdda9
+  port: 10062
+  server: 114.46.98.152
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 096-56
+  password: 8eb42a28-15df-4017-b510-1dd6a4aa61ec
+  port: 10045
+  server: 125.231.67.133
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 107-66
+  password: 70d18b04-51e1-4c63-8dfd-c0e1028c8f92
+  port: 10117
+  server: 1.170.17.67
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 113-64
+  password: 3353aa71-2cc8-421e-9c4a-ce6f4c053772
+  port: 10149
+  server: 36.232.80.151
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 131-43
+  password: 70d18b04-51e1-4c63-8dfd-c0e1028c8f92
   port: 10137
   server: 125.228.162.163
   type: ss
   udp: true
-- auth: 7620d37d-8633-49e9-be68-4a87812d18e8
-  name: 🇺🇸 美国 070
-  password: 7620d37d-8633-49e9-be68-4a87812d18e8
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 153-76
+  password: 99968610-9c75-422f-a2cc-baad29c8a015
+  port: 10019
+  server: 125.229.191.102
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 160-33
+  password: 01ca8349-7759-44b5-bc4a-c3a7e6b228a9
+  port: 10072
+  server: 36.234.89.242
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 165-22
+  password: 01ca8349-7759-44b5-bc4a-c3a7e6b228a9
+  port: 10045
+  server: 125.231.67.133
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 171-12
+  password: 70d18b04-51e1-4c63-8dfd-c0e1028c8f92
+  port: 10062
+  server: 114.46.98.152
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 173-30
+  password: 140e4cb2-a874-414b-a58b-c0300720fa7d
+  port: 10060
+  server: 125.231.66.145
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 184-65
+  password: 18db5347-e3b9-4ec0-ac36-dfc6ffdd2bc1
+  port: 10116
+  server: 1.170.46.7
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 194-80
+  password: d9c73bad-d344-43ef-9fb9-b91232d9e4a9
+  port: 10048
+  server: 114.46.80.189
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 207-50
+  password: ce510ed8-72f8-4458-8f5a-90fa3f483ea4
+  port: 10056
+  server: 125.231.66.193
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 210-35
+  password: ed7b6c5e-4658-426e-9764-13226b4256d8
+  port: 10037
+  server: 114.33.53.213
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 218-73
+  password: 140e4cb2-a874-414b-a58b-c0300720fa7d
+  port: 10149
+  server: 36.232.80.151
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 222-54
+  password: d9c73bad-d344-43ef-9fb9-b91232d9e4a9
+  port: 10149
+  server: 36.232.80.151
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 238-108
+  password: 7adae194-e255-42b3-913d-016920743cd6
+  port: 10065
+  server: 125.231.72.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 299-93
+  password: 674ee5a2-42e6-4c9f-ab6f-885f9c8e71c9
+  port: 10128
+  server: 36.232.104.177
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 309-23
+  password: 70d18b04-51e1-4c63-8dfd-c0e1028c8f92
+  port: 10013
+  server: 118.170.204.122
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 315-42
+  password: 9746d3ab-3c5a-4bcb-a41b-9163ed1af350
+  port: 10065
+  server: 125.231.72.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 321-74
+  password: 8eb42a28-15df-4017-b510-1dd6a4aa61ec
+  port: 10072
+  server: 36.234.89.242
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 357-101
+  password: 7adae194-e255-42b3-913d-016920743cd6
+  port: 10141
+  server: 36.232.123.188
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 358-59
+  password: 759a2ed7-7230-4585-9bee-c38715a7a8c0
+  port: 10128
+  server: 36.232.104.177
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 390-52
+  password: f09db49c-7a78-46e7-a994-efe676fb7f63
+  port: 10062
+  server: 114.46.98.152
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 406-51
+  password: 3353aa71-2cc8-421e-9c4a-ce6f4c053772
+  port: 10139
+  server: 36.232.87.113
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 415-88
+  password: ce510ed8-72f8-4458-8f5a-90fa3f483ea4
+  port: 10065
+  server: 125.231.72.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 426-75
+  password: 376ef421-e991-4b07-b2e7-ee71c89053f8
+  port: 10072
+  server: 36.234.89.242
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 438-28
+  password: 7adae194-e255-42b3-913d-016920743cd6
+  port: 10139
+  server: 36.232.87.113
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 443-84
+  password: ce510ed8-72f8-4458-8f5a-90fa3f483ea4
+  port: 10066
+  server: 59.126.32.59
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 449-109
+  password: 8665ab20-e997-4839-b691-e0ccdc8715ab
+  port: 10072
+  server: 36.234.89.242
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 460-16
+  password: 7adae194-e255-42b3-913d-016920743cd6
+  port: 10025
+  server: 118.170.241.115
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 495-111
+  password: 30a579e9-58c7-475c-8ad1-fe6029e34f4e
+  port: 10064
+  server: 114.46.70.213
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 503-26
+  password: 759a2ed7-7230-4585-9bee-c38715a7a8c0
+  port: 10060
+  server: 125.231.66.145
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 533-20
+  password: 376ef421-e991-4b07-b2e7-ee71c89053f8
+  port: 10065
+  server: 125.231.72.120
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 541-49
+  password: d8083a21-892b-4355-be1c-a79c6aaf4957
+  port: 10056
+  server: 125.231.66.193
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 563-71
+  password: 686c0bc3-25d2-4945-9793-d483779f6ebd
+  port: 10023
+  server: 125.229.191.103
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 575-81
+  password: 3076c795-ff4f-4eba-a7c0-345cca52305c
+  port: 10068
+  server: 114.46.93.196
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 644-41
+  password: f350e14c-5443-4bd2-873b-ee33e88f71a9
+  port: 10034
+  server: 118.170.199.80
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 660-53
+  password: 77023a39-564b-4ed7-8a4a-3aa9a3dcd0ff
+  port: 10023
+  server: 125.229.191.103
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 664-29
+  password: 8eb42a28-15df-4017-b510-1dd6a4aa61ec
+  port: 10139
+  server: 36.232.87.113
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 672-106
+  password: c35f8bc0-7cac-4718-a668-1877954fdda9
+  port: 10013
+  server: 118.170.204.122
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 695-40
+  password: 3353aa71-2cc8-421e-9c4a-ce6f4c053772
+  port: 10088
+  server: 1.170.34.91
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 720-63
+  password: d1d57e88-301b-4725-80c1-830ad22a3f1b
+  port: 10088
+  server: 1.170.34.91
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 733-96
+  password: 6b9e151f-10bb-4ef9-8607-fe3ad53f7dc1
+  port: 10034
+  server: 118.170.199.80
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 734-99
+  password: 77023a39-564b-4ed7-8a4a-3aa9a3dcd0ff
+  port: 10025
+  server: 118.170.241.115
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 台湾家宽 736-85
+  password: 759a2ed7-7230-4585-9bee-c38715a7a8c0
+  port: 10139
+  server: 36.232.87.113
+  type: ss
+  udp: true
+- mport: 35000-36000
+  name: 🇩🇪 Germany 1-135
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 156.226.174.47
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- mport: 35000-36000
+  name: 🇩🇪 Germany 2-136
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 156.226.175.115
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- mport: 35000-36000
+  name: 🇩🇪 Germany 3-137
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 156.226.174.227
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇩🇪 _DE_德国-115
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.184.60
+  type: ss
+- name: 🇩🇰 _DK_丹麦->_US_美国-112
+  network: ws
+  password: 56c852c2-9517-4c13-ae18-bf0bee41706a
+  port: 8443
+  server: fastcup.net
+  sni: cdn-node-oss-99.paofu.de
+  type: trojan
+  ws-opts:
+    headers:
+      Host: cdn-node-oss-99.paofu.de
+    path: /profile/telegram@ssrsub
+- alterId: 0
+  cipher: auto
+  client-fingerprint: ''
+  name: 🇪🇸 _ES_西班牙-117
+  port: 443
+  server: 188.208.141.177
+  tls: false
+  type: vmess
+  uuid: 0970834f-5b4d-44da-d890-19dcb2a72d4c
+- alterId: 0
+  cipher: auto
+  client-fingerprint: ''
+  name: 🇪🇸 _US_美国->_ES_西班牙-119
+  port: 443
+  server: 38.54.59.237
+  tls: false
+  type: vmess
+  uuid: 5ac807d5-42c9-4b97-9567-478e61dab696
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧 United Kingdom 1-132
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Dk_qwQ16MvWJWdv1Dzz3Hq9kkLVPdWk0_94KWzavbmE
+    short-id: bac3efd5
+  server: uk11001.gagagaga.top
+  servername: www.tvb.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+- mport: 35000-36000
+  name: 🇬🇧 United Kingdom 2-133
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: uk22002.gagagaga.top
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- mport: 35000-36000
+  name: 🇬🇧 United Kingdom 3-134
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: uk33003.gagagaga.top
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: ''
+  name: 🇬🇧 _GB_英国-114
+  port: 443
+  server: 89.31.120.192
+  tls: false
+  type: vmess
+  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇭🇰 Hong Kong -3X-145
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 0HXS30jGgmJUyXr0yS5InnOLkA0O63BvuObYP3zyhRU
+    short-id: c55bdd3d
+  server: 103.115.64.132
+  servername: www.tvb.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+- mport: 35000-36000
+  name: 🇭🇰 Hong Kong 1-120
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 191.101.132.133
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- name: 🇭🇰 Hong Kong 2-121
+  obfs: salamander
+  obfs-password: MDI0MDRhNWMyNjk1NDlhNw==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 443
+  server: 156.224.77.19
+  skip-cert-verify: true
+  sni: www.apple.com
+  type: hysteria2
+  udp: true
+- mport: 35000-36000
+  name: 🇭🇰 Hong Kong 3-122
+  obfs: salamander
+  obfs-password: YTYxNWQ5YmZlODgyODNlMg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 154.83.85.182
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  name: 🇭🇰 Hong Kong-中转-147
+  network: ws
+  port: 443
+  server: 172.67.73.28
+  servername: hkxg.gagagaga.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  ws-opts:
+    headers:
+      Host: hkxg.gagagaga.top
+    path: /test
+- cipher: aes-256-gcm
+  name: 🇭🇰 JA-HK-9950X-7
+  password: McRu2JvKif
+  port: 38001
+  server: jphj-hk-500m-100g.ifuck.gay
+  type: ss
+- auth: 04a24f06-17fa-464b-a799-90600783499f
+  name: 🇭🇰 香港 12-57
+  password: 04a24f06-17fa-464b-a799-90600783499f
+  port: 37771
+  server: hg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: hg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- auth: 626873ff-9e0d-4b5f-9243-f66eec240926
+  name: 🇭🇰 香港 16-92
+  password: 626873ff-9e0d-4b5f-9243-f66eec240926
+  port: 37771
+  server: hg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: hg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- auth: 0fa27b66-c29d-4628-b5b6-ab70f24451c9
+  name: 🇭🇰 香港 24-100
+  password: 0fa27b66-c29d-4628-b5b6-ab70f24451c9
+  port: 37771
+  server: hg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: hg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇭🇰 香港 71-82
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 11689
+  server: ss.038.node-for-bigairport.win
+  type: ss
+  udp: true
+- auth: 626873ff-9e0d-4b5f-9243-f66eec240926
+  name: 🇭🇰 香港家宽 01-48
+  password: 626873ff-9e0d-4b5f-9243-f66eec240926
+  port: 37771
+  server: xg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: xg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- auth: 915cd180-0ef8-4e85-afa5-2701284d7a8c
+  name: 🇭🇰 香港家宽 02-24
+  password: 915cd180-0ef8-4e85-afa5-2701284d7a8c
+  port: 37771
+  server: xg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: xg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- auth: f7d248a3-6b12-4bf7-b0cd-802adbc002d9
+  name: 🇭🇰 香港家宽 21-31
+  password: f7d248a3-6b12-4bf7-b0cd-802adbc002d9
+  port: 37771
+  server: xg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: xg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 印度 05-97
+  port: 45073
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3d96c02f-679c-4948-ae2a-a4dcf278e396
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 印度 06-87
+  port: 45073
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4b4bf9f0-45b5-46a6-9de5-78538a51721c
+- mport: 35000-36000
+  name: 🇯🇵 Japan 1-126
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 156.246.92.246
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- mport: 35000-36000
+  name: 🇯🇵 Japan 2-127
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 156.246.95.102
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- mport: 35000-36000
+  name: 🇯🇵 Japan 3-128
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 156.246.88.40
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 Japan-IIJ-3X-144
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: rfxbry6okLCM4i9DPIAPwr4vBqH94_D5i7TUONGiN2M
+    short-id: ebbe5ebf
+  server: 158.51.110.80
+  servername: www.tvb.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+- mport: 35000-36000
+  name: 🇯🇵 Japan-IIJ1-3X-138
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 156.231.112.237
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- auth: 0f9dcd5a-86c4-4fd7-a32f-a750c9d7af35
+  name: 🇯🇵 日本 16-36
+  password: 0f9dcd5a-86c4-4fd7-a32f-a750c9d7af35
+  port: 50000
+  ports: 50000-55000
+  server: 133.18.163.202
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- auth: bc57732f-3679-4c6b-8d78-c9e8ee48376e
+  name: 🇯🇵 日本 25-72
+  password: bc57732f-3679-4c6b-8d78-c9e8ee48376e
+  port: 50000
+  ports: 50000-55000
+  server: 133.18.163.202
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- auth: 4d10ac6f-df9b-4433-ace0-8826e4e276c5
+  name: 🇯🇵 日本 26-62
+  password: 4d10ac6f-df9b-4433-ace0-8826e4e276c5
+  port: 50000
+  ports: 50000-55000
+  server: 133.18.163.202
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇲🇩 _MD_摩尔多瓦-118
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 91.132.94.200
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇲🇩 摩尔多瓦 01-68
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+  udp: true
+- auth: Yet-Another-Public-Config-1
+  name: 🇳🇱 荷兰 02-39
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 36300
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: true
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇵🇱 _PL_波兰-113
+  port: 43953
+  server: myfreecloud.ru
+  tls: false
+  type: vmess
+  uuid: 712c13ab-550a-4812-8d3b-7eb11ac7eeaf
+- name: 🇸🇬 SG-01-231-3
+  password: 5h0hcc7wc8
+  port: 43597
+  server: 142.91.102.176
+  skip-cert-verify: true
+  sni: cn.bing.com
+  tfo: false
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇸🇬 Singapore-142
+  network: tcp
+  port: 30328
+  reality-opts:
+    public-key: sobCxpDnTvjPyP4psWwi_lkSUCdCLPcuIB-MJPhxllk
+    short-id: 46bb0ee0
+  server: 140.245.54.52
+  servername: www.tvb.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+- mport: 35000-36000
+  name: 🇺🇸 United States 1-129
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 156.229.160.242
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- mport: 35000-36000
+  name: 🇺🇸 United States 2-130
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 156.229.161.111
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- mport: 35000-36000
+  name: 🇺🇸 United States 3-131
+  obfs: salamander
+  obfs-password: YzBmODI5NGMyNWVhM2NiYg==
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 38.165.2.191
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- mport: 35000-36000
+  name: 🇺🇸 United States-1-139
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 23.94.61.176
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 United States-143
+  network: tcp
+  port: 33895
+  reality-opts:
+    public-key: g680RtPpXISeJvWsd25tIahBQZqBBJkGFMrSCSnyGRE
+    short-id: 023ec718
+  server: 167.234.223.12
+  servername: www.tvb.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+- mport: 35000-36000
+  name: 🇺🇸 United States-2-140
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 77.93.157.14
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- mport: 35000-36000
+  name: 🇺🇸 United States-3-141
+  password: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  port: 35000
+  ports: 35000-36000
+  server: 23.94.57.102
+  skip-cert-verify: true
+  sni: www.apple.com
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  name: 🇺🇸 United States-中转-146
+  network: ws
+  port: 443
+  server: 172.64.229.185
+  servername: usmg.gagagaga.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 745c1c24-11f2-4eef-866b-1aa5235f5ef7
+  ws-opts:
+    headers:
+      Host: usmg.gagagaga.top
+    path: /test
+- auth: f7d248a3-6b12-4bf7-b0cd-802adbc002d9
+  name: 🇺🇸 美国 001-90
+  password: f7d248a3-6b12-4bf7-b0cd-802adbc002d9
+  port: 37771
+  server: rb1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: rb1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 032-105
+  network: ws
+  port: 25150
+  server: 45.144.174.211
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e54230ef-8551-4400-a21c-421265a99686
+  ws-opts:
+    path: /
+- auth: e33b95f1-4363-40d4-afdd-1ce468882df4
+  name: 🇺🇸 美国 041-13
+  password: e33b95f1-4363-40d4-afdd-1ce468882df4
+  port: 37771
+  server: mg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: mg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- auth: 04a24f06-17fa-464b-a799-90600783499f
+  name: 🇺🇸 美国 049-61
+  password: 04a24f06-17fa-464b-a799-90600783499f
+  port: 37771
+  server: mg1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: mg1.xiaohuolongjc.top
+  type: hysteria2
+  udp: true
+- auth: 62267cdf-31cf-44ca-b61b-b6667128839b
+  name: 🇺🇸 美国 084-78
+  password: 62267cdf-31cf-44ca-b61b-b6667128839b
   port: 37771
   server: dg1.xiaohuolongjc.top
   skip-cert-verify: true
   sni: dg1.xiaohuolongjc.top
   type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇦🇪 阿联酋 02
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 151.242.251.153
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 023
-  password: d1d57e88-301b-4725-80c1-830ad22a3f1b
-  port: 10141
-  server: 36.232.123.188
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵 日本 44
-  password: ed35711f-1135-4a7c-8eb0-6c75dde759f3
-  port: 10589
-  server: ldu.izenny.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 330
-  password: 99968610-9c75-422f-a2cc-baad29c8a015
-  port: 10139
-  server: 36.232.87.113
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 639
-  password: e39cba96-0a8c-46a5-abbd-0d1273bda2c7
-  port: 10060
-  server: 125.231.66.145
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 627
-  password: 674ee5a2-42e6-4c9f-ab6f-885f9c8e71c9
-  port: 10060
-  server: 125.231.66.145
-  type: ss
-  udp: true
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 100
-  name: 🇺🇸 美国 031
-  port: 15823
-  protocol: udp
-  server: 208.87.243.187
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 100
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 431
-  password: 8eb42a28-15df-4017-b510-1dd6a4aa61ec
-  port: 10065
-  server: 125.231.72.120
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 335
-  password: 99968610-9c75-422f-a2cc-baad29c8a015
-  port: 10116
-  server: 1.170.46.7
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦 加拿大 04
-  port: 45065
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4b4bf9f0-45b5-46a6-9de5-78538a51721c
-- name: 🇺🇸 美国 099
+- name: 🇺🇸 美国 146-18
   network: ws
   password: slch2024
   port: 2096
-  server: 185.7.240.195
-  skip-cert-verify: false
+  server: 192.65.217.195
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 116
-  password: d8083a21-892b-4355-be1c-a79c6aaf4957
-  port: 10116
-  server: 1.170.46.7
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 075
-  password: 61b78487-1c7f-4aca-b1d7-b1a7583714f5
-  port: 10065
-  server: 125.231.72.120
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 739
-  password: 8665ab20-e997-4839-b691-e0ccdc8715ab
-  port: 10139
-  server: 36.232.87.113
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 480
-  password: 77023a39-564b-4ed7-8a4a-3aa9a3dcd0ff
-  port: 10056
-  server: 125.231.66.193
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 389
-  password: b565382b-cef2-4f9a-8162-c1b723ef27d1
-  port: 10060
-  server: 125.231.66.145
-  type: ss
-  udp: true
-- name: 🇺🇸 美国 100
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 195.26.229.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 362
-  password: ce510ed8-72f8-4458-8f5a-90fa3f483ea4
-  port: 10128
-  server: 36.232.104.177
-  type: ss
-  udp: true
-- auth: 9d0a4aa2-aa99-417f-8151-d3e6928b0ecf
-  name: 🇭🇰 香港 39
-  password: 9d0a4aa2-aa99-417f-8151-d3e6928b0ecf
-  port: 37013
-  server: tw.foldjc.top
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- auth: 88d594e6-0689-4fb0-9d65-1f3a5df70b8e
+  name: 🇺🇸 美国 152-86
+  password: 88d594e6-0689-4fb0-9d65-1f3a5df70b8e
+  port: 37771
+  server: xjp1.xiaohuolongjc.top
   skip-cert-verify: true
-  sni: tw.foldjc.top
+  sni: xjp1.xiaohuolongjc.top
   type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 417
-  password: 328066bd-08c3-491c-a949-7ba9d5e05fa3
-  port: 10065
-  server: 125.231.72.120
-  type: ss
+- auth: 5acaa712-e40b-4e92-9ae4-a5c9790217fb
+  name: 🇺🇸 美国 158-38
+  password: 5acaa712-e40b-4e92-9ae4-a5c9790217fb
+  port: 37771
+  server: xjp1.xiaohuolongjc.top
+  skip-cert-verify: true
+  sni: xjp1.xiaohuolongjc.top
+  type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 681
-  password: b565382b-cef2-4f9a-8162-c1b723ef27d1
-  port: 10064
-  server: 114.46.70.213
-  type: ss
+- name: 🇺🇸 美国 177-77
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.62.62.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 534
-  password: f920dbdd-7ef9-4e3c-b9d8-68240e6e9a00
-  port: 10034
-  server: 118.170.199.80
-  type: ss
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- auth: 456cbeda-b6e4-4e83-b61c-62c0d3722fcb
+  name: 🇺🇸 美国 180-32
+  password: 456cbeda-b6e4-4e83-b61c-62c0d3722fcb
+  port: 8443
+  server: h23.cpddx.club
+  skip-cert-verify: false
+  sni: h23.cpddx.club
+  type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 074
-  password: f09db49c-7a78-46e7-a994-efe676fb7f63
-  port: 10064
-  server: 114.46.70.213
-  type: ss
+- name: 🇺🇸 美国 189-19
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.181.197.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 657
-  password: 30a579e9-58c7-475c-8ad1-fe6029e34f4e
-  port: 10034
-  server: 118.170.199.80
-  type: ss
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- name: 🇺🇸 美国 196-69
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.162.229.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 252
-  password: b565382b-cef2-4f9a-8162-c1b723ef27d1
-  port: 10019
-  server: 125.229.191.102
-  type: ss
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- name: 🇺🇸 美国 202-94
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.162.228.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 724
-  password: 30a579e9-58c7-475c-8ad1-fe6029e34f4e
-  port: 10025
-  server: 118.170.241.115
-  type: ss
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- name: 🇺🇸 美国 206-27
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.193.29.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 179
-  password: f09db49c-7a78-46e7-a994-efe676fb7f63
-  port: 10128
-  server: 36.232.104.177
-  type: ss
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- name: 🇺🇸 美国 216-17
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.193.30.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾 053
-  password: 759a2ed7-7230-4585-9bee-c38715a7a8c0
-  port: 10045
-  server: 125.231.67.133
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
+- cipher: aes-256-gcm
+  name: '🏴‍☠️ Channel: https://t.me/txwl666-2'
+  password: txwl666
+  port: 80
+  server: qq.com
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 337
-  password: 8665ab20-e997-4839-b691-e0ccdc8715ab
-  port: 10056
-  server: 125.231.66.193
+- cipher: aes-256-gcm
+  name: '🏴‍☠️ Group: https://t.me/txwl233-1'
+  password: txwl666
+  port: 88
+  server: www.360.com
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 447
-  password: 759a2ed7-7230-4585-9bee-c38715a7a8c0
-  port: 10066
-  server: 59.126.32.59
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 738
-  password: c35f8bc0-7cac-4718-a668-1877954fdda9
-  port: 10088
-  server: 1.170.34.91
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾家宽 058
-  password: e39cba96-0a8c-46a5-abbd-0d1273bda2c7
-  port: 10128
-  server: 36.232.104.177
-  type: ss
-  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏴‍☠️ VLESS-REALITY-10
+  network: tcp
+  port: 25801
+  reality-opts:
+    public-key: e_0-YiLfvXmz21NqB6wTKmLoFe8CXntJC4E3r-Uey2I
+  server: 142.91.105.52
+  servername: updates.cdn-apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6248a1fa-b90b-4daa-bdb9-e709bc6e8bdc
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏴‍☠️ VLESS-REALITY-11
+  network: tcp
+  port: 29090
+  reality-opts:
+    public-key: cBrf4kTogp3DtMVYS0co5kxvP1IcmcDAAOBP_c_nyCk
+  server: 64.81.30.8
+  servername: updates.cdn-apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 1a753432-2403-4934-849d-96bbc5ab21b2
+- name: 🏴‍☠️ hysteria2-jp-5
+  password: 4ce1005b-aa80-4dcc-842b-17c713ef4ce1
+  port: 18888
+  server: 178.94.142.163
+  skip-cert-verify: true
+  tfo: false
+  type: hysteria2
+- name: 🏴‍☠️ hysteria2-msk-4
+  password: ee4a8f20-5467-4f12-bd87-ff21b7ba817c
+  port: 16187
+  server: 95.181.212.141
+  skip-cert-verify: true
+  tfo: false
+  type: hysteria2
+- name: 🏴‍☠️ hysteria2-us-6
+  password: ed206fcd-c81f-4983-a6bf-bbfcc71a2664
+  port: 16688
+  server: 199.245.100.27
+  skip-cert-verify: true
+  tfo: false
+  type: hysteria2
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: random
+  name: 🏴‍☠️ uk 1 vless xhttp tls cdn-9
+  network: xhttp
+  port: 443
+  server: linux.do
+  servername: uk-1.caughtwind.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 1a18d083-aadd-4f51-b058-723fd0e471c2
+  xhttp-opts:
+    path: /vless_xhttp_tls
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🏴‍☠️ vless-zoro-8
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 0n_NS2q2bvgpgQt0-gNmGNXTH-B0aqaJdE1A40sjsyE
+  server: 64.81.117.172
+  servername: ts2.tc.mm.bing.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 0cd07402-0edb-4890-808d-cd6f0e2625ee
 
 # https://mihomo.party/docs/guide/override/yaml
 
