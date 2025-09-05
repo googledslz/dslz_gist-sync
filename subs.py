@@ -4,9 +4,9 @@ import yaml
 import re
 import asyncio
 import time
+import subprocess
 from pathlib import Path
 from urllib.parse import unquote, parse_qs
-import subprocess
 from tqdm import tqdm
 
 # ================= 配置 =================
@@ -16,6 +16,7 @@ OUTPUT_FILE = "clash.yaml"
 FIX_SCRIPT = "fix_clash.py"
 
 # ================= 工具函数 =================
+
 def read_url_list() -> list:
     for p in INPUT_CANDIDATES:
         fp = Path(p)
@@ -46,6 +47,7 @@ def maybe_b64_decode(text: str) -> str:
     return text
 
 # ================= 协议解析 =================
+
 def parse_hysteria2(link: str) -> dict | None:
     try:
         raw = link[len("hysteria2://") :]
@@ -68,13 +70,13 @@ def parse_hysteria2(link: str) -> dict | None:
             "type": "hysteria2",
             "server": host,
             "port": int(port),
-            "password": password,
             **({"sni": q["sni"][0]} if "sni" in q else {}),
             **({"alpn": q["alpn"][0].split(",")} if "alpn" in q else {}),
             **({"skip-cert-verify": True} if (
                 ("insecure" in q and q["insecure"][0] in ("1", "true", "True")) or
                 ("skip-cert-verify" in q and q["skip-cert-verify"][0] in ("1", "true", "True"))
             ) else {}),
+            "password": password,
         }
     except Exception:
         return None
@@ -146,6 +148,7 @@ def parse_uri_line(line: str) -> dict | None:
     return None
 
 # ================= 合并逻辑 =================
+
 def parse_subscription_text(text: str) -> list[dict]:
     text = maybe_b64_decode(text).strip()
     proxies: list[dict] = []
@@ -165,15 +168,18 @@ def parse_subscription_text(text: str) -> list[dict]:
 
 def unique_name(existing: set, name: str) -> str:
     if name not in existing:
-        existing.add(name); return name
+        existing.add(name)
+        return name
     i = 2
     while True:
         cand = f"{name} ({i})"
         if cand not in existing:
-            existing.add(cand); return cand
+            existing.add(cand)
+            return cand
         i += 1
 
-# ================= 并发连通性测试 =================
+# ================= 并发连通性 =================
+
 async def test_one(server: str, port: int, timeout: int = 3) -> float | None:
     start = time.perf_counter()
     try:
@@ -187,11 +193,18 @@ async def test_one(server: str, port: int, timeout: int = 3) -> float | None:
 async def filter_alive_async(proxies: list[dict], concurrency: int = 50) -> list[dict]:
     sem = asyncio.Semaphore(concurrency)
     alive = []
+    seen_server_port = set()
 
     async def check(p):
-        key = (p.get("server"), p.get("port"))
+        server, port = p.get("server"), p.get("port")
+        if not server or not port:
+            return
+        key = (server, port)
+        if key in seen_server_port:
+            return
+        seen_server_port.add(key)
         async with sem:
-            latency = await test_one(*key)
+            latency = await test_one(server, int(port))
             if latency is not None:
                 p["latency_ms"] = latency
                 alive.append(p)
@@ -205,7 +218,6 @@ def build_final_config(all_proxies: list[dict]) -> dict:
     normalized = []
     for p in all_proxies:
         if "name" not in p: continue
-        p = dict(p)
         p["name"] = unique_name(seen_names, str(p["name"]))
         normalized.append(p)
     return {"proxies": normalized}
@@ -214,62 +226,75 @@ def save_yaml(data: dict, path: str):
     with open(path, "w", encoding="utf-8") as f:
         yaml.dump(data, f, allow_unicode=True, sort_keys=False)
 
-def read_existing_yaml(path: str) -> list[dict]:
-    fp = Path(path)
-    if not fp.exists():
-        return []
-    try:
-        data = yaml.safe_load(fp.read_text(encoding="utf-8"))
-        if isinstance(data, dict) and "proxies" in data:
-            return data["proxies"]
-    except Exception as e:
-        print(f"[!] 读取已有 YAML 失败: {path} -> {e}")
-    return []
+def read_existing_yaml(paths: list[str]) -> list[dict]:
+    proxies = []
+    for path in paths:
+        fp = Path(path)
+        if fp.exists():
+            try:
+                data = yaml.safe_load(fp.read_text(encoding="utf-8"))
+                if isinstance(data, dict) and "proxies" in data:
+                    proxies.extend([p for p in data["proxies"] if isinstance(p, dict)])
+            except Exception as e:
+                print(f"[!] 读取已有 YAML 失败: {path} -> {e}")
+    return proxies
+
+def print_latency_table(proxies: list[dict]):
+    if not proxies: return
+    print("\n┌" + "─"*72 + "┐")
+    print(f"│ {'节点名称':<20} │ {'服务器':<20} │ {'端口':<6} │ {'延迟(ms)':<8} │")
+    print("├" + "─"*72 + "┤")
+    for p in proxies:
+        print(f"│ {p['name']:<20} │ {p['server']:<20} │ {p['port']:<6} │ {p.get('latency_ms', '-'):<8} │")
+    print("└" + "─"*72 + "┘\n")
 
 # ================= 主流程 =================
+
 def main():
     urls = read_url_list()
     merged = []
 
-    # 拉取订阅节点
-    for url in tqdm(urls, desc="[+] 拉取订阅"):
+    print(f"[+] 开始拉取订阅节点 ({len(urls)} 个链接)")
+    for url in tqdm(urls):
         try:
-            raw = http_get(url)
-            proxies = parse_subscription_text(raw)
-            merged.extend(proxies)
+            text = http_get(url)
+            nodes = parse_subscription_text(text)
+            merged.extend(nodes)
         except Exception as e:
             print(f"[!] 拉取失败: {url} -> {e}")
 
-    print(f"[=] 原始节点数量: {len(merged)}")
+    # 合并已有 YAML
+    merged.extend(read_existing_yaml(EXISTING_YAML))
+    print(f"[+] 合并节点总数: {len(merged)}")
 
-    # 先去重 server+port
-    unique_sp = {}
+    # 去重 server+port
+    seen_sp = set()
+    deduped = []
     for p in merged:
-        key = (p.get("server"), p.get("port"))
-        if key not in unique_sp:
-            unique_sp[key] = p
-    merged = list(unique_sp.values())
-    print(f"[=] 去重后节点数量: {len(merged)}")
+        sp = (p.get("server"), p.get("port"))
+        if sp not in seen_sp:
+            deduped.append(p)
+            seen_sp.add(sp)
+    print(f"[+] 去重 server+port 后节点总数: {len(deduped)}")
 
-    # 并发连通性测试
-    print("[=] 开始并发测试节点连通性...")
-    alive = asyncio.run(filter_alive_async(merged))
-    print(f"[=] 连通节点数量: {len(alive)}")
+    # 连通性检测
+    print(f"[+] 开始并发测试节点连通性...")
+    alive = asyncio.run(filter_alive_async(deduped))
+    print(f"[+] 连通节点总数: {len(alive)}")
+    print_latency_table(alive)
 
-    # 读取已有仓库 dslz.yaml
-    existing_proxies = []
-    for path in EXISTING_YAML:
-        existing_proxies.extend(read_existing_yaml(path))
-    print(f"[+] 已读取仓库 tmp/dslz.yaml 节点: {len(existing_proxies)}")
+    # 写 clash.yaml
+    final_config = build_final_config(alive)
+    save_yaml(final_config, OUTPUT_FILE)
+    print(f"[+] 已生成 {OUTPUT_FILE}")
 
-    all_proxies = alive + existing_proxies
-    cfg = build_final_config(all_proxies)
-
-    save_yaml(cfg, OUTPUT_FILE)
-    print(f"[√] 已生成 {OUTPUT_FILE}")
-
-    # 调用 fix_clash.py
-    print("[+] 调用 fix_clash.py 修复端口并剔除错误节点...")
+    # 调用 fix_clash.py 并捕获异常
+    print(f"[+] 调用 {FIX_SCRIPT} 修复端口并剔除错误节点...")
     try:
         subprocess.run(["python3", FIX_SCRIPT], check=True)
-    except subprocess
+        print(f"[+] {FIX_SCRIPT} 执行完成")
+    except subprocess.CalledProcessError as e:
+        print(f"[!] {FIX_SCRIPT} 执行失败: {e}")
+
+if __name__ == "__main__":
+    main()
