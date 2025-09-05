@@ -175,7 +175,7 @@ def unique_name(existing: set, name: str) -> str:
             existing.add(cand); return cand
         i += 1
 
-# ================= 并发连通性 + 延迟 + server/port 去重 =================
+# ================= 并发连通性 + 延迟 =================
 
 async def test_one(server: str, port: int, timeout: int = 3) -> float | None:
     start = time.perf_counter()
@@ -240,8 +240,6 @@ def read_existing_yaml(paths: list[str]) -> list[dict]:
             print(f"[!] 读取已有 YAML 失败: {p} -> {e}")
     return []
 
-# ================= 打印延迟表格 =================
-
 def print_latency_table(proxies: list[dict]):
     if not proxies:
         return
@@ -257,4 +255,35 @@ def print_latency_table(proxies: list[dict]):
 def main():
     urls = read_url_list()
     merged = []
-    for url in
+
+    for url in urls:
+        try:
+            print(f"[+] 拉取: {url}")
+            raw = http_get(url)
+            proxies = parse_subscription_text(raw)
+            merged.extend(proxies)
+        except Exception as e:
+            print(f"[!] 拉取失败: {url} -> {e}")
+
+    print(f"[=] 开始并发测试节点连通性，总计 {len(merged)} 个")
+    alive = asyncio.run(filter_alive_async(merged))
+
+    # 读取已有仓库 tmp/dslz.yaml
+    existing_proxies = read_existing_yaml(EXISTING_YAML)
+    print(f"[+] 已读取仓库 tmp/dslz.yaml 节点 {len(existing_proxies)} 个")
+
+    # 合并节点
+    all_proxies = alive + existing_proxies
+
+    # 构建最终配置
+    cfg = build_final_config(all_proxies)
+
+    # 打印表格
+    print_latency_table(cfg["proxies"])
+
+    # 写入 clash.yaml
+    save_yaml(cfg, OUTPUT_FILE)
+    print(f"[√] 已生成 {OUTPUT_FILE}：有效节点 {len(cfg['proxies'])} 个（按延迟排序）")
+
+if __name__ == "__main__":
+    main()
