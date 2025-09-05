@@ -3,3 +3,5 @@ PyYAML
 requests
 pyyaml
 aiohttp
+requests
+pyyaml
