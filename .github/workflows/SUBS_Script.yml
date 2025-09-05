@@ -1,16 +1,11 @@
 name: 读取 Clash Config
 
-
-
 on:
   schedule:
-    # 每天北京时间早上 8 点执行 (UTC 0 点)
+    # 每天北京时间早上 6 点和 18 点执行 (UTC 22:00 / 10:00)
     - cron: "22 22 * * *"  # UTC 22:00 = 北京时间 6:00
     - cron: "0 10 * * *"   # UTC 10:00 = 北京时间 18:00
-    
   workflow_dispatch:   # 手动触发
-
-
 
 jobs:
   build:
@@ -40,6 +35,7 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
+          git pull origin main --rebase || true
           git add clash.yaml
           git commit -m "update clash config" || echo "No changes to commit"
-          git push
+          git push origin main
