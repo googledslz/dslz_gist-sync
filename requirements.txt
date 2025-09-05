@@ -5,3 +5,6 @@ pyyaml
 aiohttp
 requests
 pyyaml
+tqdm
+
+
