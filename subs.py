@@ -11,6 +11,7 @@ from urllib.parse import unquote, parse_qs
 INPUT_CANDIDATES = ["tmp/1.TXT", "/tmp/1.TXT"]
 EXISTING_YAML = ["tmp/dslz.yaml", "/tmp/dslz.yaml"]
 OUTPUT_FILE = "clash.yaml"
+FIXED_OUTPUT_FILE = "clash_fixed.yaml"
 
 # ================= 工具函数 =================
 
@@ -93,7 +94,7 @@ def parse_trojan(link: str) -> dict | None:
             "name": name,
             "type": "trojan",
             "server": host,
-            "port": port,  # 注意这里暂时保留字符串，后面解析
+            "port": port,
             "password": pwd,
         }
         sni = q.get("sni") or q.get("peer")
@@ -131,7 +132,7 @@ def parse_ss(link: str) -> dict | None:
             "name": name,
             "type": "ss",
             "server": host,
-            "port": port,  # 保留字符串，后面解析
+            "port": port,
             "cipher": method,
             "password": password,
         }
@@ -197,13 +198,12 @@ async def filter_alive_async(proxies: list[dict], concurrency: int = 50) -> list
         server, port = p.get("server"), p.get("port")
         if not server or not port:
             return
-        # 提取端口中的纯数字部分
         if isinstance(port, str):
             m = re.match(r"(\d+)", port)
             if m:
                 port = int(m.group(1))
             else:
-                return  # 不能解析的端口，跳过
+                return
         key = (server, port)
         if key in seen_server_port:
             return
@@ -212,6 +212,7 @@ async def filter_alive_async(proxies: list[dict], concurrency: int = 50) -> list
             latency = await test_one(server, port)
             if latency is not None:
                 p["latency_ms"] = latency
+                p["port"] = port  # 确保端口是整数
                 alive.append(p)
 
     await asyncio.gather(*(check(p) for p in proxies))
@@ -258,6 +259,38 @@ def save_final_yaml(alive_proxies: list[dict], existing_yaml_paths: list[str], o
             except Exception as e:
                 print(f"[!] 读取已有 YAML 失败: {p} -> {e}")
     save_yaml(final_data, output_file)
+    print(f"[√] 已生成 {output_file}")
+
+# ================= 端口清理 =================
+
+def fix_ports(input_file: str, output_file: str):
+    fp = Path(input_file)
+    if not fp.exists():
+        print(f"[!] 文件不存在: {input_file}")
+        return
+    data = yaml.safe_load(fp.read_text(encoding="utf-8"))
+    fixed_count = 0
+    if "proxies" in data and isinstance(data["proxies"], list):
+        new_proxies = []
+        for p in data["proxies"]:
+            if "port" in p:
+                port_value = p["port"]
+                if isinstance(port_value, int):
+                    new_proxies.append(p)
+                    continue
+                if isinstance(port_value, str):
+                    m = re.match(r"(\d+)", port_value)
+                    if m:
+                        p["port"] = int(m.group(1))
+                        fixed_count += 1
+                        new_proxies.append(p)
+                    else:
+                        print(f"[!] 节点 {p.get('name')} port 无法解析，跳过")
+            else:
+                new_proxies.append(p)
+        data["proxies"] = new_proxies
+    save_yaml(data, output_file)
+    print(f"[√] 端口修正完成，处理 {fixed_count} 个端口，输出 {output_file}")
 
 # ================= 主流程 =================
 
@@ -277,15 +310,13 @@ def main():
     print(f"[=] 开始并发测试节点连通性，总计 {len(merged)} 个")
     alive = asyncio.run(filter_alive_async(merged))
 
-    # 构建最终配置（按延迟排序 + 唯一名称）
     cfg = build_final_config(alive)
-
-    # 打印延迟表格
     print_latency_table(cfg["proxies"])
 
-    # 写入最终 clash.yaml（包含 tmp/dslz.yaml 内容）
     save_final_yaml(cfg["proxies"], EXISTING_YAML, OUTPUT_FILE)
-    print(f"[√] 已生成 {OUTPUT_FILE}：有效节点 {len(cfg['proxies'])} 个（按延迟排序 + 合并 dslz.yaml）")
+
+    # 自动调用端口修复，生成最终 clash_fixed.yaml
+    fix_ports(OUTPUT_FILE, FIXED_OUTPUT_FILE)
 
 if __name__ == "__main__":
     main()
