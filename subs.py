@@ -7,7 +7,9 @@ import time
 from pathlib import Path
 from urllib.parse import unquote, parse_qs
 
+# ================= 配置 =================
 INPUT_CANDIDATES = ["tmp/1.TXT", "/tmp/1.TXT"]
+EXISTING_YAML = "tmp/dslz.yaml"
 OUTPUT_FILE = "clash.yaml"
 
 # ================= 工具函数 =================
@@ -49,8 +51,7 @@ def parse_hysteria2(link: str) -> dict | None:
         creds, rest = raw.split("@", 1)
         password = creds
         hp_match = re.match(r"([^:/?#]+):(\d+)(.*)", rest)
-        if not hp_match:
-            return None
+        if not hp_match: return None
         host, port, tail = hp_match.groups()
         q, name = {}, "HY2"
         if "?" in tail:
@@ -96,8 +97,7 @@ def parse_trojan(link: str) -> dict | None:
             "password": pwd,
         }
         sni = q.get("sni") or q.get("peer")
-        if sni:
-            node["sni"] = sni[0]
+        if sni: node["sni"] = sni[0]
         if q.get("allowInsecure", ["0"])[0] in ("1","true","True"):
             node["skip-cert-verify"] = True
         return node
@@ -175,7 +175,7 @@ def unique_name(existing: set, name: str) -> str:
             existing.add(cand); return cand
         i += 1
 
-# ================= 并发连通性 + 延迟 =================
+# ================= 并发连通性 + 延迟 + server/port 去重 =================
 
 async def test_one(server: str, port: int, timeout: int = 3) -> float | None:
     start = time.perf_counter()
@@ -184,23 +184,28 @@ async def test_one(server: str, port: int, timeout: int = 3) -> float | None:
         writer.close()
         await writer.wait_closed()
         end = time.perf_counter()
-        return int((end - start) * 1000)  # ms
+        return int((end - start) * 1000)
     except Exception:
         return None
 
 async def filter_alive_async(proxies: list[dict], concurrency: int = 50) -> list[dict]:
     sem = asyncio.Semaphore(concurrency)
     alive = []
+    seen_server_port = set()
 
     async def check(p):
         server, port = p.get("server"), p.get("port")
-        if not server or not port: return
+        if not server or not port:
+            return
+        key = (server, port)
+        if key in seen_server_port:
+            return
+        seen_server_port.add(key)
         async with sem:
             latency = await test_one(server, int(port))
             if latency is not None:
                 p["latency_ms"] = latency
                 alive.append(p)
-            # 不打印单条信息，统一用表格输出
 
     await asyncio.gather(*(check(p) for p in proxies))
     return alive
@@ -208,17 +213,31 @@ async def filter_alive_async(proxies: list[dict], concurrency: int = 50) -> list
 def build_final_config(all_proxies: list[dict]) -> dict:
     # 按延迟排序
     all_proxies.sort(key=lambda x: x.get("latency_ms", 9999))
-    seen = set(); normalized = []
+    seen_names = set()
+    normalized = []
     for p in all_proxies:
         if "name" not in p: continue
         p = dict(p)
-        p["name"] = unique_name(seen, str(p["name"]))
+        p["name"] = unique_name(seen_names, str(p["name"]))
         normalized.append(p)
     return {"proxies": normalized}
 
 def save_yaml(data: dict, path: str):
     with open(path, "w", encoding="utf-8") as f:
         yaml.dump(data, f, allow_unicode=True, sort_keys=False)
+
+def read_existing_yaml(path: str) -> list[dict]:
+    """读取已有 YAML 文件 proxies 节点"""
+    fp = Path(path)
+    if not fp.exists():
+        return []
+    try:
+        data = yaml.safe_load(fp.read_text(encoding="utf-8"))
+        if isinstance(data, dict) and "proxies" in data and isinstance(data["proxies"], list):
+            return data["proxies"]
+    except Exception as e:
+        print(f"[!] 读取已有 YAML 失败: {path} -> {e}")
+    return []
 
 def print_latency_table(proxies: list[dict]):
     if not proxies: return
@@ -246,15 +265,23 @@ def main():
     print(f"[=] 开始并发测试节点连通性，总计 {len(merged)} 个")
     alive = asyncio.run(filter_alive_async(merged))
 
-    # 按延迟排序
-    alive.sort(key=lambda x: x.get("latency_ms", 9999))
+    # 读取已有仓库 tmp/dslz.yaml
+    existing_proxies = read_existing_yaml(EXISTING_YAML)
+    print(f"[+] 已读取仓库 tmp/dslz.yaml 节点 {len(existing_proxies)} 个")
+
+    # 合并节点
+    all_proxies = alive + existing_proxies
+
+    # 按延迟排序、去重 server+port、唯一名称
+    all_proxies.sort(key=lambda x: x.get("latency_ms", 9999))
+    cfg = build_final_config(all_proxies)
 
     # 打印表格
-    print_latency_table(alive)
+    print_latency_table(cfg["proxies"])
 
-    cfg = build_final_config(alive)
+    # 写入 clash.yaml
     save_yaml(cfg, OUTPUT_FILE)
-    print(f"[√] 已生成 {OUTPUT_FILE}：有效节点 {len(alive)} 个（按延迟排序）")
+    print(f"[√] 已生成 {OUTPUT_FILE}：有效节点 {len(cfg['proxies'])} 个（按延迟排序）")
 
 if __name__ == "__main__":
     main()
