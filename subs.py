@@ -25,7 +25,7 @@ def read_url_list() -> list:
             if urls:
                 print(f"[+] 读取订阅列表: {fp} ({len(urls)} 条)")
                 return urls
-    raise FileNotFoundError("未找到订阅列表文件")
+    raise FileNotFoundError("未找到 tmp/1.TXT 或 /tmp/1.TXT")
 
 def http_get(url: str) -> str:
     r = requests.get(url, timeout=45)
@@ -173,7 +173,7 @@ def unique_name(existing: set, name: str) -> str:
             existing.add(cand); return cand
         i += 1
 
-# ================= 并发连通性 + 去重 =================
+# ================= 并发连通性 + 延迟 + server/port 去重 =================
 async def test_one(server: str, port: int, timeout: int = 3) -> float | None:
     start = time.perf_counter()
     try:
@@ -206,72 +206,71 @@ async def filter_alive_async(proxies: list[dict], concurrency: int = 50) -> list
 
     for p in tqdm(proxies, desc="[>] 测试节点连通性"):
         await check(p)
+
     return alive
 
 def build_final_config(all_proxies: list[dict]) -> dict:
+    # 按延迟排序
     all_proxies.sort(key=lambda x: x.get("latency_ms", 9999))
     seen_names = set()
     normalized = []
     for p in all_proxies:
-        p["name"] = unique_name(seen_names, p.get("name","node"))
+        if "name" not in p: continue
+        p = dict(p)
+        p["name"] = unique_name(seen_names, str(p["name"]))
         normalized.append(p)
     return {"proxies": normalized}
 
-# ================= 主流程 =================
+def save_yaml(data: dict, path: str):
+    with open(path, "w", encoding="utf-8") as f:
+        yaml.safe_dump(data, f, allow_unicode=True, sort_keys=False)
+
+def read_existing_yaml(path_list: list) -> list[dict]:
+    merged = []
+    for path in path_list:
+        fp = Path(path)
+        if fp.exists():
+            with open(fp, "r", encoding="utf-8") as f:
+                try:
+                    data = yaml.safe_load(f)
+                    if isinstance(data, dict) and "proxies" in data:
+                        merged.extend(data["proxies"])
+                        print(f"[+] 已读取仓库 {fp} ({len(data['proxies'])} 条节点)")
+                except Exception:
+                    continue
+    return merged
+
+# ================= MAIN =================
 def main():
     urls = read_url_list()
-    all_proxies: list[dict] = []
+    all_proxies = []
 
-    for url in urls:
+    # 拉取订阅并解析
+    for url in tqdm(urls, desc="[>] 拉取订阅"):
         try:
-            content = http_get(url)
-            proxies = parse_subscription_text(content)
+            text = http_get(url)
+            proxies = parse_subscription_text(text)
             all_proxies.extend(proxies)
         except Exception as e:
             print(f"[!] 拉取失败: {url} -> {e}")
 
-    # 合并本地 yaml
-    for f in EXISTING_YAML:
-        fp = Path(f)
-        if fp.exists():
-            with open(fp, "r", encoding="utf-8") as fin:
-                try:
-                    data = yaml.safe_load(fin)
-                    if isinstance(data, dict) and "proxies" in data:
-                        all_proxies.extend([p for p in data["proxies"] if isinstance(p, dict)])
-                    print(f"[+] 已读取仓库 {fp}")
-                except Exception:
-                    continue
+    # 合并仓库节点
+    existing_nodes = read_existing_yaml(EXISTING_YAML)
+    all_proxies.extend(existing_nodes)
+    print(f"[+] 当前节点总数: {len(all_proxies)}")
 
-    print(f"[+] 节点总数 (去重前): {len(all_proxies)}")
+    # 异步连通性测试 + 去重 server+port
+    alive_nodes = asyncio.run(filter_alive_async(all_proxies))
+    print(f"[+] 可用节点总数: {len(alive_nodes)}")
 
-    # 去重同 server+port
-    seen_server_port = set()
-    unique_proxies = []
-    for p in all_proxies:
-        key = (p.get("server"), p.get("port"))
-        if key not in seen_server_port:
-            seen_server_port.add(key)
-            unique_proxies.append(p)
-    print(f"[+] 节点总数 (去重后): {len(unique_proxies)}")
-
-    # 并发测试连通性
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    alive_proxies = loop.run_until_complete(filter_alive_async(unique_proxies))
-    print(f"[+] 节点总数 (存活): {len(alive_proxies)}")
-
-    # 写 clash.yaml
-    cfg = build_final_config(alive_proxies)
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as fout:
-        yaml.safe_dump(cfg, fout, allow_unicode=True)
+    final_config = build_final_config(alive_nodes)
+    save_yaml(final_config, OUTPUT_FILE)
     print(f"[+] 已生成 {OUTPUT_FILE}")
 
-    # 调用 fix_clash.py
+    # 调用 fix_clash.py 并等待完成
     print(f"[+] 调用 {FIX_SCRIPT} 修复端口并剔除错误节点...")
     try:
         subprocess.run(["python3", FIX_SCRIPT], check=True)
-        print(f"[+] fix_clash.py 执行完成")
     except subprocess.CalledProcessError as e:
         print(f"[!] fix_clash.py 执行失败: {e}")
 
