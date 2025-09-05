@@ -184,6 +184,7 @@ def unique_name(existing: set, name: str) -> str:
 
 async def test_one(server: str, port: int, timeout: int = TIMEOUT) -> int | None:
     try:
+        start = time.perf_counter()
         reader, writer = await asyncio.wait_for(asyncio.open_connection(server, port), timeout)
         writer.close()
         await writer.wait_closed()
@@ -261,9 +262,27 @@ def main():
         except Exception as e:
             print(f"[!] 拉取失败: {url} -> {e}")
 
-    print(f"[=] 开始并发测试节点连通性，总计 {len(merged)} 个")
-    alive = asyncio.run(filter_alive_async(merged))
-
     # 读取已有 YAML
     existing_proxies = read_existing_yaml(EXISTING_YAML)
-    print(f"[+] 已读取仓库 tmp
+    if existing_proxies:
+        print(f"[+] 已读取仓库 tmp/dslz.yaml, {len(existing_proxies)} 个节点")
+        merged.extend(existing_proxies)
+
+    print(f"[=] 开始并发测试节点连通性，总计 {len(merged)} 个")
+    alive = asyncio.run(filter_alive_async(merged))
+    print(f"[+] 测试完成，可用节点 {len(alive)} 个")
+
+    final_config = build_final_config(alive)
+    save_yaml(final_config, OUTPUT_FILE)
+    print(f"[+] 已生成 {OUTPUT_FILE}")
+
+    # 调用 fix_clash.py
+    print(f"[+] 调用 {FIX_SCRIPT} 修复端口并剔除错误节点...")
+    try:
+        subprocess.run(["python3", FIX_SCRIPT], check=True)
+        print(f"[+] {FIX_SCRIPT} 执行完成")
+    except subprocess.CalledProcessError as e:
+        print(f"[!] {FIX_SCRIPT} 执行失败: {e}")
+
+if __name__ == "__main__":
+    main()
