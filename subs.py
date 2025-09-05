@@ -9,7 +9,7 @@ from urllib.parse import unquote, parse_qs
 
 # ================= 配置 =================
 INPUT_CANDIDATES = ["tmp/1.TXT", "/tmp/1.TXT"]
-EXISTING_YAML = "tmp/dslz.yaml"
+EXISTING_YAML = ["tmp/dslz.yaml", "/tmp/dslz.yaml"]
 OUTPUT_FILE = "clash.yaml"
 
 # ================= 工具函数 =================
