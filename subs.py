@@ -271,4 +271,17 @@ def main():
     print(f"[√] 已生成 {OUTPUT_FILE}")
 
     # 调用 fix_clash.py
-    print("[+] 调用 fix_clash.py 修复端口
+    print("[+] 调用 fix_clash.py 修复端口并剔除错误节点...")
+    try:
+        result = subprocess.run(["python3", FIX_SCRIPT], capture_output=True, text=True)
+        print(result.stdout)
+        if result.returncode != 0:
+            print(f"[!] fix_clash.py 返回非零退出码 {result.returncode}")
+            print(result.stderr)
+        else:
+            print("[+] fix_clash.py 执行完成")
+    except Exception as e:
+        print(f"[!] 调用 fix_clash.py 失败: {e}")
+
+if __name__ == "__main__":
+    main()
