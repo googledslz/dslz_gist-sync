@@ -1,49 +1,46 @@
 import yaml
-import ipaddress
 import requests
 from tqdm import tqdm
 from pathlib import Path
 
 INPUT_FILE = "clash.yaml"
+OUTPUT_FILE = "clash.yaml"
 
-# 国家名映射（可扩展）
-COUNTRY_EMOJI_MAP = {
-    "CN": "🇨🇳CN", "US": "🇺🇸US", "JP": "🇯🇵JP", "KR": "🇰🇷KR", "SG": "🇸🇬SG",
-    "DE": "🇩🇪DE", "FR": "🇫🇷FR", "GB": "🇬🇧GB", "RU": "🇷🇺RU", "IN": "🇮🇳IN"
-}
+# ================= 国家查询 =================
+COUNTRY_CACHE = {}
 
-def get_country_code(ip: str) -> str:
+def get_country_flag(ip: str) -> str:
+    if ip in COUNTRY_CACHE: return COUNTRY_CACHE[ip]
     try:
-        r = requests.get(f"https://ipapi.co/{ip}/country/", timeout=5)
-        if r.status_code == 200:
-            return COUNTRY_EMOJI_MAP.get(r.text.strip(), r.text.strip())
+        r = requests.get(f"https://ipinfo.io/{ip}/json", timeout=5)
+        r.raise_for_status()
+        data = r.json()
+        country = data.get("country", "")
+        flag = country_to_emoji(country)
+        COUNTRY_CACHE[ip] = flag
+        return flag
     except Exception:
-        pass
-    return "🌐"
+        return ""
+    
+def country_to_emoji(code: str) -> str:
+    mapping = {
+        "CN":"🇨🇳CN", "US":"🇺🇸US", "JP":"🇯🇵JP", "KR":"🇰🇷KR",
+        "SG":"🇸🇬SG", "HK":"🇭🇰HK", "TW":"🇹🇼TW"
+    }
+    return mapping.get(code.upper(), code)
 
-def fix_node(p: dict) -> dict | None:
-    # 端口必须是整数
-    try:
-        port = int(p.get("port"))
-        if not (0 < port < 65536):
-            return None
-        p["port"] = port
-    except Exception:
+# ================= 修复 =================
+
+def fix_node(node: dict) -> dict | None:
+    # 检查 server port
+    server = node.get("server")
+    port = node.get("port")
+    if not server or not isinstance(port,int):
         return None
-
-    # 字段合法性检查
-    if "type" not in p or "server" not in p or "name" not in p:
-        return None
-
-    # IP 国家前缀
-    try:
-        ipaddress.ip_address(p["server"])
-        country = get_country_code(p["server"])
-        p["name"] = f"{country} {p['name']}"
-    except Exception:
-        p["name"] = f"🌐 {p['name']}"
-
-    return p
+    # 国家标识
+    flag = get_country_flag(server)
+    node["name"] = f"{flag} {node['name']}" if flag else node["name"]
+    return node
 
 def main():
     fp = Path(INPUT_FILE)
@@ -51,24 +48,18 @@ def main():
         print(f"[!] 文件不存在: {INPUT_FILE}")
         return
 
-    data = yaml.safe_load(fp.read_text(encoding="utf-8"))
-    if not isinstance(data, dict) or "proxies" not in data:
-        print("[!] YAML 格式错误")
-        return
-
-    proxies = data["proxies"]
-    fixed = []
-
-    for p in tqdm(proxies, desc="修复节点"):
-        node = fix_node(p)
-        if node:
-            fixed.append(node)
-
-    print(f"[+] 原节点数量: {len(proxies)}, 修复后节点数量: {len(fixed)}")
-
-    data["proxies"] = fixed
-    fp.write_text(yaml.dump(data, allow_unicode=True, sort_keys=False), encoding="utf-8")
-    print("[√] 已覆盖原 clash.yaml")
+    try:
+        data = yaml.safe_load(fp.read_text(encoding="utf-8"))
+        proxies = data.get("proxies", [])
+        fixed = []
+        for p in tqdm(proxies, desc="修复节点"):
+            node = fix_node(p)
+            if node: fixed.append(node)
+        data["proxies"] = fixed
+        fp.write_text(yaml.dump(data, allow_unicode=True, sort_keys=False), encoding="utf-8")
+        print(f"[+] 修复完成, 有效节点 {len(fixed)}/{len(proxies)}")
+    except Exception as e:
+        print(f"[!] 修复失败: {e}")
 
 if __name__ == "__main__":
     main()
