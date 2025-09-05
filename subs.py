@@ -124,6 +124,17 @@ def read_existing_yaml(path_list: list[str]) -> list[dict]:
                 print(f"[!] 读取已有 YAML 失败: {p} -> {e}")
     return []
 
+def read_raw_yaml(path_list: list[str]) -> str:
+    """读取 tmp/dslz.yaml 原始内容，直接追加"""
+    for p in path_list:
+        fp = Path(p)
+        if fp.exists():
+            try:
+                return fp.read_text(encoding="utf-8")
+            except Exception as e:
+                print(f"[!] 读取文件失败: {p} -> {e}")
+    return ""
+
 # ================= 并发连通性 =================
 
 async def test_one(server: str, port: int, timeout: int = 3) -> int | None:
@@ -214,13 +225,21 @@ def main():
     alive = asyncio.run(filter_alive_async(merged))
 
     # 3. 合并节点（保留唯一 server+port，节点名称改名）
-    existing_proxies = read_existing_yaml(EXISTING_YAML)
+    existing_proxies = read_existing_yaml([])
     all_proxies = alive + existing_proxies
     cfg = build_final_config(all_proxies)
 
     # 4. 写入 clash.yaml
     save_yaml(cfg, OUTPUT_FILE)
     print(f"[+] clash.yaml 已生成，节点总数: {len(cfg['proxies'])}")
+
+    # 4b. 追加 tmp/dslz.yaml 原始内容
+    raw_yaml = read_raw_yaml(EXISTING_YAML)
+    if raw_yaml:
+        with open(OUTPUT_FILE, "a", encoding="utf-8") as f:
+            f.write("\n# ===== tmp/dslz.yaml 原始内容 =====\n")
+            f.write(raw_yaml)
+        print(f"[+] 已追加 tmp/dslz.yaml 原始内容到 clash.yaml")
 
     # 5. 调用 fix_clash.py 修复端口
     try:
