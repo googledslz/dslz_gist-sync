@@ -101,8 +101,11 @@ def main():
     links = [line.strip() for line in decoded.splitlines() if line.strip()]
     clash_config = convert_to_clash(links)
     save_yaml(clash_config, OUTPUT_FILE)
-    git_commit_push(OUTPUT_FILE)
-    print(f"[+] 已生成并推送 {OUTPUT_FILE}")
+    print(f"[+] 已生成 {OUTPUT_FILE}")
+    # git_commit_push(OUTPUT_FILE)
+    # print(f"[+] 已生成并推送 {OUTPUT_FILE}")
+    
+    
 
 if __name__ == "__main__":
     main()
