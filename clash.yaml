@@ -3,7 +3,7 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 proxies:
-- name: 剩余流量：152.33 GB
+- name: 剩余流量：152.32 GB
   type: hysteria
   server: yg.foldjc.top
   port: 37011
@@ -95,7 +95,7 @@ proxy-groups:
 - name: AUTO
   type: select
   proxies:
-  - 剩余流量：152.33 GB
+  - 剩余流量：152.32 GB
   - 距离下次重置剩余：25 天
   - 套餐到期：2025-09-25
   - 英国
