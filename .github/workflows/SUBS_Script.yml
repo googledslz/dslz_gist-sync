@@ -10,41 +10,36 @@ on:
     
   workflow_dispatch:   # 手动触发
 
-permissions:
-  contents: write   # 🔑 关键：允许推送代码
+
 
 jobs:
-  update-subs:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Install dependencies
-        run: |
-          pip install requests pyyaml
+        run: pip install requests pyyaml aiohttp
 
-      - name: Show subscription links
-        run: |
-          echo "=== tmp/1.TXT 内容如下 ==="
-          cat tmp/1.TXT || echo "⚠️ tmp/1.TXT 文件不存在"
+      - name: Print subscription list
+        run: cat tmp/1.TXT
 
       - name: Run subs.py
-        run: |
-          python subs.py
+        run: python subs.py
 
-      - name: Commit and push changes
+      - name: Commit clash.yaml
         run: |
-          git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           git add clash.yaml
           git commit -m "update clash config" || echo "No changes to commit"
           git push
