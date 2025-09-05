@@ -1,0 +1,110 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+proxies:
+- name: 剩余流量：152.33 GB
+  type: hysteria
+  server: yg.foldjc.top
+  port: 37011
+  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  tls: true
+  alpn: []
+  sni: yg.foldjc.top
+- name: 距离下次重置剩余：25 天
+  type: hysteria
+  server: yg.foldjc.top
+  port: 37011
+  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  tls: true
+  alpn: []
+  sni: yg.foldjc.top
+- name: 套餐到期：2025-09-25
+  type: hysteria
+  server: yg.foldjc.top
+  port: 37011
+  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  tls: true
+  alpn: []
+  sni: yg.foldjc.top
+- name: 英国
+  type: hysteria
+  server: yg.foldjc.top
+  port: 37011
+  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  tls: true
+  alpn: []
+  sni: yg.foldjc.top
+- name: 新加坡
+  type: hysteria
+  server: xjp.foldjc.top
+  port: 37012
+  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  tls: true
+  alpn: []
+  sni: xjp.foldjc.top
+- name: 台湾
+  type: hysteria
+  server: tw.foldjc.top
+  port: 37013
+  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  tls: true
+  alpn: []
+  sni: tw.foldjc.top
+- name: 印度
+  type: hysteria
+  server: yd.foldjc.top
+  port: 37014
+  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  tls: true
+  alpn: []
+  sni: yd.foldjc.top
+- name: 香港
+  type: hysteria
+  server: xg.foldjc.top
+  port: 37015
+  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  tls: true
+  alpn: []
+  sni: xg.foldjc.top
+- name: 美国
+  type: hysteria
+  server: mg.foldjc.top
+  port: 37016
+  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  tls: true
+  alpn: []
+  sni: mg.foldjc.top
+- name: 德国
+  type: hysteria
+  server: dg.foldjc.top
+  port: 37017
+  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  tls: true
+  alpn: []
+  sni: dg.foldjc.top
+- name: 官网-foldjc.top
+  type: hysteria
+  server: dg.foldjc.top
+  port: 37017
+  uuid: f2c218ad-e0a4-424d-9f29-5070a9f9263a
+  tls: true
+  alpn: []
+  sni: dg.foldjc.top
+proxy-groups:
+- name: AUTO
+  type: select
+  proxies:
+  - 剩余流量：152.33 GB
+  - 距离下次重置剩余：25 天
+  - 套餐到期：2025-09-25
+  - 英国
+  - 新加坡
+  - 台湾
+  - 印度
+  - 香港
+  - 美国
+  - 德国
+  - 官网-foldjc.top
+rules:
+- MATCH,AUTO
