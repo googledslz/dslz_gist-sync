@@ -1,10 +1,13 @@
 name: 读取 Clash Config
 
+
 on:
   schedule:
-    # 每天北京时间早上 8 点执行 (UTC 0 点)
     - cron: "0 0 * * *"
-  workflow_dispatch:   # 允许手动触发
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 🔑 关键：允许推送代码
 
 jobs:
   update-subs:
@@ -14,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: true   # 确保可以推送
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -23,14 +26,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install requests pyyaml
 
       - name: Run subs.py
         run: |
           python subs.py
-
-
 
       - name: Commit and push changes
         run: |
@@ -39,5 +39,3 @@ jobs:
           git add clash.yaml
           git commit -m "update clash config" || echo "No changes to commit"
           git push
-
-          
