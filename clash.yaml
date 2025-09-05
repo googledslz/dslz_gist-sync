@@ -1,46 +1,4 @@
-
-111111111111111111111111111111111111111
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
-- name: 🇸🇬 SG🐲™️【橘子科技】 6
-  server: 92.243.75.49
-  port: 2087
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
-- name: 🇸🇬 SG🐲™️【橘子科技】 7
-  server: 92.243.74.180
-  port: 8443
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
+proxies:
 - name: 🇸🇬 SG🐲™️【橘子科技】 8
   server: 92.243.74.239
   port: 8443
@@ -58,7 +16,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
+  latency_ms: 1
 - name: 🇸🇬 SG🐲™️【橘子科技】 9
   server: 27.50.48.154
   port: 8443
@@ -76,7 +34,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
+  latency_ms: 1
 - name: 🇺🇸 US🐲™️【橘子科技】
   server: 172.64.229.221
   port: 8443
@@ -94,7 +52,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
+  latency_ms: 1
 - name: 🇺🇸 US🐲™️【橘子科技】 2
   server: 172.64.229.222
   port: 2096
@@ -112,79 +70,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
-- name: 🇺🇸 US🐲™️【橘子科技】 3
-  server: 104.19.86.120
-  port: 2096
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
-- name: 🇺🇸 US🐲™️【橘子科技】 5
-  server: 172.67.65.113
-  port: 2083
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
-- name: 🇺🇸 US🐲™️【橘子科技】 6
-  server: 173.245.59.203
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
-- name: 🇺🇸 US🐲™️【橘子科技】 7
-  server: 108.165.152.202
-  port: 2083
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
+  latency_ms: 1
 - name: 🇺🇸 US🐲™️【橘子科技】 8
   server: 103.116.7.103
   port: 2083
@@ -202,25 +88,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
-- name: 🇺🇸 US🐲™️【橘子科技】 9
-  server: 130.250.137.63
-  port: 2083
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
+  latency_ms: 1
 - name: 🇺🇸 US🐲™️【橘子科技】 10
   server: 104.26.15.138
   port: 2053
@@ -238,7 +106,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 5
+  latency_ms: 1
 - type: vless
   name: 172.67.79.211_1
   server: 172.67.79.211
@@ -253,35 +121,7 @@
     path: /?ed=2560&PROT_TYPE=vless
     headers:
       host: yy.bgm2024.dpdns.org
-  latency_ms: 5
-- type: trojan
-  name: 🇺🇸US_1
-  server: 104.17.128.1
-  port: 2096
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: nn.bgm2024.dpdns.org
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: nn.bgm2024.dpdns.org
-  latency_ms: 5
-- type: trojan
-  name: 🇭🇰HK_1
-  server: 104.17.142.12
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: vx.dengta.buzz
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: vx.dengta.buzz
-  latency_ms: 5
+  latency_ms: 1
 - type: vless
   name: 🇭🇰HK_3
   server: 104.17.68.85
@@ -296,22 +136,7 @@
     path: /?ed=2560&PROT_TYPE=vless
     headers:
       host: nn.bgm2024.dpdns.org
-  latency_ms: 5
-- type: vless
-  name: 162.159.36.104_1
-  server: 162.159.36.104
-  port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: bx.dengta.buzz
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=vless
-    headers:
-      host: bx.dengta.buzz
-  latency_ms: 5
+  latency_ms: 1
 - type: vless
   name: 🇺🇸US请通过绑定自定义域名订阅！_1
   server: 198.62.62.156
@@ -326,50 +151,7 @@
     path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
     headers:
       host: xdgxsd-vdss.pages.dev
-  latency_ms: 5
-- type: trojan
-  name: 🇺🇸US_3
-  server: 162.159.129.67
-  port: 8443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: vx.dengta.buzz
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: vx.dengta.buzz
-  latency_ms: 5
-- type: trojan
-  name: 172.67.110.232_1
-  server: 172.67.110.232
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: bx.dengta.buzz
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: bx.dengta.buzz
-  latency_ms: 5
-- type: vless
-  name: 🇭🇰HK_5
-  server: 103.160.204.59
-  port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: yy.bgm2024.dpdns.org
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=vless
-    headers:
-      host: yy.bgm2024.dpdns.org
-  latency_ms: 5
+  latency_ms: 1
 - type: trojan
   name: 172.67.106.26_1
   server: 172.67.106.26
@@ -383,7 +165,7 @@
     path: /?ed=2560&PROT_TYPE=trojan
     headers:
       host: vx.dengta.buzz
-  latency_ms: 5
+  latency_ms: 1
 - type: vless
   name: 🇺🇸US_6
   server: 104.25.254.4
@@ -398,65 +180,7 @@
     path: /?ed=2560&PROT_TYPE=vless
     headers:
       host: yy.bgm2024.dpdns.org
-  latency_ms: 5
-- type: trojan
-  name: 172.67.120.0_1
-  server: 172.67.120.0
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: bx.dengta.buzz
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: bx.dengta.buzz
-  latency_ms: 5
-- type: trojan
-  name: 🇭🇰HK_6
-  server: 198.62.62.4
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: bx.dengta.buzz
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: bx.dengta.buzz
-  latency_ms: 5
-- type: vless
-  name: 172.67.243.218_1
-  server: 172.67.243.218
-  port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: bx.dengta.buzz
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=vless
-    headers:
-      host: bx.dengta.buzz
-  latency_ms: 5
-- type: vless
-  name: 172.67.181.209_1
-  server: 172.67.181.209
-  port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vx.dengta.buzz
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=vless
-    headers:
-      host: vx.dengta.buzz
-  latency_ms: 5
+  latency_ms: 1
 - name: 🇺🇸 US🐲™️【橘子科技】 (2)
   server: 92.243.74.23
   port: 2096
@@ -474,7 +198,367 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 5
+  latency_ms: 1
+- name: 🇺🇸 US🐲™️【橘子科技】 3
+  server: 213.241.198.59
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 1
+- name: 🇺🇸 US🐲™️【橘子科技】 5
+  server: 45.67.215.250
+  port: 2096
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 1
+- name: 🇸🇬 SG🐲™️【橘子科技】 2
+  server: 92.243.74.2
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 2
+- name: 🇸🇬 SG🐲™️【橘子科技】 3
+  server: 92.243.74.3
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 2
+- name: 🇸🇬 SG🐲™️【橘子科技】 4
+  server: 27.50.48.126
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 2
+- name: 🇸🇬 SG🐲™️【橘子科技】 6
+  server: 92.243.75.49
+  port: 2087
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 2
+- name: 🇸🇬 SG🐲™️【橘子科技】 7
+  server: 92.243.74.180
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 2
+- name: 🇺🇸 US🐲™️【橘子科技】 3 (2)
+  server: 104.19.86.120
+  port: 2096
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 2
+- name: 🇺🇸 US🐲™️【橘子科技】 5 (2)
+  server: 172.67.65.113
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 2
+- name: 🇺🇸 US🐲™️【橘子科技】 6
+  server: 173.245.59.203
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 2
+- name: 🇺🇸 US🐲™️【橘子科技】 7
+  server: 108.165.152.202
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 2
+- name: 🇺🇸 US🐲™️【橘子科技】 9
+  server: 130.250.137.63
+  port: 2083
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 2
+- type: trojan
+  name: 🇺🇸US_1
+  server: 104.17.128.1
+  port: 2096
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+  latency_ms: 2
+- type: trojan
+  name: 🇭🇰HK_1
+  server: 104.17.142.12
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+  latency_ms: 2
+- type: vless
+  name: 162.159.36.104_1
+  server: 162.159.36.104
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+  latency_ms: 2
+- type: trojan
+  name: 🇺🇸US_3
+  server: 162.159.129.67
+  port: 8443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+  latency_ms: 2
+- type: trojan
+  name: 172.67.110.232_1
+  server: 172.67.110.232
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+  latency_ms: 2
+- type: vless
+  name: 🇭🇰HK_5
+  server: 103.160.204.59
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+  latency_ms: 2
+- type: trojan
+  name: 172.67.120.0_1
+  server: 172.67.120.0
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+  latency_ms: 2
+- type: trojan
+  name: 🇭🇰HK_6
+  server: 198.62.62.4
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+  latency_ms: 2
+- type: vless
+  name: 172.67.243.218_1
+  server: 172.67.243.218
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+  latency_ms: 2
+- type: vless
+  name: 172.67.181.209_1
+  server: 172.67.181.209
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+  latency_ms: 2
 - name: 🇺🇸 US🐲™️【橘子科技】 2 (2)
   server: 5.182.84.50
   port: 2096
@@ -492,25 +576,7 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 5
-- name: 🇺🇸 US🐲™️【橘子科技】 3 (2)
-  server: 213.241.198.59
-  port: 2083
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 5
+  latency_ms: 2
 - name: 🇺🇸 US🐲™️【橘子科技】 4
   server: 216.24.57.1
   port: 2053
@@ -528,25 +594,7 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 5
-- name: 🇺🇸 US🐲™️【橘子科技】 5 (2)
-  server: 45.67.215.250
-  port: 2096
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 5
+  latency_ms: 2
 - name: 🇺🇸 US🐲™️【橘子科技】 4 (2)
   server: 154.26.176.94
   port: 444
@@ -564,7 +612,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 58
+  latency_ms: 63
 - name: 🇩🇪 DE🐲™️【橘子科技】 3
   server: 92.119.90.51
   port: 443
@@ -582,7 +630,7 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 88
+  latency_ms: 91
 - name: 🇩🇪 DE🐲™️【橘子科技】 4
   server: 130.61.107.238
   port: 8443
@@ -600,7 +648,7 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 88
+  latency_ms: 91
 - name: 🇵🇱 PL🐲™️【橘子科技】 9
   server: 217.30.10.46
   port: 8443
@@ -618,7 +666,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 102
+  latency_ms: 98
 - name: 🇵🇱 PL🐲™️【橘子科技】 2
   server: 45.144.51.180
   port: 8443
@@ -636,7 +684,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 103
+  latency_ms: 99
 - name: 🇵🇱 PL🐲™️【橘子科技】 3
   server: 45.144.48.48
   port: 443
@@ -654,25 +702,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 103
-- name: 🇵🇱 PL🐲™️【橘子科技】 7
-  server: 193.124.41.165
-  port: 2053
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 103
+  latency_ms: 101
 - name: 🇵🇱 PL🐲™️【橘子科技】 4
   server: 45.144.48.192
   port: 8443
@@ -690,43 +720,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 104
-- name: 🇵🇱 PL🐲™️【橘子科技】
-  server: 86.110.56.169
-  port: 2053
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 107
-- name: 🇵🇱 PL🐲™️【橘子科技】 10
-  server: 86.110.56.94
-  port: 2053
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 108
+  latency_ms: 103
 - name: 🇵🇱 PL🐲™️【橘子科技】 8
   server: 91.239.148.84
   port: 2053
@@ -744,7 +738,25 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 110
+  latency_ms: 103
+- name: 🇵🇱 PL🐲™️【橘子科技】
+  server: 86.110.56.169
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 104
 - name: 🇵🇱 PL🐲™️【橘子科技】 5
   server: 38.180.51.120
   port: 443
@@ -762,7 +774,25 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 113
+  latency_ms: 104
+- name: 🇵🇱 PL🐲™️【橘子科技】 10
+  server: 86.110.56.94
+  port: 2053
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 104
 - name: 🇵🇱 PL🐲™️【橘子科技】 6
   server: 185.188.147.79
   port: 443
@@ -780,61 +810,25 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 114
-- name: 🇩🇪 DE🐲™️【橘子科技】 5
-  server: 138.124.24.11
-  port: 443
+  latency_ms: 112
+- name: 🇵🇱 PL🐲™️【橘子科技】 7
+  server: 193.124.41.165
+  port: 2053
   client-fingerprint: random
   type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
   tls: true
   alpn:
-  - h3
+  - http%2F1.1
   tfo: false
   skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
+  servername: cdn.romil-ltd.co.uk
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /Ki5km8BGWTxThVEAefvkMj
     headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 127
-- name: 🇩🇪 DE🐲™️【橘子科技】 2
-  server: 89.22.225.117
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 129
-- name: 🇩🇪 DE🐲™️【橘子科技】
-  server: 45.134.15.120
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 130
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 112
 - name: 🇵🇱 PL🐲™️【橘子科技】 (2)
   server: 193.110.163.10
   port: 58443
@@ -852,25 +846,61 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 135
-- name: 🇯🇵 JP🐲™️【橘子科技】 5
-  server: 8.216.81.187
-  port: 30001
+  latency_ms: 117
+- name: 🇩🇪 DE🐲™️【橘子科技】 5
+  server: 138.124.24.11
+  port: 443
   client-fingerprint: random
   type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
   tls: true
   alpn:
-  - http%2F1.1
+  - h3
   tfo: false
   skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
+  servername: ts5.soscom.filegear-sg.me
   network: ws
   ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
+    path: /?ed=2560
     headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 159
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 131
+- name: 🇩🇪 DE🐲™️【橘子科技】
+  server: 45.134.15.120
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 134
+- name: 🇩🇪 DE🐲™️【橘子科技】 2
+  server: 89.22.225.117
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 134
 - name: 🇯🇵 JP🐲™️【橘子科技】 6
   server: 160.16.123.65
   port: 443
@@ -888,7 +918,25 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 159
+  latency_ms: 163
+- name: 🇯🇵 JP🐲™️【橘子科技】 5
+  server: 8.216.81.187
+  port: 30001
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 164
 - name: 🇯🇵 JP🐲™️【橘子科技】 9
   server: 47.79.90.37
   port: 49153
@@ -906,25 +954,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 160
-- name: 🇯🇵 JP🐲™️【橘子科技】 5 (2)
-  server: 158.101.77.33
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 160
+  latency_ms: 164
 - name: 🇯🇵 JP🐲™️【橘子科技】 3
   server: 47.79.38.17
   port: 443
@@ -942,63 +972,9 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 161
-- name: 🇯🇵 JP🐲™️【橘子科技】 7
-  server: 140.83.57.20
-  port: 13118
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 167
-- name: 🇯🇵 JP🐲™️【橘子科技】 2
-  server: 18.183.158.211
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 171
-- name: 🇯🇵 JP🐲™️【橘子科技】 4
-  server: 47.79.92.16
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 172
-- name: 🇭🇰 HK🐲™️【橘子科技】
-  server: 20.44.136.56
+  latency_ms: 164
+- name: 🇯🇵 JP🐲™️【橘子科技】 5 (2)
+  server: 158.101.77.33
   port: 443
   client-fingerprint: random
   type: vless
@@ -1014,25 +990,7 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 172
-- name: 🇯🇵 JP🐲™️【橘子科技】
-  server: 13.230.34.30
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 178
+  latency_ms: 164
 - name: 🇯🇵 JP🐲™️【橘子科技】 8
   server: 47.79.90.82
   port: 8843
@@ -1050,7 +1008,151 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 178
+  latency_ms: 165
+- name: 🇭🇰 HK🐲™️【橘子科技】
+  server: 20.44.136.56
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 165
+- name: 🇯🇵 JP🐲™️【橘子科技】
+  server: 13.230.34.30
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 166
+- name: 🇯🇵 JP🐲™️【橘子科技】 2
+  server: 18.183.158.211
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 166
+- name: 🇯🇵 JP🐲™️【橘子科技】 4
+  server: 47.79.32.90
+  port: 12299
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 166
+- name: 🇯🇵 JP🐲™️【橘子科技】 4 (2)
+  server: 47.79.92.16
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 167
+- name: 🇯🇵 JP🐲™️【橘子科技】 7
+  server: 140.83.57.20
+  port: 13118
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 174
+- name: 🇯🇵 JP🐲™️【橘子科技】 3 (2)
+  server: 185.184.223.85
+  port: 8443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 182
+- name: 🇹🇼 TW🐲™️【橘子科技】 2
+  server: 166.0.198.184
+  port: 4333
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 185
 - name: 🇹🇼 TW🐲™️【橘子科技】 3
   server: 34.81.140.124
   port: 10240
@@ -1068,7 +1170,7 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 185
+  latency_ms: 187
 - name: 🇹🇼 TW🐲™️【橘子科技】
   server: 34.81.169.32
   port: 8443
@@ -1086,46 +1188,10 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 186
+  latency_ms: 188
 - name: 🇹🇼 TW🐲™️【橘子科技】 5
   server: 34.81.185.105
   port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 186
-- name: 🇰🇷 KR🐲™️【橘子科技】 3
-  server: 43.164.129.82
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 187
-- name: 🇹🇼 TW🐲™️【橘子科技】 2
-  server: 166.0.198.184
-  port: 4333
   client-fingerprint: random
   type: vless
   uuid: 6496ae39-99d7-409d-9f44-70e477287517
@@ -1158,7 +1224,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 189
+  latency_ms: 190
 - name: 🇹🇼 TW🐲™️【橘子科技】 3 (2)
   server: 45.207.159.194
   port: 8080
@@ -1195,6 +1261,42 @@
     headers:
       Host: ts5.soscom.filegear-sg.me
   latency_ms: 190
+- name: 🇰🇷 KR🐲™️【橘子科技】 3
+  server: 43.164.129.82
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 191
+- name: 🇰🇷 KR🐲™️【橘子科技】 2
+  server: 43.203.199.76
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 194
 - name: 🇯🇵 JP🐲™️【橘子科技】 2 (2)
   server: 3.34.49.221
   port: 443
@@ -1213,7 +1315,7 @@
     headers:
       Host: ts5.soscom.filegear-sg.me
   latency_ms: 195
-- name: 🇰🇷 KR🐲™️【橘子科技】 2
+- name: 🇰🇷 KR🐲™️【橘子科技】 2 (2)
   server: 116.47.199.34
   port: 50000
   client-fingerprint: random
@@ -1230,10 +1332,28 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 198
-- name: 🇰🇷 KR🐲™️【橘子科技】 10
-  server: 222.104.213.148
-  port: 12457
+  latency_ms: 196
+- name: 🇹🇼 TW🐲™️【橘子科技】 6
+  server: 61.220.128.226
+  port: 43
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 197
+- name: 🇰🇷 KR🐲™️【橘子科技】 9
+  server: 121.160.141.91
+  port: 10007
   client-fingerprint: random
   type: vless
   uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
@@ -1248,7 +1368,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 200
+  latency_ms: 201
 - name: 🇭🇰 HK🐲™️【橘子科技】 3
   server: 34.92.205.97
   port: 443
@@ -1267,7 +1387,115 @@
     headers:
       Host: cdn.romil-ltd.co.uk
   latency_ms: 202
+- name: 🇭🇰 HK🐲™️【橘子科技】 9
+  server: 8.212.27.131
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 204
+- name: 🇭🇰 HK🐲™️【橘子科技】 2
+  server: 8.210.185.198
+  port: 12373
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 207
 - name: 🇰🇷 KR🐲™️【橘子科技】
+  server: 119.200.48.55
+  port: 12270
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 207
+- name: 🇰🇷 KR🐲™️【橘子科技】 4
+  server: 211.216.189.208
+  port: 39726
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 207
+- name: 🇭🇰 HK🐲™️【橘子科技】 5
+  server: 47.239.212.52
+  port: 443
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 208
+- name: 🇭🇰 HK🐲™️【橘子科技】 8
+  server: 8.218.107.214
+  port: 12332
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 209
+- name: 🇰🇷 KR🐲™️【橘子科技】 (2)
   server: 49.168.9.171
   port: 50001
   client-fingerprint: random
@@ -1284,60 +1512,6 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 204
-- name: 🇰🇷 KR🐲™️【橘子科技】 9
-  server: 121.160.141.91
-  port: 10007
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 208
-- name: 🇭🇰 HK🐲™️【橘子科技】 3 (2)
-  server: 157.254.32.145
-  port: 27017
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 208
-- name: 🇯🇵 JP🐲™️【橘子科技】 3 (2)
-  server: 185.184.223.85
-  port: 8443
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
   latency_ms: 209
 - name: 🇰🇷 KR🐲™️【橘子科技】 6
   server: 125.134.22.5
@@ -1356,24 +1530,42 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 209
-- name: 🇰🇷 KR🐲™️【橘子科技】 2 (2)
-  server: 43.203.199.76
-  port: 443
+  latency_ms: 210
+- name: 🇭🇰 HK🐲™️【橘子科技】 3 (2)
+  server: 157.254.32.145
+  port: 27017
   client-fingerprint: random
   type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
   tls: true
   alpn:
-  - http%2F1.1
+  - h3
   tfo: false
   skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
+  servername: ts5.soscom.filegear-sg.me
   network: ws
   ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
+    path: /?ed=2560
     headers:
-      Host: cdn.romil-ltd.co.uk
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 211
+- name: 🇭🇰 HK🐲™️【橘子科技】 4
+  server: 47.240.15.210
+  port: 4432
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
   latency_ms: 211
 - name: 🇰🇷 KR🐲™️【橘子科技】 8
   server: 222.121.121.198
@@ -1392,10 +1584,46 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
+  latency_ms: 212
+- name: 🇭🇰 HK🐲™️【橘子科技】 7
+  server: 8.218.209.29
+  port: 9002
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
   latency_ms: 213
-- name: 🇹🇼 TW🐲™️【橘子科技】 6
-  server: 61.220.128.226
-  port: 43
+- name: 🇭🇰 HK🐲™️【橘子科技】 4 (2)
+  server: 8.210.75.107
+  port: 2010
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 213
+- name: 🇰🇷 KR🐲™️【橘子科技】 3 (2)
+  server: 59.31.83.164
+  port: 21262
   client-fingerprint: random
   type: vless
   uuid: 6496ae39-99d7-409d-9f44-70e477287517
@@ -1411,9 +1639,9 @@
     headers:
       Host: ts5.soscom.filegear-sg.me
   latency_ms: 213
-- name: 🇭🇰 HK🐲™️【橘子科技】 2
-  server: 8.210.185.198
-  port: 12373
+- name: 🇭🇰 HK🐲™️【橘子科技】 (2)
+  server: 20.2.19.77
+  port: 443
   client-fingerprint: random
   type: vless
   uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
@@ -1447,27 +1675,45 @@
     headers:
       Host: cdn.romil-ltd.co.uk
   latency_ms: 214
-- name: 🇰🇷 KR🐲™️【橘子科技】 4
-  server: 211.216.189.208
-  port: 39726
+- name: 🇭🇰 HK🐲™️【橘子科技】 6
+  server: 47.242.25.137
+  port: 30701
   client-fingerprint: random
   type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
   tls: true
   alpn:
-  - h3
+  - http%2F1.1
   tfo: false
   skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
+  servername: cdn.romil-ltd.co.uk
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /Ki5km8BGWTxThVEAefvkMj
     headers:
-      Host: ts5.soscom.filegear-sg.me
+      Host: cdn.romil-ltd.co.uk
   latency_ms: 216
-- name: 🇭🇰 HK🐲™️【橘子科技】 5
-  server: 210.97.108.246
-  port: 13579
+- name: 🇰🇷 KR🐲™️【橘子科技】 10
+  server: 222.104.213.148
+  port: 12457
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  tls: true
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
+  network: ws
+  ws-opts:
+    path: /Ki5km8BGWTxThVEAefvkMj
+    headers:
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 216
+- name: 🇭🇰 HK🐲™️【橘子科技】 2 (2)
+  server: 47.76.248.76
+  port: 8002
   client-fingerprint: random
   type: vless
   uuid: 6496ae39-99d7-409d-9f44-70e477287517
@@ -1482,7 +1728,7 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 219
+  latency_ms: 218
 - name: 🇰🇷 KR🐲™️【橘子科技】 5
   server: 115.40.244.240
   port: 12696
@@ -1501,42 +1747,6 @@
     headers:
       Host: ts5.soscom.filegear-sg.me
   latency_ms: 222
-- name: 🇸🇬 SG🐲™️【橘子科技】 2 (2)
-  server: 8.219.238.249
-  port: 47984
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 228
-- name: 🇸🇬 SG🐲™️【橘子科技】 5
-  server: 13.250.131.37
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 230
 - name: 🇸🇬 SG🐲™️【橘子科技】
   server: 161.117.81.41
   port: 443
@@ -1554,148 +1764,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 231
-- name: 🇯🇵 JP🐲™️【橘子科技】 4 (2)
-  server: 47.79.32.90
-  port: 12299
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 232
-- name: 🇸🇬 SG🐲™️【橘子科技】 3 (2)
-  server: 158.178.247.58
-  port: 30008
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 235
-- name: 🇭🇰 HK🐲™️【橘子科技】 6
-  server: 47.242.25.137
-  port: 30701
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 237
-- name: 🇭🇰 HK🐲™️【橘子科技】 5 (2)
-  server: 47.239.212.52
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 239
-- name: 🇰🇷 KR🐲™️【橘子科技】 3 (2)
-  server: 59.31.83.164
-  port: 21262
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 240
-- type: vless
-  name: comicabc.com_1
-  server: comicabc.com
-  port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: nn.bgm2024.dpdns.org
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=vless
-    headers:
-      host: nn.bgm2024.dpdns.org
-  latency_ms: 242
-- name: 🇭🇰 HK🐲™️【橘子科技】 7
-  server: 8.218.209.29
-  port: 9002
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 244
-- name: 🇭🇰 HK🐲™️【橘子科技】 2 (2)
-  server: 47.76.248.76
-  port: 8002
-  client-fingerprint: random
-  type: vless
-  uuid: 6496ae39-99d7-409d-9f44-70e477287517
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  skip-cert-verify: false
-  servername: ts5.soscom.filegear-sg.me
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: ts5.soscom.filegear-sg.me
-  latency_ms: 245
+  latency_ms: 224
 - name: 🇸🇬 SG🐲™️【橘子科技】 10
   server: 47.236.171.64
   port: 443
@@ -1713,7 +1782,43 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 246
+  latency_ms: 225
+- name: 🇭🇰 HK🐲™️【橘子科技】 5 (2)
+  server: 210.97.108.246
+  port: 13579
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 225
+- name: 🇸🇬 SG🐲™️【橘子科技】 3 (2)
+  server: 158.178.247.58
+  port: 30008
+  client-fingerprint: random
+  type: vless
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
+  tls: true
+  alpn:
+  - h3
+  tfo: false
+  skip-cert-verify: false
+  servername: ts5.soscom.filegear-sg.me
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 225
 - name: 🇸🇬 SG🐲™️【橘子科技】 4 (2)
   server: 43.156.181.203
   port: 443
@@ -1731,115 +1836,10 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 246
-- type: vless
-  name: edgetunnel_2
-  server: xdgxsd-vdss.pages.dev
+  latency_ms: 225
+- name: 🇸🇬 SG🐲™️【橘子科技】 5
+  server: 13.250.131.37
   port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: xdgxsd-vdss.pages.dev
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      host: xdgxsd-vdss.pages.dev
-  latency_ms: 263
-- name: 🇸🇬 SG🐲™️【橘子科技】 5 (2)
-  server: 43.134.174.114
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 277
-- name: 🇭🇰 HK🐲™️【橘子科技】 8
-  server: 8.218.107.214
-  port: 12332
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 285
-- name: 🇭🇰 HK🐲™️【橘子科技】 (2)
-  server: 20.2.19.77
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 286
-- name: 🇭🇰 HK🐲™️【橘子科技】 4
-  server: 8.210.75.107
-  port: 2010
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 287
-- name: 🇭🇰 HK🐲™️【橘子科技】 9
-  server: 8.212.27.131
-  port: 443
-  client-fingerprint: random
-  type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
-  tls: true
-  alpn:
-  - http%2F1.1
-  tfo: false
-  skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
-  network: ws
-  ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
-    headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 290
-- name: 🇭🇰 HK🐲™️【橘子科技】 4 (2)
-  server: 47.240.15.210
-  port: 4432
   client-fingerprint: random
   type: vless
   uuid: 6496ae39-99d7-409d-9f44-70e477287517
@@ -1854,25 +1854,40 @@
     path: /?ed=2560
     headers:
       Host: ts5.soscom.filegear-sg.me
-  latency_ms: 292
-- name: 🇰🇷 KR🐲™️【橘子科技】 (2)
-  server: 119.200.48.55
-  port: 12270
+  latency_ms: 225
+- name: 🇸🇬 SG🐲™️【橘子科技】 2 (2)
+  server: 8.219.238.249
+  port: 47984
   client-fingerprint: random
   type: vless
-  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
+  uuid: 6496ae39-99d7-409d-9f44-70e477287517
   tls: true
   alpn:
-  - http%2F1.1
+  - h3
   tfo: false
   skip-cert-verify: false
-  servername: cdn.romil-ltd.co.uk
+  servername: ts5.soscom.filegear-sg.me
   network: ws
   ws-opts:
-    path: /Ki5km8BGWTxThVEAefvkMj
+    path: /?ed=2560
     headers:
-      Host: cdn.romil-ltd.co.uk
-  latency_ms: 302
+      Host: ts5.soscom.filegear-sg.me
+  latency_ms: 226
+- type: vless
+  name: edgetunnel_2
+  server: xdgxsd-vdss.pages.dev
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      host: xdgxsd-vdss.pages.dev
+  latency_ms: 229
 - name: 🇰🇷 KR🐲™️【橘子科技】 7
   server: 211.222.170.55
   port: 12165
@@ -1890,64 +1905,7 @@
     path: /Ki5km8BGWTxThVEAefvkMj
     headers:
       Host: cdn.romil-ltd.co.uk
-  latency_ms: 318
-- type: vless
-  name: dylan.ns.cloudflare.com_1
-  server: dylan.ns.cloudflare.com
-  port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: bx.dengta.buzz
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=vless
-    headers:
-      host: bx.dengta.buzz
-  latency_ms: 513
-- type: trojan
-  name: otto.ns.cloudflare.com_1
-  server: otto.ns.cloudflare.com
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: bx.dengta.buzz
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: bx.dengta.buzz
-  latency_ms: 516
-- type: trojan
-  name: uriah.ns.cloudflare.com_1
-  server: uriah.ns.cloudflare.com
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: vx.dengta.buzz
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: vx.dengta.buzz
-  latency_ms: 559
-- type: trojan
-  name: craig.ns.cloudflare.com_1
-  server: craig.ns.cloudflare.com
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: yy.bgm2024.dpdns.org
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: yy.bgm2024.dpdns.org
-  latency_ms: 561
+  latency_ms: 230
 - type: vless
   name: www.ipget.net_1
   server: www.ipget.net
@@ -1962,51 +1920,25 @@
     path: /?ed=2560&PROT_TYPE=vless
     headers:
       host: yy.bgm2024.dpdns.org
-  latency_ms: 567
-- type: vless
-  name: US_1
-  server: icook.hk
+  latency_ms: 233
+- name: 🇸🇬 SG🐲™️【橘子科技】 5 (2)
+  server: 43.134.174.114
   port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  skip-cert-verify: true
-  udp: true
+  client-fingerprint: random
+  type: vless
+  uuid: 2259c1c4-db67-468b-bb08-d96d46168d66
   tls: true
-  network: ws
-  servername: vx.dengta.buzz
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=vless
-    headers:
-      host: vx.dengta.buzz
-  latency_ms: 572
-- type: vless
-  name: lewis.ns.cloudflare.com_1
-  server: lewis.ns.cloudflare.com
-  port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vx.dengta.buzz
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=vless
-    headers:
-      host: vx.dengta.buzz
-  latency_ms: 579
-- type: trojan
-  name: tasteatlas.com_1
-  server: tasteatlas.com
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: nn.bgm2024.dpdns.org
+  alpn:
+  - http%2F1.1
+  tfo: false
+  skip-cert-verify: false
+  servername: cdn.romil-ltd.co.uk
   network: ws
   ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
+    path: /Ki5km8BGWTxThVEAefvkMj
     headers:
-      host: nn.bgm2024.dpdns.org
-  latency_ms: 621
+      Host: cdn.romil-ltd.co.uk
+  latency_ms: 235
 - type: vless
   name: www.hugedomains.com请通过绑定自定义域名订阅！_1
   server: www.hugedomains.com
@@ -2021,7 +1953,123 @@
     path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
     headers:
       host: xdgxsd-vdss.pages.dev
-  latency_ms: 636
+  latency_ms: 268
+- type: trojan
+  name: craig.ns.cloudflare.com_1
+  server: craig.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+  latency_ms: 269
+- type: vless
+  name: dylan.ns.cloudflare.com_1
+  server: dylan.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: bx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: bx.dengta.buzz
+  latency_ms: 269
+- type: vless
+  name: US_1
+  server: icook.hk
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+  latency_ms: 279
+- type: trojan
+  name: otto.ns.cloudflare.com_1
+  server: otto.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+  latency_ms: 282
+- type: trojan
+  name: uriah.ns.cloudflare.com_1
+  server: uriah.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: vx.dengta.buzz
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: vx.dengta.buzz
+  latency_ms: 296
+- type: vless
+  name: comicabc.com_1
+  server: comicabc.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+  latency_ms: 301
+- type: trojan
+  name: tasteatlas.com_1
+  server: tasteatlas.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: nn.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: nn.bgm2024.dpdns.org
+  latency_ms: 343
+- type: vless
+  name: lewis.ns.cloudflare.com_1
+  server: lewis.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+  latency_ms: 380
 - type: trojan
   name: www.wto.org_1
   server: www.wto.org
@@ -2035,15 +2083,7 @@
     path: /?ed=2560&PROT_TYPE=trojan
     headers:
       host: yy.bgm2024.dpdns.org
-  latency_ms: 674
-- name: 🇹🇼台湾01
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23006
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 894
+  latency_ms: 433
 - name: 🇭🇰香港03
   type: trojan
   server: okanc.iepl.cac.cab
@@ -2051,15 +2091,15 @@
   password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
   sni: www.bilibili.com
   skip-cert-verify: true
-  latency_ms: 895
-- name: 🇹🇼台湾02
+  latency_ms: 695
+- name: 🇹🇼台湾01
   type: trojan
   server: okanc.iepl.cac.cab
-  port: 23007
+  port: 23006
   password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
   sni: www.bilibili.com
   skip-cert-verify: true
-  latency_ms: 895
+  latency_ms: 695
 - name: 🇭🇰香港05
   type: trojan
   server: okanc.iepl.cac.cab
@@ -2067,31 +2107,7 @@
   password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
   sni: www.bilibili.com
   skip-cert-verify: true
-  latency_ms: 896
-- name: 🇭🇰香港04
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23004
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 898
-- name: 🇭🇰香港01
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23001
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 900
-- name: 🇹🇼台湾03
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23008
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 913
+  latency_ms: 696
 - name: 🇭🇰香港02
   type: trojan
   server: okanc.iepl.cac.cab
@@ -2099,22 +2115,39 @@
   password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
   sni: www.bilibili.com
   skip-cert-verify: true
-  latency_ms: 1003
-- type: vless
-  name: www.udemy.com_1
-  server: www.udemy.com
-  port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  latency_ms: 697
+- name: 🇭🇰香港04
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23004
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
   skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: nn.bgm2024.dpdns.org
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=vless
-    headers:
-      host: nn.bgm2024.dpdns.org
-  latency_ms: 1120
+  latency_ms: 700
+- name: 🇹🇼台湾02
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23007
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 700
+- name: 🇹🇼台湾03
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23008
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 701
+- name: 🇭🇰香港01
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23001
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 714
 - type: vless
   name: damien.ns.cloudflare.com_1
   server: damien.ns.cloudflare.com
@@ -2129,7 +2162,7 @@
     path: /?ed=2560&PROT_TYPE=vless
     headers:
       host: vx.dengta.buzz
-  latency_ms: 1137
+  latency_ms: 783
 - type: vless
   name: shopify.com_1
   server: shopify.com
@@ -2144,21 +2177,7 @@
     path: /?ed=2560&PROT_TYPE=vless
     headers:
       host: yy.bgm2024.dpdns.org
-  latency_ms: 1157
-- type: trojan
-  name: wilson.ns.cloudflare.com_1
-  server: wilson.ns.cloudflare.com
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: yy.bgm2024.dpdns.org
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: yy.bgm2024.dpdns.org
-  latency_ms: 1164
+  latency_ms: 790
 - type: vless
   name: julio.ns.cloudflare.com_1
   server: julio.ns.cloudflare.com
@@ -2173,7 +2192,21 @@
     path: /?ed=2560&PROT_TYPE=vless
     headers:
       host: nn.bgm2024.dpdns.org
-  latency_ms: 1165
+  latency_ms: 793
+- type: trojan
+  name: wilson.ns.cloudflare.com_1
+  server: wilson.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: yy.bgm2024.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: yy.bgm2024.dpdns.org
+  latency_ms: 810
 - type: trojan
   name: icook.tw_1
   server: icook.tw
@@ -2187,7 +2220,7 @@
     path: /?ed=2560&PROT_TYPE=trojan
     headers:
       host: vx.dengta.buzz
-  latency_ms: 1183
+  latency_ms: 818
 - type: vless
   name: braden.ns.cloudflare.com_1
   server: braden.ns.cloudflare.com
@@ -2202,7 +2235,22 @@
     path: /?ed=2560&PROT_TYPE=vless
     headers:
       host: bx.dengta.buzz
-  latency_ms: 1196
+  latency_ms: 820
+- type: vless
+  name: www.udemy.com_1
+  server: www.udemy.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: nn.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: nn.bgm2024.dpdns.org
+  latency_ms: 881
 - type: vless
   name: iplocation.io_1
   server: iplocation.io
@@ -2217,156 +2265,7 @@
     path: /?ed=2560&PROT_TYPE=vless
     headers:
       host: nn.bgm2024.dpdns.org
-  latency_ms: 1253
-- name: 🇹🇼台湾05
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23010
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 1445
-- name: 🇯🇵日本01
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23011
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 1446
-- name: 🇯🇵日本03
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23013
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 1447
-- name: 🇯🇵日本04
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23014
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 1447
-- name: 🇯🇵日本05
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23015
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 1448
-- name: 🇸🇬新加坡01
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23016
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 1463
-- name: 🇯🇵日本02
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23012
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 1467
-- name: 🇹🇼台湾04
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23009
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 1518
-- type: trojan
-  name: ashton.ns.cloudflare.com请通过绑定自定义域名订阅！_1
-  server: ashton.ns.cloudflare.com
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: xdgxsd-vdss.pages.dev
-  network: ws
-  ws-opts:
-    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: xdgxsd-vdss.pages.dev
-  latency_ms: 1619
-- type: trojan
-  name: benedict.ns.cloudflare.com请通过绑定自定义域名订阅！_1
-  server: benedict.ns.cloudflare.com
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: xdgxsd-vdss.pages.dev
-  network: ws
-  ws-opts:
-    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: xdgxsd-vdss.pages.dev
-  latency_ms: 1627
-- type: vless
-  name: huxley.ns.cloudflare.com_1
-  server: huxley.ns.cloudflare.com
-  port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: yy.bgm2024.dpdns.org
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=vless
-    headers:
-      host: yy.bgm2024.dpdns.org
-  latency_ms: 1638
-- type: trojan
-  name: pranab.ns.cloudflare.com_1
-  server: pranab.ns.cloudflare.com
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: bx.dengta.buzz
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: bx.dengta.buzz
-  latency_ms: 1667
-- type: trojan
-  name: rustam.ns.cloudflare.com请通过绑定自定义域名订阅！_1
-  server: rustam.ns.cloudflare.com
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: xdgxsd-vdss.pages.dev
-  network: ws
-  ws-opts:
-    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: xdgxsd-vdss.pages.dev
-  latency_ms: 1669
-- type: trojan
-  name: cris.ns.cloudflare.com请通过绑定自定义域名订阅！_1
-  server: cris.ns.cloudflare.com
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: xdgxsd-vdss.pages.dev
-  network: ws
-  ws-opts:
-    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: xdgxsd-vdss.pages.dev
-  latency_ms: 1677
+  latency_ms: 942
 - type: vless
   name: kyree.ns.cloudflare.com_1
   server: kyree.ns.cloudflare.com
@@ -2381,37 +2280,99 @@
     path: /?ed=2560&PROT_TYPE=vless
     headers:
       host: nn.bgm2024.dpdns.org
-  latency_ms: 1708
-- type: vless
-  name: www.csgo.com请通过绑定自定义域名订阅！_1
-  server: www.csgo.com
+  latency_ms: 1400
+- type: trojan
+  name: pranab.ns.cloudflare.com_1
+  server: pranab.ns.cloudflare.com
   port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  skip-cert-verify: true
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
   udp: true
-  tls: true
+  skip-cert-verify: true
+  sni: bx.dengta.buzz
   network: ws
-  servername: xdgxsd-vdss.pages.dev
   ws-opts:
-    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: bx.dengta.buzz
+  latency_ms: 1401
+- type: trojan
+  name: cris.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  server: cris.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
     headers:
       host: xdgxsd-vdss.pages.dev
-  latency_ms: 1726
-- type: vless
-  name: whatismyipaddress.com_1
-  server: whatismyipaddress.com
-  port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  latency_ms: 1414
+- name: 🇹🇼台湾05
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23010
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
   skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: vx.dengta.buzz
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=vless
-    headers:
-      host: vx.dengta.buzz
-  latency_ms: 1738
+  latency_ms: 1446
+- name: 🇯🇵日本01
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23011
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 1450
+- name: 🇹🇼台湾04
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23009
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 1450
+- name: 🇯🇵日本04
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23014
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 1451
+- name: 🇯🇵日本03
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23013
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 1451
+- name: 🇯🇵日本02
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23012
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 1451
+- name: 🇸🇬新加坡01
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23016
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 1452
+- name: 🇯🇵日本05
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23015
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 1452
 - type: vless
   name: trevor.ns.cloudflare.com_1
   server: trevor.ns.cloudflare.com
@@ -2426,39 +2387,10 @@
     path: /?ed=2560&PROT_TYPE=vless
     headers:
       host: nn.bgm2024.dpdns.org
-  latency_ms: 1742
-- type: vless
-  name: www.pcmag.com_1
-  server: www.pcmag.com
-  port: 443
-  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  skip-cert-verify: true
-  udp: true
-  tls: true
-  network: ws
-  servername: yy.bgm2024.dpdns.org
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=vless
-    headers:
-      host: yy.bgm2024.dpdns.org
-  latency_ms: 1743
+  latency_ms: 1462
 - type: trojan
-  name: time.is_1
-  server: time.is
-  port: 443
-  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
-  udp: true
-  skip-cert-verify: true
-  sni: yy.bgm2024.dpdns.org
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      host: yy.bgm2024.dpdns.org
-  latency_ms: 1777
-- type: trojan
-  name: steamdb.info请通过绑定自定义域名订阅！_1
-  server: steamdb.info
+  name: ashton.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  server: ashton.ns.cloudflare.com
   port: 443
   password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
   udp: true
@@ -2469,7 +2401,21 @@
     path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
     headers:
       host: xdgxsd-vdss.pages.dev
-  latency_ms: 1798
+  latency_ms: 1463
+- type: trojan
+  name: benedict.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  server: benedict.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+  latency_ms: 1466
 - type: vless
   name: www.ipchicken.com请通过绑定自定义域名订阅！_1
   server: www.ipchicken.com
@@ -2484,7 +2430,79 @@
     path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
     headers:
       host: xdgxsd-vdss.pages.dev
-  latency_ms: 1811
+  latency_ms: 1470
+- type: trojan
+  name: rustam.ns.cloudflare.com请通过绑定自定义域名订阅！_1
+  server: rustam.ns.cloudflare.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+  latency_ms: 1470
+- type: vless
+  name: www.pcmag.com_1
+  server: www.pcmag.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+  latency_ms: 1475
+- type: vless
+  name: huxley.ns.cloudflare.com_1
+  server: huxley.ns.cloudflare.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: yy.bgm2024.dpdns.org
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: yy.bgm2024.dpdns.org
+  latency_ms: 1488
+- type: trojan
+  name: ipv4.ip.sb请通过绑定自定义域名订阅！_1
+  server: ipv4.ip.sb
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+  latency_ms: 1499
+- type: trojan
+  name: www.okcupid.com请通过绑定自定义域名订阅！_1
+  server: www.okcupid.com
+  port: 443
+  password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  udp: true
+  skip-cert-verify: true
+  sni: xdgxsd-vdss.pages.dev
+  network: ws
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    headers:
+      host: xdgxsd-vdss.pages.dev
+  latency_ms: 1504
 - type: trojan
   name: www.4chan.org_1
   server: www.4chan.org
@@ -2498,7 +2516,37 @@
     path: /?ed=2560&PROT_TYPE=trojan
     headers:
       host: vx.dengta.buzz
-  latency_ms: 1832
+  latency_ms: 1537
+- type: vless
+  name: whatismyipaddress.com_1
+  server: whatismyipaddress.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: vx.dengta.buzz
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=vless
+    headers:
+      host: vx.dengta.buzz
+  latency_ms: 1546
+- type: vless
+  name: www.csgo.com请通过绑定自定义域名订阅！_1
+  server: www.csgo.com
+  port: 443
+  uuid: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
+  skip-cert-verify: true
+  udp: true
+  tls: true
+  network: ws
+  servername: xdgxsd-vdss.pages.dev
+  ws-opts:
+    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=vless
+    headers:
+      host: xdgxsd-vdss.pages.dev
+  latency_ms: 1549
 - type: vless
   name: dnschecker.org_1
   server: dnschecker.org
@@ -2513,10 +2561,10 @@
     path: /?ed=2560&PROT_TYPE=vless
     headers:
       host: nn.bgm2024.dpdns.org
-  latency_ms: 1843
+  latency_ms: 1562
 - type: trojan
-  name: www.okcupid.com请通过绑定自定义域名订阅！_1
-  server: www.okcupid.com
+  name: steamdb.info请通过绑定自定义域名订阅！_1
+  server: steamdb.info
   port: 443
   password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
   udp: true
@@ -2527,21 +2575,21 @@
     path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
     headers:
       host: xdgxsd-vdss.pages.dev
-  latency_ms: 1855
+  latency_ms: 1612
 - type: trojan
-  name: ipv4.ip.sb请通过绑定自定义域名订阅！_1
-  server: ipv4.ip.sb
+  name: time.is_1
+  server: time.is
   port: 443
   password: 5c7cca1f-1335-4076-9356-80cb1cc8ee72
   udp: true
   skip-cert-verify: true
-  sni: xdgxsd-vdss.pages.dev
+  sni: yy.bgm2024.dpdns.org
   network: ws
   ws-opts:
-    path: /xdgxsd-vdss.pages.dev/?ed=2560&PROT_TYPE=trojan
+    path: /?ed=2560&PROT_TYPE=trojan
     headers:
-      host: xdgxsd-vdss.pages.dev
-  latency_ms: 1928
+      host: yy.bgm2024.dpdns.org
+  latency_ms: 1706
 - name: 🇸🇬新加坡05
   type: trojan
   server: okanc.iepl.cac.cab
@@ -2549,15 +2597,7 @@
   password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
   sni: www.bilibili.com
   skip-cert-verify: true
-  latency_ms: 2076
-- name: 🇺🇸美国01
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23021
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 2079
+  latency_ms: 1993
 - name: 🇸🇬新加坡04
   type: trojan
   server: okanc.iepl.cac.cab
@@ -2565,15 +2605,7 @@
   password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
   sni: www.bilibili.com
   skip-cert-verify: true
-  latency_ms: 2080
-- name: 🇺🇸美国03
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23023
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 2088
+  latency_ms: 1997
 - name: 🇺🇸美国02
   type: trojan
   server: okanc.iepl.cac.cab
@@ -2581,23 +2613,7 @@
   password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
   sni: www.bilibili.com
   skip-cert-verify: true
-  latency_ms: 2095
-- name: 🇸🇬新加坡03
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23018
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 2098
-- name: 🇺🇸美国04
-  type: trojan
-  server: okanc.iepl.cac.cab
-  port: 23024
-  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
-  sni: www.bilibili.com
-  skip-cert-verify: true
-  latency_ms: 2182
+  latency_ms: 2002
 - name: 🇸🇬新加坡02
   type: trojan
   server: okanc.iepl.cac.cab
@@ -2605,7 +2621,39 @@
   password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
   sni: www.bilibili.com
   skip-cert-verify: true
-  latency_ms: 2182
+  latency_ms: 2003
+- name: 🇸🇬新加坡03
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23018
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 2003
+- name: 🇺🇸美国04
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23024
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 2003
+- name: 🇺🇸美国03
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23023
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 2004
+- name: 🇺🇸美国01
+  type: trojan
+  server: okanc.iepl.cac.cab
+  port: 23021
+  password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
+  sni: www.bilibili.com
+  skip-cert-verify: true
+  latency_ms: 2005
 - name: 🇺🇸美国05
   type: trojan
   server: okanc.iepl.cac.cab
@@ -2613,4 +2661,541 @@
   password: 51e39469-c3e4-4a68-bba6-185a4cae2e56
   sni: www.bilibili.com
   skip-cert-verify: true
-  latency_ms: 2586
+  latency_ms: 2191
+proxy-groups:
+- name: 🚀 节点选择
+  proxies:
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇨🇦 加拿大A点
+  - 🇫🇷 法国节A点
+  - 🇸🇬 新加坡A点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+  type: select
+- include-all: true
+  name: 🚀 手动切换
+  type: select
+- include-all: true
+  interval: 300
+  name: ♻️ 自动选择
+  tolerance: 50
+  type: url-test
+- name: 📲 电报消息
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇸🇬 狮城节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇫🇷 法国节A点
+  - 🇸🇬 新加坡A点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+  type: select
+- name: 💬 Ai平台
+  proxies:
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🇩🇪德国A点
+  - 🚀 手动切换
+  - DIRECT
+  type: select
+- name: 📹 油管视频
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇸🇬 狮城节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+  type: select
+- name: 📺 巴哈姆特
+  proxies:
+  - 🇨🇳 台湾节点
+  - 🚀 节点选择
+  - 🚀 手动切换
+  - DIRECT
+  type: select
+- name: 📺 哔哩哔哩
+  proxies:
+  - 🎯 全球直连
+  - 🇨🇳 台湾节点
+  - 🇭🇰 香港节点
+  type: select
+- name: 🌍 国外媒体
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  - DIRECT
+  type: select
+- name: 🌏 国内媒体
+  proxies:
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🚀 手动切换
+  type: select
+- name: 📢 谷歌FCM
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- name: Ⓜ️ 微软Bing
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- name: Ⓜ️ 微软云盘
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- name: Ⓜ️ 微软服务
+  proxies:
+  - 🚀 节点选择
+  - DIRECT
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- name: 🍎 苹果服务
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- name: 🎮 游戏平台
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- filter: (?i)网易|音乐|NetEase|Music
+  include-all: true
+  name: 🎶 网易音乐
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  type: select
+- name: 🎯 全球直连
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  type: select
+- name: 🛑 广告拦截
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🍃 应用净化
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🐟 漏网之鱼
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇭🇰 香港节点
+  - 🇨🇳 台湾节点
+  - 🇸🇬 狮城节点
+  - 🇯🇵 日本节点
+  - 🇺🇲 美国节点
+  - 🇰🇷 韩国节点
+  - 🚀 手动切换
+  type: select
+- filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+  include-all: true
+  interval: 300
+  name: 🇭🇰 香港节点
+  tolerance: 50
+  type: url-test
+- filter: (?i)法国|FR|fr|🇫🇷|法
+  include-all: true
+  interval: 300
+  name: 🇫🇷 法国节A点
+  tolerance: 50
+  type: url-test
+- filter: (?i)荷兰|🇳🇱|NL|nl
+  include-all: true
+  interval: 300
+  name: 🇳🇱荷兰A点
+  tolerance: 50
+  type: url-test
+- filter: (?i)🇩🇪|德国|DE|de
+  include-all: true
+  interval: 300
+  name: 🇩🇪德国A点
+  tolerance: 50
+  type: url-test
+- filter: (?i)新加坡|🇸🇬|SG|sg
+  include-all: true
+  interval: 300
+  name: 🇸🇬 新加坡A点
+  tolerance: 50
+  type: url-test
+- filter: (?i)🇨🇦|CA|加拿大
+  include-all: true
+  interval: 300
+  name: 🇨🇦 加拿大A点
+  tolerance: 50
+  type: url-test
+- filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
+  include-all: true
+  interval: 300
+  name: 🇯🇵 日本节点
+  tolerance: 50
+  type: url-test
+- filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+  include-all: true
+  interval: 300
+  name: 🇺🇲 美国节点
+  tolerance: 50
+  type: url-test
+- filter: (?i)台|新北|彰化|TW|Taiwan
+  include-all: true
+  interval: 300
+  name: 🇨🇳 台湾节点
+  tolerance: 50
+  type: url-test
+- filter: (?i)新加坡|坡|狮城|SG|Singapore
+  include-all: true
+  interval: 300
+  name: 🇸🇬 狮城节点
+  tolerance: 50
+  type: url-test
+- filter: (?i)KR|Korea|KOR|首尔|韩|韓
+  include-all: true
+  interval: 300
+  name: 🇰🇷 韩国节点
+  tolerance: 50
+  type: url-test
+rule-providers:
+  AI:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/AI.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/AI.list
+  Apple:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Apple.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list
+  Bahamut:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Bahamut.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bahamut.list
+  BanAD:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/BanAD.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
+  BanProgramAD:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/BanProgramAD.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
+  Bilibili:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Bilibili.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Bilibili.list
+  BilibiliHMT:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/BilibiliHMT.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/BilibiliHMT.list
+  Bing:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Bing.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Bing.list
+  ChinaCompanyIp:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/ChinaCompanyIp.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
+  ChinaDomain:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/ChinaDomain.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
+  ChinaMedia:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/ChinaMedia.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
+  Download:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Download.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
+  Epic:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Epic.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Epic.list
+  GoogleCN:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/GoogleCN.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
+  GoogleFCM:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/GoogleFCM.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/GoogleFCM.list
+  LocalAreaNetwork:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/LocalAreaNetwork.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
+  Microsoft:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Microsoft.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list
+  NetEaseMusic:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/NetEaseMusic.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list
+  Netflix:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Netflix.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Netflix.list
+  Nintendo:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Nintendo.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Nintendo.list
+  OneDrive:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/OneDrive.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/OneDrive.list
+  OpenAi:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/OpenAi.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
+  Origin:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Origin.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Origin.list
+  ProxyGFWlist:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/ProxyGFWlist.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
+  ProxyMedia:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/ProxyMedia.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
+  Sony:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Sony.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Sony.list
+  Steam:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Steam.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Steam.list
+  SteamCN:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/SteamCN.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
+  Telegram:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/Telegram.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
+  UnBan:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/UnBan.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
+  YouTube:
+    behavior: classical
+    format: text
+    interval: 86400
+    path: ./ruleset/YouTube.list
+    type: http
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
+rules:
+- DOMAIN-SUFFIX,192.168.0.111,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- DOMAIN-KEYWORD,rojans.trevel,💬 Ai平台
+- DOMAIN-KEYWORD,ppv.sosorg,💬 Ai平台
+- DOMAIN-KEYWORD,sub,💬 Ai平台
+- DOMAIN-KEYWORD,pm.,💬 Ai平台
+- DOMAIN-KEYWORD,github,💬 Ai平台
+- DOMAIN-KEYWORD,chatgpt,💬 Ai平台
+- DOMAIN-KEYWORD,openai.,💬 Ai平台
+- DOMAIN-KEYWORD,oaistatic,💬 Ai平台
+- DOMAIN-KEYWORD,oaiusercontent,💬 Ai平台
+- DOMAIN-KEYWORD,anthropic.,💬 Ai平台
+- DOMAIN-KEYWORD,claude.ai,💬 Ai平台
+- PROCESS-NAME,subs-check.exe,🎯 全球直连
+- PROCESS-NAME,subs-check,🎯 全球直连
+- RULE-SET,LocalAreaNetwork,🎯 全球直连
+- RULE-SET,UnBan,🎯 全球直连
+- RULE-SET,BanAD,🛑 广告拦截
+- RULE-SET,BanProgramAD,🍃 应用净化
+- RULE-SET,GoogleFCM,📢 谷歌FCM
+- RULE-SET,GoogleCN,🎯 全球直连
+- RULE-SET,SteamCN,🎯 全球直连
+- RULE-SET,Bing,Ⓜ️ 微软Bing
+- RULE-SET,OneDrive,Ⓜ️ 微软云盘
+- RULE-SET,Microsoft,Ⓜ️ 微软服务
+- RULE-SET,Apple,🍎 苹果服务
+- RULE-SET,Telegram,📲 电报消息
+- RULE-SET,AI,💬 Ai平台
+- RULE-SET,NetEaseMusic,🎶 网易音乐
+- RULE-SET,Epic,🎮 游戏平台
+- RULE-SET,Origin,🎮 游戏平台
+- RULE-SET,Sony,🎮 游戏平台
+- RULE-SET,Steam,🎮 游戏平台
+- RULE-SET,Nintendo,🎮 游戏平台
+- RULE-SET,YouTube,📹 油管视频
+- RULE-SET,Bahamut,📺 巴哈姆特
+- RULE-SET,BilibiliHMT,📺 哔哩哔哩
+- RULE-SET,Bilibili,📺 哔哩哔哩
+- RULE-SET,ChinaMedia,🌏 国内媒体
+- RULE-SET,ProxyMedia,🌍 国外媒体
+- RULE-SET,ProxyGFWlist,🚀 节点选择
+- RULE-SET,ChinaDomain,🎯 全球直连
+- RULE-SET,ChinaCompanyIp,🎯 全球直连
+- RULE-SET,Download,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
