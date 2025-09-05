@@ -226,62 +226,21 @@ def save_yaml(data: dict, path: str):
     with open(path, "w", encoding="utf-8") as f:
         yaml.dump(data, f, allow_unicode=True, sort_keys=False)
 
-def read_existing_yaml(path: str) -> list[dict]:
-    """读取已有 YAML 文件 proxies 节点"""
-    fp = Path(path)
-    if not fp.exists():
-        return []
-    try:
-        data = yaml.safe_load(fp.read_text(encoding="utf-8"))
-        if isinstance(data, dict) and "proxies" in data and isinstance(data["proxies"], list):
-            return data["proxies"]
-    except Exception as e:
-        print(f"[!] 读取已有 YAML 失败: {path} -> {e}")
+def read_existing_yaml(paths: list[str]) -> list[dict]:
+    """读取已有 YAML 文件 proxies 节点，支持多个候选路径"""
+    for p in paths:
+        fp = Path(p)
+        if not fp.exists():
+            continue
+        try:
+            data = yaml.safe_load(fp.read_text(encoding="utf-8"))
+            if isinstance(data, dict) and "proxies" in data and isinstance(data["proxies"], list):
+                return data["proxies"]
+        except Exception as e:
+            print(f"[!] 读取已有 YAML 失败: {p} -> {e}")
     return []
 
 def print_latency_table(proxies: list[dict]):
     if not proxies: return
     print("\n┌" + "─"*72 + "┐")
-    print(f"│ {'节点名称':<20} │ {'服务器':<20} │ {'端口':<6} │ {'延迟(ms)':<8} │")
-    print("├" + "─"*72 + "┤")
-    for p in proxies:
-        print(f"│ {p['name']:<20} │ {p['server']:<20} │ {p['port']:<6} │ {p.get('latency_ms', '-'):<8} │")
-    print("└" + "─"*72 + "┘\n")
-
-# ================= 主流程 =================
-
-def main():
-    urls = read_url_list()
-    merged = []
-    for url in urls:
-        try:
-            print(f"[+] 拉取: {url}")
-            raw = http_get(url)
-            proxies = parse_subscription_text(raw)
-            merged.extend(proxies)
-        except Exception as e:
-            print(f"[!] 拉取失败: {url} -> {e}")
-
-    print(f"[=] 开始并发测试节点连通性，总计 {len(merged)} 个")
-    alive = asyncio.run(filter_alive_async(merged))
-
-    # 读取已有仓库 tmp/dslz.yaml
-    existing_proxies = read_existing_yaml(EXISTING_YAML)
-    print(f"[+] 已读取仓库 tmp/dslz.yaml 节点 {len(existing_proxies)} 个")
-
-    # 合并节点
-    all_proxies = alive + existing_proxies
-
-    # 按延迟排序、去重 server+port、唯一名称
-    all_proxies.sort(key=lambda x: x.get("latency_ms", 9999))
-    cfg = build_final_config(all_proxies)
-
-    # 打印表格
-    print_latency_table(cfg["proxies"])
-
-    # 写入 clash.yaml
-    save_yaml(cfg, OUTPUT_FILE)
-    print(f"[√] 已生成 {OUTPUT_FILE}：有效节点 {len(cfg['proxies'])} 个（按延迟排序）")
-
-if __name__ == "__main__":
-    main()
+    print(f"│
