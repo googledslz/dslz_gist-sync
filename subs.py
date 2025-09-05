@@ -2,11 +2,15 @@ import base64
 import requests
 import yaml
 import re
+import asyncio
+import time
 from pathlib import Path
 from urllib.parse import unquote, parse_qs
 
-INPUT_CANDIDATES = ["tmp/1.TXT", "/tmp/1.TXT"]  # 两个路径都尝试
+INPUT_CANDIDATES = ["tmp/1.TXT", "/tmp/1.TXT"]
 OUTPUT_FILE = "clash.yaml"
+
+# ================= 工具函数 =================
 
 def read_url_list() -> list:
     for p in INPUT_CANDIDATES:
@@ -17,7 +21,7 @@ def read_url_list() -> list:
             if urls:
                 print(f"[+] 读取订阅列表: {fp} ({len(urls)} 条)")
                 return urls
-    raise FileNotFoundError("未找到 tmp/1.TXT 或 /tmp/1.TXT（每行一个订阅地址）")
+    raise FileNotFoundError("未找到 tmp/1.TXT 或 /tmp/1.TXT")
 
 def http_get(url: str) -> str:
     r = requests.get(url, timeout=45)
@@ -37,7 +41,7 @@ def maybe_b64_decode(text: str) -> str:
         pass
     return text
 
-# ---------------- URI 解析 ----------------
+# ================= 协议解析 =================
 
 def parse_hysteria2(link: str) -> dict | None:
     try:
@@ -57,22 +61,19 @@ def parse_hysteria2(link: str) -> dict | None:
             q = parse_qs(query_part)
         elif "#" in tail:
             name = unquote(tail.split("#", 1)[1])
-
-        node = {
+        return {
             "name": name,
             "type": "hysteria2",
             "server": host,
             "port": int(port),
             "password": password,
+            **({"sni": q["sni"][0]} if "sni" in q else {}),
+            **({"alpn": q["alpn"][0].split(",")} if "alpn" in q else {}),
+            **({"skip-cert-verify": True} if (
+                ("insecure" in q and q["insecure"][0] in ("1", "true", "True")) or
+                ("skip-cert-verify" in q and q["skip-cert-verify"][0] in ("1", "true", "True"))
+            ) else {}),
         }
-        if "sni" in q and q["sni"]:
-            node["sni"] = q["sni"][0]
-        if "alpn" in q and q["alpn"]:
-            node["alpn"] = [s for s in q["alpn"][0].split(",") if s]
-        if ("insecure" in q and q["insecure"] and q["insecure"][0] in ("1", "true", "True")) \
-           or ("skip-cert-verify" in q and q["skip-cert-verify"][0] in ("1","true","True")):
-            node["skip-cert-verify"] = True
-        return node
     except Exception:
         return None
 
@@ -81,11 +82,10 @@ def parse_trojan(link: str) -> dict | None:
         raw = link[len("trojan://") :]
         pwd, rest = raw.split("@", 1)
         host_port, tail = (rest.split("?", 1) + [""])[:2]
+        name = "Trojan"
         if "#" in tail:
             tail, frag = tail.split("#", 1)
             name = unquote(frag)
-        else:
-            name = "Trojan"
         host, port = host_port.split(":")
         q = parse_qs(tail)
         node = {
@@ -111,32 +111,22 @@ def parse_ss(link: str) -> dict | None:
         if "#" in body:
             body, frag = body.split("#", 1)
             name = unquote(frag)
-
         def decode_if_b64(s: str) -> str:
             try:
                 padded = s + "=" * (-len(s) % 4)
-                out = base64.b64decode(padded).decode("utf-8", errors="ignore")
-                return out
+                return base64.b64decode(padded).decode("utf-8", errors="ignore")
             except Exception:
                 return s
-
         if "@" not in body:
             body = decode_if_b64(body)
-
         if "@" in body:
             auth, hp = body.split("@", 1)
         else:
             m = re.match(r"([^:@]+):([^:@]+)@([^:@]+):(\d+)", body)
-            if not m:
-                return None
-            auth = f"{m.group(1)}:{m.group(2)}"
-            hp = f"{m.group(3)}:{m.group(4)}"
-
-        if ":" not in auth or ":" not in hp:
-            return None
+            if not m: return None
+            auth, hp = f"{m.group(1)}:{m.group(2)}", f"{m.group(3)}:{m.group(4)}"
         method, password = auth.split(":", 1)
         host, port = hp.split(":", 1)
-
         return {
             "name": name,
             "type": "ss",
@@ -149,90 +139,122 @@ def parse_ss(link: str) -> dict | None:
         return None
 
 def parse_uri_line(line: str) -> dict | None:
-    if line.startswith("hysteria2://"):
-        return parse_hysteria2(line)
-    if line.startswith("trojan://"):
-        return parse_trojan(line)
-    if line.startswith("ss://"):
-        return parse_ss(line)
+    if line.startswith("hysteria2://"): return parse_hysteria2(line)
+    if line.startswith("trojan://"): return parse_trojan(line)
+    if line.startswith("ss://"): return parse_ss(line)
     return None
 
-# --------------- 订阅解析与合并 ----------------
+# ================= 合并逻辑 =================
 
 def parse_subscription_text(text: str) -> list[dict]:
     text = maybe_b64_decode(text).strip()
     proxies: list[dict] = []
-
-    # Clash YAML
     if "proxies:" in text:
         try:
             data = yaml.safe_load(text)
-            if isinstance(data, dict) and "proxies" in data and isinstance(data["proxies"], list):
-                for p in data["proxies"]:
-                    if isinstance(p, dict) and "name" in p and "type" in p:
-                        proxies.append(p)
-                print(f"    - Clash YAML，提取 {len(proxies)} 个节点")
+            if isinstance(data, dict) and "proxies" in data:
+                proxies.extend([p for p in data["proxies"] if isinstance(p, dict)])
+                print(f"    - Clash YAML，{len(proxies)} 个节点")
                 return proxies
         except Exception:
             pass
-
-    # URI 列表
     lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
-    added = 0
     for ln in lines:
         node = parse_uri_line(ln)
-        if node:
-            proxies.append(node)
-            added += 1
-    print(f"    - URI 列表，成功解析 {added}/{len(lines)}")
+        if node: proxies.append(node)
+    print(f"    - URI 列表，解析 {len(proxies)} 个节点")
     return proxies
 
 def unique_name(existing: set, name: str) -> str:
     if name not in existing:
-        existing.add(name)
-        return name
+        existing.add(name); return name
     i = 2
     while True:
         cand = f"{name} ({i})"
         if cand not in existing:
-            existing.add(cand)
-            return cand
+            existing.add(cand); return cand
         i += 1
 
+# ================= 并发连通性 + 延迟 =================
+
+async def test_one(server: str, port: int, timeout: int = 3) -> float | None:
+    start = time.perf_counter()
+    try:
+        reader, writer = await asyncio.wait_for(asyncio.open_connection(server, port), timeout)
+        writer.close()
+        await writer.wait_closed()
+        end = time.perf_counter()
+        return int((end - start) * 1000)  # ms
+    except Exception:
+        return None
+
+async def filter_alive_async(proxies: list[dict], concurrency: int = 50) -> list[dict]:
+    sem = asyncio.Semaphore(concurrency)
+    alive = []
+
+    async def check(p):
+        server, port = p.get("server"), p.get("port")
+        if not server or not port: return
+        async with sem:
+            latency = await test_one(server, int(port))
+            if latency is not None:
+                p["latency_ms"] = latency
+                alive.append(p)
+            # 不打印单条信息，统一用表格输出
+
+    await asyncio.gather(*(check(p) for p in proxies))
+    return alive
+
 def build_final_config(all_proxies: list[dict]) -> dict:
-    seen = set()
-    normalized = []
+    # 按延迟排序
+    all_proxies.sort(key=lambda x: x.get("latency_ms", 9999))
+    seen = set(); normalized = []
     for p in all_proxies:
-        if "name" not in p:
-            continue
+        if "name" not in p: continue
         p = dict(p)
         p["name"] = unique_name(seen, str(p["name"]))
         normalized.append(p)
-
     return {"proxies": normalized}
 
 def save_yaml(data: dict, path: str):
     with open(path, "w", encoding="utf-8") as f:
         yaml.dump(data, f, allow_unicode=True, sort_keys=False)
 
+def print_latency_table(proxies: list[dict]):
+    if not proxies: return
+    print("\n┌" + "─"*72 + "┐")
+    print(f"│ {'节点名称':<20} │ {'服务器':<20} │ {'端口':<6} │ {'延迟(ms)':<8} │")
+    print("├" + "─"*72 + "┤")
+    for p in proxies:
+        print(f"│ {p['name']:<20} │ {p['server']:<20} │ {p['port']:<6} │ {p.get('latency_ms', '-'):<8} │")
+    print("└" + "─"*72 + "┘\n")
+
+# ================= 主流程 =================
+
 def main():
     urls = read_url_list()
-    merged: list[dict] = []
-    total_from_each = []
-
+    merged = []
     for url in urls:
         try:
             print(f"[+] 拉取: {url}")
             raw = http_get(url)
             proxies = parse_subscription_text(raw)
             merged.extend(proxies)
-            total_from_each.append(len(proxies))
         except Exception as e:
             print(f"[!] 拉取失败: {url} -> {e}")
 
-    cfg = build_final_config(merged)
+    print(f"[=] 开始并发测试节点连通性，总计 {len(merged)} 个")
+    alive = asyncio.run(filter_alive_async(merged))
+
+    # 按延迟排序
+    alive.sort(key=lambda x: x.get("latency_ms", 9999))
+
+    # 打印表格
+    print_latency_table(alive)
+
+    cfg = build_final_config(alive)
     save_yaml(cfg, OUTPUT_FILE)
-    print(f"[√] 已生成 {OUTPUT_FILE}：共 {len(merged)} 个节点（各订阅解析数: {total_from_each}）")
+    print(f"[√] 已生成 {OUTPUT_FILE}：有效节点 {len(alive)} 个（按延迟排序）")
 
 if __name__ == "__main__":
     main()
