@@ -1,11 +1,12 @@
 import base64
-import asyncio
-import aiohttp
 import requests
 import yaml
 import re
+import asyncio
+import time
 import subprocess
 from pathlib import Path
+from urllib.parse import unquote, parse_qs
 
 # ================= 配置 =================
 INPUT_CANDIDATES = ["tmp/1.TXT", "/tmp/1.TXT"]
@@ -26,195 +27,278 @@ def read_url_list() -> list:
                 return urls
     raise FileNotFoundError("未找到 tmp/1.TXT 或 /tmp/1.TXT")
 
-def decode_base64(content: str) -> str:
+def http_get(url: str) -> str:
+    r = requests.get(url, timeout=45)
+    r.raise_for_status()
+    return r.text
+
+def maybe_b64_decode(text: str) -> str:
+    if "://" in text or "proxies:" in text:
+        return text
     try:
-        missing_padding = 4 - len(content) % 4
-        if missing_padding:
-            content += "=" * missing_padding
-        return base64.b64decode(content).decode("utf-8", errors="ignore")
+        padded = text + "=" * (-len(text) % 4)
+        decoded = base64.b64decode(padded, validate=False)
+        s = decoded.decode("utf-8", errors="ignore")
+        if "://" in s or "proxies:" in s:
+            return s
     except Exception:
-        return content
+        pass
+    return text
 
-def parse_subscription(url: str) -> list:
-    print(f"[+] 拉取: {url}")
+# ================= 协议解析 =================
+
+def parse_hysteria2(link: str) -> dict | None:
     try:
-        resp = requests.get(url, timeout=15)
-        resp.raise_for_status()
-        content = resp.text.strip()
-        if content.startswith("vmess://") or content.startswith("ss://") or content.startswith("vless://"):
-            return content.splitlines()
-        else:
-            decoded = decode_base64(content)
-            return decoded.splitlines()
-    except Exception as e:
-        print(f"[!] 拉取失败: {url} -> {e}")
-        return []
-
-# ============ 节点解析 ============
-def parse_node(line: str) -> dict:
-    if line.startswith("vmess://"):
-        return parse_vmess(line)
-    elif line.startswith("ss://"):
-        return parse_ss(line)
-    elif line.startswith("vless://"):
-        return parse_vless(line)
-    return None
-
-def parse_vmess(line: str) -> dict:
-    try:
-        data = line[8:]
-        js = base64.b64decode(data + "==").decode("utf-8", errors="ignore")
-        cfg = yaml.safe_load(js)
+        raw = link[len("hysteria2://") :]
+        creds, rest = raw.split("@", 1)
+        password = creds
+        hp_match = re.match(r"([^:/?#]+):(\d+)(.*)", rest)
+        if not hp_match: return None
+        host, port, tail = hp_match.groups()
+        q, name = {}, "HY2"
+        if "?" in tail:
+            query_part = tail.split("?", 1)[1]
+            if "#" in query_part:
+                query_part, frag = query_part.split("#", 1)
+                name = unquote(frag)
+            q = parse_qs(query_part)
+        elif "#" in tail:
+            name = unquote(tail.split("#", 1)[1])
         return {
-            "name": cfg.get("ps", "vmess"),
-            "type": "vmess",
-            "server": cfg["add"],
-            "port": int(cfg["port"]),
-            "uuid": cfg["id"],
-            "alterId": int(cfg.get("aid", 0)),
-            "cipher": "auto",
-            "tls": True if cfg.get("tls") == "tls" else False,
-            "network": cfg.get("net", "tcp"),
+            "name": name,
+            "type": "hysteria2",
+            "server": host,
+            "port": int(port),
+            "password": password,
+            **({"sni": q["sni"][0]} if "sni" in q else {}),
+            **({"alpn": q["alpn"][0].split(",")} if "alpn" in q else {}),
+            **({"skip-cert-verify": True} if (
+                ("insecure" in q and q["insecure"][0] in ("1", "true", "True")) or
+                ("skip-cert-verify" in q and q["skip-cert-verify"][0] in ("1", "true", "True"))
+            ) else {}),
         }
     except Exception:
         return None
 
-def parse_ss(line: str) -> dict:
+def parse_trojan(link: str) -> dict | None:
     try:
-        from urllib.parse import urlparse
-        data = line[5:]
-        if "#" in data:
-            data, name = data.split("#", 1)
-            name = requests.utils.unquote(name)
+        raw = link[len("trojan://") :]
+        pwd, rest = raw.split("@", 1)
+        host_port, tail = (rest.split("?", 1) + [""])[:2]
+        name = "Trojan"
+        if "#" in tail:
+            tail, frag = tail.split("#", 1)
+            name = unquote(frag)
+        host, port = host_port.split(":")
+        q = parse_qs(tail)
+        node = {
+            "name": name,
+            "type": "trojan",
+            "server": host,
+            "port": int(port),
+            "password": pwd,
+        }
+        sni = q.get("sni") or q.get("peer")
+        if sni: node["sni"] = sni[0]
+        if q.get("allowInsecure", ["0"])[0] in ("1","true","True"):
+            node["skip-cert-verify"] = True
+        return node
+    except Exception:
+        return None
+
+def parse_ss(link: str) -> dict | None:
+    try:
+        body = link[len("ss://") :]
+        name = "Shadowsocks"
+        if "#" in body:
+            body, frag = body.split("#", 1)
+            name = unquote(frag)
+        def decode_if_b64(s: str) -> str:
+            try:
+                padded = s + "=" * (-len(s) % 4)
+                return base64.b64decode(padded).decode("utf-8", errors="ignore")
+            except Exception:
+                return s
+        if "@" not in body:
+            body = decode_if_b64(body)
+        if "@" in body:
+            auth, hp = body.split("@", 1)
         else:
-            name = "ss"
-        if "@" not in data:
-            raw = base64.b64decode(data + "==").decode("utf-8")
-            method, rest = raw.split(":", 1)
-            password, server_port = rest.split("@")
-            server, port = server_port.split(":")
-        else:
-            method_pwd, server_port = data.split("@")
-            method, password = method_pwd.split(":", 1)
-            server, port = server_port.split(":")
+            m = re.match(r"([^:@]+):([^:@]+)@([^:@]+):(\d+)", body)
+            if not m: return None
+            auth, hp = f"{m.group(1)}:{m.group(2)}", f"{m.group(3)}:{m.group(4)}"
+        method, password = auth.split(":", 1)
+        host, port = hp.split(":", 1)
         return {
             "name": name,
             "type": "ss",
-            "server": server,
-            "port": int(re.sub(r"\D", "", port)),
+            "server": host,
+            "port": int(port),
             "cipher": method,
             "password": password,
         }
     except Exception:
         return None
 
-def parse_vless(line: str) -> dict:
-    try:
-        from urllib.parse import urlparse, parse_qs
-        data = line[8:]
-        if "#" in data:
-            data, name = data.split("#", 1)
-            name = requests.utils.unquote(name)
-        else:
-            name = "vless"
-        u = urlparse("vless://" + data)
-        qs = parse_qs(u.query)
-        return {
-            "name": name,
-            "type": "vless",
-            "server": u.hostname,
-            "port": int(u.port or 443),
-            "uuid": u.username,
-            "network": qs.get("type", ["tcp"])[0],
-            "tls": True if qs.get("security", ["none"])[0] == "tls" else False,
-        }
-    except Exception:
-        return None
+def parse_uri_line(line: str) -> dict | None:
+    if line.startswith("hysteria2://"): return parse_hysteria2(line)
+    if line.startswith("trojan://"): return parse_trojan(line)
+    if line.startswith("ss://"): return parse_ss(line)
+    if line.startswith("vless://"): return None  # 先忽略不支持
+    if line.startswith("vmess://"): return None  # 先忽略不支持
+    return None
 
-# ============ 并发测试连通性 ============
+# ================= 合并逻辑 =================
+
+def parse_subscription_text(text: str) -> list[dict]:
+    text = maybe_b64_decode(text).strip()
+    proxies: list[dict] = []
+    if "proxies:" in text:
+        try:
+            data = yaml.safe_load(text)
+            if isinstance(data, dict) and "proxies" in data:
+                proxies.extend([p for p in data["proxies"] if isinstance(p, dict)])
+                print(f"    - Clash YAML，{len(proxies)} 个节点")
+                return proxies
+        except Exception:
+            pass
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    for ln in lines:
+        node = parse_uri_line(ln)
+        if node: proxies.append(node)
+    print(f"    - URI 列表，解析 {len(proxies)} 个节点")
+    return proxies
+
+def unique_name(existing: set, name: str) -> str:
+    if name not in existing:
+        existing.add(name); return name
+    i = 2
+    while True:
+        cand = f"{name} ({i})"
+        if cand not in existing:
+            existing.add(cand); return cand
+        i += 1
+
+# ================= 并发连通性 =================
+
 async def test_one(server: str, port: int, timeout: int = 3) -> float | None:
+    start = time.perf_counter()
     try:
-        start = asyncio.get_event_loop().time()
-        reader, writer = await asyncio.wait_for(asyncio.open_connection(server, port), timeout=timeout)
+        reader, writer = await asyncio.wait_for(asyncio.open_connection(server, port), timeout)
         writer.close()
         await writer.wait_closed()
-        return (asyncio.get_event_loop().time() - start) * 1000
+        end = time.perf_counter()
+        return int((end - start) * 1000)
     except Exception:
         return None
 
-async def filter_alive_async(proxies: list) -> list:
-    print(f"[=] 开始并发测试节点连通性，总计 {len(proxies)} 个")
-    results = []
+async def filter_alive_async(proxies: list[dict], concurrency: int = 50) -> list[dict]:
+    sem = asyncio.Semaphore(concurrency)
+    alive = []
+    seen_server_port = set()
 
     async def check(p):
-        latency = await test_one(p["server"], p["port"])
-        if latency is not None:
-            p["latency"] = latency
-            results.append(p)
+        server, port = p.get("server"), p.get("port")
+        if not server or not port:
+            return
+        key = (server, port)
+        if key in seen_server_port:
+            return
+        seen_server_port.add(key)
+        async with sem:
+            latency = await test_one(server, int(port))
+            if latency is not None:
+                p["latency_ms"] = latency
+                alive.append(p)
 
     await asyncio.gather(*(check(p) for p in proxies))
-    results.sort(key=lambda x: x["latency"])
-    print("[=] 存活节点: ", len(results))
-    for p in results[:20]:
-        print(f"{p['name']:<30} {p['server']}:{p['port']}  {p['latency']:.1f} ms")
-    return results
+    return alive
 
-# ============ 去重 & 改名 ============
-def dedup_and_rename(proxies: list) -> list:
-    seen = set()
-    names = {}
-    newlist = []
-    for p in proxies:
-        key = (p["server"], p["port"])
-        if key in seen:
+# ================= 读取已有 YAML =================
+
+def read_existing_yaml(paths: list[str]) -> list[dict]:
+    proxies = []
+    for path in paths:
+        fp = Path(path)
+        if fp.exists():
+            try:
+                data = yaml.safe_load(fp.read_text(encoding="utf-8"))
+                if isinstance(data, dict) and "proxies" in data:
+                    proxies.extend([p for p in data["proxies"] if isinstance(p, dict)])
+                    print(f"[+] 读取已有 YAML {fp}: {len(data['proxies'])} 个节点")
+            except Exception as e:
+                print(f"[!] 读取失败 {fp}: {e}")
+    return proxies
+
+# ================= 保存 YAML =================
+
+def build_final_config(all_proxies: list[dict]) -> dict:
+    # 按延迟排序
+    all_proxies.sort(key=lambda x: x.get("latency_ms", 9999))
+    seen_names = set()
+    normalized = []
+    seen_server_port = set()
+    for p in all_proxies:
+        if "name" not in p or "server" not in p or "port" not in p:
             continue
-        seen.add(key)
-        name = p["name"]
-        count = 1
-        while name in names:
-            count += 1
-            name = f"{p['name']}_{count}"
-        names[name] = 1
-        p["name"] = name
-        newlist.append(p)
-    return newlist
+        # server+port 去重
+        key = (p["server"], p["port"])
+        if key in seen_server_port:
+            continue
+        seen_server_port.add(key)
+        p = dict(p)
+        p["name"] = unique_name(seen_names, str(p["name"]))
+        normalized.append(p)
+    return {"proxies": normalized}
 
-# ============ 主逻辑 ============
+def save_yaml(data: dict, path: str):
+    with open(path, "w", encoding="utf-8") as f:
+        yaml.dump(data, f, allow_unicode=True, sort_keys=False)
+
+def print_latency_table(proxies: list[dict]):
+    if not proxies: return
+    print("\n┌" + "─"*72 + "┐")
+    print(f"│ {'节点名称':<20} │ {'服务器':<20} │ {'端口':<6} │ {'延迟(ms)':<8} │")
+    print("├" + "─"*72 + "┤")
+    for p in proxies:
+        print(f"│ {p['name']:<20} │ {p['server']:<20} │ {p['port']:<6} │ {p.get('latency_ms', '-'):<8} │")
+    print("└" + "─"*72 + "┘\n")
+
+# ================= 主流程 =================
+
 def main():
     urls = read_url_list()
-    all_nodes = []
+    merged = []
     for url in urls:
-        lines = parse_subscription(url)
-        for line in lines:
-            node = parse_node(line)
-            if node:
-                all_nodes.append(node)
+        try:
+            print(f"[+] 拉取: {url}")
+            raw = http_get(url)
+            proxies = parse_subscription_text(raw)
+            merged.extend(proxies)
+        except Exception as e:
+            print(f"[!] 拉取失败: {url} -> {e}")
 
-    print(f"[+] 共解析到 {len(all_nodes)} 个节点")
+    # 并发测试
+    print(f"[=] 开始并发测试节点连通性，总计 {len(merged)} 个")
+    alive = asyncio.run(filter_alive_async(merged))
 
-    # 测试可用性
-    alive = asyncio.run(filter_alive_async(all_nodes))
+    # 读取已有 YAML
+    existing_proxies = read_existing_yaml(EXISTING_YAML)
+    all_proxies = alive + existing_proxies
 
-    # 去重 & 改名
-    merged = dedup_and_rename(alive)
+    cfg = build_final_config(all_proxies)
 
-    # 写入 clash.yaml
-    clash_config = {"proxies": merged}
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        yaml.safe_dump(clash_config, f, allow_unicode=True, sort_keys=False)
+    # 打印表格
+    print_latency_table(cfg["proxies"])
 
-    # 追加 dslz.yaml
-    for p in EXISTING_YAML:
-        fp = Path(p)
-        if fp.exists():
-            with open(fp, "r", encoding="utf-8") as src, open(OUTPUT_FILE, "a", encoding="utf-8") as dst:
-                dst.write("\n")
-                dst.write(src.read())
-            print(f"[+] 已追加 {fp} 到 clash.yaml")
+    # 保存 clash.yaml
+    save_yaml(cfg, OUTPUT_FILE)
+    print(f"[+] 已生成 {OUTPUT_FILE}")
 
     # 调用 fix_clash.py
-    subprocess.run(["python", FIX_SCRIPT], check=True)
-    print("[+] clash.yaml 已修复完成")
+    print(f"[+] 调用 {FIX_SCRIPT} 修复端口并剔除错误节点...")
+    subprocess.run(["python3", FIX_SCRIPT], check=True)
+    print(f"[+] 修复完成")
 
 if __name__ == "__main__":
     main()
