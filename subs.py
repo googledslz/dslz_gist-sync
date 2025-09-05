@@ -1,24 +1,17 @@
 import base64
 import requests
 import yaml
-import subprocess
-import os
-from urllib.parse import unquote, urlparse, parse_qs
-
-
-import base64
-import requests
-import yaml
 from urllib.parse import unquote, parse_qs
+from pathlib import Path
 
 # === 配置区 ===
-SUB_URL = "https://foldjc.top/api/v1/client/subscribe?token=412e0b0168a844cadf332a634b5a52d4"
+INPUT_FILE = "tmp/1.TXT"   # 存放订阅链接的文件
 OUTPUT_FILE = "clash.yaml"
 
 
 # === 下载订阅 ===
 def download_subscribe(url: str) -> str:
-    print("[+] 下载订阅中...")
+    print(f"[+] 下载订阅: {url}")
     resp = requests.get(url, timeout=30)
     resp.raise_for_status()
     return resp.text.strip()
@@ -34,7 +27,6 @@ def decode_base64(data: str) -> str:
 
 # === 解析 hysteria2 链接为 Clash 节点 ===
 def parse_hysteria2(link: str) -> dict:
-    # 格式: hysteria2://uuid@host:port/?param=xxx#name
     url = link.replace("hysteria2://", "")
     creds, rest = url.split("@", 1)
     uuid = creds
@@ -100,14 +92,29 @@ def save_yaml(data: dict, path: str):
 
 
 def main():
-    raw = download_subscribe(SUB_URL)
-    decoded = decode_base64(raw)
-    links = [line.strip() for line in decoded.splitlines() if line.strip()]
-    clash_config = convert_to_clash(links)
+    # 读取订阅链接列表
+    sub_file = Path(INPUT_FILE)
+    if not sub_file.exists():
+        print(f"[!] 输入文件不存在: {INPUT_FILE}")
+        return
+
+    with open(sub_file, "r", encoding="utf-8") as f:
+        urls = [line.strip() for line in f if line.strip()]
+
+    all_links = []
+    for url in urls:
+        try:
+            raw = download_subscribe(url)
+            decoded = decode_base64(raw)
+            links = [line.strip() for line in decoded.splitlines() if line.strip()]
+            all_links.extend(links)
+        except Exception as e:
+            print(f"[!] 拉取失败: {url}, 错误: {e}")
+
+    clash_config = convert_to_clash(all_links)
     save_yaml(clash_config, OUTPUT_FILE)
-    print(f"[+] 已生成 {OUTPUT_FILE}")
+    print(f"[+] 已生成 {OUTPUT_FILE}，包含 {len(all_links)} 个节点")
 
 
 if __name__ == "__main__":
     main()
-
