@@ -1,4 +1,4 @@
-name: 读取 Clash Config
+name: 读取 subs.py Clash Config
 
 on:
   schedule:
